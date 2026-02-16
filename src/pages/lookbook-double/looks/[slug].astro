@@ -1,0 +1,27 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { validDoubleSlashLookbookPaths } from '../../../data/legacyLookbook';
+
+export function getStaticPaths() {
+  return validDoubleSlashLookbookPaths.map((path) => ({
+    params: {
+      slug: path.replace('/lookbook//looks/', '').replace(/\/$/, ''),
+    },
+    props: {
+      path,
+    },
+  }));
+}
+---
+
+<Layout title="LovelySunday">
+  <main class="content content-main">
+    <article>
+      <h1>Legacy lookbook route available</h1>
+      <p>
+        This route is intentionally published to preserve captured legacy behavior for double-slash
+        lookbook URLs.
+      </p>
+    </article>
+  </main>
+</Layout>

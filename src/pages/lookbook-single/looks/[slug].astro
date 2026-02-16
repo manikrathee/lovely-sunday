@@ -1,0 +1,34 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import {
+  capturedSingleSlashLookbook404Paths,
+  rewriteLegacyLookbookPath,
+} from '../../../data/legacyLookbook';
+
+export function getStaticPaths() {
+  return capturedSingleSlashLookbook404Paths.map((path) => ({
+    params: {
+      slug: path.replace('/lookbook/looks/', '').replace(/\/$/, ''),
+    },
+    props: {
+      path,
+    },
+  }));
+}
+
+const { path } = Astro.props;
+Astro.response.status = 404;
+const correctedPath = rewriteLegacyLookbookPath(path);
+---
+
+<Layout title="LovelySunday" noindex>
+  <main class="content content-main">
+    <article>
+      <h1>LovelySunday</h1>
+      <p>We couldn't find the page you were looking for.</p>
+      <p>
+        Internal nav correction target: <a href={correctedPath}>{correctedPath}</a>
+      </p>
+    </article>
+  </main>
+</Layout>
