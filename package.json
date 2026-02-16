@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy:s3": "bash scripts/deploy-to-s3.sh",
+    "verify:urls": "node scripts/verify-post-deploy-urls.mjs",
+    "deploy:production": "bash scripts/deploy-and-verify.sh"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
