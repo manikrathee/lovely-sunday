@@ -17,7 +17,7 @@ if [[ -n "${CLOUDFRONT_DISTRIBUTION_ID:-}" ]]; then
   aws cloudfront create-invalidation \
     --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" \
     --paths "/*" \
-    "${region_args[@]}" >/dev/null
+    ${region_args[@]+"${region_args[@]}"} >/dev/null
 fi
 
 node "$(dirname "$0")/verify-post-deploy-urls.mjs"

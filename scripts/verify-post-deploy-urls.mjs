@@ -17,15 +17,22 @@ const baseUrl = new URL(VERIFY_BASE_URL.endsWith('/') ? VERIFY_BASE_URL : `${VER
 
 const parseManifest = async () => {
   const raw = await readFile(MANIFEST_URL_FILE, 'utf8');
-  return raw
+  const lines = raw
     .split(/\r?\n/)
     .map((line) => line.trim())
-    .filter(Boolean)
-    .map((source) => {
+    .filter(Boolean);
+
+  const entries = [];
+  for (const source of lines) {
+    try {
       const sourceUrl = new URL(source);
       const target = new URL(sourceUrl.pathname + sourceUrl.search, baseUrl);
-      return { source, target: target.toString() };
-    });
+      entries.push({ source, target: target.toString() });
+    } catch {
+      console.warn(`[verify] SKIP invalid URL in manifest: ${source}`);
+    }
+  }
+  return entries;
 };
 
 const fetchWithTimeout = async (url) => {

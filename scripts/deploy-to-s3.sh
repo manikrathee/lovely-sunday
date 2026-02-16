@@ -26,13 +26,13 @@ aws s3 sync "$DIST_DIR/" "s3://$S3_BUCKET" \
   --delete \
   --exclude "$HASHED_ASSET_PREFIX/*" \
   --cache-control "public,max-age=0,must-revalidate" \
-  "${region_args[@]}"
+  ${region_args[@]+"${region_args[@]}"}
 
 echo "[deploy] Uploading hashed assets with immutable cache headers..."
 aws s3 sync "$DIST_DIR/" "s3://$S3_BUCKET" \
   --exclude "*" \
   --include "$HASHED_ASSET_PREFIX/*" \
   --cache-control "public,max-age=31536000,immutable" \
-  "${region_args[@]}"
+  ${region_args[@]+"${region_args[@]}"}
 
 echo "[deploy] S3 deploy complete: s3://$S3_BUCKET"
