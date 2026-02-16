@@ -166,14 +166,30 @@ aws s3api put-bucket-policy \
 # 1) Build
 SITE_URL=https://www.yourdomain.com npm run build
 
-# 2) Sync build output to S3
-aws s3 sync dist/ s3://www.yourdomain.com --delete
+# 2) Upload to S3 (HTML revalidates, hashed assets are immutable)
+S3_BUCKET=www.yourdomain.com AWS_REGION=us-east-1 npm run deploy:s3
 
-# 3) Invalidate CloudFront cache
+# 3) Invalidate CloudFront cache (optional but recommended)
 aws cloudfront create-invalidation \
   --distribution-id E123ABC456DEF \
   --paths "/*"
+
+# 4) Verify every captured URL on the deployed host
+VERIFY_BASE_URL=https://www.yourdomain.com npm run verify:urls
+
+# 5) One command: upload, optional invalidation, and URL verification
+S3_BUCKET=www.yourdomain.com \
+AWS_REGION=us-east-1 \
+VERIFY_BASE_URL=https://www.yourdomain.com \
+CLOUDFRONT_DISTRIBUTION_ID=E123ABC456DEF \
+npm run deploy:production
 ```
+
+`npm run deploy:s3` performs a two-pass upload:
+- non-hashed files (`index.html`, route HTML, etc.) → `Cache-Control: public,max-age=0,must-revalidate`
+- hashed Astro assets (`_astro/*`) → `Cache-Control: public,max-age=31536000,immutable`
+
+`npm run verify:urls` reads `capture/manifests/all_urls.txt`, rewrites each path onto `VERIFY_BASE_URL`, and writes `capture/manifests/post_deploy_verification_report.json`.
 
 ---
 
@@ -254,6 +270,10 @@ Used by this repository:
 - `SITE_URL`: canonical site URL used by sitemap/robots/canonical metadata
 - `PUBLIC_GA_MEASUREMENT_ID`: optional analytics
 - `PUBLIC_TWITTER_HANDLE`: optional social metadata
+- `S3_BUCKET`: target bucket for deploy scripts
+- `AWS_REGION`: optional AWS region for CLI commands
+- `VERIFY_BASE_URL`: deployed public base URL used by post-deploy checker
+- `CLOUDFRONT_DISTRIBUTION_ID`: optional distribution for automatic invalidation in `deploy:production`
 
 Example:
 
