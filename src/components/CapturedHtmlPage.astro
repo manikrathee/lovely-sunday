@@ -144,7 +144,7 @@ const renderedHtml = rawHtml.replace(
             if (!img) return "unknown";
 
             const dimensions = img.getAttribute("data-image-dimensions") || "";
-            const match = dimensions.match(/(\\d+)x(\\d+)/i);
+            const match = dimensions.match(/(\d+)x(\d+)/i);
             if (!match) return "unknown";
 
             const width = Number(match[1]);

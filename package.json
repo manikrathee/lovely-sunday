@@ -7,7 +7,8 @@
     "dev:astro": "astro dev",
     "build": "astro build && npm run qa:parity",
     "build:astro": "astro build",
-    "qa:parity": "node scripts/qa/parity-gate.mjs",
+    "qa:parity": "node scripts/qa/parity-gate.mjs && npm run check:gallery-orientations",
+    "check:gallery-orientations": "node scripts/check-gallery-orientations.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "deploy:s3": "bash scripts/deploy-to-s3.sh",
@@ -38,5 +39,8 @@
     "postcss-custom-properties": "^14.0.6",
     "postcss-easy-import": "^4.0.0",
     "swup": "^4.8.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
   }
 }
