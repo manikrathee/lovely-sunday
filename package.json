@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:routes": "node scripts/verify-route-manifest.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
