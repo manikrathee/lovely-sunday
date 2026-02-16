@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ImageBlock from './ImageBlock.astro';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  thumbnail?: string;
+  articleClass?: string;
+  includeExcerpt?: boolean;
+}
+
+const {
+  title,
+  description,
+  thumbnail,
+  articleClass = 'post-content',
+  includeExcerpt = false,
+} = Astro.props;
+
+const resolvedTitle = title || "";
+---
+
+<Layout title={resolvedTitle} description={description}>
+  <article class={`${articleClass} ${thumbnail ? '' : 'no-image'}`.trim()}>
+    {includeExcerpt && description && <p class="post-content-excerpt">{description}</p>}
+    <ImageBlock src={thumbnail} alt={resolvedTitle} />
+
+    <div class="post-content-body">
+      <slot />
+    </div>
+
+    <slot name="after" />
+  </article>
+</Layout>

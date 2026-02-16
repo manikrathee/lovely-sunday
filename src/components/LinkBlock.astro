@@ -1,0 +1,14 @@
+---
+export interface Props {
+  href: string;
+  label: string;
+  direction?: 'prev' | 'next';
+}
+
+const { href, label, direction = 'next' } = Astro.props;
+const arrow = direction === 'prev' ? `← ${label}` : `${label} →`;
+---
+
+<a class={`post-nav-link ${direction}`} href={href}>
+  <span>{arrow}</span>
+</a>

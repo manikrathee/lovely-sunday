@@ -79,6 +79,8 @@ RUNTIME_HOST_BLOCKLIST = {
     "clanker-events.squarespace.com",
 }
 
+ASSET_INITIATOR_ALLOWLIST = {"img", "image", "link", "script", "css", "font", "video", "audio"}
+
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -181,32 +183,40 @@ def looks_like_static_url(url: str) -> bool:
     suffix = pathlib.Path(path).suffix.lower()
     if suffix in STATIC_EXTENSIONS:
         return True
-    if parsed.netloc.lower() == "images.squarespace-cdn.com" and "/content/" in path:
+    if (parsed.hostname or "").lower() == "images.squarespace-cdn.com" and "/content/" in path:
         return True
-    if parsed.netloc.lower() in {"fonts.googleapis.com", "use.typekit.com"} and "/css" in path:
+    if (parsed.hostname or "").lower() in {"fonts.googleapis.com", "use.typekit.com"} and "/css" in path:
         return True
     return False
 
 
-def resource_entry_download_candidate(resource_url: str, initiator_type: str | None) -> bool:
+def classify_asset_url(resource_url: str, initiator_type: str | None) -> tuple[bool, str]:
     parsed = urllib.parse.urlparse(resource_url)
-    host = (parsed.netloc or "").lower()
+    scheme = (parsed.scheme or "").lower()
+    host = (parsed.hostname or "").lower()
     path = parsed.path or ""
     initiator = (initiator_type or "").lower()
 
+    if scheme and scheme not in {"http", "https"}:
+        return False, "unsupported_scheme"
     if not host:
-        return False
+        return False, "missing_host"
     if host in RUNTIME_HOST_BLOCKLIST:
-        return False
+        return False, "runtime_host_blocklist"
     if host in ALLOWED_HOSTS and path.startswith("/api/"):
-        return False
+        return False, "internal_api_endpoint"
     if host in STATIC_HOST_ALLOWLIST:
-        return True
+        return True, "static_host_allowlist"
     if looks_like_static_url(resource_url):
-        return True
-    if initiator in {"img", "image", "link", "script", "css", "font"} and "/api/" not in path:
-        return True
-    return False
+        return True, "static_extension_or_provider_rule"
+    if initiator in ASSET_INITIATOR_ALLOWLIST and "/api/" not in path:
+        return True, "asset_initiator_allowlist"
+    return False, "non_static_or_outbound"
+
+
+def resource_entry_download_candidate(resource_url: str, initiator_type: str | None) -> bool:
+    include, _ = classify_asset_url(resource_url, initiator_type)
+    return include
 
 
 def is_internal(url: str) -> bool:
@@ -348,36 +358,38 @@ def crawl_worker(
 def collect_asset_urls(page_json_files: list[pathlib.Path]) -> list[str]:
     urls: set[str] = set()
 
-    def add(value: Any) -> None:
+    def add(value: Any, initiator_hint: str | None = None) -> None:
         if isinstance(value, list):
             for item in value:
-                add(item)
+                add(item, initiator_hint)
             return
         if not isinstance(value, str):
             return
         normalized = normalize_url(value)
         if normalized:
-            urls.add(normalized)
+            include, _ = classify_asset_url(normalized, initiator_hint)
+            if include:
+                urls.add(normalized)
 
     for page_file in page_json_files:
         data = json.loads(read_text(page_file))
         for image in data.get("images", []):
-            add(image.get("src"))
-            add(image.get("srcset", []))
+            add(image.get("src"), "image")
+            add(image.get("srcset", []), "image")
         for video in data.get("videos", []):
-            add(video.get("src"))
+            add(video.get("src"), "video")
         for script in data.get("scripts", []):
-            add(script.get("src"))
+            add(script.get("src"), "script")
         for stylesheet in data.get("stylesheets", []):
-            add(stylesheet.get("href"))
-        add(data.get("icons", []))
+            add(stylesheet.get("href"), "css")
+        add(data.get("icons", []), "image")
         for resource in data.get("resourceEntries", []):
             name = resource.get("name")
             initiator = resource.get("initiatorType")
             if isinstance(name, str) and resource_entry_download_candidate(name, initiator):
-                add(name)
-        add(data.get("openGraph", {}).get("image"))
-        add(data.get("twitter", {}).get("image"))
+                add(name, initiator)
+        add(data.get("openGraph", {}).get("image"), "image")
+        add(data.get("twitter", {}).get("image"), "image")
 
     return sorted(urls)
 
@@ -559,6 +571,48 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def build_asset_filter_rules() -> dict[str, Any]:
+    return {
+        "generatedAt": utc_now(),
+        "runtimeHostBlocklist": sorted(RUNTIME_HOST_BLOCKLIST),
+        "staticHostAllowlist": sorted(STATIC_HOST_ALLOWLIST),
+        "allowedAssetInitiatorTypes": sorted(ASSET_INITIATOR_ALLOWLIST),
+        "rules": [
+            {
+                "id": "reject_runtime_hosts",
+                "result": "exclude",
+                "description": "Block telemetry/API providers that are runtime-only and not static mirror candidates.",
+            },
+            {
+                "id": "reject_internal_api_paths",
+                "result": "exclude",
+                "description": "Block first-party /api/ endpoints from static asset mirroring.",
+            },
+            {
+                "id": "allow_known_static_hosts",
+                "result": "include",
+                "description": "Allow static CDNs and font providers used by captured pages.",
+            },
+            {
+                "id": "allow_static_extension_or_provider_pattern",
+                "result": "include",
+                "description": "Allow URLs that match known static extensions/provider patterns.",
+            },
+            {
+                "id": "allow_asset_initiator_types",
+                "result": "include",
+                "description": "Allow non-API resources discovered via static asset initiator types.",
+            },
+            {
+                "id": "exclude_non_static_or_outbound",
+                "result": "exclude",
+                "description": "Exclude unresolved non-static URLs so outbound destinations remain outbound links.",
+            },
+        ],
+        "recheckSource": "capture/manifests/failed_url_recheck_report.json",
+    }
+
+
 def main() -> int:
     args = parse_args()
     start = time.time()
@@ -635,6 +689,7 @@ def main() -> int:
     page_json_files = [output_dir / pathlib.Path(item["jsonFile"]) for item in successful if item.get("jsonFile")]
     asset_urls = collect_asset_urls(page_json_files)
     write_text(output_dir / "manifests" / "asset_urls.txt", "\n".join(asset_urls) + "\n")
+    write_json(output_dir / "manifests" / "asset_filter_rules.json", build_asset_filter_rules())
     print(f"[assets] unique URLs queued for download: {len(asset_urls)}")
 
     download_root = output_dir / "assets" / "downloads"
