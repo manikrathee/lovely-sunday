@@ -65,7 +65,11 @@ function decodeHtml(value) {
 
 function extractPageMetrics(html) {
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-    const canonicalMatch = html.match(/<link[^>]*rel=["'][^"']*canonical[^"']*["'][^>]*href=["']([^"']+)["'][^>]*>/i);
+
+    // Match canonical link regardless of attribute order (rel before href, or href before rel)
+    const canonicalMatch =
+        html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i) ||
+        html.match(/<link[^>]*href=["']([^"']+)["'][^>]*rel=["']canonical["'][^>]*>/i);
 
     const h1 = [];
     const h1Regex = /<h1\b[^>]*>([\s\S]*?)<\/h1>/gi;
@@ -86,6 +90,9 @@ function extractPageMetrics(html) {
 
 function readPngDimensions(filePath) {
     const buffer = fs.readFileSync(filePath);
+    if (buffer.length < 24) {
+        throw new Error(`File too small to be a valid PNG: ${filePath} (${buffer.length} bytes)`);
+    }
     if (buffer.toString("ascii", 1, 4) !== "PNG") {
         throw new Error(`Not a PNG file: ${filePath}`);
     }
@@ -98,6 +105,16 @@ function readPngDimensions(filePath) {
 if (!fs.existsSync(distDir)) {
     console.error(`✖ Missing dist directory: ${distDir}. Run \`astro build\` before parity check.`);
     process.exit(1);
+}
+
+// Gracefully skip when capture artifacts are not present (fresh clone, CI without snapshots)
+const requiredArtifacts = [reportPath, snapshotsPath, pageJsonDir];
+const missingArtifacts = requiredArtifacts.filter((p) => !fs.existsSync(p));
+if (missingArtifacts.length > 0) {
+    console.log(
+        `⚠ Parity QA gate skipped: missing capture artifacts (${missingArtifacts.map((p) => path.relative(repoRoot, p)).join(", ")}). Run the capture workflow first to enable parity checks.`,
+    );
+    process.exit(0);
 }
 
 const verificationReport = readJson(reportPath);
@@ -113,16 +130,28 @@ const expectedPages = snapshots.filter((page) => page.status === "success" && pa
 const screenshotByPath = new Map();
 for (const entry of fs.readdirSync(pageJsonDir)) {
     if (!entry.endsWith(".json")) continue;
-    const payload = readJson(path.join(pageJsonDir, entry));
-    const routePath = normalizePathname(new URL(payload.url).pathname);
-    screenshotByPath.set(routePath, {
-        desktop: payload._capture?.desktopScreenshot,
-        mobile: payload._capture?.mobileScreenshot,
-    });
+    try {
+        const payload = readJson(path.join(pageJsonDir, entry));
+        if (!payload.url) continue;
+        const routePath = normalizePathname(new URL(payload.url).pathname);
+        screenshotByPath.set(routePath, {
+            desktop: payload._capture?.desktopScreenshot,
+            mobile: payload._capture?.mobileScreenshot,
+        });
+    } catch (error) {
+        issues.push(`page_json/${entry}: failed to parse (${error.message}).`);
+    }
 }
 
 for (const page of expectedPages) {
-    const routePath = normalizePathname(new URL(page.url).pathname);
+    let routePath;
+    try {
+        routePath = normalizePathname(new URL(page.url).pathname);
+    } catch (error) {
+        issues.push(`Malformed URL in snapshots: ${JSON.stringify(page.url)} (${error.message}).`);
+        continue;
+    }
+
     const htmlPath =
         routePath === "/"
             ? path.join(distDir, "index.html")
