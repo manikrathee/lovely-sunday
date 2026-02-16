@@ -1,0 +1,43 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+:root {
+
+    /* Colours */
+    --color-primary: #3eb0ef;
+    --color-base: #131313;
+    --color-border: #ddd;
+    --color-bg: #ffffff;
+
+    /* Fonts */
+    --font-sans-serif: 'Futura', 'League Spartan', 'Trebuchet MS', Arial, sans-serif;
+    --font-serif: 'EB Garamond', Georgia, Times, serif;
+    --font-mono: Menlo, Courier, monospace;
+    --font-light: 100;
+    --font-normal: 400;
+    --font-bold: 700;
+    --font-heavy: 800;
+
+    /* Breakpoints */
+    --xlarge: 1680px;
+    --large: 1280px;
+    --medium: 980px;
+    --small: 740px;
+    --xsmall: 480px;
+
+    /* Sizes */
+    --height: 4rem;
+    --margin: 2rem;
+    --radius: 0.5rem;
+
+}
+
+[data-theme='dark'] {
+    --color-primary: #5ec2ff;
+    --color-base: #e0e0e0;
+    --color-border: #444;
+    --color-bg: #121212;
+
+
+    /* Old BG--color-bg: #f8f8f8;*/
+}
