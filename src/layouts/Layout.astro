@@ -8,7 +8,6 @@ import { Head } from "astro-capo";
 import { SEO } from "astro-seo";
 import { Breadcrumbs } from "astro-breadcrumbs";
 import { GoogleAnalytics } from "@astrolib/analytics";
-import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -29,9 +28,9 @@ const {
     ogImagePath,
 } = Astro.props;
 
-const siteName = "Clay Astro";
+const siteName = "Lovely Sunday";
 const siteDescription =
-    "A minimalist, image-first photoblog built with Astro and the Clay theme.";
+    "A capture-faithful recreation of Lovely Sunday in Astro.";
 const normalizedPath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const resolvedOgPath =
     ogImagePath || (normalizedPath.length > 0 ? normalizedPath : "index");
@@ -52,10 +51,6 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-        <GoogleFontsOptimizer
-            url="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=League+Spartan:wght@300;400;500;600;700&display=swap"
-        />
 
         <SEO
             title={title || siteName}
@@ -86,24 +81,6 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
                 site: twitterHandle || undefined,
             }}
         />
-
-        <script is:inline>
-            const theme = (() => {
-                if (
-                    typeof localStorage !== "undefined" &&
-                    localStorage.getItem("theme")
-                ) {
-                    return localStorage.getItem("theme");
-                }
-                return "light";
-            })();
-
-            if (theme === "dark") {
-                document.documentElement.setAttribute("data-theme", "dark");
-            } else {
-                document.documentElement.removeAttribute("data-theme");
-            }
-        </script>
     </Head>
     <body class="site-wrapper">
         <Header title={title} />
@@ -126,67 +103,12 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
             import Swup from "swup";
             import HeadPlugin from "@swup/head-plugin";
 
-            const STORAGE_KEY = "theme";
-            const THEME_ATTR = "data-theme";
-
-            const applyTheme = (theme: "light" | "dark") => {
-                if (theme === "dark") {
-                    document.documentElement.setAttribute(THEME_ATTR, "dark");
-                } else {
-                    document.documentElement.removeAttribute(THEME_ATTR);
-                }
-            };
-
-            const getTheme = (): "light" | "dark" =>
-                localStorage.getItem(STORAGE_KEY) === "dark" ? "dark" : "light";
-
-            const updateThemeIcons = () => {
-                const isDark =
-                    document.documentElement.getAttribute(THEME_ATTR) ===
-                    "dark";
-                const sun = document.querySelector<HTMLElement>(".sun-icon");
-                const moon = document.querySelector<HTMLElement>(".moon-icon");
-
-                if (sun) sun.style.display = isDark ? "inline-block" : "none";
-                if (moon) moon.style.display = isDark ? "none" : "inline-block";
-            };
-
-            const bindThemeToggle = () => {
-                const toggle = document.getElementById("theme-toggle");
-                if (!toggle || toggle.dataset.bound === "true") return;
-
-                toggle.dataset.bound = "true";
-                toggle.addEventListener("click", () => {
-                    const nextTheme =
-                        document.documentElement.getAttribute(THEME_ATTR) ===
-                        "dark"
-                            ? "light"
-                            : "dark";
-
-                    localStorage.setItem(STORAGE_KEY, nextTheme);
-                    applyTheme(nextTheme);
-                    updateThemeIcons();
-                });
-            };
-
-            const initInteractiveUi = () => {
-                applyTheme(getTheme());
-                updateThemeIcons();
-                bindThemeToggle();
-            };
-
             document.addEventListener("DOMContentLoaded", () => {
-                initInteractiveUi();
-
-                const swup = new Swup({
+                new Swup({
                     containers: ["#swup"],
                     cache: true,
                     animationSelector: "[class*='transition-']",
                     plugins: [new HeadPlugin()],
-                });
-
-                swup.hooks.on("page:view", () => {
-                    initInteractiveUi();
                 });
             });
         </script>
