@@ -2,19 +2,20 @@ import type { MiddlewareHandler } from 'astro';
 import {
   capturedSingleSlashLookbook404Paths,
   validDoubleSlashLookbookPaths,
+  extractLookbookSlug,
 } from './data/legacyLookbook';
 
 const doubleSlashRewriteTargets = Object.fromEntries(
   validDoubleSlashLookbookPaths.map((path) => [
     path,
-    `/lookbook-double/looks/${path.replace('/lookbook//looks/', '').replace(/\/$/, '')}/`,
+    `/lookbook-double/looks/${extractLookbookSlug(path)}/`,
   ]),
 );
 
 const singleSlashRewriteTargets = Object.fromEntries(
   capturedSingleSlashLookbook404Paths.map((path) => [
     path,
-    `/lookbook-single/looks/${path.replace('/lookbook/looks/', '').replace(/\/$/, '')}/`,
+    `/lookbook-single/looks/${extractLookbookSlug(path)}/`,
   ]),
 );
 

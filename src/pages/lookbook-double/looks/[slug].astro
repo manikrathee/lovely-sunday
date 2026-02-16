@@ -1,11 +1,11 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { validDoubleSlashLookbookPaths } from '../../../data/legacyLookbook';
+import { validDoubleSlashLookbookPaths, extractLookbookSlug } from '../../../data/legacyLookbook';
 
 export function getStaticPaths() {
   return validDoubleSlashLookbookPaths.map((path) => ({
     params: {
-      slug: path.replace('/lookbook//looks/', '').replace(/\/$/, ''),
+      slug: extractLookbookSlug(path),
     },
     props: {
       path,

@@ -38,3 +38,22 @@ export function rewriteLegacyLookbookPath(pathname: string): string {
 
   return internalUrlRewriteMap[slashTerminatedPathname] ?? slashTerminatedPathname;
 }
+
+/**
+ * Extract the slug portion from a legacy lookbook path.
+ * Works for both single-slash (/lookbook/looks/slug/) and
+ * double-slash (/lookbook//looks/slug/) variants.
+ */
+export function extractLookbookSlug(path: string): string {
+  return path.replace(/^\/lookbook\/{1,2}looks\//, '').replace(/\/$/, '');
+}
+
+/**
+ * Given a single-slash legacy lookbook path, return the path to the
+ * corresponding double-slash page that is actually generated at build time.
+ * This avoids linking to double-slash URLs that browsers normalise away.
+ */
+export function correctedLookbookPath(singleSlashPath: string): string {
+  const slug = extractLookbookSlug(singleSlashPath);
+  return `/lookbook-double/looks/${slug}/`;
+}
