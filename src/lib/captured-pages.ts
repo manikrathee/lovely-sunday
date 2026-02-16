@@ -28,7 +28,13 @@ function toPathname(url: string): string {
   return new URL(url).pathname;
 }
 
+let _cache: CapturedPage[] | null = null;
+
 export function loadCapturedPages(): CapturedPage[] {
+  if (_cache) {
+    return _cache;
+  }
+
   const manifestUrls = readFileSync(resolve(manifestsDir, "all_urls.txt"), "utf-8")
     .split(/\r?\n/)
     .map((line) => line.trim())
@@ -56,7 +62,7 @@ export function loadCapturedPages(): CapturedPage[] {
     });
   }
 
-  const capturedPages = manifestUrls.map((url) => {
+  _cache = manifestUrls.map((url) => {
     const page = pagesByUrl.get(url);
     if (!page) {
       throw new Error(`Missing capture/page_json entry for URL: ${url}`);
@@ -65,11 +71,5 @@ export function loadCapturedPages(): CapturedPage[] {
     return page;
   });
 
-  if (capturedPages.length !== manifestUrls.length) {
-    throw new Error(
-      `Captured route count mismatch. Manifest has ${manifestUrls.length}, built ${capturedPages.length}.`,
-    );
-  }
-
-  return capturedPages;
+  return _cache;
 }

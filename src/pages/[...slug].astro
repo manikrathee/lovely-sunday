@@ -7,7 +7,7 @@ export function getStaticPaths() {
   return capturedPages
     .filter((page) => page.pathname !== "/")
     .map((page) => {
-      const slug = page.pathname.replace(/^\//, "").split("/");
+      const slug = page.pathname.replace(/^\//, "").split("/").filter(Boolean);
       return {
         params: { slug },
         props: {
