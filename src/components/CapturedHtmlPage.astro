@@ -1,4 +1,5 @@
 ---
+import "../styles/components/captured-gallery.css";
 import { correctedLookbookPath, internalUrlRewriteMap } from "../data/legacyLookbook";
 
 export interface Props {
@@ -49,97 +50,27 @@ const renderedHtml = rawHtml.replace(
 {
   hasAutocolumnGallery && (
     <>
-      <style>
-        body.collection-type-gallery .site-page--gallery-list .gallery-wrapper {
-          max-width: min(1440px, 100%);
-          margin: 0 auto;
-          padding-inline: clamp(14px, 2.2vw, 30px);
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .slides.sqs-gallery-design-autocolumns {
-          display: grid !important;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: clamp(12px, 1.5vw, 20px);
-          height: auto !important;
-          align-items: start;
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide {
-          position: relative !important;
-          inset: auto !important;
-          width: 100% !important;
-          height: auto !important;
-          margin: 0 !important;
-          overflow: hidden;
-          opacity: 0;
-          transform: translate3d(0, 14px, 0);
-          transition:
-            opacity 220ms ease-out,
-            transform 220ms ease-out;
-          will-change: opacity, transform;
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide.is-visible {
-          opacity: 1;
-          transform: translate3d(0, 0, 0);
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide {
-          grid-column: 1 / -1;
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide.is-half-span {
-          grid-column: auto;
-        }
-
-        body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide img {
-          display: block;
-          width: 100% !important;
-          height: auto !important;
-          object-fit: cover;
-        }
-
-        @media (max-width: 800px) {
-          body.collection-type-gallery .site-page--gallery-list .slides.sqs-gallery-design-autocolumns {
-            grid-template-columns: 1fr;
-            gap: 14px;
-          }
-
-          body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide {
-            grid-column: auto;
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          body.collection-type-gallery .site-page--gallery-list .sqs-gallery-design-autocolumns-slide {
-            opacity: 1;
-            transform: none;
-            transition: none;
-          }
-        }
-      </style>
-
       <script is:inline>
         (() => {
-          const gallerySlides = Array.from(
-            document.querySelectorAll(
-              ".site-page--gallery-list .slides.sqs-gallery-design-autocolumns .sqs-gallery-design-autocolumns-slide",
-            ),
-          );
-          if (gallerySlides.length === 0) return;
+          const gallerySelector =
+            ".site-page--gallery-list .slides.sqs-gallery-design-autocolumns .sqs-gallery-design-autocolumns-slide";
+          const orientationThreshold = 24;
 
-          // Swap low-res thumbnail URLs with captured originals for wide layouts.
-          for (const slide of gallerySlides) {
-            const img = slide.querySelector("img[data-src]");
-            if (!img) continue;
-            const source = img.getAttribute("data-src");
-            if (!source) continue;
-            if (img.getAttribute("src") !== source) {
-              img.setAttribute("src", source);
+          const getSlides = () => Array.from(document.querySelectorAll(gallerySelector));
+
+          const swapHighResImages = (slides) => {
+            for (const slide of slides) {
+              const img = slide.querySelector("img[data-src]");
+              if (!img) continue;
+              const source = img.getAttribute("data-src");
+              if (!source) continue;
+              if (img.getAttribute("src") !== source) {
+                img.setAttribute("src", source);
+              }
             }
-          }
+          };
 
-          const getOrientation = (slide) => {
+          const parseOrientation = (slide) => {
             const img = slide.querySelector("img");
             if (!img) return "unknown";
 
@@ -153,38 +84,49 @@ const renderedHtml = rawHtml.replace(
               return "unknown";
             }
 
-            if (Math.abs(width - height) <= 24) return "square";
+            if (Math.abs(width - height) <= orientationThreshold) return "square";
             return height > width ? "portrait" : "landscape";
           };
 
-          // Build 50/50 rows only when adjacent slides share orientation.
-          // Mixed orientation pairs are promoted to full-width to keep visual balance.
+          const ensureOrientationData = (slides) => {
+            for (const slide of slides) {
+              const orientation = parseOrientation(slide);
+              slide.dataset.orientation = orientation;
+            }
+          };
+
+          const isBalancedPair = (current, next) => {
+            const currentOrientation = current.dataset.orientation || "unknown";
+            const nextOrientation = next.dataset.orientation || "unknown";
+            return (
+              currentOrientation !== "unknown" &&
+              nextOrientation !== "unknown" &&
+              currentOrientation === nextOrientation
+            );
+          };
+
+          const revealSlide = (slide) => slide.classList.add("is-visible");
+
+          const gallerySlides = getSlides();
+          if (gallerySlides.length === 0) return;
+
+          swapHighResImages(gallerySlides);
+          ensureOrientationData(gallerySlides);
+
           for (const slide of gallerySlides) {
             slide.classList.remove("is-half-span");
           }
 
-          let index = 0;
-          if (gallerySlides.length > 0) {
-            index = 1; // Keep a lead full-width image before paired rows.
-          }
-
-          while (index < gallerySlides.length) {
+          const startIndex = gallerySlides.length > 0 ? 1 : 0;
+          for (let index = startIndex; index < gallerySlides.length; ) {
             const current = gallerySlides[index];
             const next = gallerySlides[index + 1];
-
             if (!next) {
               index += 1;
               continue;
             }
 
-            const currentOrientation = getOrientation(current);
-            const nextOrientation = getOrientation(next);
-            const isBalancedPair =
-              currentOrientation !== "unknown" &&
-              nextOrientation !== "unknown" &&
-              currentOrientation === nextOrientation;
-
-            if (isBalancedPair) {
+            if (isBalancedPair(current, next)) {
               current.classList.add("is-half-span");
               next.classList.add("is-half-span");
               index += 2;
@@ -194,7 +136,6 @@ const renderedHtml = rawHtml.replace(
             index += 1;
           }
 
-          const revealSlide = (slide) => slide.classList.add("is-visible");
           if (!("IntersectionObserver" in window)) {
             gallerySlides.forEach(revealSlide);
             return;

@@ -1,11 +1,15 @@
 ---
+import AnnouncementBar from "./AnnouncementBar.astro";
+
+const utilities = [
+  { icon: "◉", label: "Browse our social feed" },
+  { icon: "⌕", label: "Search LovelySunday archives" },
+  { icon: "👜", label: "View cart" },
+];
 ---
 
 <header class="site-head">
-    <div class="announcement-bar">
-        <p>Sign up for our email list &amp; be the first to see LovelySunday&apos;s latest looks!</p>
-        <span aria-hidden="true">×</span>
-    </div>
+    <AnnouncementBar />
 
     <div class="site-head-container">
         <button class="icon-button" aria-label="Open menu">☰</button>
@@ -15,9 +19,15 @@
         </a>
 
         <div class="site-head-right" aria-label="Utilities">
-            <span aria-hidden="true">◉</span>
-            <span aria-hidden="true">⌕</span>
-            <span aria-hidden="true">👜</span>
+            {utilities.map((utility) => (
+                <button
+                    type="button"
+                    class="icon-button"
+                    aria-label={utility.label}
+                >
+                    {utility.icon}
+                </button>
+            ))}
         </div>
     </div>
 </header>
