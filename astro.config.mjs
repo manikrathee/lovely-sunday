@@ -13,6 +13,15 @@ export default defineConfig({
     site,
     output: "static",
     trailingSlash: "ignore",
+    server: {
+        host: "localhost",
+        port: 4321,
+    },
+    vite: {
+        server: {
+            allowedHosts: ["lovelysunday.test"],
+        },
+    },
     build: {
         format: "directory",
     },

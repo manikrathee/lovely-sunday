@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A minimalist, high-performance Astro theme for photographers and artists.",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev & caddy run --config Caddyfile",
+    "dev:astro": "astro dev",
     "build": "astro build && npm run qa:parity",
     "build:astro": "astro build",
     "qa:parity": "node scripts/qa/parity-gate.mjs",
