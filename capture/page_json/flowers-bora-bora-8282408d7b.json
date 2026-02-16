@@ -451,7 +451,7 @@
   "listItems": [],
   "mainText": "",
   "meta": {
-    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible—especially if it means wearing one around the house! I love this blue jumper! It's so comfortable and the color compliments the turquoise water surrounding us. The lightweight, flowy material is perfect for an island vacation. I definitely overpacked for this trip and just spent a majority of the time in a bathing suit. The whole trip was wonderful and I'll be posting more soon! Update: Sorry, this jumpsuit is now sold out. Similar: 1 , 2 , 3",
+    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible\u2014especially if it means wearing one around the house! I love this blue jumper! It's so comfortable and the color compliments the turquoise water surrounding us. The lightweight, flowy material is perfect for an island vacation. I definitely overpacked for this trip and just spent a majority of the time in a bathing suit. The whole trip was wonderful and I'll be posting more soon! Update: Sorry, this jumpsuit is now sold out. Similar: 1 , 2 , 3",
     "robots": null,
     "viewport": "width=device-width, initial-scale=1"
   },
@@ -485,9 +485,9 @@
     "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
   ],
   "openGraph": {
-    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible—especially if it means wearing one around the",
+    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible\u2014especially if it means wearing one around the",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Flower Crowns in Bora Bora — LovelySunday",
+    "title": "Flower Crowns in Bora Bora \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/flowers-bora-bora"
   },
@@ -1147,12 +1147,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Flower Crowns in Bora Bora — LovelySunday",
+  "title": "Flower Crowns in Bora Bora \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
-    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible—especially if it means wearing one around the",
+    "description": "I am so excited to share these photos with you! When we were in Bora Bora, our hotel had a beach-side flower crown session with the sweetest Tahitian woman, Lela. I had such a great time learning this skill and will be putting it to use whenever possible\u2014especially if it means wearing one around the",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Flower Crowns in Bora Bora — LovelySunday"
+    "title": "Flower Crowns in Bora Bora \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/flowers-bora-bora",
   "videos": [],
@@ -1161,8 +1161,8 @@
     "pageId": "flowers-bora-bora-8282408d7b",
     "worker": 3,
     "capturedAt": "2026-02-16T01:18:53.493665+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/flowers-bora-bora-8282408d7b.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/flowers-bora-bora-8282408d7b.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/flowers-bora-bora-8282408d7b.html"
+    "desktopScreenshot": "screenshots/desktop/flowers-bora-bora-8282408d7b.png",
+    "mobileScreenshot": "screenshots/mobile/flowers-bora-bora-8282408d7b.png",
+    "rawHtmlFile": "raw_html/flowers-bora-bora-8282408d7b.html"
   }
 }

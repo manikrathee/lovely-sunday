@@ -66,7 +66,7 @@
   "openGraph": {
     "description": "Photography, prints and other goods for sale.",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "The Lovely Sunday Shop — LovelySunday",
+    "title": "The Lovely Sunday Shop \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/shop"
   },
@@ -398,12 +398,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "The Lovely Sunday Shop — LovelySunday",
+  "title": "The Lovely Sunday Shop \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Photography, prints and other goods for sale.",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "The Lovely Sunday Shop — LovelySunday"
+    "title": "The Lovely Sunday Shop \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/shop",
   "videos": [],
@@ -412,8 +412,8 @@
     "pageId": "shop-c9558f83ee",
     "worker": 2,
     "capturedAt": "2026-02-16T01:19:25.724048+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/shop-c9558f83ee.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/shop-c9558f83ee.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/shop-c9558f83ee.html"
+    "desktopScreenshot": "screenshots/desktop/shop-c9558f83ee.png",
+    "mobileScreenshot": "screenshots/mobile/shop-c9558f83ee.png",
+    "rawHtmlFile": "raw_html/shop-c9558f83ee.html"
   }
 }

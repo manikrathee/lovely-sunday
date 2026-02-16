@@ -445,7 +445,7 @@
   "openGraph": {
     "description": "I have been really into all white outfits and dresses lately. Its so clean looking and the scalloped detail makes this look extra feminine!&nbsp;The pop of pink from my bag gives the outfit some color and I love that the texture is similar to my shoes. I love mixing textures- it adds such depth",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "White Scalloped Dress — LovelySunday",
+    "title": "White Scalloped Dress \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/white-scalloped-dress"
   },
@@ -1089,12 +1089,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "White Scalloped Dress — LovelySunday",
+  "title": "White Scalloped Dress \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I have been really into all white outfits and dresses lately. Its so clean looking and the scalloped detail makes this look extra feminine!&nbsp;The pop of pink from my bag gives the outfit some color and I love that the texture is similar to my shoes. I love mixing textures- it adds such depth",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "White Scalloped Dress — LovelySunday"
+    "title": "White Scalloped Dress \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/white-scalloped-dress",
   "videos": [],
@@ -1103,8 +1103,8 @@
     "pageId": "white-scalloped-dress-36d8bdd6d0",
     "worker": 2,
     "capturedAt": "2026-02-16T01:19:29.114898+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/white-scalloped-dress-36d8bdd6d0.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/white-scalloped-dress-36d8bdd6d0.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/white-scalloped-dress-36d8bdd6d0.html"
+    "desktopScreenshot": "screenshots/desktop/white-scalloped-dress-36d8bdd6d0.png",
+    "mobileScreenshot": "screenshots/mobile/white-scalloped-dress-36d8bdd6d0.png",
+    "rawHtmlFile": "raw_html/white-scalloped-dress-36d8bdd6d0.html"
   }
 }

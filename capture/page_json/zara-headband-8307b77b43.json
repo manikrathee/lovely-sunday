@@ -375,7 +375,7 @@
   "openGraph": {
     "description": "I intend to wear this amazing headband everyday! Its so sparkly and really serves as a standout piece with this simple black maxi dress . Both pieces are great additions to your wardrobe because they can be styled for a casual day look or a special event. (Plus it fulfills my dream of being a pr",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Zara Headband — LovelySunday",
+    "title": "Zara Headband \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/zara-headband"
   },
@@ -971,12 +971,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Zara Headband — LovelySunday",
+  "title": "Zara Headband \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I intend to wear this amazing headband everyday! Its so sparkly and really serves as a standout piece with this simple black maxi dress . Both pieces are great additions to your wardrobe because they can be styled for a casual day look or a special event. (Plus it fulfills my dream of being a pr",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Zara Headband — LovelySunday"
+    "title": "Zara Headband \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/zara-headband",
   "videos": [],
@@ -985,8 +985,8 @@
     "pageId": "zara-headband-8307b77b43",
     "worker": 3,
     "capturedAt": "2026-02-16T01:19:30.085936+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/zara-headband-8307b77b43.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/zara-headband-8307b77b43.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/zara-headband-8307b77b43.html"
+    "desktopScreenshot": "screenshots/desktop/zara-headband-8307b77b43.png",
+    "mobileScreenshot": "screenshots/mobile/zara-headband-8307b77b43.png",
+    "rawHtmlFile": "raw_html/zara-headband-8307b77b43.html"
   }
 }

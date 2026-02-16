@@ -417,7 +417,7 @@
   "openGraph": {
     "description": "Top: Morning Lavender Clutch: Zara (sold out), Asos , BHLDN Skirt: Asos (sold out), Choies Shoes: Windsor store (sold out), Steve Madden",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Bonjour! — LovelySunday",
+    "title": "Bonjour! \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt"
   },
@@ -1053,12 +1053,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Bonjour! — LovelySunday",
+  "title": "Bonjour! \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Top: Morning Lavender Clutch: Zara (sold out), Asos , BHLDN Skirt: Asos (sold out), Choies Shoes: Windsor store (sold out), Steve Madden",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Bonjour! — LovelySunday"
+    "title": "Bonjour! \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
   "videos": [],
@@ -1067,8 +1067,8 @@
     "pageId": "bonjour-pink-skirt-paris-shirt-eb59319045",
     "worker": 2,
     "capturedAt": "2026-02-16T01:18:50.130505+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/bonjour-pink-skirt-paris-shirt-eb59319045.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/bonjour-pink-skirt-paris-shirt-eb59319045.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/bonjour-pink-skirt-paris-shirt-eb59319045.html"
+    "desktopScreenshot": "screenshots/desktop/bonjour-pink-skirt-paris-shirt-eb59319045.png",
+    "mobileScreenshot": "screenshots/mobile/bonjour-pink-skirt-paris-shirt-eb59319045.png",
+    "rawHtmlFile": "raw_html/bonjour-pink-skirt-paris-shirt-eb59319045.html"
   }
 }

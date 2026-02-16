@@ -389,7 +389,7 @@
   "openGraph": {
     "description": "I packed this gigantic hat in my suitcase because the look is so worth it! Oversized hats are one of my favorite accessories because it takes any outfit to a whole new level. I found a similar hat from an independent shop on Etsy . I like purchasing items from smaller stores because it helps supp",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Mornings in Germany — LovelySunday",
+    "title": "Mornings in Germany \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/mornings-in-germany"
   },
@@ -1009,12 +1009,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Mornings in Germany — LovelySunday",
+  "title": "Mornings in Germany \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I packed this gigantic hat in my suitcase because the look is so worth it! Oversized hats are one of my favorite accessories because it takes any outfit to a whole new level. I found a similar hat from an independent shop on Etsy . I like purchasing items from smaller stores because it helps supp",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Mornings in Germany — LovelySunday"
+    "title": "Mornings in Germany \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/mornings-in-germany",
   "videos": [],
@@ -1023,8 +1023,8 @@
     "pageId": "mornings-in-germany-c885069abd",
     "worker": 1,
     "capturedAt": "2026-02-16T01:19:20.551215+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/mornings-in-germany-c885069abd.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/mornings-in-germany-c885069abd.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/mornings-in-germany-c885069abd.html"
+    "desktopScreenshot": "screenshots/desktop/mornings-in-germany-c885069abd.png",
+    "mobileScreenshot": "screenshots/mobile/mornings-in-germany-c885069abd.png",
+    "rawHtmlFile": "raw_html/mornings-in-germany-c885069abd.html"
   }
 }

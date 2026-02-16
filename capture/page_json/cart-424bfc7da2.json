@@ -948,8 +948,8 @@
     "pageId": "cart-424bfc7da2",
     "worker": 3,
     "capturedAt": "2026-02-16T01:18:50.164743+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/cart-424bfc7da2.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/cart-424bfc7da2.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/cart-424bfc7da2.html"
+    "desktopScreenshot": "screenshots/desktop/cart-424bfc7da2.png",
+    "mobileScreenshot": "screenshots/mobile/cart-424bfc7da2.png",
+    "rawHtmlFile": "raw_html/cart-424bfc7da2.html"
   }
 }

@@ -305,7 +305,7 @@
   "openGraph": {
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Home NEW — LovelySunday",
+    "title": "Home NEW \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/index"
   },
@@ -856,12 +856,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Home NEW — LovelySunday",
+  "title": "Home NEW \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Home NEW — LovelySunday"
+    "title": "Home NEW \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/index",
   "videos": [],
@@ -870,8 +870,8 @@
     "pageId": "index-4961a6dbd2",
     "worker": 1,
     "capturedAt": "2026-02-16T01:18:56.030600+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/index-4961a6dbd2.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/index-4961a6dbd2.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/index-4961a6dbd2.html"
+    "desktopScreenshot": "screenshots/desktop/index-4961a6dbd2.png",
+    "mobileScreenshot": "screenshots/mobile/index-4961a6dbd2.png",
+    "rawHtmlFile": "raw_html/index-4961a6dbd2.html"
   }
 }

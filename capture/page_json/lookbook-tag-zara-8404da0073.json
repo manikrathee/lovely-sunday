@@ -908,8 +908,8 @@
     "pageId": "lookbook-tag-zara-8404da0073",
     "worker": 1,
     "capturedAt": "2026-02-16T01:19:17.418333+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-tag-zara-8404da0073.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-tag-zara-8404da0073.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-tag-zara-8404da0073.html"
+    "desktopScreenshot": "screenshots/desktop/lookbook-tag-zara-8404da0073.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-tag-zara-8404da0073.png",
+    "rawHtmlFile": "raw_html/lookbook-tag-zara-8404da0073.html"
   }
 }

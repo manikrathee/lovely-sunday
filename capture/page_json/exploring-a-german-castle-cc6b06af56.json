@@ -459,7 +459,7 @@
   "openGraph": {
     "description": "On our second day in Germany, we spent the morning exploring the beautiful grounds of our hotel, Scholsshotel Kronberg. The castle is stunning and it felt like we were living in a different era. The staff was wonderful, the food was delicious, and it was truly a once in a lifetime experience to stay",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Exploring a German Castle — LovelySunday",
+    "title": "Exploring a German Castle \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/exploring-a-german-castle"
   },
@@ -1119,12 +1119,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Exploring a German Castle — LovelySunday",
+  "title": "Exploring a German Castle \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "On our second day in Germany, we spent the morning exploring the beautiful grounds of our hotel, Scholsshotel Kronberg. The castle is stunning and it felt like we were living in a different era. The staff was wonderful, the food was delicious, and it was truly a once in a lifetime experience to stay",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Exploring a German Castle — LovelySunday"
+    "title": "Exploring a German Castle \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/exploring-a-german-castle",
   "videos": [],
@@ -1133,8 +1133,8 @@
     "pageId": "exploring-a-german-castle-cc6b06af56",
     "worker": 2,
     "capturedAt": "2026-02-16T01:18:53.411534+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/exploring-a-german-castle-cc6b06af56.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/exploring-a-german-castle-cc6b06af56.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/exploring-a-german-castle-cc6b06af56.html"
+    "desktopScreenshot": "screenshots/desktop/exploring-a-german-castle-cc6b06af56.png",
+    "mobileScreenshot": "screenshots/mobile/exploring-a-german-castle-cc6b06af56.png",
+    "rawHtmlFile": "raw_html/exploring-a-german-castle-cc6b06af56.html"
   }
 }

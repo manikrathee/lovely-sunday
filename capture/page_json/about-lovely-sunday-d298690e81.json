@@ -396,7 +396,7 @@
     }
   ],
   "listItems": [],
-  "mainText": "The girl behind Lovely Sunday Hi, I'm Aileen. My love for fashion started when I was in fourth grade with two significant moments: the first time I saw Cher’s closet in Clueless (obviously!) and when my Grandpa handed me the New York Times Fashion Magazine and I fell in love with the beautiful art and clothing I discovered inside. I always wanted to work in fashion, but I wasn't sure of exactly what I wanted to do. I decided to start a fashion blog since I love to play dress up, have way too many shoes, and I could help people understand why fashion is so important in expressing ourselves. Since my husband and I are photographers- the quality, the viewpoint, and styling behind each photo is so important to me. I could not ask for someone better at understanding my vision while enjoying what we love. I hope you enjoy my passion project, learn to shop smarter, and that I can inspire you in any way. Contact Me Name First Name (required) Last Name (required) Email Address (required) Subject (required) Message (required) Submit Meet Aileen Map data ©2026 Google Terms Report a map error",
+  "mainText": "The girl behind Lovely Sunday Hi, I'm Aileen. My love for fashion started when I was in fourth grade with two significant moments: the first time I saw Cher\u2019s closet in Clueless (obviously!) and when my Grandpa handed me the New York Times Fashion Magazine and I fell in love with the beautiful art and clothing I discovered inside. I always wanted to work in fashion, but I wasn't sure of exactly what I wanted to do. I decided to start a fashion blog since I love to play dress up, have way too many shoes, and I could help people understand why fashion is so important in expressing ourselves. Since my husband and I are photographers- the quality, the viewpoint, and styling behind each photo is so important to me. I could not ask for someone better at understanding my vision while enjoying what we love. I hope you enjoy my passion project, learn to shop smarter, and that I can inspire you in any way. Contact Me Name First Name (required) Last Name (required) Email Address (required) Subject (required) Message (required) Submit Meet Aileen Map data \u00a92026 Google Terms Report a map error",
   "meta": {
     "description": "Follow LovelySunday on Instagram: @_lovelysunday",
     "robots": null,
@@ -434,13 +434,13 @@
   "openGraph": {
     "description": "Follow LovelySunday on Instagram: @_lovelysunday&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "About Aileen Marie, The stylist behind LovelySunday — LovelySunday",
+    "title": "About Aileen Marie, The stylist behind LovelySunday \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/about-lovely-sunday"
   },
   "paragraphs": [
     "Hi, I'm Aileen.",
-    "My love for fashion started when I was in fourth grade with two significant moments: the first time I saw Cher’s closet in Clueless (obviously!) and when my Grandpa handed me the New York Times Fashion Magazine and I fell in love with the beautiful art and clothing I discovered inside.",
+    "My love for fashion started when I was in fourth grade with two significant moments: the first time I saw Cher\u2019s closet in Clueless (obviously!) and when my Grandpa handed me the New York Times Fashion Magazine and I fell in love with the beautiful art and clothing I discovered inside.",
     "I always wanted to work in fashion, but I wasn't sure of exactly what I wanted to do. I decided to start a fashion blog since I love to play dress up, have way too many shoes, and I could help people understand why fashion is so important in expressing ourselves.",
     "Since my husband and I are photographers- the quality, the viewpoint, and styling behind each photo is so important to me. I could not ask for someone better at understanding my vision while enjoying what we love. I hope you enjoy my passion project, learn to shop smarter, and that I can inspire you in any way."
   ],
@@ -1356,12 +1356,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "About Aileen Marie, The stylist behind LovelySunday — LovelySunday",
+  "title": "About Aileen Marie, The stylist behind LovelySunday \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Follow LovelySunday on Instagram: @_lovelysunday&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "About Aileen Marie, The stylist behind LovelySunday — LovelySunday"
+    "title": "About Aileen Marie, The stylist behind LovelySunday \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/about-lovely-sunday",
   "videos": [],
@@ -1370,8 +1370,8 @@
     "pageId": "about-lovely-sunday-d298690e81",
     "worker": 2,
     "capturedAt": "2026-02-16T01:18:46.954487+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/about-lovely-sunday-d298690e81.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/about-lovely-sunday-d298690e81.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/about-lovely-sunday-d298690e81.html"
+    "desktopScreenshot": "screenshots/desktop/about-lovely-sunday-d298690e81.png",
+    "mobileScreenshot": "screenshots/mobile/about-lovely-sunday-d298690e81.png",
+    "rawHtmlFile": "raw_html/about-lovely-sunday-d298690e81.html"
   }
 }

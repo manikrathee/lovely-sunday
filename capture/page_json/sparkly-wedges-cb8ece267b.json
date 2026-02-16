@@ -431,7 +431,7 @@
   "openGraph": {
     "description": "Top: H&amp;M&nbsp; (sold out), Gap , Lulu's Pants: Gap (sold out) similar Shoes: Shoedazzle&nbsp; (sold out), New Look&nbsp; , Online Shoes Purse: Louis Vuitton&nbsp; Earrings: BaubleBar (sold out) similar Sunglasses: Asos",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Sparkly Wedges — LovelySunday",
+    "title": "Sparkly Wedges \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/sparkly-wedges"
   },
@@ -1059,12 +1059,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Sparkly Wedges — LovelySunday",
+  "title": "Sparkly Wedges \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Top: H&amp;M&nbsp; (sold out), Gap , Lulu's Pants: Gap (sold out) similar Shoes: Shoedazzle&nbsp; (sold out), New Look&nbsp; , Online Shoes Purse: Louis Vuitton&nbsp; Earrings: BaubleBar (sold out) similar Sunglasses: Asos",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Sparkly Wedges — LovelySunday"
+    "title": "Sparkly Wedges \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/sparkly-wedges",
   "videos": [],
@@ -1073,8 +1073,8 @@
     "pageId": "sparkly-wedges-cb8ece267b",
     "worker": 4,
     "capturedAt": "2026-02-16T01:19:23.964294+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/sparkly-wedges-cb8ece267b.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/sparkly-wedges-cb8ece267b.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/sparkly-wedges-cb8ece267b.html"
+    "desktopScreenshot": "screenshots/desktop/sparkly-wedges-cb8ece267b.png",
+    "mobileScreenshot": "screenshots/mobile/sparkly-wedges-cb8ece267b.png",
+    "rawHtmlFile": "raw_html/sparkly-wedges-cb8ece267b.html"
   }
 }

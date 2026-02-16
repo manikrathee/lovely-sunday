@@ -459,7 +459,7 @@
   "openGraph": {
     "description": "Living out my dreams in a lavender tulle skirt on the balcony of our hotel room at the Shangri La Hotel in Paris! I could live in this moment forever! Skirt- Space 46 Boutique Top- Banana Heels- Asos",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Lavender Dreams in Paris — LovelySunday",
+    "title": "Lavender Dreams in Paris \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/lavender-dreams-in-paris"
   },
@@ -1119,12 +1119,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Lavender Dreams in Paris — LovelySunday",
+  "title": "Lavender Dreams in Paris \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Living out my dreams in a lavender tulle skirt on the balcony of our hotel room at the Shangri La Hotel in Paris! I could live in this moment forever! Skirt- Space 46 Boutique Top- Banana Heels- Asos",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Lavender Dreams in Paris — LovelySunday"
+    "title": "Lavender Dreams in Paris \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/lavender-dreams-in-paris",
   "videos": [],
@@ -1133,8 +1133,8 @@
     "pageId": "lavender-dreams-in-paris-a79efc1d84",
     "worker": 2,
     "capturedAt": "2026-02-16T01:18:56.670971+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lavender-dreams-in-paris-a79efc1d84.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lavender-dreams-in-paris-a79efc1d84.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lavender-dreams-in-paris-a79efc1d84.html"
+    "desktopScreenshot": "screenshots/desktop/lavender-dreams-in-paris-a79efc1d84.png",
+    "mobileScreenshot": "screenshots/mobile/lavender-dreams-in-paris-a79efc1d84.png",
+    "rawHtmlFile": "raw_html/lavender-dreams-in-paris-a79efc1d84.html"
   }
 }

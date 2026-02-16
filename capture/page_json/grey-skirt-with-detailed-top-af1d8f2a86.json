@@ -487,7 +487,7 @@
   "openGraph": {
     "description": "I loooove maxi dresses and skirts, it always makes me feel just a little bit fancier! The crop top details are so beautiful and the gentle breeze hit the skirt just right. I am also obsessed with these shoes!! Not only are they super comfortable, but they are covered in glitter and make me look like",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Maxi Chic — LovelySunday",
+    "title": "Maxi Chic \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/grey-skirt-with-detailed-top"
   },
@@ -1147,12 +1147,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Maxi Chic — LovelySunday",
+  "title": "Maxi Chic \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I loooove maxi dresses and skirts, it always makes me feel just a little bit fancier! The crop top details are so beautiful and the gentle breeze hit the skirt just right. I am also obsessed with these shoes!! Not only are they super comfortable, but they are covered in glitter and make me look like",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Maxi Chic — LovelySunday"
+    "title": "Maxi Chic \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
   "videos": [],
@@ -1161,8 +1161,8 @@
     "pageId": "grey-skirt-with-detailed-top-af1d8f2a86",
     "worker": 4,
     "capturedAt": "2026-02-16T01:18:53.309605+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/grey-skirt-with-detailed-top-af1d8f2a86.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/grey-skirt-with-detailed-top-af1d8f2a86.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/grey-skirt-with-detailed-top-af1d8f2a86.html"
+    "desktopScreenshot": "screenshots/desktop/grey-skirt-with-detailed-top-af1d8f2a86.png",
+    "mobileScreenshot": "screenshots/mobile/grey-skirt-with-detailed-top-af1d8f2a86.png",
+    "rawHtmlFile": "raw_html/grey-skirt-with-detailed-top-af1d8f2a86.html"
   }
 }

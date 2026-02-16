@@ -321,7 +321,7 @@
     }
   ],
   "listItems": [],
-  "mainText": "Brandon Maxwell S/S Dupe I love this dress from Brandon Maxwell’s amazing collection from NYFW! The style of this dress is timeless, sophisticated, and chic. You can purchase Maxwell’s dress and belt from Moda Operandi for $2,790. I found a similar dress and belt option for a total cost of $111. Simply remove the belt the dress comes with and replace it with the leather belt to complete the look.",
+  "mainText": "Brandon Maxwell S/S Dupe I love this dress from Brandon Maxwell\u2019s amazing collection from NYFW! The style of this dress is timeless, sophisticated, and chic. You can purchase Maxwell\u2019s dress and belt from Moda Operandi for $2,790. I found a similar dress and belt option for a total cost of $111. Simply remove the belt the dress comes with and replace it with the leather belt to complete the look.",
   "meta": {
     "description": null,
     "robots": null,
@@ -359,13 +359,13 @@
   "openGraph": {
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Brandon Maxwell S/S Dupe — LovelySunday",
+    "title": "Brandon Maxwell S/S Dupe \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/bmaxwelldupe"
   },
   "paragraphs": [
     "Brandon Maxwell S/S Dupe",
-    "I love this dress from Brandon Maxwell’s amazing collection from NYFW! The style of this dress is timeless, sophisticated, and chic. You can purchase Maxwell’s dress and belt from Moda Operandi for $2,790. I found a similar dress and belt option for a total cost of $111. Simply remove the belt the dress comes with and replace it with the leather belt to complete the look."
+    "I love this dress from Brandon Maxwell\u2019s amazing collection from NYFW! The style of this dress is timeless, sophisticated, and chic. You can purchase Maxwell\u2019s dress and belt from Moda Operandi for $2,790. I found a similar dress and belt option for a total cost of $111. Simply remove the belt the dress comes with and replace it with the leather belt to complete the look."
   ],
   "resourceEntries": [
     {
@@ -923,12 +923,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Brandon Maxwell S/S Dupe — LovelySunday",
+  "title": "Brandon Maxwell S/S Dupe \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Brandon Maxwell S/S Dupe — LovelySunday"
+    "title": "Brandon Maxwell S/S Dupe \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/bmaxwelldupe",
   "videos": [],
@@ -937,8 +937,8 @@
     "pageId": "bmaxwelldupe-40097f5ca0",
     "worker": 1,
     "capturedAt": "2026-02-16T01:18:50.196968+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/bmaxwelldupe-40097f5ca0.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/bmaxwelldupe-40097f5ca0.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/bmaxwelldupe-40097f5ca0.html"
+    "desktopScreenshot": "screenshots/desktop/bmaxwelldupe-40097f5ca0.png",
+    "mobileScreenshot": "screenshots/mobile/bmaxwelldupe-40097f5ca0.png",
+    "rawHtmlFile": "raw_html/bmaxwelldupe-40097f5ca0.html"
   }
 }

@@ -607,7 +607,7 @@
   "listItems": [],
   "mainText": "Jan 7 YSL Studio Paris, France Dec 5 Sequin Dresses Nov 29 Culottes Mar 20 Beret Rainbow Mar 13 Dresses over Denim Mar 8 International Womens Day! Jan 23 Ouai-STED with Jen Atkin!",
   "meta": {
-    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist–Glitter obsessed and always in search of all things Lovely.",
+    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist\u2013Glitter obsessed and always in search of all things Lovely.",
     "robots": null,
     "viewport": "width=device-width, initial-scale=1"
   },
@@ -654,7 +654,7 @@
     "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
   ],
   "openGraph": {
-    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist–Glitter obsessed and always in search of all things Lovely.",
+    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist\u2013Glitter obsessed and always in search of all things Lovely.",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
     "title": "LovelySunday",
     "type": "website",
@@ -673,7 +673,7 @@
     "Time to shop the best sale of the year at Nordstrom!",
     "Found the perfect look a like of a Kate Spade pink feathered clutch!",
     "Check out this Missguided blazer that looks just like the sold-out Balmain x HM blazer!",
-    "What’s something in your life that you spend your free time doing? Something you would do unpaid because you enjoy it so much? What really makes your soul happy and makes you feel personally fulfilled?"
+    "What\u2019s something in your life that you spend your free time doing? Something you would do unpaid because you enjoy it so much? What really makes your soul happy and makes you feel personally fulfilled?"
   ],
   "resourceEntries": [
     {
@@ -1312,7 +1312,7 @@
   "title": "LovelySunday",
   "twitter": {
     "card": "summary",
-    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist–Glitter obsessed and always in search of all things Lovely.",
+    "description": "A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist\u2013Glitter obsessed and always in search of all things Lovely.",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
     "title": "LovelySunday"
   },
@@ -1323,8 +1323,8 @@
     "pageId": "lookbook-b14bf51c96",
     "worker": 4,
     "capturedAt": "2026-02-16T01:18:56.292249+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-b14bf51c96.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-b14bf51c96.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-b14bf51c96.html"
+    "desktopScreenshot": "screenshots/desktop/lookbook-b14bf51c96.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-b14bf51c96.png",
+    "rawHtmlFile": "raw_html/lookbook-b14bf51c96.html"
   }
 }

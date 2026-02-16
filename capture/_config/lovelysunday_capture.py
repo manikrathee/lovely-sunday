@@ -125,14 +125,17 @@ def agent_browser(session: str, args: list[str], env: dict[str, str], timeout: i
     return run_cmd(cmd, env=env, timeout=timeout, check=True)
 
 
-def normalize_url(raw: str) -> str | None:
+def normalize_url(raw: str, *, default_scheme: str = "https", force_https: bool = False) -> str | None:
     value = (raw or "").strip()
     if not value:
         return None
 
     parsed = urllib.parse.urlparse(value)
     if not parsed.scheme:
-        parsed = urllib.parse.urlparse("https://" + value)
+        if parsed.netloc:
+            parsed = parsed._replace(scheme=default_scheme)
+        else:
+            parsed = urllib.parse.urlparse(f"{default_scheme}://{value}")
     if not parsed.netloc:
         return None
 
@@ -142,9 +145,9 @@ def normalize_url(raw: str) -> str | None:
     if not re.fullmatch(r"[a-z0-9.-]+", host):
         return None
 
-    scheme = "https"
+    scheme = "https" if force_https else (parsed.scheme.lower() if parsed.scheme else default_scheme.lower())
     port = f":{parsed.port}" if parsed.port else ""
-    if parsed.port in (80, 443):
+    if (scheme == "http" and parsed.port == 80) or (scheme == "https" and parsed.port == 443):
         port = ""
     netloc = f"{host}{port}"
 
@@ -165,6 +168,11 @@ def normalize_url(raw: str) -> str | None:
         )
     )
     return normalized
+
+
+def normalize_crawl_url(raw: str) -> str | None:
+    # Canonicalize crawl inventory to HTTPS to avoid duplicate HTTP/HTTPS page fetches.
+    return normalize_url(raw, force_https=True)
 
 
 def looks_like_static_url(url: str) -> bool:
@@ -238,7 +246,7 @@ def parse_sitemap_urls(xml_bytes: bytes) -> list[str]:
     urls = []
     for node in loc_nodes:
         if node.text:
-            normalized = normalize_url(node.text)
+            normalized = normalize_crawl_url(node.text)
             if normalized:
                 urls.append(normalized)
     return sorted(set(urls))
@@ -253,7 +261,7 @@ def collect_nav_urls(site_url: str, nav_js: str, env: dict[str, str]) -> list[st
         parsed = json.loads(parsed)
     urls = []
     for value in parsed:
-        normalized = normalize_url(value)
+        normalized = normalize_crawl_url(value)
         if normalized and is_internal(normalized):
             urls.append(normalized)
     return sorted(set(urls))
@@ -288,6 +296,10 @@ def crawl_worker(
         mobile_png = output / "screenshots" / "mobile" / f"{page_id}.png"
         html_file = output / "raw_html" / f"{page_id}.html"
         json_file = output / "page_json" / f"{page_id}.json"
+        desktop_png_rel = desktop_png.relative_to(output).as_posix()
+        mobile_png_rel = mobile_png.relative_to(output).as_posix()
+        html_file_rel = html_file.relative_to(output).as_posix()
+        json_file_rel = json_file.relative_to(output).as_posix()
 
         try:
             set_viewport(session, *DESKTOP_VIEWPORT, env=env)
@@ -309,17 +321,17 @@ def crawl_worker(
                 "pageId": page_id,
                 "worker": worker_id,
                 "capturedAt": utc_now(),
-                "desktopScreenshot": str(desktop_png),
-                "mobileScreenshot": str(mobile_png),
-                "rawHtmlFile": str(html_file),
+                "desktopScreenshot": desktop_png_rel,
+                "mobileScreenshot": mobile_png_rel,
+                "rawHtmlFile": html_file_rel,
             }
             write_json(json_file, page_data)
 
             record["status"] = "success"
-            record["jsonFile"] = str(json_file)
-            record["rawHtmlFile"] = str(html_file)
-            record["desktopScreenshot"] = str(desktop_png)
-            record["mobileScreenshot"] = str(mobile_png)
+            record["jsonFile"] = json_file_rel
+            record["rawHtmlFile"] = html_file_rel
+            record["desktopScreenshot"] = desktop_png_rel
+            record["mobileScreenshot"] = mobile_png_rel
             record["finalUrl"] = page_data.get("url")
             record["title"] = page_data.get("title")
             record["counts"] = page_data.get("counts", {})
@@ -397,7 +409,7 @@ def asset_target_path(root: pathlib.Path, url: str, content_type: str | None) ->
     return root / host / pathlib.Path(*parts)
 
 
-def download_one_asset(url: str, download_root: pathlib.Path) -> dict[str, Any]:
+def download_one_asset(url: str, download_root: pathlib.Path, output_root: pathlib.Path) -> dict[str, Any]:
     started_at = utc_now()
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
@@ -416,7 +428,7 @@ def download_one_asset(url: str, download_root: pathlib.Path) -> dict[str, Any]:
             "contentType": content_type,
             "bytes": len(body),
             "sha256": digest,
-            "file": str(target),
+            "file": target.relative_to(output_root).as_posix(),
             "startedAt": started_at,
             "completedAt": utc_now(),
         }
@@ -462,6 +474,7 @@ def verify_worker(
 def compare_live_to_capture(
     crawl_records: list[dict[str, Any]],
     verify_records: list[dict[str, Any]],
+    output_root: pathlib.Path,
 ) -> dict[str, Any]:
     by_url: dict[str, dict[str, Any]] = {}
     for record in crawl_records:
@@ -486,6 +499,8 @@ def compare_live_to_capture(
             continue
 
         page_file = pathlib.Path(crawl_record["jsonFile"])
+        if not page_file.is_absolute():
+            page_file = output_root / page_file
         captured = json.loads(read_text(page_file))
         live = verify_item["live"]
 
@@ -551,11 +566,7 @@ def main() -> int:
     scripts_dir = pathlib.Path(__file__).resolve().parent
     capture_root = scripts_dir.parent
     repo_root = capture_root.parent
-    output_dir = (
-        pathlib.Path(args.output).resolve()
-        if args.output
-        else (capture_root / f"lovelysunday-{datetime.now().strftime('%Y%m%d-%H%M%S')}")
-    )
+    output_dir = pathlib.Path(args.output) if args.output else (capture_root / f"lovelysunday-{datetime.now().strftime('%Y%m%d-%H%M%S')}")
     for rel in [
         "manifests",
         "logs",
@@ -621,7 +632,7 @@ def main() -> int:
     failed = [item for item in crawl_records if item.get("status") != "success"]
     print(f"[crawl] success={len(successful)} failed={len(failed)}")
 
-    page_json_files = [pathlib.Path(item["jsonFile"]) for item in successful if item.get("jsonFile")]
+    page_json_files = [output_dir / pathlib.Path(item["jsonFile"]) for item in successful if item.get("jsonFile")]
     asset_urls = collect_asset_urls(page_json_files)
     write_text(output_dir / "manifests" / "asset_urls.txt", "\n".join(asset_urls) + "\n")
     print(f"[assets] unique URLs queued for download: {len(asset_urls)}")
@@ -629,7 +640,7 @@ def main() -> int:
     download_root = output_dir / "assets" / "downloads"
     asset_records: list[dict[str, Any]] = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(args.asset_workers, 1)) as executor:
-        futures = [executor.submit(download_one_asset, url, download_root) for url in asset_urls]
+        futures = [executor.submit(download_one_asset, url, download_root, output_dir) for url in asset_urls]
         for future in concurrent.futures.as_completed(futures):
             asset_records.append(future.result())
     asset_records.sort(key=lambda item: item["url"])
@@ -658,8 +669,13 @@ def main() -> int:
     verify_records.sort(key=lambda item: item["url"])
     write_json(output_dir / "manifests" / "verification_live_snapshots.json", {"pages": verify_records})
 
-    verification_report = compare_live_to_capture(crawl_records, verify_records)
+    verification_report = compare_live_to_capture(crawl_records, verify_records, output_dir)
     write_json(output_dir / "manifests" / "verification_report.json", verification_report)
+
+    try:
+        output_dir_display = output_dir.relative_to(repo_root).as_posix()
+    except ValueError:
+        output_dir_display = output_dir.as_posix()
 
     summary = {
         "generatedAt": utc_now(),
@@ -680,7 +696,7 @@ def main() -> int:
             "failed": len([item for item in asset_records if item.get("status") != "success"]),
         },
         "verification": verification_report["summary"],
-        "outputDir": str(output_dir),
+        "outputDir": output_dir_display,
     }
     write_json(output_dir / "manifests" / "summary.json", summary)
 

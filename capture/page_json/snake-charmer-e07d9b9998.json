@@ -417,7 +417,7 @@
   "openGraph": {
     "description": "Ladies... I have a secret- jumpers are the greatest thing ever! I never thought I would like them, but they're so comfortable and so easy to dress up from day to night and I mayyyy have been on a jumper buying spree ever since.&nbsp;The most important part of wearing a jumper is that it fits you",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Snake Charmer — LovelySunday",
+    "title": "Snake Charmer \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/snake-charmer"
   },
@@ -1037,12 +1037,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Snake Charmer — LovelySunday",
+  "title": "Snake Charmer \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Ladies... I have a secret- jumpers are the greatest thing ever! I never thought I would like them, but they're so comfortable and so easy to dress up from day to night and I mayyyy have been on a jumper buying spree ever since.&nbsp;The most important part of wearing a jumper is that it fits you",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Snake Charmer — LovelySunday"
+    "title": "Snake Charmer \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/snake-charmer",
   "videos": [],
@@ -1051,8 +1051,8 @@
     "pageId": "snake-charmer-e07d9b9998",
     "worker": 3,
     "capturedAt": "2026-02-16T01:19:26.978446+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/snake-charmer-e07d9b9998.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/snake-charmer-e07d9b9998.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/snake-charmer-e07d9b9998.html"
+    "desktopScreenshot": "screenshots/desktop/snake-charmer-e07d9b9998.png",
+    "mobileScreenshot": "screenshots/mobile/snake-charmer-e07d9b9998.png",
+    "rawHtmlFile": "raw_html/snake-charmer-e07d9b9998.html"
   }
 }

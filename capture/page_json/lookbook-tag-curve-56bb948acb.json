@@ -892,8 +892,8 @@
     "pageId": "lookbook-tag-curve-56bb948acb",
     "worker": 3,
     "capturedAt": "2026-02-16T01:19:12.485516+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-tag-curve-56bb948acb.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-tag-curve-56bb948acb.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-tag-curve-56bb948acb.html"
+    "desktopScreenshot": "screenshots/desktop/lookbook-tag-curve-56bb948acb.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-tag-curve-56bb948acb.png",
+    "rawHtmlFile": "raw_html/lookbook-tag-curve-56bb948acb.html"
   }
 }

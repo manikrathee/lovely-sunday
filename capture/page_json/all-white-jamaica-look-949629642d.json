@@ -325,7 +325,7 @@
   "listItems": [],
   "mainText": "",
   "meta": {
-    "description": "I love wearing monochrome looks on tropical vacations because I think it stands out among the green palm trees and turquoise waters while still being effortless and versatile. This silk skirt is from Zara and my shoes are old but here are some fringe sandals I love and these Karl Lagerfeld slides that also work with this look. If I could just rant about this tshirt real quick- this is from Karla Welch’s collection with Hanes. Karla is a source of inspiration to me in terms of her styling (she styles Tracee Ellis Ross who is a gorgeous queen of fashion, Busy Phillips, Olivia Wilde, Megan Rapinoe and other badass gorgeous women) and her fearlessness in sharing her opinions on issues facing our society. Basic white and black tshirts are a staple in my wardrobe and Karla created these quality shirts with options of different cuts to build your collection of basics. Be sure to follow her on instagram for more inspiration. Ok, rant over!",
+    "description": "I love wearing monochrome looks on tropical vacations because I think it stands out among the green palm trees and turquoise waters while still being effortless and versatile. This silk skirt is from Zara and my shoes are old but here are some fringe sandals I love and these Karl Lagerfeld slides that also work with this look. If I could just rant about this tshirt real quick- this is from Karla Welch\u2019s collection with Hanes. Karla is a source of inspiration to me in terms of her styling (she styles Tracee Ellis Ross who is a gorgeous queen of fashion, Busy Phillips, Olivia Wilde, Megan Rapinoe and other badass gorgeous women) and her fearlessness in sharing her opinions on issues facing our society. Basic white and black tshirts are a staple in my wardrobe and Karla created these quality shirts with options of different cuts to build your collection of basics. Be sure to follow her on instagram for more inspiration. Ok, rant over!",
     "robots": null,
     "viewport": "width=device-width, initial-scale=1"
   },
@@ -361,7 +361,7 @@
   "openGraph": {
     "description": "I love wearing monochrome looks on tropical vacations because I think it stands out among the green palm trees and turquoise waters while still being effortless and versatile. This silk skirt is from Zara and my shoes are old but here are some fringe sandals I love and these Karl Lagerfeld",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Summer in Jamaica — LovelySunday",
+    "title": "Summer in Jamaica \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/all-white-jamaica-look"
   },
@@ -955,12 +955,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Summer in Jamaica — LovelySunday",
+  "title": "Summer in Jamaica \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I love wearing monochrome looks on tropical vacations because I think it stands out among the green palm trees and turquoise waters while still being effortless and versatile. This silk skirt is from Zara and my shoes are old but here are some fringe sandals I love and these Karl Lagerfeld",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Summer in Jamaica — LovelySunday"
+    "title": "Summer in Jamaica \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/all-white-jamaica-look",
   "videos": [],
@@ -969,8 +969,8 @@
     "pageId": "all-white-jamaica-look-949629642d",
     "worker": 4,
     "capturedAt": "2026-02-16T01:18:46.955452+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/all-white-jamaica-look-949629642d.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/all-white-jamaica-look-949629642d.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/all-white-jamaica-look-949629642d.html"
+    "desktopScreenshot": "screenshots/desktop/all-white-jamaica-look-949629642d.png",
+    "mobileScreenshot": "screenshots/mobile/all-white-jamaica-look-949629642d.png",
+    "rawHtmlFile": "raw_html/all-white-jamaica-look-949629642d.html"
   }
 }

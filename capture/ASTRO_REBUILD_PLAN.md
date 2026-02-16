@@ -3,16 +3,16 @@
 ## 1) Scope + Fidelity Rules
 - Use captured source of truth only; do not add Astro-only features not present on source site.
 - Canonical route inventory:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/manifests/all_urls.txt`
+  - `capture/manifests/all_urls.txt`
   - 55 URLs total (47 sitemap + nav-only + nav double-slash variants).
 - Verified parity:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/manifests/verification_report.json`
+  - `capture/manifests/verification_report.json`
   - 55/55 checks match on title/canonical/H1/image-count.
 
 ## 2) Content Ingestion
 - Parse from:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/page_json`
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html`
+  - `capture/page_json`
+  - `capture/raw_html`
 - Build Astro content collections with:
   - `slug`, `sourceUrl`, `title`, `canonical`, `meta`, `headings`, `mainText`
   - `paragraphs`, `links`, `images`, `stylesheets`, `scripts`, `jsonLd`.
@@ -22,13 +22,13 @@
   - Keep valid double-slash nav targets (`/lookbook//looks/...`) available.
   - Keep single-slash lookbook variants as captured (they render source 404 page state).
 - Internal rewrite map for known nav correction cases:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/manifests/internal_url_rewrite_map.json`
+  - `capture/manifests/internal_url_rewrite_map.json`
 
 ## 4) Assets
 - Use downloaded mirror:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/assets/downloads`
+  - `capture/assets/downloads`
 - Manifest:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/manifests/assets_manifest.json`
+  - `capture/manifests/assets_manifest.json`
 - Status:
   - 724 queued, 724 downloaded, 0 failed.
 - Do not mirror outbound shopping/social links as local files.
@@ -57,7 +57,7 @@
 ## 9) Prior Failed URL Recheck Outcome
 - Source failed set: 140 URLs from older run.
 - Recheck report:
-  - `/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/manifests/failed_url_recheck_report.json`
+  - `capture/manifests/failed_url_recheck_report.json`
 - Result:
   - 5 internal lookbook URLs fixed via rewrite map.
   - 104 runtime telemetry/API endpoints filtered as non-static assets.

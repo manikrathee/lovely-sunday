@@ -459,7 +459,7 @@
   "openGraph": {
     "description": "The sunset was so beautiful in this gorgeous field we stumbled upon. This Zara dress was the perfect look for this location- so flowing, comfortable, and bohemian. I love the texture of the dress and the lace up sides add a little bit of mystery. This was such a fun experience being out in this amaz",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Sunset in a Wheat Field — LovelySunday",
+    "title": "Sunset in a Wheat Field \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/wheat-field-sunset"
   },
@@ -1119,12 +1119,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Sunset in a Wheat Field — LovelySunday",
+  "title": "Sunset in a Wheat Field \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "The sunset was so beautiful in this gorgeous field we stumbled upon. This Zara dress was the perfect look for this location- so flowing, comfortable, and bohemian. I love the texture of the dress and the lace up sides add a little bit of mystery. This was such a fun experience being out in this amaz",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Sunset in a Wheat Field — LovelySunday"
+    "title": "Sunset in a Wheat Field \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/wheat-field-sunset",
   "videos": [],
@@ -1133,8 +1133,8 @@
     "pageId": "wheat-field-sunset-f4eedd5d89",
     "worker": 1,
     "capturedAt": "2026-02-16T01:19:26.646032+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/wheat-field-sunset-f4eedd5d89.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/wheat-field-sunset-f4eedd5d89.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/wheat-field-sunset-f4eedd5d89.html"
+    "desktopScreenshot": "screenshots/desktop/wheat-field-sunset-f4eedd5d89.png",
+    "mobileScreenshot": "screenshots/mobile/wheat-field-sunset-f4eedd5d89.png",
+    "rawHtmlFile": "raw_html/wheat-field-sunset-f4eedd5d89.html"
   }
 }

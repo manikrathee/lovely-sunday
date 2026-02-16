@@ -445,7 +445,7 @@
   "openGraph": {
     "description": "This detail on this lace dress is so beautiful and I have been obsessed with white dresses lately. I paired it with a suede shoe to add some texture and lavender is the perfect pop of color. I love mixing edgy and feminine pieces and this studded lavender bag could not be more perfect!&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Purple & Lace — LovelySunday",
+    "title": "Purple & Lace \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/purple-lace"
   },
@@ -1081,12 +1081,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Purple & Lace — LovelySunday",
+  "title": "Purple & Lace \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "This detail on this lace dress is so beautiful and I have been obsessed with white dresses lately. I paired it with a suede shoe to add some texture and lavender is the perfect pop of color. I love mixing edgy and feminine pieces and this studded lavender bag could not be more perfect!&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Purple & Lace — LovelySunday"
+    "title": "Purple & Lace \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/purple-lace",
   "videos": [],
@@ -1095,8 +1095,8 @@
     "pageId": "purple-lace-b6f153d977",
     "worker": 3,
     "capturedAt": "2026-02-16T01:19:23.814559+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/purple-lace-b6f153d977.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/purple-lace-b6f153d977.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/purple-lace-b6f153d977.html"
+    "desktopScreenshot": "screenshots/desktop/purple-lace-b6f153d977.png",
+    "mobileScreenshot": "screenshots/mobile/purple-lace-b6f153d977.png",
+    "rawHtmlFile": "raw_html/purple-lace-b6f153d977.html"
   }
 }

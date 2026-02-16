@@ -501,7 +501,7 @@
   "openGraph": {
     "description": "Top: Asos , Missguided Culottes: Forever 21 (found in store),&nbsp; Missguided Heels: &nbsp; S teve Madden&nbsp; Clutch: Just Fab&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Pink Colouttes — LovelySunday",
+    "title": "Pink Colouttes \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/pink-colouttes"
   },
@@ -1177,12 +1177,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Pink Colouttes — LovelySunday",
+  "title": "Pink Colouttes \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "Top: Asos , Missguided Culottes: Forever 21 (found in store),&nbsp; Missguided Heels: &nbsp; S teve Madden&nbsp; Clutch: Just Fab&nbsp;",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Pink Colouttes — LovelySunday"
+    "title": "Pink Colouttes \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/pink-colouttes",
   "videos": [],
@@ -1191,8 +1191,8 @@
     "pageId": "pink-colouttes-1cc4413735",
     "worker": 2,
     "capturedAt": "2026-02-16T01:19:22.733900+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/pink-colouttes-1cc4413735.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/pink-colouttes-1cc4413735.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/pink-colouttes-1cc4413735.html"
+    "desktopScreenshot": "screenshots/desktop/pink-colouttes-1cc4413735.png",
+    "mobileScreenshot": "screenshots/mobile/pink-colouttes-1cc4413735.png",
+    "rawHtmlFile": "raw_html/pink-colouttes-1cc4413735.html"
   }
 }

@@ -842,8 +842,8 @@
     "pageId": "lookbook-looks-get-ouai-sted-80d7b9dfd1",
     "worker": 4,
     "capturedAt": "2026-02-16T01:19:05.728700+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-looks-get-ouai-sted-80d7b9dfd1.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-looks-get-ouai-sted-80d7b9dfd1.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-looks-get-ouai-sted-80d7b9dfd1.html"
+    "desktopScreenshot": "screenshots/desktop/lookbook-looks-get-ouai-sted-80d7b9dfd1.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-looks-get-ouai-sted-80d7b9dfd1.png",
+    "rawHtmlFile": "raw_html/lookbook-looks-get-ouai-sted-80d7b9dfd1.html"
   }
 }

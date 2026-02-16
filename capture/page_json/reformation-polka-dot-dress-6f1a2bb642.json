@@ -381,7 +381,7 @@
   "listItems": [],
   "mainText": "",
   "meta": {
-    "description": "Its safe to say that 50% of my wardrobe is polka dots- it’s an obsession I’ve had since I was a kid and I don’t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here are some other options from some brands I love: Reformation , Asos , Fashion Union , Privacy Please , and Flynn Skye My sunglasses are from Quay Australia and my bag is from Jcrew- here is a similar bag and similar sunnies .",
+    "description": "Its safe to say that 50% of my wardrobe is polka dots- it\u2019s an obsession I\u2019ve had since I was a kid and I don\u2019t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here are some other options from some brands I love: Reformation , Asos , Fashion Union , Privacy Please , and Flynn Skye My sunglasses are from Quay Australia and my bag is from Jcrew- here is a similar bag and similar sunnies .",
     "robots": null,
     "viewport": "width=device-width, initial-scale=1"
   },
@@ -415,9 +415,9 @@
     "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
   ],
   "openGraph": {
-    "description": "Its safe to say that 50% of my wardrobe is polka dots- it’s an obsession I’ve had since I was a kid and I don’t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here ar",
+    "description": "Its safe to say that 50% of my wardrobe is polka dots- it\u2019s an obsession I\u2019ve had since I was a kid and I don\u2019t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here ar",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Reformation Polka Dot Dress — LovelySunday",
+    "title": "Reformation Polka Dot Dress \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/reformation-polka-dot-dress"
   },
@@ -1037,12 +1037,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Reformation Polka Dot Dress — LovelySunday",
+  "title": "Reformation Polka Dot Dress \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
-    "description": "Its safe to say that 50% of my wardrobe is polka dots- it’s an obsession I’ve had since I was a kid and I don’t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here ar",
+    "description": "Its safe to say that 50% of my wardrobe is polka dots- it\u2019s an obsession I\u2019ve had since I was a kid and I don\u2019t see it changing anytime soon! So, when I spotted this perfect dress from Reformation, I knew it was a piece that I needed to add to my collection. The dress has since sold out, but here ar",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Reformation Polka Dot Dress — LovelySunday"
+    "title": "Reformation Polka Dot Dress \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/reformation-polka-dot-dress",
   "videos": [],
@@ -1051,8 +1051,8 @@
     "pageId": "reformation-polka-dot-dress-6f1a2bb642",
     "worker": 4,
     "capturedAt": "2026-02-16T01:19:20.764491+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/reformation-polka-dot-dress-6f1a2bb642.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/reformation-polka-dot-dress-6f1a2bb642.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/reformation-polka-dot-dress-6f1a2bb642.html"
+    "desktopScreenshot": "screenshots/desktop/reformation-polka-dot-dress-6f1a2bb642.png",
+    "mobileScreenshot": "screenshots/mobile/reformation-polka-dot-dress-6f1a2bb642.png",
+    "rawHtmlFile": "raw_html/reformation-polka-dot-dress-6f1a2bb642.html"
   }
 }

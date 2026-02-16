@@ -381,7 +381,7 @@
   "listItems": [],
   "mainText": "",
   "meta": {
-    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket. Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I’ve been a huge fan of Everlane for a few years and I love how successful they’ve become—plus its so important to support local businesses. Everyone needs a leather jacket in their wardrobe and I have been in love with this one since the day I spotted it in Zara! I wear this with any item in my closet- from distressed denim to a pink a-line skirt and everything in-between! Sunglasses: RayBan Top: Everlane Jacket: Zara Jeans: Forever21 Heels: Just Fab (sold out), similar: BCBG , JustFab Ear Cuff: JustFab",
+    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket. Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I\u2019ve been a huge fan of Everlane for a few years and I love how successful they\u2019ve become\u2014plus its so important to support local businesses. Everyone needs a leather jacket in their wardrobe and I have been in love with this one since the day I spotted it in Zara! I wear this with any item in my closet- from distressed denim to a pink a-line skirt and everything in-between! Sunglasses: RayBan Top: Everlane Jacket: Zara Jeans: Forever21 Heels: Just Fab (sold out), similar: BCBG , JustFab Ear Cuff: JustFab",
     "robots": null,
     "viewport": "width=device-width, initial-scale=1"
   },
@@ -415,9 +415,9 @@
     "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
   ],
   "openGraph": {
-    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket.&nbsp; Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I’ve been a huge fan of Everlane &nbsp;for a few years and I love how s",
+    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket.&nbsp; Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I\u2019ve been a huge fan of Everlane &nbsp;for a few years and I love how s",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "All About the Basics — LovelySunday",
+    "title": "All About the Basics \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/all-about-the-basics"
   },
@@ -1037,12 +1037,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "All About the Basics — LovelySunday",
+  "title": "All About the Basics \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
-    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket.&nbsp; Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I’ve been a huge fan of Everlane &nbsp;for a few years and I love how s",
+    "description": "These are some of my favorite basics- distressed denim, a silk button down shirt, and a leather jacket.&nbsp; Each piece is from one of my most shopped stores (and are very popular names on my credit card bill, oops!). I\u2019ve been a huge fan of Everlane &nbsp;for a few years and I love how s",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "All About the Basics — LovelySunday"
+    "title": "All About the Basics \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/all-about-the-basics",
   "videos": [],
@@ -1051,8 +1051,8 @@
     "pageId": "all-about-the-basics-63987591be",
     "worker": 3,
     "capturedAt": "2026-02-16T01:18:47.105208+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/all-about-the-basics-63987591be.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/all-about-the-basics-63987591be.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/all-about-the-basics-63987591be.html"
+    "desktopScreenshot": "screenshots/desktop/all-about-the-basics-63987591be.png",
+    "mobileScreenshot": "screenshots/mobile/all-about-the-basics-63987591be.png",
+    "rawHtmlFile": "raw_html/all-about-the-basics-63987591be.html"
   }
 }

@@ -908,8 +908,8 @@
     "pageId": "lookbook-tag-missguided-8bd88ab02a",
     "worker": 1,
     "capturedAt": "2026-02-16T01:19:14.567352+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-tag-missguided-8bd88ab02a.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-tag-missguided-8bd88ab02a.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-tag-missguided-8bd88ab02a.html"
+    "desktopScreenshot": "screenshots/desktop/lookbook-tag-missguided-8bd88ab02a.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-tag-missguided-8bd88ab02a.png",
+    "rawHtmlFile": "raw_html/lookbook-tag-missguided-8bd88ab02a.html"
   }
 }

@@ -305,7 +305,7 @@
   "openGraph": {
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Looks NEW — LovelySunday",
+    "title": "Looks NEW \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/looks"
   },
@@ -840,12 +840,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Looks NEW — LovelySunday",
+  "title": "Looks NEW \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": null,
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Looks NEW — LovelySunday"
+    "title": "Looks NEW \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/looks",
   "videos": [],
@@ -854,8 +854,8 @@
     "pageId": "looks-cfab777399",
     "worker": 4,
     "capturedAt": "2026-02-16T01:19:17.501072+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/looks-cfab777399.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/looks-cfab777399.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/looks-cfab777399.html"
+    "desktopScreenshot": "screenshots/desktop/looks-cfab777399.png",
+    "mobileScreenshot": "screenshots/mobile/looks-cfab777399.png",
+    "rawHtmlFile": "raw_html/looks-cfab777399.html"
   }
 }

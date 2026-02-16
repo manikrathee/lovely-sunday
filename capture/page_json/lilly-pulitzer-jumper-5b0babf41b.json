@@ -459,7 +459,7 @@
   "openGraph": {
     "description": "I have been loving jumpers lately- they're so comfortable and can easily be dressed up for a casual day or dressed up for a date night!&nbsp; I snagged this jumper from the Lily Pulitzer for Target collection, but it all sold out so quickly! Florals are also high on my list right now- I can't he",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Lilly Pulitzer Jumper — LovelySunday",
+    "title": "Lilly Pulitzer Jumper \u2014 LovelySunday",
     "type": "website",
     "url": "http://www.lovelysunday.co/lilly-pulitzer-jumper"
   },
@@ -1103,12 +1103,12 @@
       "rel": "stylesheet"
     }
   ],
-  "title": "Lilly Pulitzer Jumper — LovelySunday",
+  "title": "Lilly Pulitzer Jumper \u2014 LovelySunday",
   "twitter": {
     "card": "summary",
     "description": "I have been loving jumpers lately- they're so comfortable and can easily be dressed up for a casual day or dressed up for a date night!&nbsp; I snagged this jumper from the Lily Pulitzer for Target collection, but it all sold out so quickly! Florals are also high on my list right now- I can't he",
     "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
-    "title": "Lilly Pulitzer Jumper — LovelySunday"
+    "title": "Lilly Pulitzer Jumper \u2014 LovelySunday"
   },
   "url": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
   "videos": [],
@@ -1117,8 +1117,8 @@
     "pageId": "lilly-pulitzer-jumper-5b0babf41b",
     "worker": 3,
     "capturedAt": "2026-02-16T01:18:56.782787+00:00",
-    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lilly-pulitzer-jumper-5b0babf41b.png",
-    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lilly-pulitzer-jumper-5b0babf41b.png",
-    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lilly-pulitzer-jumper-5b0babf41b.html"
+    "desktopScreenshot": "screenshots/desktop/lilly-pulitzer-jumper-5b0babf41b.png",
+    "mobileScreenshot": "screenshots/mobile/lilly-pulitzer-jumper-5b0babf41b.png",
+    "rawHtmlFile": "raw_html/lilly-pulitzer-jumper-5b0babf41b.html"
   }
 }
