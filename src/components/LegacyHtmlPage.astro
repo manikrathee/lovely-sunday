@@ -36,13 +36,19 @@ function rewriteInternalHref(href: string): string {
   return `${pathname}${queryPart}${hashPart}`;
 }
 
-const renderedHtml = rawHtml.replace(
-  /<a\b([^>]*?)\bhref=(["'])([^"']+)\2([^>]*)>/gi,
-  (_full, beforeHref, quote, hrefValue, afterHref) => {
-    const rewrittenHref = rewriteInternalHref(hrefValue);
-    return `<a${beforeHref}href=${quote}${rewrittenHref}${quote}${afterHref}>`;
-  },
-);
+const renderedHtml = rawHtml
+  // Strip "Powered by Squarespace" branding
+  .replace(/<p[^>]*>Powered by\s*<a[^>]*squarespace[^>]*>Squarespace<\/a><\/p>/gi, "")
+  // Strip Facebook icon links
+  .replace(/<a\b[^>]*href="[^"]*facebook\.com\/pages\/LovelySunday[^"]*"[^>]*>[\s\S]*?<\/a>/gi, "")
+  // Rewrite internal hrefs
+  .replace(
+    /<a\b([^>]*?)\bhref=(["'])([^"']+)\2([^>]*)>/gi,
+    (_full, beforeHref, quote, hrefValue, afterHref) => {
+      const rewrittenHref = rewriteInternalHref(hrefValue);
+      return `<a${beforeHref}href=${quote}${rewrittenHref}${quote}${afterHref}>`;
+    },
+  );
 ---
 
 <Fragment set:html={renderedHtml} />

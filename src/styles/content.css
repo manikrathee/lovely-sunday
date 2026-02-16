@@ -55,7 +55,8 @@ production stylesheet in assets/built/screen.css using gulp dev
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: color(var(--color-base) l(+50%));
+  color: var(--color-base);
+  opacity: 0.5;
 }
 
 .error-link {
@@ -77,7 +78,8 @@ production stylesheet in assets/built/screen.css using gulp dev
 
 .page-head-description {
   margin: 0 0 1.6vw;
-  color: color(var(--color-border) l(-20%));
+  color: var(--color-base);
+  opacity: 0.6;
   font-size: 2.2rem;
   line-height: 1.35em;
 }
@@ -154,7 +156,6 @@ production stylesheet in assets/built/screen.css using gulp dev
   position: relative;
   width: 100vw;
   min-width: 100%;
-  min-width: 100%;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   transform: translateX(calc(50vw - 50%));
@@ -226,8 +227,8 @@ production stylesheet in assets/built/screen.css using gulp dev
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  border: color(var(--color-base) l(-10%)) 1px solid;
-  color: #080808;
+  border: var(--color-border) 1px solid;
+  color: var(--color-base);
   font-size: 1.4rem;
   line-height: 1.5em;
   background: #eeeeee;
@@ -262,8 +263,8 @@ production stylesheet in assets/built/screen.css using gulp dev
   margin-left: -10px;
   width: 0px;
   height: 30px;
-  background: color(var(--color-border) l(+10%));
-  box-shadow: #000 0 0 0 1px;
+  background: var(--color-border);
+  box-shadow: var(--color-base) 0 0 0 1px;
   transform: rotate(45deg);
 }
 
@@ -315,7 +316,8 @@ production stylesheet in assets/built/screen.css using gulp dev
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  color: color(var(--color-border) l(-20%));
+  color: var(--color-base);
+  opacity: 0.6;
 }
 
 .author-links {
@@ -381,7 +383,8 @@ img {border-radius: 10px;}
   font-size: 2.2rem;
   line-height: 1.4;
   margin: 0 0 2.2rem;
-  color: #3e3e3e;
+  color: var(--color-base);
+  opacity: 0.8;
 }
 
 .post-content-image {
@@ -397,7 +400,7 @@ img {border-radius: 10px;}
 .post-content-body {
   font-size: 2rem;
   line-height: 1.9;
-  color: #363636;
+  color: var(--color-base);
 }
 
 .post-content-body p {
@@ -412,7 +415,7 @@ img {border-radius: 10px;}
 
 .post-link a {
   font-size: 1.7rem !important;
-  color: #3a3a3a !important;
+  color: var(--color-base) !important;
   text-decoration: none;
 }
 

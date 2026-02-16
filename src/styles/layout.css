@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: var(--color-bg);
-    color: #2f2f2f;
+    color: var(--color-base);
     font-family: var(--font-serif);
 }
 
