@@ -8,9 +8,9 @@ import { Head } from "astro-capo";
 import { SEO } from "astro-seo";
 import { Breadcrumbs } from "astro-breadcrumbs";
 import { GoogleAnalytics } from "@astrolib/analytics";
-import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { getRouteSeoMeta } from "../lib/routeSeo";
 
 export interface Props {
     title?: string;
@@ -29,13 +29,14 @@ const {
     ogImagePath,
 } = Astro.props;
 
-const siteName = "Clay Astro";
+const siteName = "Lovely Sunday";
 const siteDescription =
     "A minimalist, image-first photoblog built with Astro and the Clay theme.";
+const routeSeo = getRouteSeoMeta(Astro.url.pathname);
 const normalizedPath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const resolvedOgPath =
     ogImagePath || (normalizedPath.length > 0 ? normalizedPath : "index");
-const canonical = Astro.url.href;
+const canonical = routeSeo?.canonical || Astro.url.href;
 const ogImage = new URL(
     `/open-graph/${resolvedOgPath}.png`,
     Astro.site ?? Astro.url,
@@ -43,6 +44,12 @@ const ogImage = new URL(
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 const twitterHandle = import.meta.env.PUBLIC_TWITTER_HANDLE;
 const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
+const resolvedTitle = routeSeo?.title || title || siteName;
+const resolvedDescription = routeSeo?.description || description || siteDescription;
+const resolvedOgImage = routeSeo?.openGraph.image || ogImage;
+const resolvedOgUrl = routeSeo?.openGraph.url || canonical;
+const resolvedRobots = routeSeo?.robots || undefined;
+const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false);
 ---
 
 <!doctype html>
@@ -53,39 +60,42 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
         <meta name="generator" content={Astro.generator} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <GoogleFontsOptimizer
-            url="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=League+Spartan:wght@300;400;500;600;700&display=swap"
-        />
-
         <SEO
-            title={title || siteName}
+            title={resolvedTitle}
             titleDefault={siteName}
-            titleTemplate={`%s | ${siteName}`}
-            description={description || siteDescription}
+            titleTemplate={routeSeo?.title ? undefined : `%s | ${siteName}`}
+            description={resolvedDescription}
             canonical={canonical}
-            noindex={noindex}
-            nofollow={noindex}
+            noindex={resolvedNoIndex}
+            nofollow={resolvedNoIndex}
             openGraph={{
                 basic: {
-                    title: title || siteName,
-                    type: "website",
-                    image: ogImage,
-                    url: canonical,
+                    title: routeSeo?.openGraph.title || resolvedTitle,
+                    type: routeSeo?.openGraph.type || "website",
+                    image: resolvedOgImage,
+                    url: resolvedOgUrl,
                 },
                 optional: {
-                    description: description || siteDescription,
+                    description:
+                        routeSeo?.openGraph.description || resolvedDescription,
                     siteName,
                 },
             }}
             twitter={{
-                card: "summary_large_image",
-                title: title || siteName,
-                description: description || siteDescription,
-                image: ogImage,
+                card: routeSeo?.twitter.card || "summary_large_image",
+                title: routeSeo?.twitter.title || resolvedTitle,
+                description: routeSeo?.twitter.description || resolvedDescription,
+                image: routeSeo?.twitter.image || resolvedOgImage,
                 creator: twitterHandle || undefined,
                 site: twitterHandle || undefined,
             }}
         />
+
+        {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
+
+        {routeSeo?.jsonLd.map((entry) => (
+            <script is:inline type="application/ld+json" set:html={entry} />
+        ))}
 
         <script is:inline>
             const theme = (() => {
@@ -126,67 +136,12 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
             import Swup from "swup";
             import HeadPlugin from "@swup/head-plugin";
 
-            const STORAGE_KEY = "theme";
-            const THEME_ATTR = "data-theme";
-
-            const applyTheme = (theme: "light" | "dark") => {
-                if (theme === "dark") {
-                    document.documentElement.setAttribute(THEME_ATTR, "dark");
-                } else {
-                    document.documentElement.removeAttribute(THEME_ATTR);
-                }
-            };
-
-            const getTheme = (): "light" | "dark" =>
-                localStorage.getItem(STORAGE_KEY) === "dark" ? "dark" : "light";
-
-            const updateThemeIcons = () => {
-                const isDark =
-                    document.documentElement.getAttribute(THEME_ATTR) ===
-                    "dark";
-                const sun = document.querySelector<HTMLElement>(".sun-icon");
-                const moon = document.querySelector<HTMLElement>(".moon-icon");
-
-                if (sun) sun.style.display = isDark ? "inline-block" : "none";
-                if (moon) moon.style.display = isDark ? "none" : "inline-block";
-            };
-
-            const bindThemeToggle = () => {
-                const toggle = document.getElementById("theme-toggle");
-                if (!toggle || toggle.dataset.bound === "true") return;
-
-                toggle.dataset.bound = "true";
-                toggle.addEventListener("click", () => {
-                    const nextTheme =
-                        document.documentElement.getAttribute(THEME_ATTR) ===
-                        "dark"
-                            ? "light"
-                            : "dark";
-
-                    localStorage.setItem(STORAGE_KEY, nextTheme);
-                    applyTheme(nextTheme);
-                    updateThemeIcons();
-                });
-            };
-
-            const initInteractiveUi = () => {
-                applyTheme(getTheme());
-                updateThemeIcons();
-                bindThemeToggle();
-            };
-
             document.addEventListener("DOMContentLoaded", () => {
-                initInteractiveUi();
-
-                const swup = new Swup({
+                new Swup({
                     containers: ["#swup"],
                     cache: true,
                     animationSelector: "[class*='transition-']",
                     plugins: [new HeadPlugin()],
-                });
-
-                swup.hooks.on("page:view", () => {
-                    initInteractiveUi();
                 });
             });
         </script>

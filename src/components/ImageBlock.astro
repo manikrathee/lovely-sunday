@@ -1,0 +1,18 @@
+---
+export interface Props {
+  src?: string;
+  alt: string;
+  className?: string;
+  loading?: 'lazy' | 'eager';
+}
+
+const { src, alt, className = 'post-content-image', loading = 'lazy' } = Astro.props;
+---
+
+{
+  src && (
+    <div class={className}>
+      <img src={src} class="kg-image" alt={alt} loading={loading} />
+    </div>
+  )
+}

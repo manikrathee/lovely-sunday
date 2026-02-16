@@ -29,6 +29,9 @@
   - `capture/assets/downloads`
 - Manifest:
   - `capture/manifests/assets_manifest.json`
+- Filter rule docs / manifest:
+  - `capture/STATIC_ASSET_FILTER_RULES.md`
+  - `capture/manifests/asset_filter_rules.json`
 - Status:
   - 724 queued, 724 downloaded, 0 failed.
 - Do not mirror outbound shopping/social links as local files.
