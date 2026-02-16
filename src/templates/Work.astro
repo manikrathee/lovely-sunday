@@ -1,5 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import PostLayout from '../components/PostLayout.astro';
+import LinkBlock from '../components/LinkBlock.astro';
 import { type CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -13,49 +14,31 @@ const { entry, next, prev, baseSlug } = Astro.props;
 const { Content } = await entry.render();
 
 const { title, description, thumbnail } = entry.data;
-
-// Icons logic (replacing SVG imports with inline or similar)
-// For simplicity, using text or simple arrows.
 ---
 
-<Layout title={title} description={description}>
-  <article class={`post-content ${thumbnail ? '' : 'no-image'}`}>
-    {/* Title hidden as it is shown in the header now
-    <header class="post-content-header">
-      <h1 class="post-content-title">{title}</h1>
-    </header>
-    */}
+<PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt>
+  <Content />
 
-    {description && (
-      <p class="post-content-excerpt">{description}</p>
-    )}
-
-    {thumbnail && (
-      <div class="post-content-image">
-        <img src={thumbnail} class="kg-image" alt={title} />
-      </div>
-    )}
-
-    <div class="post-content-body">
-      <Content />
-    </div>
-
+  <Fragment slot="after">
     <div class="post-link">
       <div>
         {next && (
-            <a style="display: flex; align-items: center; color: #131313; font-size: 2rem;" href={`/${baseSlug}/${next.slug}/`}>
-               <span>&larr; {next.data.title}</span>
-            </a>
+          <LinkBlock
+            direction="prev"
+            href={`/${baseSlug}/${next.slug}/`}
+            label={next.data.title}
+          />
         )}
       </div>
       <div>
         {prev && (
-            <a style="display: flex; align-items: center; color: #131313; font-size: 2rem;" href={`/${baseSlug}/${prev.slug}/`}>
-               <span>{prev.data.title} &rarr;</span>
-            </a>
+          <LinkBlock
+            direction="next"
+            href={`/${baseSlug}/${prev.slug}/`}
+            label={prev.data.title}
+          />
         )}
       </div>
     </div>
-
-  </article>
-</Layout>
+  </Fragment>
+</PostLayout>

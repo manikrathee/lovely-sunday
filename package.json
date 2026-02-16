@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "A minimalist, high-performance Astro theme for photographers and artists.",
   "scripts": {
-    "dev": "npm run prepare:capture-assets && astro dev",
-    "build": "npm run prepare:capture-assets && astro build",
-    "preview": "npm run prepare:capture-assets && astro preview",
+    "dev": "astro dev",
+    "build": "astro build && npm run qa:parity",
+    "build:astro": "astro build",
+    "qa:parity": "node scripts/qa/parity-gate.mjs",
+    "preview": "astro preview",
     "astro": "astro",
-    "prepare:capture-assets": "node scripts/prepare-capture-assets.mjs",
-    "validate:capture-assets": "node scripts/validate-capture-assets.mjs"
+    "check:routes": "node scripts/verify-route-manifest.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
