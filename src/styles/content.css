@@ -287,6 +287,26 @@ production stylesheet in assets/built/screen.css using gulp dev
   box-shadow: none !important;
 }
 
+
+.post-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.post-nav-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-base);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.post-nav-link:hover {
+  text-decoration: underline;
+}
+
 /* Author Archive
 /* ---------------------------------------------------------- */
 
