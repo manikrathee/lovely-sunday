@@ -1,8 +1,8 @@
 ---
-import CapturedHtmlPage from "../../../components/CapturedHtmlPage.astro";
-import { getCapturedPageBySourcePathname } from "../../../lib/captured-pages";
+import LegacyHtmlPage from "../../../components/LegacyHtmlPage.astro";
+import { getLegacyPageBySourcePathname } from "../../../lib/legacy-pages";
 import {
-  capturedSingleSlashLookbook404Paths,
+  legacySingleSlashLookbook404Paths,
   extractLookbookSlug,
 } from "../../../data/legacyLookbook";
 
@@ -10,11 +10,11 @@ export function getStaticPaths() {
   const removeTrailingSlash = (pathname: string) =>
     pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
 
-  return capturedSingleSlashLookbook404Paths.map((path) => {
+  return legacySingleSlashLookbook404Paths.map((path) => {
     const sourcePathname = removeTrailingSlash(path);
-    const page = getCapturedPageBySourcePathname(sourcePathname);
+    const page = getLegacyPageBySourcePathname(sourcePathname);
     if (!page) {
-      throw new Error(`Missing captured page for legacy single-slash lookbook path: ${sourcePathname}`);
+      throw new Error(`Missing legacy page for single-slash lookbook path: ${sourcePathname}`);
     }
 
     return {
@@ -31,4 +31,4 @@ export function getStaticPaths() {
 const { rawHtml } = Astro.props;
 ---
 
-<CapturedHtmlPage rawHtml={rawHtml} />
+<LegacyHtmlPage rawHtml={rawHtml} />

@@ -1,6 +1,6 @@
 import type { MiddlewareHandler } from 'astro';
 import {
-  capturedSingleSlashLookbook404Paths,
+  legacySingleSlashLookbook404Paths,
   validDoubleSlashLookbookPaths,
   extractLookbookSlug,
 } from './data/legacyLookbook';
@@ -13,7 +13,7 @@ const doubleSlashRewriteTargets = Object.fromEntries(
 );
 
 const singleSlashRewriteTargets = Object.fromEntries(
-  capturedSingleSlashLookbook404Paths.map((path) => [
+  legacySingleSlashLookbook404Paths.map((path) => [
     path,
     `/lookbook-single/looks/${extractLookbookSlug(path)}/`,
   ]),

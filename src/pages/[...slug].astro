@@ -1,9 +1,9 @@
 ---
-import { loadCapturedPages } from "../lib/captured-pages";
-import CapturedHtmlPage from "../components/CapturedHtmlPage.astro";
+import { loadLegacyPages } from "../lib/legacy-pages";
+import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
 
 export function getStaticPaths() {
-  const capturedPages = loadCapturedPages();
+  const legacyPages = loadLegacyPages();
   const explicitRoutes = new Set(["/about-lovely-sunday"]);
 
   // Deduplicate by pathname — double-slash URLs (e.g. /lookbook//looks/x)
@@ -11,7 +11,7 @@ export function getStaticPaths() {
   // Keep the last occurrence (single-slash canonical version comes after
   // double-slash in manifest order).
   const byPathname = new Map();
-  for (const page of capturedPages) {
+  for (const page of legacyPages) {
     if (page.pathname === "/") continue;
     if (explicitRoutes.has(page.pathname)) continue;
     byPathname.set(page.pathname, page);
@@ -31,4 +31,4 @@ export function getStaticPaths() {
 const { rawHtml } = Astro.props;
 ---
 
-<CapturedHtmlPage rawHtml={rawHtml} />
+<LegacyHtmlPage rawHtml={rawHtml} />

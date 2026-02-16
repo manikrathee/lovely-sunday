@@ -1,11 +1,11 @@
 ---
-import CapturedHtmlPage from "../components/CapturedHtmlPage.astro";
-import { getCapturedPageBySourcePathname } from "../lib/captured-pages";
+import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
+import { getLegacyPageBySourcePathname } from "../lib/legacy-pages";
 
-const homePage = getCapturedPageBySourcePathname("/");
+const homePage = getLegacyPageBySourcePathname("/");
 if (!homePage) {
-  throw new Error("Missing captured homepage source for '/'");
+  throw new Error("Missing legacy homepage source for '/'");
 }
 ---
 
-<CapturedHtmlPage rawHtml={homePage.rawHtml} />
+<LegacyHtmlPage rawHtml={homePage.rawHtml} />

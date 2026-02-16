@@ -12,7 +12,7 @@ type CapturePageJson = {
   _capture: CaptureMetadata;
 };
 
-export type CapturedPage = {
+export type LegacyPage = {
   url: string;
   sourcePathname: string;
   pathname: string;
@@ -38,10 +38,10 @@ function normalizePathname(pathname: string): string {
   return normalizedSourcePathname.replace(/\/{2,}/g, "/");
 }
 
-let _cache: CapturedPage[] | null = null;
-let _cacheBySourcePathname: Map<string, CapturedPage> | null = null;
+let _cache: LegacyPage[] | null = null;
+let _cacheBySourcePathname: Map<string, LegacyPage> | null = null;
 
-export function loadCapturedPages(): CapturedPage[] {
+export function loadLegacyPages(): LegacyPage[] {
   if (_cache) {
     return _cache;
   }
@@ -51,7 +51,7 @@ export function loadCapturedPages(): CapturedPage[] {
     .map((line) => line.trim())
     .filter(Boolean);
 
-  const pagesByUrl = new Map<string, CapturedPage>();
+  const pagesByUrl = new Map<string, LegacyPage>();
 
   for (const fileName of readdirSync(pageJsonDir)) {
     if (!fileName.endsWith(".json")) {
@@ -96,8 +96,8 @@ export function loadCapturedPages(): CapturedPage[] {
   return _cache;
 }
 
-export function getCapturedPageBySourcePathname(pathname: string): CapturedPage | undefined {
-  const pages = loadCapturedPages();
+export function getLegacyPageBySourcePathname(pathname: string): LegacyPage | undefined {
+  const pages = loadLegacyPages();
   void pages;
   return _cacheBySourcePathname?.get(normalizeSourcePathname(pathname));
 }

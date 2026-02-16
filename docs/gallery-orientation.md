@@ -12,4 +12,4 @@ Gallery posts on Lovely Sunday pair photos only when they share the same orienta
 
 To enforce the rule, the build now runs `npm run check:gallery-orientations`. The script under `scripts/check-gallery-orientations.mjs` mirrors the browser pairing logic and fails the build if it finds adjacent half-spans with different `data-image-dimensions`.
 
-When capturing new Squarespace content, keep the `data-image-dimensions` attributes intact so the orientation helper can work, and rely on the inline script in `CapturedHtmlPage.astro` to mark up balanced pairs automatically.
+When working with legacy Squarespace content, keep the `data-image-dimensions` attributes intact so the orientation helper can work, and rely on the inline script in `LegacyHtmlPage.astro` to mark up balanced pairs automatically.

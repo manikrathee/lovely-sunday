@@ -1,5 +1,5 @@
 ---
-import "../styles/components/captured-gallery.css";
+import "../styles/components/legacy-gallery.css";
 import { correctedLookbookPath, internalUrlRewriteMap } from "../data/legacyLookbook";
 
 export interface Props {
@@ -15,7 +15,7 @@ function rewriteInternalHref(href: string): string {
 
   let pathname = pathnameRaw;
 
-  // Keep captured internal links inside this rebuilt site.
+  // Keep legacy internal links inside this rebuilt site.
   if (/^https?:\/\/www\.lovelysunday\.co/i.test(pathname)) {
     pathname = pathname.replace(/^https?:\/\/www\.lovelysunday\.co/i, "") || "/";
   }
