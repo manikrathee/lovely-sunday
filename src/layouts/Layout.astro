@@ -11,6 +11,7 @@ import { GoogleAnalytics } from "@astrolib/analytics";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { getRouteSeoMeta } from "../lib/routeSeo";
 
 export interface Props {
     title?: string;
@@ -32,10 +33,11 @@ const {
 const siteName = "Clay Astro";
 const siteDescription =
     "A minimalist, image-first photoblog built with Astro and the Clay theme.";
+const routeSeo = getRouteSeoMeta(Astro.url.pathname);
 const normalizedPath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const resolvedOgPath =
     ogImagePath || (normalizedPath.length > 0 ? normalizedPath : "index");
-const canonical = Astro.url.href;
+const canonical = routeSeo?.canonical || Astro.url.href;
 const ogImage = new URL(
     `/open-graph/${resolvedOgPath}.png`,
     Astro.site ?? Astro.url,
@@ -43,6 +45,12 @@ const ogImage = new URL(
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 const twitterHandle = import.meta.env.PUBLIC_TWITTER_HANDLE;
 const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
+const resolvedTitle = routeSeo?.title || title || siteName;
+const resolvedDescription = routeSeo?.description || description || siteDescription;
+const resolvedOgImage = routeSeo?.openGraph.image || ogImage;
+const resolvedOgUrl = routeSeo?.openGraph.url || canonical;
+const resolvedRobots = routeSeo?.robots || undefined;
+const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false);
 ---
 
 <!doctype html>
@@ -58,34 +66,41 @@ const showBreadcrumbs = breadcrumbs && Astro.url.pathname !== "/";
         />
 
         <SEO
-            title={title || siteName}
+            title={resolvedTitle}
             titleDefault={siteName}
-            titleTemplate={`%s | ${siteName}`}
-            description={description || siteDescription}
+            titleTemplate={routeSeo?.title ? undefined : `%s | ${siteName}`}
+            description={resolvedDescription}
             canonical={canonical}
-            noindex={noindex}
-            nofollow={noindex}
+            noindex={resolvedNoIndex}
+            nofollow={resolvedNoIndex}
             openGraph={{
                 basic: {
-                    title: title || siteName,
-                    type: "website",
-                    image: ogImage,
-                    url: canonical,
+                    title: routeSeo?.openGraph.title || resolvedTitle,
+                    type: routeSeo?.openGraph.type || "website",
+                    image: resolvedOgImage,
+                    url: resolvedOgUrl,
                 },
                 optional: {
-                    description: description || siteDescription,
+                    description:
+                        routeSeo?.openGraph.description || resolvedDescription,
                     siteName,
                 },
             }}
             twitter={{
-                card: "summary_large_image",
-                title: title || siteName,
-                description: description || siteDescription,
-                image: ogImage,
+                card: routeSeo?.twitter.card || "summary_large_image",
+                title: routeSeo?.twitter.title || resolvedTitle,
+                description: routeSeo?.twitter.description || resolvedDescription,
+                image: routeSeo?.twitter.image || resolvedOgImage,
                 creator: twitterHandle || undefined,
                 site: twitterHandle || undefined,
             }}
         />
+
+        {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
+
+        {routeSeo?.jsonLd.map((entry) => (
+            <script is:inline type="application/ld+json" set:html={entry} />
+        ))}
 
         <script is:inline>
             const theme = (() => {
