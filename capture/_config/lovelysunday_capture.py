@@ -183,9 +183,9 @@ def looks_like_static_url(url: str) -> bool:
     suffix = pathlib.Path(path).suffix.lower()
     if suffix in STATIC_EXTENSIONS:
         return True
-    if parsed.netloc.lower() == "images.squarespace-cdn.com" and "/content/" in path:
+    if (parsed.hostname or "").lower() == "images.squarespace-cdn.com" and "/content/" in path:
         return True
-    if parsed.netloc.lower() in {"fonts.googleapis.com", "use.typekit.com"} and "/css" in path:
+    if (parsed.hostname or "").lower() in {"fonts.googleapis.com", "use.typekit.com"} and "/css" in path:
         return True
     return False
 
@@ -193,7 +193,7 @@ def looks_like_static_url(url: str) -> bool:
 def classify_asset_url(resource_url: str, initiator_type: str | None) -> tuple[bool, str]:
     parsed = urllib.parse.urlparse(resource_url)
     scheme = (parsed.scheme or "").lower()
-    host = (parsed.netloc or "").lower()
+    host = (parsed.hostname or "").lower()
     path = parsed.path or ""
     initiator = (initiator_type or "").lower()
 
