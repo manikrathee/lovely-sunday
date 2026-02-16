@@ -72,7 +72,7 @@ export function loadCapturedPages(): CapturedPage[] {
     });
   }
 
-  const capturedPages = manifestUrls.map((url) => {
+  _cache = manifestUrls.map((url) => {
     const page = pagesByUrl.get(url);
     if (!page) {
       throw new Error(`Missing capture/page_json entry for URL: ${url}`);
@@ -81,6 +81,5 @@ export function loadCapturedPages(): CapturedPage[] {
     return page;
   });
 
-  _cache = capturedPages;
-  return capturedPages;
+  return _cache;
 }

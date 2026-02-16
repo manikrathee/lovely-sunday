@@ -287,6 +287,26 @@ production stylesheet in assets/built/screen.css using gulp dev
   box-shadow: none !important;
 }
 
+
+.post-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.post-nav-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-base);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.post-nav-link:hover {
+  text-decoration: underline;
+}
+
 /* Author Archive
 /* ---------------------------------------------------------- */
 
@@ -349,3 +369,51 @@ production stylesheet in assets/built/screen.css using gulp dev
 img.gatsby-resp-image-image { border-radius: 10px !important;}
 
 img {border-radius: 10px;}
+
+/* Capture-faithful overrides */
+.post-content {
+  max-width: 74rem;
+  margin: 0 auto;
+}
+
+.post-content-excerpt {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin: 0 0 2.2rem;
+  color: #3e3e3e;
+}
+
+.post-content-image {
+  margin: 0 auto 2.4rem;
+  max-width: 62rem;
+}
+
+.post-content-image img {
+  width: 100%;
+  border: 1px solid #ebebeb;
+}
+
+.post-content-body {
+  font-size: 2rem;
+  line-height: 1.9;
+  color: #363636;
+}
+
+.post-content-body p {
+  margin-bottom: 2rem;
+}
+
+.post-link {
+  margin-top: 4rem;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 2rem;
+}
+
+.post-link a {
+  font-size: 1.7rem !important;
+  color: #3a3a3a !important;
+  text-decoration: none;
+}
+
+.post-link a:hover { text-decoration: underline; }

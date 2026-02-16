@@ -4,9 +4,14 @@
   "description": "A minimalist, high-performance Astro theme for photographers and artists.",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run qa:parity",
+    "build:astro": "astro build",
+    "qa:parity": "node scripts/qa/parity-gate.mjs",
     "preview": "astro preview",
     "astro": "astro",
+    "deploy:s3": "bash scripts/deploy-to-s3.sh",
+    "verify:urls": "node scripts/verify-post-deploy-urls.mjs",
+    "deploy:production": "bash scripts/deploy-and-verify.sh",
     "check:routes": "node scripts/verify-route-manifest.mjs"
   },
   "dependencies": {
