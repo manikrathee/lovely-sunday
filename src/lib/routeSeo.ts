@@ -63,6 +63,15 @@ const canonicalToPath = (canonical?: string | null): string | null => {
   }
 };
 
+/**
+ * Prevent JSON-LD strings from closing a <script> tag early.
+ * The HTML parser sees </script> regardless of the script's type attribute,
+ * so we replace it with a safe escaped form that is valid JSON but won't
+ * trigger the HTML parser.
+ */
+const sanitizeJsonLd = (raw: string): string =>
+  raw.replace(/<\/(script)/gi, "<\\/$1");
+
 const routeSeoByPath = new Map<string, RouteSeoMeta>();
 
 for (const data of Object.values(pageJsonModules)) {
@@ -92,7 +101,7 @@ for (const data of Object.values(pageJsonModules)) {
       description: data.twitter?.description ?? undefined,
       image: data.twitter?.image ?? undefined,
     },
-    jsonLd: data.jsonLd ?? [],
+    jsonLd: (data.jsonLd ?? []).map(sanitizeJsonLd),
   });
 }
 
