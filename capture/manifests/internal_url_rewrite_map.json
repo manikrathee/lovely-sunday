@@ -1,0 +1,9 @@
+{
+  "rewriteMap": {
+    "https://www.lovelysunday.co/lookbook/looks/babes-day": "https://www.lovelysunday.co/lookbook//looks/babes-day",
+    "https://www.lovelysunday.co/lookbook/looks/culottes": "https://www.lovelysunday.co/lookbook//looks/culottes",
+    "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted": "https://www.lovelysunday.co/lookbook//looks/get-ouai-sted",
+    "https://www.lovelysunday.co/lookbook/looks/pink-pumps": "https://www.lovelysunday.co/lookbook//looks/pink-pumps",
+    "https://www.lovelysunday.co/lookbook/looks/sequin-dresses": "https://www.lovelysunday.co/lookbook//looks/sequin-dresses"
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "canonical": "http://www.lovelysunday.co/lilly-pulitzer-jumper",
+  "capturedAt": "2026-02-16T01:18:56.077Z",
+  "counts": {
+    "images": 24,
+    "jsonLd": 3,
+    "links": 35,
+    "listItems": 0,
+    "paragraphs": 0,
+    "resources": 61,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-1.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144520216-2Y9MFRJX7J9CSJFWPBLA/LovelySunday-LilyPulitzerJumper-1.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-58.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144989490-KF1XYYK27BY8JZ61JOAM/LovelySunday-LilyPulitzerJumper-58.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-7.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144635445-3LMGXXTZG9WYG4V2JGFE/LovelySunday-LilyPulitzerJumper-7.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-14.jpg",
+      "height": 378,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144681385-U7GZAQ8KPIFS3BQKVQ9Q/LovelySunday-LilyPulitzerJumper-14.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-2.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144586685-HLIN4Z0V37AE1ZDA9VZP/LovelySunday-LilyPulitzerJumper-2.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-24.jpg",
+      "height": 721,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144738437-EZIEUF7TWJMEYGHFVANO/LovelySunday-LilyPulitzerJumper-24.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-13.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144694598-ZJMRFZIE9K03TPI1U81B/LovelySunday-LilyPulitzerJumper-13.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-32.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144788660-Z02Z4CS7AN8B15AZDPO3/LovelySunday-LilyPulitzerJumper-32.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-51.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144932232-AH1NL8IDEBHKU2BCYRYW/LovelySunday-LilyPulitzerJumper-51.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-63.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440145025795-NX3E0Q95Z4O3WAU2WJDN/LovelySunday-LilyPulitzerJumper-63.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-60.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440145006105-QRS8IWOYDC33XHMRAQ31/LovelySunday-LilyPulitzerJumper-60.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-1.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-58.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-7.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-14.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-2.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-24.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-13.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-32.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-51.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-63.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "LovelySunday-LilyPulitzerJumper-60.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "",
+  "meta": {
+    "description": "I have been loving jumpers lately- they're so comfortable and can easily be dressed up for a casual day or dressed up for a date night! I snagged this jumper from the Lily Pulitzer for Target collection, but it all sold out so quickly! Florals are also high on my list right now- I can't help it, its so pretty and feminine! Hope this inspires you to try out this trend! Jumper: Lily Pulitzer for Target (sold out), similar: WalkTrendy , Asos , Asos , Shopbop Hat: H&M (sold out), similar: Forever21 , Asos , Urban Outfitters Sandals: Lily Pulitzer for Target (sold out), similar: Ebay , Dillards , 6pm Bag: Vintage, similar: Athleta , H&M Tassel Necklace: Bauble Bar (sold out), similar: Jeweliq , Bauble Bar",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "I have been loving jumpers lately- they're so comfortable and can easily be dressed up for a casual day or dressed up for a date night!&nbsp; I snagged this jumper from the Lily Pulitzer for Target collection, but it all sold out so quickly! Florals are also high on my list right now- I can't he",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
+    "title": "Lilly Pulitzer Jumper — LovelySunday",
+    "type": "website",
+    "url": "http://www.lovelysunday.co/lilly-pulitzer-jumper"
+  },
+  "paragraphs": [],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 24.8,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204733903",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 83.7,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 78.8,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 69.4,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204733913&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/gallery-collection-list-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-07747667a3187b76-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 25.9,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1451677581&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Flilly-pulitzer-jumper&ul=en-us&dt=Lilly%20Pulitzer%20Jumper%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=887452272.1771203240&tid=UA-19400273-24&_gid=1750867923.1771203240&_slc=1&z=937579392",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 76018,
+      "duration": 0.3,
+      "encodedBodySize": 76018,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144520216-2Y9MFRJX7J9CSJFWPBLA/LovelySunday-LilyPulitzerJumper-1.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 115612,
+      "duration": 0.2,
+      "encodedBodySize": 115612,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144989490-KF1XYYK27BY8JZ61JOAM/LovelySunday-LilyPulitzerJumper-58.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 78860,
+      "duration": 0.4,
+      "encodedBodySize": 78860,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144635445-3LMGXXTZG9WYG4V2JGFE/LovelySunday-LilyPulitzerJumper-7.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 76126,
+      "duration": 0.4,
+      "encodedBodySize": 76126,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144681385-U7GZAQ8KPIFS3BQKVQ9Q/LovelySunday-LilyPulitzerJumper-14.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 128656,
+      "duration": 0.3,
+      "encodedBodySize": 128656,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144586685-HLIN4Z0V37AE1ZDA9VZP/LovelySunday-LilyPulitzerJumper-2.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 110240,
+      "duration": 0.3,
+      "encodedBodySize": 110240,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144738437-EZIEUF7TWJMEYGHFVANO/LovelySunday-LilyPulitzerJumper-24.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 107238,
+      "duration": 0.3,
+      "encodedBodySize": 107238,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144694598-ZJMRFZIE9K03TPI1U81B/LovelySunday-LilyPulitzerJumper-13.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 57018,
+      "duration": 0.4,
+      "encodedBodySize": 57018,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144788660-Z02Z4CS7AN8B15AZDPO3/LovelySunday-LilyPulitzerJumper-32.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 61684,
+      "duration": 0.3,
+      "encodedBodySize": 61684,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440144932232-AH1NL8IDEBHKU2BCYRYW/LovelySunday-LilyPulitzerJumper-51.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 119120,
+      "duration": 0.3,
+      "encodedBodySize": 119120,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440145025795-NX3E0Q95Z4O3WAU2WJDN/LovelySunday-LilyPulitzerJumper-63.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 56360,
+      "duration": 0.3,
+      "encodedBodySize": 56360,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1440145006105-QRS8IWOYDC33XHMRAQ31/LovelySunday-LilyPulitzerJumper-60.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 46.7,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204734187&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 99.3,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=Dc4vRxw0zods&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Flilly-pulitzer-jumper&callback=PIN_1771204733928.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-07747667a3187b76-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/gallery-collection-list-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "Lilly Pulitzer Jumper — LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "I have been loving jumpers lately- they're so comfortable and can easily be dressed up for a casual day or dressed up for a date night!&nbsp; I snagged this jumper from the Lily Pulitzer for Target collection, but it all sold out so quickly! Florals are also high on my list right now- I can't he",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
+    "title": "Lilly Pulitzer Jumper — LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "pageId": "lilly-pulitzer-jumper-5b0babf41b",
+    "worker": 3,
+    "capturedAt": "2026-02-16T01:18:56.782787+00:00",
+    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lilly-pulitzer-jumper-5b0babf41b.png",
+    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lilly-pulitzer-jumper-5b0babf41b.png",
+    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lilly-pulitzer-jumper-5b0babf41b.html"
+  }
+}

@@ -1,0 +1,1407 @@
+{
+  "canonical": "http://www.lovelysunday.co/lookbook/oh-my-pearls",
+  "capturedAt": "2026-02-16T01:19:08.327Z",
+  "counts": {
+    "images": 12,
+    "jsonLd": 4,
+    "links": 80,
+    "listItems": 0,
+    "paragraphs": 17,
+    "resources": 67,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Apr 21 Oh my Pearls!",
+      "Subscribe to my latest looks!",
+      "Jan 10 Pink Pumps",
+      "Jul 18 Nordstrom Anniversary Sale Favorites",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [
+      "Recently from the Lookbook",
+      "Find me on @Instagram"
+    ],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "Oh my Pearls!",
+      "height": 800,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg?format=1500w",
+      "srcset": [],
+      "width": 830
+    },
+    {
+      "alt": "Pearls, Asos, Trending, Pearl, Tulle, Baublebar, Asos",
+      "height": 768,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=2500w"
+      ],
+      "width": 796
+    },
+    {
+      "alt": "YSL Studio Paris, France",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Thank you to the women owned companies and artists getting me through quarantine 🙌💎",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🤍",
+      "height": 337,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Once upon a Time in Paris...",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Oh, how rare and beautiful you are🍊",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🖤",
+      "height": 331,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Pink Pumps",
+      "height": 97,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1515706477227-OLTOJ0MLRTUMUI0Z0T4K/PinkPumps.jpg?format=100w",
+      "srcset": [],
+      "width": 100
+    },
+    {
+      "alt": "Nordstrom Anniversary Sale Favorites",
+      "height": 117,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg?format=100w",
+      "srcset": [],
+      "width": 100
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}",
+    "{\"name\":\"Oh my Pearls! from Lookbook \\u2014 LovelySunday\",\"url\":\"http://www.lovelysunday.co/lookbook/oh-my-pearls\",\"datePublished\":\"2017-04-21T15:13:31-0400\",\"dateModified\":\"2017-06-23T19:19:30-0400\",\"headline\":\"Oh my Pearls!\",\"author\":\"Aileen\",\"publisher\":{\"name\":\"LovelySunday\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\"},\"@context\":\"http://schema.org\",\"@type\":\"Organization\"},\"image\":\"http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/58f961ca9de4bb3597481eae/1498259970870/Ls--Pearls-4-19-17.jpg?format=1500w\",\"@context\":\"http://schema.org\",\"@type\":\"Article\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.zara.com/us/en/woman/new-in/double-breasted-jacket-c805003p4486065.html#selectedColor=679&origin=shopcart",
+      "rel": "",
+      "target": "",
+      "text": "Red Blazer"
+    },
+    {
+      "href": "https://www.shopbop.com/eartha-pearl-lady-mini-top/vp/v=1/1559133708.htm?currencyCode=USD&extid=SE_froogle_SC_usa&cvosrc=cse.google.ZZPOS30362&cvo_campaign=SB_Google_USD&s_kwcid=AL!3510!3!%7Bcreative%7D!%7Bmatchtype%7D!%7Bplacement%7D!%7Bnetwork%7D!!%7Bkeyword%7D&ef_id=V4AxyAAAAOn4k2WV:20170329210010:s",
+      "rel": "",
+      "target": "",
+      "text": "Zac Posen Handbag"
+    },
+    {
+      "href": "https://www.renttherunway.com/shop/designers/zac_zac_posen_handbags/pearl_lady_eartha_iconic_convertible_backpack",
+      "rel": "",
+      "target": "",
+      "text": "Rent the Runway"
+    },
+    {
+      "href": "http://www.forever21.com/Product/Product.aspx?br=F21&category=ACC&productid=1000215318",
+      "rel": "",
+      "target": "",
+      "text": "Multistrand Choker"
+    },
+    {
+      "href": "http://us.asos.com/lost-ink/lost-ink-shift-dress-with-ruffle-and-faux-pearl-hem/prd/7548023?iid=7548023&clr=Lightpurple&SearchQuery=pearl&pgesize=153&pge=0&totalstyles=153&gridsize=4&gridrow=17&gridcolumn=1",
+      "rel": "",
+      "target": "",
+      "text": "Blue Shift Dress"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/jeffrey-campbell-civil-pearly-heeled-beaded-tassel-loafer-women/4361237?origin=category-personalizedsort&fashioncolor=BLACK%20SUEDE%2F%20GOLD",
+      "rel": "",
+      "target": "",
+      "text": "P"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/jeffrey-campbell-civil-pearly-heeled-beaded-tassel-loafer-women/4361237?origin=category-personalizedsort&fashioncolor=BLACK%20SUEDE%2F%20GOLD",
+      "rel": "",
+      "target": "",
+      "text": "ink Tassel Loafer"
+    },
+    {
+      "href": "http://us.asos.com/asos-curve/asos-curve-pearl-shift-mini-dress-with-fluted-sleeve/prd/7579020?iid=7579020&clr=Mint&SearchQuery=pearl&pgesize=36&pge=0&totalstyles=153&gridsize=4&gridrow=9&gridcolumn=4",
+      "rel": "",
+      "target": "",
+      "text": "Seafoam Curve Dress"
+    },
+    {
+      "href": "https://www.baublebar.com/product/31861-aleeza-drops.html",
+      "rel": "",
+      "target": "",
+      "text": "Statement Earrings"
+    },
+    {
+      "href": "https://www.missguidedus.com/black-pear-embellished-3-strap-barely-there-heels",
+      "rel": "",
+      "target": "",
+      "text": "Three Strap Heels"
+    },
+    {
+      "href": "http://us.asos.com/little-mistress/little-mistress-faux-pearl-embellished-cropped-top/prd/7664341?CTAref=Complete%20the%20Look%20Carousel_1&featureref1=complete%20the%20look",
+      "rel": "",
+      "target": "",
+      "text": "the top"
+    },
+    {
+      "href": "http://us.asos.com/little-mistress/little-mistress-faux-pearl-embellished-tulle-midi-skirt/prd/7664351?iid=7664351&clr=Nude&SearchQuery=pearl&pgesize=36&pge=0&totalstyles=153&gridsize=4&gridrow=9&gridcolumn=3",
+      "rel": "",
+      "target": "",
+      "text": "skirt"
+    },
+    {
+      "href": "http://us.asos.com/new-look/new-look-pearl-embellished-sweater/prd/8027746?iid=8027746&clr=Lightpink&SearchQuery=pearl&pgesize=153&pge=0&totalstyles=153&gridsize=4&gridrow=16&gridcolumn=4",
+      "rel": "",
+      "target": "",
+      "text": "Sweater"
+    },
+    {
+      "href": "http://us.asos.com/asos-white/asos-white-pearl-embellished-jeans-in-washed-black/prd/7484046?iid=7484046&clr=Black&SearchQuery=black%20pearl%20jeans&SearchRedirect=true",
+      "rel": "",
+      "target": "",
+      "text": "Embellished Jeans"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+      "rel": "tag",
+      "target": "",
+      "text": "Nordstrom"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+      "rel": "tag",
+      "target": "",
+      "text": "Tulle Skirt"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Curve",
+      "rel": "tag",
+      "target": "",
+      "text": "Curve"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Pearl",
+      "rel": "tag",
+      "target": "",
+      "text": "Pearl"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Asos",
+      "rel": "tag",
+      "target": "",
+      "text": "Asos"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Missguided",
+      "rel": "tag",
+      "target": "",
+      "text": "Missguided"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+      "rel": "tag",
+      "target": "",
+      "text": "Baublebar"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Denim",
+      "rel": "tag",
+      "target": "",
+      "text": "Denim"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/tag/Zara",
+      "rel": "tag",
+      "target": "",
+      "text": "Zara"
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+      "rel": "",
+      "target": "_blank",
+      "text": "Facebook0"
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls&text=Pearls+are+no+longer+reserved+for+boring+necklaces%2C+but+an+edgy+way+to+creatively+style+any+look%21",
+      "rel": "",
+      "target": "_blank",
+      "text": "Twitter"
+    },
+    {
+      "href": "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+      "rel": "",
+      "target": "_blank",
+      "text": "Tumblr"
+    },
+    {
+      "href": "https://www.pinterest.com/pin/create/link/?description=Pearls+are+no+longer+reserved+for+boring+necklaces%2C+but+an+edgy+way+to+creatively+style+any+look%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+      "rel": "",
+      "target": "_blank",
+      "text": "Pinterest0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/oh-my-pearls#",
+      "rel": "",
+      "target": "",
+      "text": "0 Likes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": "YSL Studio Paris, France"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "http://www.instagram.com/_lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": "@_lovelysunday"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_5fZUWH3j6/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg\" alt=\"Thank you to the women owned companies and artists getting me through quarantine 🙌💎\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_aN7oinL-G/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg\" alt=\"🤍\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-kX2eSnoMp/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg\" alt=\"Once upon a Time in Paris...\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-h7JFWH64M/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg\" alt=\"Oh, how rare and beautiful you are🍊\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B6TYSyiniqZ/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg\" alt=\"🖤\" />"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook//looks/pink-pumps",
+      "rel": "",
+      "target": "",
+      "text": "Jan 10 Pink Pumps"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+      "rel": "",
+      "target": "",
+      "text": "Jul 18 Nordstrom Anniversary Sale Favorites"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "Apr 21 Oh my Pearls! I am in love with the way pearls are being used this season! It is such a beautiful detail to take any piece to the next level. It makes my fashion heart sing when any item is used in an unconventional way! The perception of pearls as your grandmother's necklaces has changed into an edgy way to edit any look. I put together some of my current favorite pearl pieces to inspire you to try this trend. Check out my instagram @_lovelysunday for some more gorgeous pieces and use #lslooks to share how you incorporated pearls into your outfits! Also, this is a really fun and easy DIY project where you can create your own one of a kind pearl pieces by changing buttons on your basic blazer or embellishing your own denim. Enjoy! Pearls, Asos, Trending, Pearl, Tulle, Baublebar, Asos Red Blazer Zac Posen Handbag (Also available on Rent the Runway if you don't want to commit to purchasing but still want to try it out!), Multistrand Choker Blue Shift Dress, Pink Tassel Loafer (also in black and dark pink) Seafoam Curve Dress Statement Earrings Three Strap Heels Pink Set (This is great because you can wear the top and skirt separately or together to create endless looks), Sweater Embellished Jeans Nordstrom, Tulle Skirt, Curve, Pearl, Asos, Missguided, Baublebar, Denim, Zara Aileen Subscribe to my latest looks! Be the first the see the latest looks or blogs from the Lookbook! SIGN UP Recently from the Lookbook Jan 7, 2019 Aileen YSL Studio Paris, France Find me on @Instagram @_lovelysunday",
+  "meta": {
+    "description": "Pearls are no longer reserved for boring necklaces, but an edgy way to creatively style any look!",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+    "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+    "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+    "https://www.lovelysunday.co/lookbook/tag/Curve",
+    "https://www.lovelysunday.co/lookbook/tag/Pearl",
+    "https://www.lovelysunday.co/lookbook/tag/Asos",
+    "https://www.lovelysunday.co/lookbook/tag/Missguided",
+    "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+    "https://www.lovelysunday.co/lookbook/tag/Denim",
+    "https://www.lovelysunday.co/lookbook/tag/Zara",
+    "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+    "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls&text=Pearls+are+no+longer+reserved+for+boring+necklaces%2C+but+an+edgy+way+to+creatively+style+any+look%21",
+    "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+    "https://www.pinterest.com/pin/create/link/?description=Pearls+are+no+longer+reserved+for+boring+necklaces%2C+but+an+edgy+way+to+creatively+style+any+look%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+    "https://www.lovelysunday.co/lookbook/oh-my-pearls#",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "Pearls are no longer reserved for boring necklaces, but an edgy way to creatively style any look!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/58f961ca9de4bb3597481eae/1498259970870/Ls--Pearls-4-19-17.jpg?format=1500w",
+    "title": "Oh my Pearls! from Lookbook — LovelySunday",
+    "type": "article",
+    "url": "http://www.lovelysunday.co/lookbook/oh-my-pearls"
+  },
+  "paragraphs": [
+    "I am in love with the way pearls are being used this season! It is such a beautiful detail to take any piece to the next level. It makes my fashion heart sing when any item is used in an unconventional way! The perception of pearls as your grandmother's necklaces has changed into an edgy way to edit any look.",
+    "I put together some of my current favorite pearl pieces to inspire you to try this trend. Check out my instagram @_lovelysunday for some more gorgeous pieces and use #lslooks to share how you incorporated pearls into your outfits!",
+    "Also, this is a really fun and easy DIY project where you can create your own one of a kind pearl pieces by changing buttons on your basic blazer or embellishing your own denim.",
+    "Enjoy!",
+    "Pearls, Asos, Trending, Pearl, Tulle, Baublebar, Asos",
+    "Red Blazer",
+    "Zac Posen Handbag (Also available on Rent the Runway if you don't want to commit to purchasing but still want to try it out!),",
+    "Multistrand Choker",
+    "Blue Shift Dress, Pink Tassel Loafer (also in black and dark pink)",
+    "Seafoam Curve Dress",
+    "Statement Earrings",
+    "Three Strap Heels",
+    "Pink Set (This is great because you can wear the top and skirt separately or together to create endless looks),",
+    "Sweater",
+    "Embellished Jeans",
+    "Be the first the see the latest looks or blogs from the Lookbook!",
+    "@_lovelysunday"
+  ],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 16.1,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204746135",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3510,
+      "duration": 0.3,
+      "encodedBodySize": 3510,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1515706477227-OLTOJ0MLRTUMUI0Z0T4K/PinkPumps.jpg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 4432,
+      "duration": 0,
+      "encodedBodySize": 4432,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/share-buttons-8296c7041804d44d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 79.1,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 82.9,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 82.8,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 73,
+      "duration": 80.4,
+      "encodedBodySize": 73,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/1/website-component-definitions",
+      "transferSize": 373
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 71.7,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204746151&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 48888,
+      "duration": 0.3,
+      "encodedBodySize": 48888,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492739850246-CSH1BY1DLKVEBIDFNX99/image-asset.jpeg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 48888,
+      "duration": 0.2,
+      "encodedBodySize": 48888,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 38.6,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://graph.facebook.com/?id=http://www.lovelysunday.co/lookbook/oh-my-pearls&callback=SquarespaceShareButtonCounts1771204746163.facebook",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 14.1,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://widgets.pinterest.com/v1/urls/count.json?source=6&url=http://www.lovelysunday.co/lookbook/oh-my-pearls&callback=SquarespaceShareButtonCounts1771204746163.pinterest",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 27.4,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1109604987&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls&ul=en-us&dt=Oh%20my%20Pearls!%20from%20Lookbook%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=1687702535.1771203240&tid=UA-19400273-24&_gid=312726254.1771203240&_slc=1&z=1771223098",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 40074,
+      "duration": 0,
+      "encodedBodySize": 40074,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 8600,
+      "duration": 118,
+      "encodedBodySize": 8600,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/block/render",
+      "transferSize": 8900
+    },
+    {
+      "decodedBodySize": 30,
+      "duration": 83.8,
+      "encodedBodySize": 50,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/blog-like-count/58f961ca9de4bb3597481eae",
+      "transferSize": 350
+    },
+    {
+      "decodedBodySize": 20740,
+      "duration": 0,
+      "encodedBodySize": 20740,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 12590,
+      "duration": 0,
+      "encodedBodySize": 12590,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 24382,
+      "duration": 0,
+      "encodedBodySize": 24382,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 38396,
+      "duration": 0,
+      "encodedBodySize": 38396,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17120,
+      "duration": 0,
+      "encodedBodySize": 17120,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 47.6,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204746425&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 87.2,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=0V7iWjNis66q&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls&callback=PIN_1771204746164.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "Oh my Pearls! from Lookbook — LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "Pearls are no longer reserved for boring necklaces, but an edgy way to creatively style any look!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/58f961ca9de4bb3597481eae/1498259970870/Ls--Pearls-4-19-17.jpg?format=1500w",
+    "title": "Oh my Pearls! from Lookbook — LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+    "pageId": "lookbook-oh-my-pearls-26fcf1ac38",
+    "worker": 4,
+    "capturedAt": "2026-02-16T01:19:08.953925+00:00",
+    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-oh-my-pearls-26fcf1ac38.png",
+    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-oh-my-pearls-26fcf1ac38.png",
+    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-oh-my-pearls-26fcf1ac38.html"
+  }
+}

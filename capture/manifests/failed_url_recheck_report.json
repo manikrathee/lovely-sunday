@@ -1,0 +1,1690 @@
+{
+  "generatedAt": "2026-02-16T00:00:00Z",
+  "sourceFailedUrls": 140,
+  "summary": {
+    "outbound_link_not_static_asset": 31,
+    "filtered_runtime_endpoint_not_static_asset": 104,
+    "resolved_via_internal_rewrite": 5
+  },
+  "entries": [
+    {
+      "url": "https://bebe%20tweed%20wrap%20coat/",
+      "run2_error": "URL can't contain control characters. 'bebe tweed wrap coat' (found at least ' ')",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://clanker-events.squarespace.com/api/v1/clanker/events",
+      "run2_error": "HTTP Error 405: Method Not Allowed",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/about-lovely-sunday",
+        "https://www.lovelysunday.co/contact-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498347&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498350&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/about-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498354&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/all-about-the-basics"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498354&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/all-white-jamaica-look"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501359&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501376&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501381&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/contact-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501695&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/cart"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504415&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504540&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/exploring-a-german-castle"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504548&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/flowers-bora-bora"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504612&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/daily-diary"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203507592&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/index"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203507745&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203507847&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lavender-dreams-in-paris"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203507915&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203510428&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/balmain-blazer"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203510756&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/babes-day"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203511142&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203511229&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203513628&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203513963&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203514564&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203514705&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/culottes"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203516968&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Asos"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517416&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517510&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/pink-pumps"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517545&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/sequin-dresses"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203519817&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Missguided"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520344&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520370&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Curve"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520650&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Denim"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203522680&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Zara"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523222&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523228&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Pearl"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523510&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203525541&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/mornings-in-germany"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526103&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526106&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526374&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/looks"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203528693&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/search"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203529221&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/reformation-polka-dot-dress"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203529653&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/pink-colouttes"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203531459&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/purple-lace"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203531539&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/wheat-field-sunset"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203532496&sid=627458b6-44db-4a25-80e0-0bb88e520f22&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/sparkly-wedges"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203534773&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/snake-charmer"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203536354&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/white-scalloped-dress"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203537982&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://maps.googleapis.com/$rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService/GetViewportInfo",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/about-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498623&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/about-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498641&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498644&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/all-about-the-basics"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203498654&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/all-white-jamaica-look"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501636&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501651&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501655&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/contact-lovely-sunday"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203501965&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/cart"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504695&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504815&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/exploring-a-german-castle"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504829&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/flowers-bora-bora"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203504899&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/daily-diary"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203507871&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/index"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203508018&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203508131&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lavender-dreams-in-paris"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203508211&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203510707&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/balmain-blazer"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203511029&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/babes-day"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203511432&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203511508&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203513911&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203514239&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203514838&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203514978&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/culottes"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517275&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Asos"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517691&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517829&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/sequin-dresses"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203517853&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/pink-pumps"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520100&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Missguided"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520617&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520654&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Curve"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203520936&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Denim"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203522954&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Zara"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523513&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Pearl"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523529&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203523781&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203525826&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/mornings-in-germany"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526388&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526395&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203526643&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/looks"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203528973&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/search"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203529526&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/reformation-polka-dot-dress"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203529926&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/pink-colouttes"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203531731&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/purple-lace"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203531839&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/wheat-field-sunset"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203532786&sid=627458b6-44db-4a25-80e0-0bb88e520f22&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/sparkly-wedges"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203535102&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/snake-charmer"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771203538357&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://tinyletter.com/lovelysunday",
+      "run2_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/",
+        "https://www.lovelysunday.co/about-lovely-sunday",
+        "https://www.lovelysunday.co/all-about-the-basics",
+        "https://www.lovelysunday.co/all-white-jamaica-look",
+        "https://www.lovelysunday.co/bmaxwelldupe",
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+        "https://www.lovelysunday.co/cart",
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/exploring-a-german-castle",
+        "https://www.lovelysunday.co/flowers-bora-bora",
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+        "https://www.lovelysunday.co/index",
+        "https://www.lovelysunday.co/lavender-dreams-in-paris",
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+        "https://www.lovelysunday.co/lookbook",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/babes-day",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/culottes",
+        "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/looks/pink-pumps",
+        "https://www.lovelysunday.co/lookbook/looks/sequin-dresses",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/tag/Asos",
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+        "https://www.lovelysunday.co/lookbook/tag/Curve",
+        "https://www.lovelysunday.co/lookbook/tag/Denim",
+        "https://www.lovelysunday.co/lookbook/tag/Missguided",
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+        "https://www.lovelysunday.co/lookbook/tag/Pearl",
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+        "https://www.lovelysunday.co/lookbook/tag/Zara",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+        "https://www.lovelysunday.co/looks",
+        "https://www.lovelysunday.co/mornings-in-germany",
+        "https://www.lovelysunday.co/pink-colouttes",
+        "https://www.lovelysunday.co/purple-lace",
+        "https://www.lovelysunday.co/reformation-polka-dot-dress",
+        "https://www.lovelysunday.co/search",
+        "https://www.lovelysunday.co/snake-charmer",
+        "https://www.lovelysunday.co/sparkly-wedges",
+        "https://www.lovelysunday.co/wheat-field-sunset",
+        "https://www.lovelysunday.co/white-scalloped-dress",
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/ALDO-Fluffy-Framed-Clutch/16cne6?iid=5007495&mporgp=L0FMRE8vQUxETy1GbHVmZnktRnJhbWVkLUNsdXRjaC9Qcm9kLw..",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/asos-curve/asos-curve-pearl-shift-mini-dress-with-fluted-sleeve/prd/7579020?iid=7579020&clr=Mint&SearchQuery=pearl&pgesize=36&pge=0&totalstyles=153&gridsize=4&gridrow=9&gridcolumn=4",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/asos-white/asos-white-pearl-embellished-jeans-in-washed-black/prd/7484046?iid=7484046&clr=Black&SearchQuery=black%20pearl%20jeans&SearchRedirect=true",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/asos/asos-design-mono-polka-dot-plunge-tulle-high-low-mini-dress/prd/9129897?clr=multi&SearchQuery=dot%20dress&gridcolumn=4&gridrow=8&gridsize=4&pge=1&pgesize=72&totalstyles=204",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/little-mistress/little-mistress-faux-pearl-embellished-cropped-top/prd/7664341?CTAref=Complete%20the%20Look%20Carousel_1&featureref1=complete%20the%20look",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/little-mistress/little-mistress-faux-pearl-embellished-tulle-midi-skirt/prd/7664351?iid=7664351&clr=Nude&SearchQuery=pearl&pgesize=36&pge=0&totalstyles=153&gridsize=4&gridrow=9&gridcolumn=3",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/lost-ink/lost-ink-shift-dress-with-ruffle-and-faux-pearl-hem/prd/7548023?iid=7548023&clr=Lightpurple&SearchQuery=pearl&pgesize=153&pge=0&totalstyles=153&gridsize=4&gridrow=17&gridcolumn=1",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/new-look/new-look-pearl-embellished-sweater/prd/8027746?iid=8027746&clr=Lightpink&SearchQuery=pearl&pgesize=153&pge=0&totalstyles=153&gridsize=4&gridrow=16&gridcolumn=4",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://us.asos.com/true-decadence/true-decadence-burgundy-velvet-half-moon-clutch-bag/prd/8695863?clr=burgundy&SearchQuery=&cid=8730&gridcolumn=1&gridrow=6&gridsize=4&pge=1&pgesize=72&totalstyles=60",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.asos.com/us/asos-design/asos-design-midi-belted-shirt-dress-in-slub/prd/13050333?acquisitionsource=pasteboard",
+      "run2_error": "The read operation timed out",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.baublebar.com/product/31861-aleeza-drops.html",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.etsy.com/listing/697987291/green-waist-wide-leather-belt-women",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/",
+        "https://www.lovelysunday.co/about-lovely-sunday",
+        "https://www.lovelysunday.co/all-about-the-basics",
+        "https://www.lovelysunday.co/all-white-jamaica-look",
+        "https://www.lovelysunday.co/bmaxwelldupe",
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+        "https://www.lovelysunday.co/cart",
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/exploring-a-german-castle",
+        "https://www.lovelysunday.co/flowers-bora-bora",
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+        "https://www.lovelysunday.co/index",
+        "https://www.lovelysunday.co/lavender-dreams-in-paris",
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+        "https://www.lovelysunday.co/lookbook",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/babes-day",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/culottes",
+        "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/looks/pink-pumps",
+        "https://www.lovelysunday.co/lookbook/looks/sequin-dresses",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/tag/Asos",
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+        "https://www.lovelysunday.co/lookbook/tag/Curve",
+        "https://www.lovelysunday.co/lookbook/tag/Denim",
+        "https://www.lovelysunday.co/lookbook/tag/Missguided",
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+        "https://www.lovelysunday.co/lookbook/tag/Pearl",
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+        "https://www.lovelysunday.co/lookbook/tag/Zara",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+        "https://www.lovelysunday.co/looks",
+        "https://www.lovelysunday.co/mornings-in-germany",
+        "https://www.lovelysunday.co/pink-colouttes",
+        "https://www.lovelysunday.co/purple-lace",
+        "https://www.lovelysunday.co/reformation-polka-dot-dress",
+        "https://www.lovelysunday.co/search",
+        "https://www.lovelysunday.co/shop",
+        "https://www.lovelysunday.co/snake-charmer",
+        "https://www.lovelysunday.co/sparkly-wedges",
+        "https://www.lovelysunday.co/wheat-field-sunset",
+        "https://www.lovelysunday.co/white-scalloped-dress",
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Fbalmain-blazer",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/balmain-blazer"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Fdresses-over-denim",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Fkate-spade-pink-feather-clutch",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fberetrainbow",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Foh-my-pearls",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Fwhat-is-your-passion",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Fysl-studio-paris-france",
+      "run2_error": "HTTP Error 400: Bad Request",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.jcrew.com/us/p/womens_category/blazers/wool/parke-blazer/G7726?color_name=navy&noPopUp=true&srccode=PL_XPROD_ALLPRDCT_ACQ_XXX_EVG_COUSA_EN_EN_P_CREW_AW_CPC_PLA,Brand_All_Products_XXX,PRODUCT%20GROUP,71700000032274671,58700003835347419,p30955879639&NoPopUp=True&gclid=Cj0KCQjw7Z3VBRC-ARIsAEQifZTFPc_El--QlFbtSQnkb9KvexFXlT9XdZaO6sMDgrVHrwfuY8rmu9AaAk3-EALw_wcB&gclsrc=aw.ds",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.lordandtaylor.com/main/ProductDetail.jsp?PRODUCT%3C%3Eprd_id=845524442429211&site_refer=CSE_GGLPRADS001_LT&gclid=Cj0KCQjw7Z3VBRC-ARIsAEQifZQvVIG47gwGnklDdapaMhg9c2-5VlZax_9QI8PdvGst-DnXfR7nfmUaAg56EALw_wcB&gclsrc=aw.ds",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/api/1/website-component-definitions",
+      "run2_error": "HTTP Error 401: Unauthorized",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/api/block/render",
+      "run2_error": "HTTP Error 405: Method Not Allowed",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/api/census/RecordHit",
+      "run2_error": "HTTP Error 405: Method Not Allowed",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/",
+        "https://www.lovelysunday.co/about-lovely-sunday",
+        "https://www.lovelysunday.co/all-about-the-basics",
+        "https://www.lovelysunday.co/all-white-jamaica-look",
+        "https://www.lovelysunday.co/bmaxwelldupe",
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+        "https://www.lovelysunday.co/cart",
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/exploring-a-german-castle",
+        "https://www.lovelysunday.co/flowers-bora-bora",
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+        "https://www.lovelysunday.co/index",
+        "https://www.lovelysunday.co/lavender-dreams-in-paris",
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+        "https://www.lovelysunday.co/lookbook",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/tag/Asos",
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+        "https://www.lovelysunday.co/lookbook/tag/Curve",
+        "https://www.lovelysunday.co/lookbook/tag/Denim",
+        "https://www.lovelysunday.co/lookbook/tag/Missguided",
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+        "https://www.lovelysunday.co/lookbook/tag/Pearl",
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+        "https://www.lovelysunday.co/lookbook/tag/Zara",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+        "https://www.lovelysunday.co/looks",
+        "https://www.lovelysunday.co/mornings-in-germany",
+        "https://www.lovelysunday.co/pink-colouttes",
+        "https://www.lovelysunday.co/purple-lace",
+        "https://www.lovelysunday.co/reformation-polka-dot-dress",
+        "https://www.lovelysunday.co/shop",
+        "https://www.lovelysunday.co/snake-charmer",
+        "https://www.lovelysunday.co/sparkly-wedges",
+        "https://www.lovelysunday.co/wheat-field-sunset",
+        "https://www.lovelysunday.co/white-scalloped-dress",
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/api/census/button-render",
+      "run2_error": "HTTP Error 405: Method Not Allowed",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/shop"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/api/census/form-render",
+      "run2_error": "HTTP Error 405: Method Not Allowed",
+      "contexts": [
+        "resourceEntries.name"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/",
+        "https://www.lovelysunday.co/about-lovely-sunday",
+        "https://www.lovelysunday.co/all-about-the-basics",
+        "https://www.lovelysunday.co/all-white-jamaica-look",
+        "https://www.lovelysunday.co/bmaxwelldupe",
+        "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+        "https://www.lovelysunday.co/cart",
+        "https://www.lovelysunday.co/contact-lovely-sunday",
+        "https://www.lovelysunday.co/daily-diary",
+        "https://www.lovelysunday.co/exploring-a-german-castle",
+        "https://www.lovelysunday.co/flowers-bora-bora",
+        "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+        "https://www.lovelysunday.co/index",
+        "https://www.lovelysunday.co/lavender-dreams-in-paris",
+        "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+        "https://www.lovelysunday.co/lookbook",
+        "https://www.lovelysunday.co/lookbook/balmain-blazer",
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "https://www.lovelysunday.co/lookbook/tag/Asos",
+        "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+        "https://www.lovelysunday.co/lookbook/tag/Curve",
+        "https://www.lovelysunday.co/lookbook/tag/Denim",
+        "https://www.lovelysunday.co/lookbook/tag/Missguided",
+        "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+        "https://www.lovelysunday.co/lookbook/tag/Pearl",
+        "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+        "https://www.lovelysunday.co/lookbook/tag/Zara",
+        "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+        "https://www.lovelysunday.co/looks",
+        "https://www.lovelysunday.co/mornings-in-germany",
+        "https://www.lovelysunday.co/pink-colouttes",
+        "https://www.lovelysunday.co/purple-lace",
+        "https://www.lovelysunday.co/reformation-polka-dot-dress",
+        "https://www.lovelysunday.co/search",
+        "https://www.lovelysunday.co/snake-charmer",
+        "https://www.lovelysunday.co/sparkly-wedges",
+        "https://www.lovelysunday.co/wheat-field-sunset",
+        "https://www.lovelysunday.co/white-scalloped-dress",
+        "https://www.lovelysunday.co/zara-headband"
+      ],
+      "recheck_status": "filtered_runtime_endpoint_not_static_asset"
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/babes-day",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "resolved_via_internal_rewrite",
+      "fixed_url": "https://www.lovelysunday.co/lookbook//looks/babes-day"
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/culottes",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "resolved_via_internal_rewrite",
+      "fixed_url": "https://www.lovelysunday.co/lookbook//looks/culottes"
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "resolved_via_internal_rewrite",
+      "fixed_url": "https://www.lovelysunday.co/lookbook//looks/get-ouai-sted"
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/pink-pumps",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "resolved_via_internal_rewrite",
+      "fixed_url": "https://www.lovelysunday.co/lookbook//looks/pink-pumps"
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/sequin-dresses",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "resolved_via_internal_rewrite",
+      "fixed_url": "https://www.lovelysunday.co/lookbook//looks/sequin-dresses"
+    },
+    {
+      "url": "https://www.madewell.com/madewell_category/DENIMBAR/highriseskinnyjeans/PRDOVR~H5206/H5206.jsp",
+      "run2_error": "HTTP Error 403: Forbidden",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.missguidedus.com/black-pear-embellished-3-strap-barely-there-heels",
+      "run2_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.missguidedus.com'. (_ssl.c:1081)>",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.missguidedus.com/dresses/long-sleeve-tux-dress-black",
+      "run2_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.missguidedus.com'. (_ssl.c:1081)>",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/lookbook/balmain-blazer"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.modaoperandi.com/brandon-maxwell-ss20/shawl-collar-short-sleeve-jacket-dress",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.modaoperandi.com/brandon-maxwell-ss20/wide-leather-waist-belt?color=green",
+      "run2_error": "HTTP Error 404: Not Found",
+      "contexts": [
+        "links.href"
+      ],
+      "source_pages": [
+        "https://www.lovelysunday.co/bmaxwelldupe"
+      ],
+      "recheck_status": "outbound_link_not_static_asset"
+    },
+    {
+      "url": "https://www.net-a-porter.com/us/en/product/512693/Balmain/double-breasted-pique-blazer",
+      "run2_error": "The read operation timed out",
+      "contexts": [],
+      "source_pages": [],
+      "recheck_status": "outbound_link_not_static_asset"
+    }
+  ]
+}

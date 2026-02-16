@@ -1,0 +1,1424 @@
+{
+  "canonical": "http://www.lovelysunday.co/lookbook//looks/babes-day",
+  "capturedAt": "2026-02-16T01:18:58.796Z",
+  "counts": {
+    "images": 12,
+    "jsonLd": 4,
+    "links": 79,
+    "listItems": 0,
+    "paragraphs": 25,
+    "resources": 70,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Mar 8 International Womens Day!",
+      "Subscribe to my latest looks!",
+      "Mar 13 Dresses over Denim",
+      "Jan 23 Ouai-STED with Jen Atkin!",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [
+      "Recently from the Lookbook",
+      "Find me on @Instagram"
+    ],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "International Womens Day!",
+      "height": 2000,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520548447589-AMR1D2FY5QZA8ABFKWF4/IMG_1789-1.jpeg?format=1500w",
+      "srcset": [],
+      "width": 1500
+    },
+    {
+      "alt": "IMG_1789-1.jpeg",
+      "height": 1920,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "YSL Studio Paris, France",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Thank you to the women owned companies and artists getting me through quarantine 🙌💎",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🤍",
+      "height": 337,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Once upon a Time in Paris...",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Oh, how rare and beautiful you are🍊",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🖤",
+      "height": 331,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Dresses over Denim",
+      "height": 150,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520988910297-4EEM6IOQICZ15D6VFDYE/london-fashion-week-street-style-spring-2018.png?format=100w",
+      "srcset": [],
+      "width": 100
+    },
+    {
+      "alt": "Ouai-STED with Jen Atkin!",
+      "height": 150,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1502470964493-N6BRJW8K9TV3HEBMFSSX/L1010099.jpg?format=100w",
+      "srcset": [],
+      "width": 100
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}",
+    "{\"name\":\"International Womens Day! from Lookbook \\u2014 LovelySunday\",\"url\":\"http://www.lovelysunday.co/lookbook//looks/babes-day\",\"datePublished\":\"2018-03-08T17:32:26-0500\",\"dateModified\":\"2018-03-08T17:34:22-0500\",\"headline\":\"International Womens Day! \",\"author\":\"Aileen\",\"publisher\":{\"name\":\"LovelySunday\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\"},\"@context\":\"http://schema.org\",\"@type\":\"Organization\"},\"image\":\"http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5aa1a9560d929727a3027c24/1520548462856/IMG_1789-1.jpeg?format=1500w\",\"@context\":\"http://schema.org\",\"@type\":\"Article\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.amazon.com/We-Should-All-Be-Feminists/dp/110191176X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+      "rel": "",
+      "target": "",
+      "text": "We Should all be Feminists"
+    },
+    {
+      "href": "https://www.amazon.com/Men-Explain-Things-Rebecca-Solnit/dp/1608464660/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+      "rel": "",
+      "target": "",
+      "text": "Men Explain Things to Me"
+    },
+    {
+      "href": "https://www.amazon.com/Heart-Talk-Poetic-Wisdom-Better/dp/1501191136/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1520543297&sr=8-1",
+      "rel": "",
+      "target": "",
+      "text": "Heart Talk"
+    },
+    {
+      "href": "https://www.amazon.com/Sun-Her-Flowers-Rupi-Kaur/dp/1449486797/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+      "rel": "",
+      "target": "",
+      "text": "the sun and her flowers"
+    },
+    {
+      "href": "https://www.amazon.com/Bloom-Yourself-April-Green-ebook/dp/B077QJNW1S",
+      "rel": "",
+      "target": "",
+      "text": "Bloom for Yourself"
+    },
+    {
+      "href": "https://www.amazon.com/Bluest-Eye-Toni-Morrison/dp/0375411550/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1520543372&sr=8-1",
+      "rel": "",
+      "target": "",
+      "text": "The Bluest Eye"
+    },
+    {
+      "href": "https://www.amazon.com/You-Are-Badass-Doubting-Greatness/dp/0762447699/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543393&sr=8-3&dpID=51ypp1C%252B97L&preST=_SY291_BO1,204,203,200_QL40_&dpSrc=detail",
+      "rel": "",
+      "target": "",
+      "text": "You Are A Badass"
+    },
+    {
+      "href": "https://www.amazon.com/Feminine-Mystique-50th-Anniversary/dp/0393346781/ref=mt_paperback?_encoding=UTF8&me=",
+      "rel": "",
+      "target": "",
+      "text": "The Feminine Mystique"
+    },
+    {
+      "href": "ttps://www.amazon.com/Bringing-Up-B%C3%A9b%C3%A9-Discovers-Parenting/dp/0143122967/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543439&sr=1-1",
+      "rel": "",
+      "target": "",
+      "text": "Bringing Up Bebe"
+    },
+    {
+      "href": "https://www.amazon.com/Its-Messy-Boobs-Badass-Women/dp/0062412469/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543456&sr=1-1",
+      "rel": "",
+      "target": "",
+      "text": "It’s Messy"
+    },
+    {
+      "href": "https://www.amazon.com/Crossroads-Should-Must-Follow-Passion/dp/0761184880/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+      "rel": "",
+      "target": "",
+      "text": "The Crossroads of Should and Must"
+    },
+    {
+      "href": "https://www.amazon.com/Woman-I-Wanted-Be/dp/1451651554/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543518&sr=1-1",
+      "rel": "",
+      "target": "",
+      "text": "The Woman I Wanted to Be"
+    },
+    {
+      "href": "https://www.amazon.com/Diana-Her-True-Story-Words/dp/1501169734/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543535&sr=8-2",
+      "rel": "",
+      "target": "",
+      "text": "Diana In Her Words"
+    },
+    {
+      "href": "https://www.amazon.com/New-Jim-Crow-Incarceration-Colorblindness/dp/1595586431/ref=mt_paperback?_encoding=UTF8&me=",
+      "rel": "",
+      "target": "",
+      "text": "The New Jim Crow"
+    },
+    {
+      "href": "https://www.amazon.com/Pivot-Only-Move-That-Matters/dp/0143129031/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1520543575&sr=1-1",
+      "rel": "",
+      "target": "",
+      "text": "Pivot"
+    },
+    {
+      "href": "https://www.amazon.com/Grace-Memoir-Coddington/dp/0812993357/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1520543612&sr=1-2",
+      "rel": "",
+      "target": "",
+      "text": "Grace, A Memoir"
+    },
+    {
+      "href": "https://www.amazon.com/Gio_Graphy-Fun-Wild-World-Fashion/dp/0847858391/ref=sr_1_1?s=books&ie=UTF8&qid=1520543630&sr=1-1&keywords=giovanna+battaglia&dpID=51xIWhBOPtL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch",
+      "rel": "",
+      "target": "",
+      "text": "Gio Graphy"
+    },
+    {
+      "href": "https://www.amazon.com/Progress-Lettering-Artists-Sketchbook-Process-ebook/dp/B00WYJCIB4/ref=sr_1_1?s=books&ie=UTF8&qid=1520543649&sr=1-1&keywords=in+progress+by+jessica+hische",
+      "rel": "",
+      "target": "",
+      "text": "In Progress"
+    },
+    {
+      "href": "https://www.amazon.com/Together-We-Rise-Behind-Protest/dp/0062843435/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1520543663&sr=1-3",
+      "rel": "",
+      "target": "",
+      "text": "Together We Rise"
+    },
+    {
+      "href": "https://onnewsstandsnow.com/products/newsweek-she-persisted",
+      "rel": "",
+      "target": "",
+      "text": "She Persisted"
+    },
+    {
+      "href": "https://www.timeincshop.com/storefront/special-editions/see-all/life-audrey-25-years-later/prodTIBZAUDREYHEP.html",
+      "rel": "",
+      "target": "",
+      "text": "Audrey Hepburn"
+    },
+    {
+      "href": "https://shop.darlingmagazine.org/collections/print",
+      "rel": "",
+      "target": "",
+      "text": "Darling Magazine"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+      "rel": "",
+      "target": "_blank",
+      "text": "Facebook0"
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day&text=Happy+International+Women%27s+Day%21%21",
+      "rel": "",
+      "target": "_blank",
+      "text": "Twitter"
+    },
+    {
+      "href": "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+      "rel": "",
+      "target": "_blank",
+      "text": "Tumblr"
+    },
+    {
+      "href": "https://www.pinterest.com/pin/create/link/?description=Happy+International+Women%27s+Day%21%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520548447589-AMR1D2FY5QZA8ABFKWF4/IMG_1789-1.jpeg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+      "rel": "",
+      "target": "_blank",
+      "text": "Pinterest0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook//looks/babes-day#",
+      "rel": "",
+      "target": "",
+      "text": "0 Likes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": "YSL Studio Paris, France"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "http://www.instagram.com/_lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": "@_lovelysunday"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_5fZUWH3j6/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg\" alt=\"Thank you to the women owned companies and artists getting me through quarantine 🙌💎\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_aN7oinL-G/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg\" alt=\"🤍\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-kX2eSnoMp/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg\" alt=\"Once upon a Time in Paris...\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-h7JFWH64M/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg\" alt=\"Oh, how rare and beautiful you are🍊\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B6TYSyiniqZ/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg\" alt=\"🖤\" />"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+      "rel": "",
+      "target": "",
+      "text": "Mar 13 Dresses over Denim"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook//looks/get-ouai-sted",
+      "rel": "",
+      "target": "",
+      "text": "Jan 23 Ouai-STED with Jen Atkin!"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "Mar 8 International Womens Day! Hi lovies! I wanted to share some books written by women that inspire and encourage me in my journey to becoming the woman I aspire to be. I have learned so much from all these trailblazing women and I know they will inspire you too. Educating yourself on other people’s experiences and showing compassion towards them is how barriers and stereotypes are broken down. We have more in common then we know. It is important when talking about supporting our fellow badass babes that we ensure we are including women of all races, abilities, sexual orientation, classes, and religious beliefs. We will continue to fight for our joint goals and we will not be underestimated. Women are a force in this world that will not be tamed. We Should all be Feminists by Chimamanda Ngozi Adichie Men Explain Things to Me by Rebecca Solnit Heart Talk by Cleo Wade the sun and her flowers by Rupi Kaur Bloom for Yourself by April Green The Bluest Eye by Toni Morrison You Are A Badass by Jen Sincero The Feminine Mystique by Betty Friedan Bringing Up Bebe by Pamela Druckerman It’s Messy by Amanda deCadenet The Crossroads of Should and Must by Elle Luna The Woman I Wanted to Be by Diane Von Furstenberg Diana In Her Words by Andrew Morton The New Jim Crow by Michelle Alexander Pivot by Jenny Blake Grace, A Memoir by Grace Coddington Gio Graphy by Giovanna Battaglia In Progress by Jessica Hische Together We Rise She Persisted by Time Magazine Audrey Hepburn by Life Magazine Darling Magazine Aileen Subscribe to my latest looks! Be the first the see the latest looks or blogs from the Lookbook! SIGN UP Recently from the Lookbook Jan 7, 2019 Aileen YSL Studio Paris, France Find me on @Instagram @_lovelysunday",
+  "meta": {
+    "description": "Happy International Women's Day!!",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+    "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+    "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day&text=Happy+International+Women%27s+Day%21%21",
+    "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+    "https://www.pinterest.com/pin/create/link/?description=Happy+International+Women%27s+Day%21%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520548447589-AMR1D2FY5QZA8ABFKWF4/IMG_1789-1.jpeg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day",
+    "https://www.lovelysunday.co/lookbook//looks/babes-day#",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "Happy International Women's Day!!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5aa1a9560d929727a3027c24/1520548462856/IMG_1789-1.jpeg?format=1500w",
+    "title": "International Womens Day! from Lookbook — LovelySunday",
+    "type": "article",
+    "url": "http://www.lovelysunday.co/lookbook//looks/babes-day"
+  },
+  "paragraphs": [
+    "Hi lovies! I wanted to share some books written by women that inspire and encourage me in my journey to becoming the woman I aspire to be. I have learned so much from all these trailblazing women and I know they will inspire you too. Educating yourself on other people’s experiences and showing compassion towards them is how barriers and stereotypes are broken down. We have more in common then we know. It is important when talking about supporting our fellow badass babes that we ensure we are including women of all races, abilities, sexual orientation, classes, and religious beliefs. We will continue to fight for our joint goals and we will not be underestimated. Women are a force in this world that will not be tamed.",
+    "We Should all be Feminists by Chimamanda Ngozi Adichie",
+    "Men Explain Things to Me by Rebecca Solnit",
+    "Heart Talk by Cleo Wade",
+    "the sun and her flowers by Rupi Kaur",
+    "Bloom for Yourself by April Green",
+    "The Bluest Eye by Toni Morrison",
+    "You Are A Badass by Jen Sincero",
+    "The Feminine Mystique by Betty Friedan",
+    "Bringing Up Bebe by Pamela Druckerman",
+    "It’s Messy by Amanda deCadenet",
+    "The Crossroads of Should and Must by Elle Luna",
+    "The Woman I Wanted to Be by Diane Von Furstenberg",
+    "Diana In Her Words by Andrew Morton",
+    "The New Jim Crow by Michelle Alexander",
+    "Pivot by Jenny Blake",
+    "Grace, A Memoir by Grace Coddington",
+    "Gio Graphy by Giovanna Battaglia",
+    "In Progress by Jessica Hische",
+    "Together We Rise",
+    "She Persisted by Time Magazine",
+    "Audrey Hepburn by Life Magazine",
+    "Darling Magazine",
+    "Be the first the see the latest looks or blogs from the Lookbook!",
+    "@_lovelysunday"
+  ],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13912,
+      "duration": 0,
+      "encodedBodySize": 13912,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14168,
+      "duration": 0,
+      "encodedBodySize": 14168,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 14.3,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204736445",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 113625,
+      "duration": 0.2,
+      "encodedBodySize": 113625,
+      "initiatorType": "other",
+      "name": "https://www.lovelysunday.co/universal/svg/social-accounts.svg#facebook-icon",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 21314,
+      "duration": 0.7,
+      "encodedBodySize": 21314,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520988910297-4EEM6IOQICZ15D6VFDYE/london-fashion-week-street-style-spring-2018.png?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18332,
+      "duration": 0.6,
+      "encodedBodySize": 18332,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1502470964493-N6BRJW8K9TV3HEBMFSSX/L1010099.jpg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/share-buttons-8296c7041804d44d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 91.3,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 84.1,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 88.7,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 73,
+      "duration": 83.9,
+      "encodedBodySize": 73,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/1/website-component-definitions",
+      "transferSize": 373
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 86.6,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204736462&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 245402,
+      "duration": 0.3,
+      "encodedBodySize": 245402,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520546409325-GBUECX2GE0ZKFAF1DLUJ/IMG_1789-1.jpeg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 245402,
+      "duration": 0.3,
+      "encodedBodySize": 245402,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520548447589-AMR1D2FY5QZA8ABFKWF4/IMG_1789-1.jpeg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 54.9,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://graph.facebook.com/?id=http://www.lovelysunday.co/lookbook//looks/babes-day&callback=SquarespaceShareButtonCounts1771204736478.facebook",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 14.3,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://widgets.pinterest.com/v1/urls/count.json?source=6&url=http://www.lovelysunday.co/lookbook//looks/babes-day&callback=SquarespaceShareButtonCounts1771204736478.pinterest",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 40074,
+      "duration": 0.3,
+      "encodedBodySize": 40074,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 26.9,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=675384262&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day&ul=en-us&dt=International%20Womens%20Day!%20from%20Lookbook%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=261290423.1771203240&tid=UA-19400273-24&_gid=52583902.1771203240&_slc=1&z=1378138423",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 8600,
+      "duration": 114.5,
+      "encodedBodySize": 8600,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/block/render",
+      "transferSize": 8900
+    },
+    {
+      "decodedBodySize": 30,
+      "duration": 85.3,
+      "encodedBodySize": 50,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/blog-like-count/5aa1a9560d929727a3027c24",
+      "transferSize": 350
+    },
+    {
+      "decodedBodySize": 20740,
+      "duration": 0,
+      "encodedBodySize": 20740,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 12590,
+      "duration": 0,
+      "encodedBodySize": 12590,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 24382,
+      "duration": 0.4,
+      "encodedBodySize": 24382,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 38396,
+      "duration": 0,
+      "encodedBodySize": 38396,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17120,
+      "duration": 0,
+      "encodedBodySize": 17120,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 52.4,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204736752&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 88,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=BFAXCHCKYRh0&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fbabes-day&callback=PIN_1771204736479.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "International Womens Day! from Lookbook — LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "Happy International Women's Day!!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5aa1a9560d929727a3027c24/1520548462856/IMG_1789-1.jpeg?format=1500w",
+    "title": "International Womens Day! from Lookbook — LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/lookbook//looks/babes-day",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/lookbook//looks/babes-day",
+    "pageId": "lookbook-looks-babes-day-3702b338f9",
+    "worker": 1,
+    "capturedAt": "2026-02-16T01:18:59.458635+00:00",
+    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-looks-babes-day-3702b338f9.png",
+    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-looks-babes-day-3702b338f9.png",
+    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-looks-babes-day-3702b338f9.html"
+  }
+}

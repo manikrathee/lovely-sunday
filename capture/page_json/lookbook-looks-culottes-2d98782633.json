@@ -1,0 +1,1548 @@
+{
+  "canonical": "http://www.lovelysunday.co/lookbook//looks/culottes",
+  "capturedAt": "2026-02-16T01:18:59.445Z",
+  "counts": {
+    "images": 27,
+    "jsonLd": 4,
+    "links": 67,
+    "listItems": 0,
+    "paragraphs": 4,
+    "resources": 85,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Nov 29 Culottes",
+      "Subscribe to my latest looks!",
+      "Dec 5 Sequin Dresses",
+      "Mar 20 Beret Rainbow",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [
+      "Recently from the Lookbook",
+      "Find me on @Instagram"
+    ],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "Culottes",
+      "height": 705,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920492747-TS75R1VZQBSSELZI9SM5/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg?format=1500w",
+      "srcset": [],
+      "width": 564
+    },
+    {
+      "alt": "ac873ea4443148c762573f5e13b0a0cb--styling-culottes-culottes-outfit.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534557069-DTHYQT6ZH92G952CDVWS/ac873ea4443148c762573f5e13b0a0cb--styling-culottes-culottes-outfit.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "46ceb25ca15c66d9aae60a6381a91c3d--fresh-outfits-style-outfits.jpg",
+      "height": 398,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534551658-86W2Z46NZAAATOOW23D0/46ceb25ca15c66d9aae60a6381a91c3d--fresh-outfits-style-outfits.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "d22504fba437f1776bb6ff601fe10501.jpg",
+      "height": 420,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534559327-7G9Z7WXP7Q2LTJ266L77/d22504fba437f1776bb6ff601fe10501.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "54282169f55d4214a04a2d8effb9cf65--lifestyle-photography-minimal-style.jpg",
+      "height": 347,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534556884-997FJA5A8QL2FVJ4Z38Y/54282169f55d4214a04a2d8effb9cf65--lifestyle-photography-minimal-style.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "2bb9281eef7710e58086a01997b30ec9--pants-culottes-culottes-.jpg",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534544204-BT6KM280KWN393ELXQIH/2bb9281eef7710e58086a01997b30ec9--pants-culottes-culottes-.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "23202afaf639de3f6d7997942b3fd8e2.jpg",
+      "height": 470,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534554892-TYXVS2IT5QZB4MCFX4I4/23202afaf639de3f6d7997942b3fd8e2.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "4931cda27df357392c2148b1adb9f67d--song-of-style-amiee-song-style.jpg",
+      "height": 449,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534553726-THC687IDM1BY11LP8U6M/4931cda27df357392c2148b1adb9f67d--song-of-style-amiee-song-style.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "9bc7ff54fe96e0c63ae2075e4e44a667--pink-crop-top-striped-crop-top.jpg",
+      "height": 451,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534547138-710KI76BS27XT0007RVS/9bc7ff54fe96e0c63ae2075e4e44a667--pink-crop-top-striped-crop-top.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "9dd84f8aac16fcccb54ede5c9b01152a.jpg",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534551540-NVVUXT84HQTATXO0A88X/9dd84f8aac16fcccb54ede5c9b01152a.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "5759a65f04bd49220af20e7f6de270e9--white-wide-leg-trousers-wide-legs.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534553445-VHDM0QGSOIDPGV9Z19X5/5759a65f04bd49220af20e7f6de270e9--white-wide-leg-trousers-wide-legs.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "27346a90aed3458a65337414a6746923.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534555742-RFUJ4SA55BKXIUFY3865/27346a90aed3458a65337414a6746923.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "c53ef9830212ee49c047f35f13232da1.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534558439-ZRRBA88M5HOV53KN9FYI/c53ef9830212ee49c047f35f13232da1.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "c31151bbcd96827bd499271257a5dbe8.jpg",
+      "height": 362,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534558686-81LVKFARDBYEHCETJPSC/c31151bbcd96827bd499271257a5dbe8.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "f513fae6d9bbd3da9dd3374f1df3a2f9.jpg",
+      "height": 671,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534560671-Q65WX37P8GKXFF0NLIW2/f513fae6d9bbd3da9dd3374f1df3a2f9.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "fb2140d70b4ecf74c3dbbdd52f9ecb5b--culottes-style-culottes-outfit.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534560672-NGI5QIZK8H09N03UON7K/fb2140d70b4ecf74c3dbbdd52f9ecb5b--culottes-style-culottes-outfit.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "fdb907ba36ed323125a07c6eecf9da70--vacation-style-pink-pants.jpg",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534564036-PIZ8T58TYNGNSKLL5V11/fdb907ba36ed323125a07c6eecf9da70--vacation-style-pink-pants.jpg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "YSL Studio Paris, France",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Thank you to the women owned companies and artists getting me through quarantine 🙌💎",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🤍",
+      "height": 337,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Once upon a Time in Paris...",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Oh, how rare and beautiful you are🍊",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "🖤",
+      "height": 331,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Sequin Dresses",
+      "height": 153,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920784046-MF3EF8OAFDDAI8FT82G5/D3B75993-0A26-4428-A67C-4E8BF0F08816.jpeg?format=100w",
+      "srcset": [],
+      "width": 100
+    },
+    {
+      "alt": "Beret Rainbow",
+      "height": 150,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520992854059-XOW8FGE034TV4MLDDYBQ/15-fashion-influencers-following-instagram.png?format=100w",
+      "srcset": [],
+      "width": 100
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}",
+    "{\"name\":\"Culottes from Lookbook \\u2014 LovelySunday\",\"url\":\"http://www.lovelysunday.co/lookbook//looks/culottes\",\"datePublished\":\"2018-11-29T18:46:24-0500\",\"dateModified\":\"2019-01-07T23:08:19-0500\",\"headline\":\"Culottes\",\"author\":\"Aileen\",\"publisher\":{\"name\":\"LovelySunday\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\"},\"@context\":\"http://schema.org\",\"@type\":\"Organization\"},\"image\":\"http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5bff3b2b21c67c41f87fc669/1546920499051/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg?format=1500w\",\"@context\":\"http://schema.org\",\"@type\":\"Article\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.everlane.com/products/womens-straight-leg-crop-stone?collection=womens-bottoms",
+      "rel": "",
+      "target": "",
+      "text": "Everlane"
+    },
+    {
+      "href": "https://www.zara.com/us/en/corduroy-culottes-p04786269.html?v1=6975527&v2=1074624",
+      "rel": "",
+      "target": "",
+      "text": "Corduroy"
+    },
+    {
+      "href": "https://us.asos.com/only/only-polka-dot-culotte-pants/prd/9521222?clr=night-sky&SearchQuery=culottes&gridcolumn=2&gridrow=5&gridsize=4&pge=3&pgesize=72&totalstyles=357",
+      "rel": "",
+      "target": "",
+      "text": "Polka Dot"
+    },
+    {
+      "href": "https://us.asos.com/asos-curve/asos-design-curve-tapered-peg-with-contrast-bind-in-mono-floral-print/prd/10231866?CTAref=We%20Recommend%20Carousel_8&featureref1=we%20recommend%20pers",
+      "rel": "",
+      "target": "",
+      "text": "Curve"
+    },
+    {
+      "href": "https://www.zara.com/us/en/flowy-ankle-pants-p07102150.html?v1=6451679&v2=1074824",
+      "rel": "",
+      "target": "",
+      "text": "Dot"
+    },
+    {
+      "href": "https://www.zara.com/us/en/animal-print-mid-rise-culotte-jeans-p00327214.html?v1=7661069&v2=1080553",
+      "rel": "",
+      "target": "",
+      "text": "Leopard Denim"
+    },
+    {
+      "href": "https://www.zara.com/us/en/pleated-pants-p04387021.html?v1=7425505&v2=1074624",
+      "rel": "",
+      "target": "",
+      "text": "Comfy Leopard"
+    },
+    {
+      "href": "https://www.zara.com/us/en/high-waisted-pants-p05375040.html?v1=7631018&v2=1074602",
+      "rel": "",
+      "target": "",
+      "text": "Black"
+    },
+    {
+      "href": "https://us.asos.com/asos-design/asos-design-mix-match-culotte-with-tie-waist/prd/9351582?clr=nude&SearchQuery=culottes&gridcolumn=3&gridrow=5&gridsize=4&pge=1&pgesize=72&totalstyles=357",
+      "rel": "",
+      "target": "",
+      "text": "Pink"
+    },
+    {
+      "href": "https://us.asos.com/asos-design/asos-design-mix-match-culotte-with-tie-waist/prd/9351581?clr=soft-blue&SearchQuery=culottes&gridcolumn=4&gridrow=16&gridsize=4&pge=3&pgesize=72&totalstyles=357",
+      "rel": "",
+      "target": "",
+      "text": "Blue"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+      "rel": "",
+      "target": "_blank",
+      "text": "Facebook0"
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes&text=Culottes-+a+surprisingly+versitile+addition+to+your+closet.+",
+      "rel": "",
+      "target": "_blank",
+      "text": "Twitter"
+    },
+    {
+      "href": "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+      "rel": "",
+      "target": "_blank",
+      "text": "Tumblr"
+    },
+    {
+      "href": "https://www.pinterest.com/pin/create/link/?description=Culottes-+a+surprisingly+versitile+addition+to+your+closet.+&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920492747-TS75R1VZQBSSELZI9SM5/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+      "rel": "",
+      "target": "_blank",
+      "text": "Pinterest0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook//looks/culottes#",
+      "rel": "",
+      "target": "",
+      "text": "0 Likes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": "YSL Studio Paris, France"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "http://www.instagram.com/_lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": "@_lovelysunday"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_5fZUWH3j6/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg\" alt=\"Thank you to the women owned companies and artists getting me through quarantine 🙌💎\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_aN7oinL-G/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg\" alt=\"🤍\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-kX2eSnoMp/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg\" alt=\"Once upon a Time in Paris...\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-h7JFWH64M/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg\" alt=\"Oh, how rare and beautiful you are🍊\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B6TYSyiniqZ/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg\" alt=\"🖤\" />"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook//looks/sequin-dresses",
+      "rel": "",
+      "target": "",
+      "text": "Dec 5 Sequin Dresses"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+      "rel": "",
+      "target": "",
+      "text": "Mar 20 Beret Rainbow"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "Nov 29 Culottes Culottes were definitely one of those trends I was skeptical about at first, but grew to end up appreciating. I really did not think they would be as flattering, versatile, and as comfortable as they are, but they work with everything from t-shirts & sneakers to sequins & heels. Here’s some of my favorite ways to style culottes as well as some of options for you to try. Enjoy! Everlane, Corduroy , Polka Dot, Curve Dot, Leopard Denim, Comfy Leopard, Black , Pink, Blue Aileen Subscribe to my latest looks! Be the first the see the latest looks or blogs from the Lookbook! SIGN UP Recently from the Lookbook Jan 7, 2019 Aileen YSL Studio Paris, France Find me on @Instagram @_lovelysunday",
+  "meta": {
+    "description": "Culottes- a surprisingly versitile addition to your closet.",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3",
+    "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+    "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes&text=Culottes-+a+surprisingly+versitile+addition+to+your+closet.+",
+    "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+    "https://www.pinterest.com/pin/create/link/?description=Culottes-+a+surprisingly+versitile+addition+to+your+closet.+&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920492747-TS75R1VZQBSSELZI9SM5/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes",
+    "https://www.lovelysunday.co/lookbook//looks/culottes#",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "Culottes- a surprisingly versitile addition to your closet.",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5bff3b2b21c67c41f87fc669/1546920499051/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg?format=1500w",
+    "title": "Culottes from Lookbook — LovelySunday",
+    "type": "article",
+    "url": "http://www.lovelysunday.co/lookbook//looks/culottes"
+  },
+  "paragraphs": [
+    "Culottes were definitely one of those trends I was skeptical about at first, but grew to end up appreciating. I really did not think they would be as flattering, versatile, and as comfortable as they are, but they work with everything from t-shirts & sneakers to sequins & heels. Here’s some of my favorite ways to style culottes as well as some of options for you to try. Enjoy!",
+    "Everlane, Corduroy , Polka Dot, Curve Dot, Leopard Denim, Comfy Leopard, Black , Pink, Blue",
+    "Be the first the see the latest looks or blogs from the Lookbook!",
+    "@_lovelysunday"
+  ],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0.4,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0.4,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13912,
+      "duration": 0,
+      "encodedBodySize": 13912,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14168,
+      "duration": 0,
+      "encodedBodySize": 14168,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 20,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204737079",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 113625,
+      "duration": 0.4,
+      "encodedBodySize": 113625,
+      "initiatorType": "other",
+      "name": "https://www.lovelysunday.co/universal/svg/social-accounts.svg#facebook-icon",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 2332,
+      "duration": 0.4,
+      "encodedBodySize": 2332,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920784046-MF3EF8OAFDDAI8FT82G5/D3B75993-0A26-4428-A67C-4E8BF0F08816.jpeg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18892,
+      "duration": 0.4,
+      "encodedBodySize": 18892,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1520992854059-XOW8FGE034TV4MLDDYBQ/15-fashion-influencers-following-instagram.png?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0.4,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/share-buttons-8296c7041804d44d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 75.3,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 84.9,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 81.9,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 73,
+      "duration": 84.6,
+      "encodedBodySize": 73,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/1/website-component-definitions",
+      "transferSize": 373
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 69.7,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204737102&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 59004,
+      "duration": 0.4,
+      "encodedBodySize": 59004,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546920492747-TS75R1VZQBSSELZI9SM5/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 25144,
+      "duration": 0.4,
+      "encodedBodySize": 25144,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534557069-DTHYQT6ZH92G952CDVWS/ac873ea4443148c762573f5e13b0a0cb--styling-culottes-culottes-outfit.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 45,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://graph.facebook.com/?id=http://www.lovelysunday.co/lookbook//looks/culottes&callback=SquarespaceShareButtonCounts1771204737119.facebook",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 13.8,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://widgets.pinterest.com/v1/urls/count.json?source=6&url=http://www.lovelysunday.co/lookbook//looks/culottes&callback=SquarespaceShareButtonCounts1771204737119.pinterest",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 27.6,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1912922072&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes&ul=en-us&dt=Culottes%20from%20Lookbook%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=1050581138.1771203240&tid=UA-19400273-24&_gid=406708288.1771203240&_slc=1&z=255656836",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 25140,
+      "duration": 0.8,
+      "encodedBodySize": 25140,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534551658-86W2Z46NZAAATOOW23D0/46ceb25ca15c66d9aae60a6381a91c3d--fresh-outfits-style-outfits.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 11708,
+      "duration": 0.2,
+      "encodedBodySize": 11708,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534559327-7G9Z7WXP7Q2LTJ266L77/d22504fba437f1776bb6ff601fe10501.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 34382,
+      "duration": 0.2,
+      "encodedBodySize": 34382,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534556884-997FJA5A8QL2FVJ4Z38Y/54282169f55d4214a04a2d8effb9cf65--lifestyle-photography-minimal-style.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 6410,
+      "duration": 0.2,
+      "encodedBodySize": 6410,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534544204-BT6KM280KWN393ELXQIH/2bb9281eef7710e58086a01997b30ec9--pants-culottes-culottes-.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 42542,
+      "duration": 0.3,
+      "encodedBodySize": 42542,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534554892-TYXVS2IT5QZB4MCFX4I4/23202afaf639de3f6d7997942b3fd8e2.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 26402,
+      "duration": 0.3,
+      "encodedBodySize": 26402,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534553726-THC687IDM1BY11LP8U6M/4931cda27df357392c2148b1adb9f67d--song-of-style-amiee-song-style.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 8600,
+      "duration": 105.9,
+      "encodedBodySize": 8600,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/block/render",
+      "transferSize": 8900
+    },
+    {
+      "decodedBodySize": 16146,
+      "duration": 0.3,
+      "encodedBodySize": 16146,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534547138-710KI76BS27XT0007RVS/9bc7ff54fe96e0c63ae2075e4e44a667--pink-crop-top-striped-crop-top.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 19364,
+      "duration": 0.3,
+      "encodedBodySize": 19364,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534551540-NVVUXT84HQTATXO0A88X/9dd84f8aac16fcccb54ede5c9b01152a.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 11756,
+      "duration": 0.4,
+      "encodedBodySize": 11756,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534553445-VHDM0QGSOIDPGV9Z19X5/5759a65f04bd49220af20e7f6de270e9--white-wide-leg-trousers-wide-legs.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 23612,
+      "duration": 0.5,
+      "encodedBodySize": 23612,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534555742-RFUJ4SA55BKXIUFY3865/27346a90aed3458a65337414a6746923.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 30,
+      "duration": 91.2,
+      "encodedBodySize": 50,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/blog-like-count/5bff3b2b21c67c41f87fc669",
+      "transferSize": 350
+    },
+    {
+      "decodedBodySize": 30702,
+      "duration": 0.3,
+      "encodedBodySize": 30702,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534558439-ZRRBA88M5HOV53KN9FYI/c53ef9830212ee49c047f35f13232da1.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 35232,
+      "duration": 0.2,
+      "encodedBodySize": 35232,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534560671-Q65WX37P8GKXFF0NLIW2/f513fae6d9bbd3da9dd3374f1df3a2f9.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 9416,
+      "duration": 0.2,
+      "encodedBodySize": 9416,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534560672-NGI5QIZK8H09N03UON7K/fb2140d70b4ecf74c3dbbdd52f9ecb5b--culottes-style-culottes-outfit.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 10062,
+      "duration": 0.3,
+      "encodedBodySize": 10062,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534564036-PIZ8T58TYNGNSKLL5V11/fdb907ba36ed323125a07c6eecf9da70--vacation-style-pink-pants.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 20170,
+      "duration": 0.4,
+      "encodedBodySize": 20170,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1543534558686-81LVKFARDBYEHCETJPSC/c31151bbcd96827bd499271257a5dbe8.jpg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 40074,
+      "duration": 0.3,
+      "encodedBodySize": 40074,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 20740,
+      "duration": 0.3,
+      "encodedBodySize": 20740,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 12590,
+      "duration": 0.3,
+      "encodedBodySize": 12590,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 24382,
+      "duration": 0.3,
+      "encodedBodySize": 24382,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 38396,
+      "duration": 0.3,
+      "encodedBodySize": 38396,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17120,
+      "duration": 0.3,
+      "encodedBodySize": 17120,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 45.7,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204737375&sid=387adcb3-a993-4833-ad2f-ca1b13d1daf3&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 103.3,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=ubW73cudbNyc&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2F%2Flooks%2Fculottes&callback=PIN_1771204737120.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "Culottes from Lookbook — LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "Culottes- a surprisingly versitile addition to your closet.",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/5bff3b2b21c67c41f87fc669/1546920499051/B13526DE-2A4A-489E-971E-5DFBD7E56D17.jpeg?format=1500w",
+    "title": "Culottes from Lookbook — LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/lookbook//looks/culottes",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/lookbook//looks/culottes",
+    "pageId": "lookbook-looks-culottes-2d98782633",
+    "worker": 2,
+    "capturedAt": "2026-02-16T01:19:00.122486+00:00",
+    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/lookbook-looks-culottes-2d98782633.png",
+    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/lookbook-looks-culottes-2d98782633.png",
+    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/lookbook-looks-culottes-2d98782633.html"
+  }
+}

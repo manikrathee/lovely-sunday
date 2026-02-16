@@ -1,0 +1,1168 @@
+{
+  "canonical": "http://www.lovelysunday.co/grey-skirt-with-detailed-top",
+  "capturedAt": "2026-02-16T01:18:52.590Z",
+  "counts": {
+    "images": 28,
+    "jsonLd": 3,
+    "links": 35,
+    "listItems": 0,
+    "paragraphs": 0,
+    "resources": 63,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "Grey-Maxi-6.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058839125-7VUPPOWTAF3GHP4AYJV0/Grey-Maxi-6.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-26.jpg",
+      "height": 307,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058964799-DIDDIHG1QPSGLU4ACVXW/Grey-Maxi-26.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-2.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058817025-2QUQWZXJHBMBE6NEAYN5/Grey-Maxi-2.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-7.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058844612-VR1CIJ38YS0UBYUKUJU5/Grey-Maxi-7.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-10.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058854100-OFAY420DCA0CDSABGB4R/Grey-Maxi-10.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-15.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058868330-9W8SVEN866D3IFPKBGT9/Grey-Maxi-15.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-14.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058878128-4BYB6X1FYB1HAMYXIOJU/Grey-Maxi-14.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-73.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059048361-TG7RDTWW20LTG4MWITGQ/Grey-Maxi-73.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-60.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059030192-I4JRE4IRCVIX7RLURLZU/Grey-Maxi-60.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-23.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058912093-HF1H7GZWG9D22P5L27VK/Grey-Maxi-23.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-44.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059004057-AE7JN7TYBUTO7AT47U5D/Grey-Maxi-44.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-52.jpg",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059093651-5FMW69O7KQHL6H8O93YR/Grey-Maxi-52.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-49.jpg",
+      "height": 750,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059086687-D117215D5GFHVKMKMQW5/Grey-Maxi-49.jpg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Grey-Maxi-6.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-26.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-2.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-7.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-10.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-15.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-14.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-73.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-60.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-23.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-44.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-52.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    },
+    {
+      "alt": "Grey-Maxi-49.jpg",
+      "height": null,
+      "src": null,
+      "srcset": [],
+      "width": null
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "",
+  "meta": {
+    "description": "I loooove maxi dresses and skirts, it always makes me feel just a little bit fancier! The crop top details are so beautiful and the gentle breeze hit the skirt just right. I am also obsessed with these shoes!! Not only are they super comfortable, but they are covered in glitter and make me look like a ballerina- aka my dream. This look is so comfortable while still being really feminine and has just the right amount of glamour :) Top: Forever 21 (found in store), Revolve , Nordstrom Maxi: TJMaxx (found in store), YOOX , Forever21 Shoes: Shoedazzle Sunglasses: Kate Spade Saturday (RIP) , Kate Spade , Asos Hat: Target Purse: DailyLook (sold out in pink but other colors available), CUSP , Kate Spade , Zara",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "I loooove maxi dresses and skirts, it always makes me feel just a little bit fancier! The crop top details are so beautiful and the gentle breeze hit the skirt just right. I am also obsessed with these shoes!! Not only are they super comfortable, but they are covered in glitter and make me look like",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
+    "title": "Maxi Chic — LovelySunday",
+    "type": "website",
+    "url": "http://www.lovelysunday.co/grey-skirt-with-detailed-top"
+  },
+  "paragraphs": [],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 11.3,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204730398",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 80.1,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 85.7,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 69.2,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204730410&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/gallery-collection-list-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-07747667a3187b76-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 22.5,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=250820687&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Fgrey-skirt-with-detailed-top&ul=en-us&dt=Maxi%20Chic%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=1687702535.1771203240&tid=UA-19400273-24&_gid=312726254.1771203240&_slc=1&z=1650146582",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 155874,
+      "duration": 0.3,
+      "encodedBodySize": 155874,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058839125-7VUPPOWTAF3GHP4AYJV0/Grey-Maxi-6.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 86292,
+      "duration": 0.3,
+      "encodedBodySize": 86292,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058964799-DIDDIHG1QPSGLU4ACVXW/Grey-Maxi-26.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 90370,
+      "duration": 0.2,
+      "encodedBodySize": 90370,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058817025-2QUQWZXJHBMBE6NEAYN5/Grey-Maxi-2.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 137078,
+      "duration": 0.3,
+      "encodedBodySize": 137078,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058844612-VR1CIJ38YS0UBYUKUJU5/Grey-Maxi-7.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 75238,
+      "duration": 0.5,
+      "encodedBodySize": 75238,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058854100-OFAY420DCA0CDSABGB4R/Grey-Maxi-10.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 84558,
+      "duration": 0.3,
+      "encodedBodySize": 84558,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058868330-9W8SVEN866D3IFPKBGT9/Grey-Maxi-15.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 74006,
+      "duration": 0.2,
+      "encodedBodySize": 74006,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058878128-4BYB6X1FYB1HAMYXIOJU/Grey-Maxi-14.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 36056,
+      "duration": 0.2,
+      "encodedBodySize": 36056,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059048361-TG7RDTWW20LTG4MWITGQ/Grey-Maxi-73.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 61464,
+      "duration": 0.3,
+      "encodedBodySize": 61464,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059030192-I4JRE4IRCVIX7RLURLZU/Grey-Maxi-60.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 134396,
+      "duration": 0.3,
+      "encodedBodySize": 134396,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439058912093-HF1H7GZWG9D22P5L27VK/Grey-Maxi-23.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 94260,
+      "duration": 0.3,
+      "encodedBodySize": 94260,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059004057-AE7JN7TYBUTO7AT47U5D/Grey-Maxi-44.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 68538,
+      "duration": 0.4,
+      "encodedBodySize": 68538,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059093651-5FMW69O7KQHL6H8O93YR/Grey-Maxi-52.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 116766,
+      "duration": 0.3,
+      "encodedBodySize": 116766,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1439059086687-D117215D5GFHVKMKMQW5/Grey-Maxi-49.jpg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 48.7,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204730682&sid=64373f35-c89f-4e7b-bef0-aa5e3f4ca5cc&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 100.6,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=mknXam67wcUA&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Fgrey-skirt-with-detailed-top&callback=PIN_1771204730426.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-07747667a3187b76-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/gallery-collection-list-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "Maxi Chic — LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "I loooove maxi dresses and skirts, it always makes me feel just a little bit fancier! The crop top details are so beautiful and the gentle breeze hit the skirt just right. I am also obsessed with these shoes!! Not only are they super comfortable, but they are covered in glitter and make me look like",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/563991f6e4b00aaa0fe497fb/1446613494500/logo-600px.png?format=1500w",
+    "title": "Maxi Chic — LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "pageId": "grey-skirt-with-detailed-top-af1d8f2a86",
+    "worker": 4,
+    "capturedAt": "2026-02-16T01:18:53.309605+00:00",
+    "desktopScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/desktop/grey-skirt-with-detailed-top-af1d8f2a86.png",
+    "mobileScreenshot": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/screenshots/mobile/grey-skirt-with-detailed-top-af1d8f2a86.png",
+    "rawHtmlFile": "/Users/manikrathee/Developer/lovely-sunday/capture/lovelysunday-run4/raw_html/grey-skirt-with-detailed-top-af1d8f2a86.html"
+  }
+}

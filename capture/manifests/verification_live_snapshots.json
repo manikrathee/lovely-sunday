@@ -1,0 +1,838 @@
+{
+  "pages": [
+    {
+      "url": "https://www.lovelysunday.co/",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/",
+        "checkedAt": "2026-02-16T01:19:40.135Z",
+        "h1": [],
+        "imageCount": 15,
+        "linkCount": 74,
+        "mainTextHash": 614817258,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/about-lovely-sunday",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/about-lovely-sunday",
+        "checkedAt": "2026-02-16T01:19:40.137Z",
+        "h1": [
+          "The girl behind Lovely Sunday"
+        ],
+        "imageCount": 16,
+        "linkCount": 38,
+        "mainTextHash": 2295634737,
+        "title": "About Aileen Marie, The stylist behind LovelySunday — LovelySunday",
+        "url": "https://www.lovelysunday.co/about-lovely-sunday"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/all-about-the-basics",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/all-about-the-basics",
+        "checkedAt": "2026-02-16T01:19:40.105Z",
+        "h1": [],
+        "imageCount": 18,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "All About the Basics — LovelySunday",
+        "url": "https://www.lovelysunday.co/all-about-the-basics"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/all-white-jamaica-look",
+        "checkedAt": "2026-02-16T01:19:40.135Z",
+        "h1": [],
+        "imageCount": 10,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Summer in Jamaica — LovelySunday",
+        "url": "https://www.lovelysunday.co/all-white-jamaica-look"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/bmaxwelldupe",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/bmaxwelldupe",
+        "checkedAt": "2026-02-16T01:19:42.112Z",
+        "h1": [],
+        "imageCount": 4,
+        "linkCount": 39,
+        "mainTextHash": 3310118626,
+        "title": "Brandon Maxwell S/S Dupe — LovelySunday",
+        "url": "https://www.lovelysunday.co/bmaxwelldupe"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+        "checkedAt": "2026-02-16T01:19:42.113Z",
+        "h1": [],
+        "imageCount": 18,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Bonjour! — LovelySunday",
+        "url": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/cart",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:42.343Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 36,
+        "mainTextHash": 202976523,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/cart"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/contact-lovely-sunday",
+        "checkedAt": "2026-02-16T01:19:42.122Z",
+        "h1": [
+          "Feel free to ask any of your styling or fashion related questions!"
+        ],
+        "imageCount": 7,
+        "linkCount": 41,
+        "mainTextHash": 2602951050,
+        "title": "Contact Aileen Marie, the creator of LovelySunday — LovelySunday",
+        "url": "https://www.lovelysunday.co/contact-lovely-sunday"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/daily-diary",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/daily-diary",
+        "checkedAt": "2026-02-16T01:19:44.097Z",
+        "h1": [
+          "Daily Diary"
+        ],
+        "imageCount": 22,
+        "linkCount": 55,
+        "mainTextHash": 1696865185,
+        "title": "Daily Diary — LovelySunday",
+        "url": "https://www.lovelysunday.co/daily-diary"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/exploring-a-german-castle",
+        "checkedAt": "2026-02-16T01:19:44.096Z",
+        "h1": [],
+        "imageCount": 24,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Exploring a German Castle — LovelySunday",
+        "url": "https://www.lovelysunday.co/exploring-a-german-castle"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/flowers-bora-bora",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/flowers-bora-bora",
+        "checkedAt": "2026-02-16T01:19:44.310Z",
+        "h1": [],
+        "imageCount": 28,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Flower Crowns in Bora Bora — LovelySunday",
+        "url": "https://www.lovelysunday.co/flowers-bora-bora"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/grey-skirt-with-detailed-top",
+        "checkedAt": "2026-02-16T01:19:44.097Z",
+        "h1": [],
+        "imageCount": 28,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Maxi Chic — LovelySunday",
+        "url": "https://www.lovelysunday.co/grey-skirt-with-detailed-top"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/index",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/index",
+        "checkedAt": "2026-02-16T01:19:46.080Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Home NEW — LovelySunday",
+        "url": "https://www.lovelysunday.co/index"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lavender-dreams-in-paris",
+        "checkedAt": "2026-02-16T01:19:46.084Z",
+        "h1": [],
+        "imageCount": 24,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Lavender Dreams in Paris — LovelySunday",
+        "url": "https://www.lovelysunday.co/lavender-dreams-in-paris"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lilly-pulitzer-jumper",
+        "checkedAt": "2026-02-16T01:19:46.282Z",
+        "h1": [],
+        "imageCount": 24,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Lilly Pulitzer Jumper — LovelySunday",
+        "url": "https://www.lovelysunday.co/lilly-pulitzer-jumper"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/",
+        "checkedAt": "2026-02-16T01:19:46.095Z",
+        "h1": [],
+        "imageCount": 15,
+        "linkCount": 74,
+        "mainTextHash": 348010890,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook//looks/babes-day",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook//looks/babes-day",
+        "checkedAt": "2026-02-16T01:19:48.127Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 79,
+        "mainTextHash": 2432041289,
+        "title": "International Womens Day! from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook//looks/babes-day"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook//looks/culottes",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook//looks/culottes",
+        "checkedAt": "2026-02-16T01:19:48.127Z",
+        "h1": [],
+        "imageCount": 27,
+        "linkCount": 67,
+        "mainTextHash": 1463694513,
+        "title": "Culottes from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook//looks/culottes"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook//looks/get-ouai-sted",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook//looks/get-ouai-sted",
+        "checkedAt": "2026-02-16T01:19:48.293Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 61,
+        "mainTextHash": 2945549478,
+        "title": "Ouai-STED with Jen Atkin! from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook//looks/get-ouai-sted"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook//looks/pink-pumps",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook//looks/pink-pumps",
+        "checkedAt": "2026-02-16T01:19:48.125Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 66,
+        "mainTextHash": 3440105203,
+        "title": "Pink Pumps from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook//looks/pink-pumps"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook//looks/sequin-dresses",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook//looks/sequin-dresses",
+        "checkedAt": "2026-02-16T01:19:50.140Z",
+        "h1": [],
+        "imageCount": 20,
+        "linkCount": 66,
+        "mainTextHash": 1000230051,
+        "title": "Sequin Dresses from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook//looks/sequin-dresses"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/balmain-blazer",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/balmain-blazer",
+        "checkedAt": "2026-02-16T01:19:50.140Z",
+        "h1": [],
+        "imageCount": 15,
+        "linkCount": 60,
+        "mainTextHash": 107113366,
+        "title": "Balmain Blazer from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/balmain-blazer"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/dresses-over-denim",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/dresses-over-denim",
+        "checkedAt": "2026-02-16T01:19:50.304Z",
+        "h1": [],
+        "imageCount": 17,
+        "linkCount": 62,
+        "mainTextHash": 1230572546,
+        "title": "Dresses over Denim from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/dresses-over-denim"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+        "checkedAt": "2026-02-16T01:19:50.140Z",
+        "h1": [],
+        "imageCount": 14,
+        "linkCount": 58,
+        "mainTextHash": 3056772777,
+        "title": "Kate Spade Pink Feather Clutch from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/babes-day",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:52.112Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 37,
+        "mainTextHash": 3630894387,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/babes-day"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/beretrainbow",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/looks/beretrainbow",
+        "checkedAt": "2026-02-16T01:19:52.163Z",
+        "h1": [],
+        "imageCount": 18,
+        "linkCount": 58,
+        "mainTextHash": 3556572267,
+        "title": "Beret Rainbow from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/beretrainbow"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/culottes",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:52.279Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 37,
+        "mainTextHash": 3630894387,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/culottes"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:52.116Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 37,
+        "mainTextHash": 3630894387,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/get-ouai-sted"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+        "checkedAt": "2026-02-16T01:19:54.157Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 95,
+        "mainTextHash": 3836237519,
+        "title": "Nordstrom Anniversary Sale Favorites from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/pink-pumps",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:54.129Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 37,
+        "mainTextHash": 3630894387,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/pink-pumps"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/looks/sequin-dresses",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:19:54.230Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 37,
+        "mainTextHash": 3630894387,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/looks/sequin-dresses"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/oh-my-pearls",
+        "checkedAt": "2026-02-16T01:19:54.129Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 80,
+        "mainTextHash": 269274428,
+        "title": "Oh my Pearls! from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/oh-my-pearls"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Asos",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Asos",
+        "checkedAt": "2026-02-16T01:19:56.119Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 274231384,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Asos"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Baublebar",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Baublebar",
+        "checkedAt": "2026-02-16T01:19:56.086Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 756225418,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Baublebar"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Curve",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Curve",
+        "checkedAt": "2026-02-16T01:19:56.189Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 1768239657,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Curve"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Denim",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Denim",
+        "checkedAt": "2026-02-16T01:19:56.094Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 2816247399,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Denim"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Missguided",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Missguided",
+        "checkedAt": "2026-02-16T01:19:58.085Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 3779479946,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Missguided"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Nordstrom",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Nordstrom",
+        "checkedAt": "2026-02-16T01:19:58.047Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 296820412,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Nordstrom"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Pearl",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Pearl",
+        "checkedAt": "2026-02-16T01:19:58.152Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 120640306,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Pearl"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Tulle+Skirt",
+        "checkedAt": "2026-02-16T01:19:58.050Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 3515079617,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Tulle+Skirt"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/tag/Zara",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/tag/Zara",
+        "checkedAt": "2026-02-16T01:20:00.037Z",
+        "h1": [],
+        "imageCount": 3,
+        "linkCount": 38,
+        "mainTextHash": 2854327896,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/tag/Zara"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/what-is-your-passion",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/what-is-your-passion",
+        "checkedAt": "2026-02-16T01:20:00.268Z",
+        "h1": [],
+        "imageCount": 15,
+        "linkCount": 65,
+        "mainTextHash": 618516817,
+        "title": "What is your passion? from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/what-is-your-passion"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+        "checkedAt": "2026-02-16T01:20:00.158Z",
+        "h1": [],
+        "imageCount": 51,
+        "linkCount": 62,
+        "mainTextHash": 4165602823,
+        "title": "YSL Studio Paris, France from Lookbook — LovelySunday",
+        "url": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/looks",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/looks",
+        "checkedAt": "2026-02-16T01:20:00.021Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Looks NEW — LovelySunday",
+        "url": "https://www.lovelysunday.co/looks"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/mornings-in-germany",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/mornings-in-germany",
+        "checkedAt": "2026-02-16T01:20:02.009Z",
+        "h1": [],
+        "imageCount": 14,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Mornings in Germany — LovelySunday",
+        "url": "https://www.lovelysunday.co/mornings-in-germany"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/pink-colouttes",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/pink-colouttes",
+        "checkedAt": "2026-02-16T01:20:02.235Z",
+        "h1": [],
+        "imageCount": 30,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Pink Colouttes — LovelySunday",
+        "url": "https://www.lovelysunday.co/pink-colouttes"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/purple-lace",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/purple-lace",
+        "checkedAt": "2026-02-16T01:20:02.120Z",
+        "h1": [],
+        "imageCount": 22,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Purple & Lace — LovelySunday",
+        "url": "https://www.lovelysunday.co/purple-lace"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/reformation-polka-dot-dress",
+        "checkedAt": "2026-02-16T01:20:02.003Z",
+        "h1": [],
+        "imageCount": 18,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Reformation Polka Dot Dress — LovelySunday",
+        "url": "https://www.lovelysunday.co/reformation-polka-dot-dress"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/search",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": null,
+        "checkedAt": "2026-02-16T01:20:03.978Z",
+        "h1": [],
+        "imageCount": 2,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "LovelySunday",
+        "url": "https://www.lovelysunday.co/search"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/shop",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/shop",
+        "checkedAt": "2026-02-16T01:20:04.263Z",
+        "h1": [
+          "Lovely Sunday Studios",
+          "The Shop"
+        ],
+        "imageCount": 1,
+        "linkCount": 2,
+        "mainTextHash": 1165927702,
+        "title": "The Lovely Sunday Shop — LovelySunday",
+        "url": "https://www.lovelysunday.co/shop"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/snake-charmer",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/snake-charmer",
+        "checkedAt": "2026-02-16T01:20:04.090Z",
+        "h1": [],
+        "imageCount": 18,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Snake Charmer — LovelySunday",
+        "url": "https://www.lovelysunday.co/snake-charmer"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/sparkly-wedges",
+      "worker": 4,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/sparkly-wedges",
+        "checkedAt": "2026-02-16T01:20:03.963Z",
+        "h1": [],
+        "imageCount": 20,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Sparkly Wedges — LovelySunday",
+        "url": "https://www.lovelysunday.co/sparkly-wedges"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/wheat-field-sunset",
+      "worker": 1,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/wheat-field-sunset",
+        "checkedAt": "2026-02-16T01:20:05.955Z",
+        "h1": [],
+        "imageCount": 24,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Sunset in a Wheat Field — LovelySunday",
+        "url": "https://www.lovelysunday.co/wheat-field-sunset"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/white-scalloped-dress",
+      "worker": 2,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/white-scalloped-dress",
+        "checkedAt": "2026-02-16T01:20:06.229Z",
+        "h1": [],
+        "imageCount": 22,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "White Scalloped Dress — LovelySunday",
+        "url": "https://www.lovelysunday.co/white-scalloped-dress"
+      }
+    },
+    {
+      "url": "https://www.lovelysunday.co/zara-headband",
+      "worker": 3,
+      "status": "success",
+      "live": {
+        "canonical": "http://www.lovelysunday.co/zara-headband",
+        "checkedAt": "2026-02-16T01:20:06.063Z",
+        "h1": [],
+        "imageCount": 12,
+        "linkCount": 35,
+        "mainTextHash": 0,
+        "title": "Zara Headband — LovelySunday",
+        "url": "https://www.lovelysunday.co/zara-headband"
+      }
+    }
+  ]
+}
