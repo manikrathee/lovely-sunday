@@ -6,7 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare:capture-assets": "node scripts/prepare-capture-assets.mjs",
+    "validate:capture-assets": "node scripts/validate-capture-assets.mjs",
+    "predev": "npm run prepare:capture-assets",
+    "prebuild": "npm run prepare:capture-assets",
+    "prepreview": "npm run prepare:capture-assets"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",

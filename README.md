@@ -20,6 +20,28 @@ If you just need the shortest path, use sections **4) Deploy commands** and **5)
 
 ---
 
+
+## Capture mirror assets
+
+Astro now serves captured assets directly from `capture/assets/downloads` via a symlink mounted at `public/assets/downloads`.
+
+```bash
+# Create/update the symlink used by Astro
+npm run prepare:capture-assets
+
+# Validate mirrored coverage against capture manifests
+npm run validate:capture-assets
+# Optional CI gate (fails if any mirrored file is missing locally)
+npm run validate:capture-assets -- --strict
+```
+
+`validate:capture-assets` checks:
+- manifest count parity between `capture/manifests/summary.json` and `capture/manifests/assets_manifest.json`
+- every successful asset points to `assets/downloads/...` (and in `--strict` mode, every mirrored file must also exist on disk)
+- outbound shopping/social links flagged in `failed_url_recheck_report.json` remain external
+
+---
+
 ## 1) Prerequisites
 
 Install locally:
