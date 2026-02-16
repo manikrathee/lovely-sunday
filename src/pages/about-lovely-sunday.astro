@@ -1,0 +1,189 @@
+---
+import Layout from "../layouts/Layout.astro";
+import aboutPage from "../../capture/page_json/about-lovely-sunday-d298690e81.json";
+
+type CaptureImage = {
+  src: string;
+  alt?: string;
+};
+
+const images = (aboutPage.images as CaptureImage[]).filter((image) => image.src);
+const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
+---
+
+<Layout title="About LovelySunday" breadcrumbs={false}>
+  <article class="about-page">
+    <img class="hero" src={heroImage.src} alt={heroImage.alt ?? ""} />
+
+    <div class="about-inner">
+      <div class="brand">
+        <img src={logoImage.src} alt={logoImage.alt ?? "LovelySunday"} />
+      </div>
+
+      <div class="content-grid">
+        <section>
+          <h1>The girl behind Lovely Sunday</h1>
+          <h2>Welcome to LovelySunday</h2>
+
+          <p>Hi, I'm Aileen.</p>
+          <p>
+            My love for fashion started when I was in fourth grade with two significant moments: the first
+            time I saw Cher’s closet in Clueless (obviously!) and when my Grandpa handed me the New York Times
+            Fashion Magazine and I fell in love with the beautiful art and clothing I discovered inside.
+          </p>
+          <p>
+            I always wanted to work in fashion, but I wasn't sure of exactly what I wanted to do. I decided to
+            start a fashion blog since I love to play dress up, have way too many shoes, and I could help people
+            understand why fashion is so important in expressing ourselves.
+          </p>
+          <p>
+            Since my husband and I are photographers- the quality, the viewpoint, and styling behind each photo
+            is so important to me. I could not ask for someone better at understanding my vision while enjoying
+            what we love. I hope you enjoy my passion project, learn to shop smarter, and that I can inspire you
+            in any way.
+          </p>
+        </section>
+
+        <aside>
+          <section class="panel">
+            <h3>Meet Aileen</h3>
+            <img class="profile" src={profileImage.src} alt={profileImage.alt ?? ""} />
+          </section>
+
+          <section class="panel">
+            <h2>Subscribe to LovelySunday</h2>
+            <p>Get updates on new looks and posts!</p>
+            <input type="email" placeholder="Email Address" aria-label="Email Address" />
+            <button type="button">Sign Up</button>
+          </section>
+
+          <section class="panel">
+            <h3>Contact Me</h3>
+            <p>Explore looks, style and fun travel recommendations</p>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <div class="hidden-media" aria-hidden="true">
+      {hiddenImages.slice(0, -1).map((image) => <img src={image.src} alt={image.alt ?? ""} />)}
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .about-page {
+    margin: -4rem -1.5rem 0;
+    background: #fff;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .hero {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem 4rem;
+  }
+
+  .brand {
+    text-align: center;
+    margin: 1rem 0 2.5rem;
+  }
+
+  .brand img {
+    width: min(420px, 90%);
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin: 0 0 1.25rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin: 1.6rem 0 0.9rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    margin: 1.6rem 0 0.9rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .panel {
+    border: 1px solid #e4e4e4;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    background: #fafafa;
+  }
+
+  .profile {
+    width: 100%;
+    display: block;
+    margin: 1rem 0 0;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font: inherit;
+    box-sizing: border-box;
+  }
+
+  input {
+    padding: 0.7rem 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #cfcfcf;
+    background: #fff;
+  }
+
+  button {
+    margin-top: 0.75rem;
+    background: #222;
+    color: #fff;
+    border: 0;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+
+  .hidden-media {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    .about-page {
+      margin-top: -3rem;
+    }
+
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-inner {
+      padding-top: 1rem;
+    }
+  }
+</style>
