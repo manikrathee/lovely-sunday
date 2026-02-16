@@ -1,10 +1,20 @@
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 const repoRoot = resolve(process.cwd());
 
 const allUrlsPath = resolve(repoRoot, "capture/manifests/all_urls.txt");
 const pageJsonDir = resolve(repoRoot, "capture/page_json");
+
+if (!existsSync(allUrlsPath)) {
+  console.error(`Manifest file not found: ${allUrlsPath}`);
+  process.exit(1);
+}
+
+if (!existsSync(pageJsonDir)) {
+  console.error(`Page JSON directory not found: ${pageJsonDir}`);
+  process.exit(1);
+}
 
 const manifestUrls = readFileSync(allUrlsPath, "utf-8")
   .split(/\r?\n/)
@@ -26,8 +36,9 @@ for (const fileName of readdirSync(pageJsonDir)) {
   pageJsonUrls.add(json.url);
 }
 
+const manifestUrlSet = new Set(manifestUrls);
 const missingFromCapture = manifestUrls.filter((url) => !pageJsonUrls.has(url));
-const extraInCapture = [...pageJsonUrls].filter((url) => !manifestUrls.includes(url));
+const extraInCapture = [...pageJsonUrls].filter((url) => !manifestUrlSet.has(url));
 
 if (missingFromCapture.length > 0 || extraInCapture.length > 0) {
   console.error("Route manifest mismatch detected.");

@@ -4,17 +4,25 @@ import { loadCapturedPages } from "../lib/captured-pages";
 export function getStaticPaths() {
   const capturedPages = loadCapturedPages();
 
-  return capturedPages
-    .filter((page) => page.pathname !== "/")
-    .map((page) => {
-      const slug = page.pathname.replace(/^\//, "").split("/");
-      return {
-        params: { slug },
-        props: {
-          rawHtml: page.rawHtml,
-        },
-      };
-    });
+  // Deduplicate by pathname — double-slash URLs (e.g. /lookbook//looks/x)
+  // normalize to the same pathname as their single-slash counterparts.
+  // Keep the last occurrence (single-slash canonical version comes after
+  // double-slash in manifest order).
+  const byPathname = new Map();
+  for (const page of capturedPages) {
+    if (page.pathname === "/") continue;
+    byPathname.set(page.pathname, page);
+  }
+
+  return [...byPathname.values()].map((page) => {
+    const slug = page.pathname.replace(/^\//, "").split("/").filter(Boolean);
+    return {
+      params: { slug },
+      props: {
+        rawHtml: page.rawHtml,
+      },
+    };
+  });
 }
 
 const { rawHtml } = Astro.props;

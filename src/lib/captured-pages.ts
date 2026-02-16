@@ -21,14 +21,22 @@ export type CapturedPage = {
 };
 
 const repoRoot = resolve(process.cwd());
+const captureDir = resolve(repoRoot, "capture");
 const manifestsDir = resolve(repoRoot, "capture/manifests");
 const pageJsonDir = resolve(repoRoot, "capture/page_json");
 
 function toPathname(url: string): string {
-  return new URL(url).pathname;
+  // Normalize double slashes in pathname (e.g. /lookbook//looks/x -> /lookbook/looks/x)
+  return new URL(url).pathname.replace(/\/{2,}/g, "/");
 }
 
+let _cache: CapturedPage[] | null = null;
+
 export function loadCapturedPages(): CapturedPage[] {
+  if (_cache) {
+    return _cache;
+  }
+
   const manifestUrls = readFileSync(resolve(manifestsDir, "all_urls.txt"), "utf-8")
     .split(/\r?\n/)
     .map((line) => line.trim())
@@ -44,7 +52,15 @@ export function loadCapturedPages(): CapturedPage[] {
     const filePath = resolve(pageJsonDir, fileName);
     const pageJson = JSON.parse(readFileSync(filePath, "utf-8")) as CapturePageJson;
 
-    const rawHtmlPath = resolve(repoRoot, "capture", pageJson._capture.rawHtmlFile);
+    const rawHtmlPath = resolve(captureDir, pageJson._capture.rawHtmlFile);
+
+    // Guard against path traversal: resolved path must stay within capture/
+    if (!rawHtmlPath.startsWith(captureDir + "/")) {
+      throw new Error(
+        `Refusing to read rawHtmlFile outside capture directory: ${pageJson._capture.rawHtmlFile}`,
+      );
+    }
+
     const rawHtml = readFileSync(rawHtmlPath, "utf-8");
 
     pagesByUrl.set(pageJson.url, {
@@ -65,11 +81,6 @@ export function loadCapturedPages(): CapturedPage[] {
     return page;
   });
 
-  if (capturedPages.length !== manifestUrls.length) {
-    throw new Error(
-      `Captured route count mismatch. Manifest has ${manifestUrls.length}, built ${capturedPages.length}.`,
-    );
-  }
-
+  _cache = capturedPages;
   return capturedPages;
 }
