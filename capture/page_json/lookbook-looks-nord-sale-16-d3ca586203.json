@@ -1,0 +1,1533 @@
+{
+  "canonical": "http://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+  "capturedAt": "2026-02-16T01:19:08.210Z",
+  "counts": {
+    "images": 12,
+    "jsonLd": 4,
+    "links": 95,
+    "listItems": 0,
+    "paragraphs": 46,
+    "resources": 69,
+    "scripts": 20,
+    "stylesheets": 5
+  },
+  "headings": {
+    "h1": [],
+    "h2": [
+      "Welcome to LovelySunday",
+      "Jul 18 Nordstrom Anniversary Sale Favorites",
+      "Subscribe to my latest looks!",
+      "Apr 21 Oh my Pearls!",
+      "Jan 2 Kate Spade Pink Feather Clutch",
+      "Subscribe to LovelySunday"
+    ],
+    "h3": [
+      "Recently from the Lookbook",
+      "Find me on @Instagram"
+    ],
+    "h4": [],
+    "h5": [],
+    "h6": []
+  },
+  "icons": [
+    "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420266037677-3Z4HPIG94CRGERMCUOX9/favicon.ico"
+  ],
+  "images": [
+    {
+      "alt": "L1150442.jpg",
+      "height": 2424,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=2500w"
+      ],
+      "width": 1440
+    },
+    {
+      "alt": "LovelySunday",
+      "height": 439,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "srcset": [],
+      "width": 1000
+    },
+    {
+      "alt": "Nordstrom Anniversary Sale Favorites",
+      "height": 965,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg?format=1500w",
+      "srcset": [],
+      "width": 825
+    },
+    {
+      "alt": "",
+      "height": 926,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg",
+      "srcset": [
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=100w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=300w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=750w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=1500w",
+        "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=2500w"
+      ],
+      "width": 792
+    },
+    {
+      "alt": "YSL Studio Paris, France",
+      "height": 450,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Thank you to the women owned companies and artists getting me through quarantine \ud83d\ude4c\ud83d\udc8e",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "\ud83e\udd0d",
+      "height": 337,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Once upon a Time in Paris...",
+      "height": 333,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "srcset": [],
+      "width": 500
+    },
+    {
+      "alt": "Oh, how rare and beautiful you are\ud83c\udf4a",
+      "height": 375,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "\ud83d\udda4",
+      "height": 331,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "srcset": [],
+      "width": 300
+    },
+    {
+      "alt": "Oh my Pearls!",
+      "height": 97,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg?format=100w",
+      "srcset": [],
+      "width": 100
+    },
+    {
+      "alt": "Kate Spade Pink Feather Clutch",
+      "height": 128,
+      "src": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1451725993188-443CX18QEN2I2403BPQN/image-asset.jpeg?format=100w",
+      "srcset": [],
+      "width": 100
+    }
+  ],
+  "jsonLd": [
+    "{\"url\":\"http://www.lovelysunday.co\",\"name\":\"LovelySunday\",\"description\":\"<p>Two best friends setting out to explore the west coast in our favorite outfits! We love fashion, photography, lettering, anything with glitter on it, and have a slight obsession with flamingoes! Follow us on our journey and we hope to inspire you along the way!&nbsp;</p><p>With lots of love,&nbsp;</p><p>Aileen &amp; Rory</p>\",\"image\":\"//images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
+    "{\"legalName\":\"LovelySunday\",\"address\":\"San Francisco, CA 94158\\nUSA\",\"email\":\"contact@lovelysunday.co\",\"telephone\":\"\",\"sameAs\":[\"https://www.facebook.com/pages/LovelySunday/812231418844278\"],\"@context\":\"http://schema.org\",\"@type\":\"Organization\"}",
+    "{\"address\":\"San Francisco, CA 94158\\nUSA\",\"image\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\",\"name\":\"LovelySunday\",\"openingHours\":\"Mo all day, Tu all day, We all day, Th all day, Fr all day, Sa all day, Su all day\",\"@context\":\"http://schema.org\",\"@type\":\"LocalBusiness\"}",
+    "{\"name\":\"Nordstrom Anniversary Sale Favorites from Lookbook \\u2014 LovelySunday\",\"url\":\"http://www.lovelysunday.co/lookbook/looks/nord-sale-16\",\"datePublished\":\"2016-07-18T04:02:00-0400\",\"dateModified\":\"2016-07-18T04:30:44-0400\",\"headline\":\"Nordstrom Anniversary Sale Favorites\",\"author\":\"Aileen Rathee\",\"publisher\":{\"name\":\"LovelySunday\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://static1.squarespace.com/static/547b94a8e4b045935f3ae973/t/54a78801e4b0c309d01bca33/1589148119935/\"},\"@context\":\"http://schema.org\",\"@type\":\"Organization\"},\"image\":\"http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/578c6e1c6b8f5ba9870c957b/1468830644002/nordstrom-anniv-sale-2016.jpg?format=1500w\",\"@context\":\"http://schema.org\",\"@type\":\"Article\"}"
+  ],
+  "links": [
+    {
+      "href": "https://www.lovelysunday.co/index",
+      "rel": "",
+      "target": "",
+      "text": "Home"
+    },
+    {
+      "href": "https://www.lovelysunday.co/purple-lace",
+      "rel": "",
+      "target": "",
+      "text": "Purple & Lace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/wheat-field-sunset",
+      "rel": "",
+      "target": "",
+      "text": "Sunset in a Wheat Field"
+    },
+    {
+      "href": "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+      "rel": "",
+      "target": "",
+      "text": "Maxi Chic"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-about-the-basics",
+      "rel": "",
+      "target": "",
+      "text": "All About the Basics"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+      "rel": "",
+      "target": "",
+      "text": "Lilly Pulitzer Jumper"
+    },
+    {
+      "href": "https://www.lovelysunday.co/white-scalloped-dress",
+      "rel": "",
+      "target": "",
+      "text": "White Scalloped Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/sparkly-wedges",
+      "rel": "",
+      "target": "",
+      "text": "Sparkly Wedges"
+    },
+    {
+      "href": "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+      "rel": "",
+      "target": "",
+      "text": "Bonjour!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/pink-colouttes",
+      "rel": "",
+      "target": "",
+      "text": "Pink Colouttes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/mornings-in-germany",
+      "rel": "",
+      "target": "",
+      "text": "Mornings in Germany"
+    },
+    {
+      "href": "https://www.lovelysunday.co/zara-headband",
+      "rel": "",
+      "target": "",
+      "text": "Zara Headband"
+    },
+    {
+      "href": "https://www.lovelysunday.co/all-white-jamaica-look",
+      "rel": "",
+      "target": "",
+      "text": "Summer in Jamaica"
+    },
+    {
+      "href": "https://www.lovelysunday.co/snake-charmer",
+      "rel": "",
+      "target": "",
+      "text": "Snake Charmer"
+    },
+    {
+      "href": "https://www.lovelysunday.co/flowers-bora-bora",
+      "rel": "",
+      "target": "",
+      "text": "Flower Crowns in Bora Bora"
+    },
+    {
+      "href": "https://www.lovelysunday.co/reformation-polka-dot-dress",
+      "rel": "",
+      "target": "",
+      "text": "Reformation Polka Dot Dress"
+    },
+    {
+      "href": "https://www.lovelysunday.co/exploring-a-german-castle",
+      "rel": "",
+      "target": "",
+      "text": "Exploring a German Castle"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lavender-dreams-in-paris",
+      "rel": "",
+      "target": "",
+      "text": "Lavender Dreams in Paris"
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": "Lookbook"
+    },
+    {
+      "href": "https://www.lovelysunday.co/daily-diary",
+      "rel": "",
+      "target": "",
+      "text": "Daily Diary"
+    },
+    {
+      "href": "https://www.lovelysunday.co/about-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "About"
+    },
+    {
+      "href": "https://www.lovelysunday.co/contact-lovely-sunday",
+      "rel": "",
+      "target": "",
+      "text": "Get in touch"
+    },
+    {
+      "href": "https://www.lovelysunday.co/shop",
+      "rel": "",
+      "target": "",
+      "text": "The Shop"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://tinyletter.com/lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=54a7a925e4b0f7d742decaf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen Rathee"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/lauren-ralph-lauren-collarless-crepe-topper/4422697?origin=keywordsearch-personalizedsort&fashioncolor=BLUSH",
+      "rel": "",
+      "target": "",
+      "text": "Ralph Lauren/ Collarless Crepe Topper Coat"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/lauren-ralph-lauren-wool-blend-maxi-coat/4349228?origin=keywordsearch-personalizedsort&fashioncolor=BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Ralph Lauren/"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/lauren-ralph-lauren-wool-blend-maxi-coat/4349228?origin=keywordsearch-personalizedsort&fashioncolor=BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Black Wool Maxi"
+    },
+    {
+      "href": "http://bebe%20tweed%20wrap%20coat/",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "http://bebe%20tweed%20wrap%20coat/",
+      "rel": "",
+      "target": "",
+      "text": "Bebe/ Grey Tweed Wrap Coat"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/leith-mock-neck-midi-dress/4264044?origin=shoppingbag",
+      "rel": "",
+      "target": "",
+      "text": "Leith/Mock Neck Midi Dress"
+    },
+    {
+      "href": "http://shop.nordstrom.com/o/oneill-dress-accessories/4432152?origin=keywordsearch-personalizedsort&fashioncolor=ARMY%20GREEN%20MULTI%20PRINT",
+      "rel": "",
+      "target": "",
+      "text": "O'Neill Print Sheath Dress"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/astr-stripe-romper/4348244?origin=keywordsearch-personalizedsort&fashioncolor=BLACK-WHITE",
+      "rel": "",
+      "target": "",
+      "text": "ASTR Stripe Romper"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/ted-baker-london-crystal-bobble-patent-leather-flap-wallet-nordstrom-exclusive/4329525?origin=related-4329525-0-1-PP_4_TEST_3-Data_Lab_Recommendo_V2-frequently_viewed_v3_3&recs_type=related&recs_productId=4329525&recs_categoryId=0&recs_productOrder=1&recs_placementId=PP_4_TEST_3&recs_source=Data_Lab_Recommendo_V2&recs_strategy=frequently_viewed_v3_3&recs_referringPageType=item_page",
+      "rel": "",
+      "target": "",
+      "text": "Ted Baker London/ \u2018Crystal Bobble\u2019 Patent Leather Clutch"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/ted-baker-london-pure-peony-leather-matinee-wallet-nordstrom-exclusive/4329541?origin=shoppingbag",
+      "rel": "",
+      "target": "",
+      "text": "floral"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/ted-baker-london-faux-leather-satchel-nordstrom-exclusive/4329528?origin=keywordsearch-personalizedsort&fashioncolor=BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Ted Baker/ Leather Satchel"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/vince-camuto-abril-leather-shoulder-bag/4331649?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%2F%20LEOPARD",
+      "rel": "",
+      "target": "",
+      "text": "Vince Camuto/ 'Abril' Leather Shoulder Bag"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/rebecca-minkoff-avery-crossbody-bag/4324801?origin=keywordsearch-personalizedsort&fashioncolor=SANDSTONE",
+      "rel": "",
+      "target": "",
+      "text": "Rebecca Minkoff/ 'Avery' Crossbody Bag"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/sole-society-cassidy-faux-leather-duffel-bag/4410444?origin=keywordsearch-personalizedsort&fashioncolor=GREY%20FORGED",
+      "rel": "",
+      "target": "",
+      "text": "Sole Society/ 'Cassidy' Faux Leather Duffel Bag"
+    },
+    {
+      "href": "http://shop.nordstrom.com/sr?origin=keywordsearch&contextualcategoryid=0&keyword=Topshop+%27Julie%27+Suede+Moto+Jacket",
+      "rel": "",
+      "target": "",
+      "text": "Topshop/ 'Julie' Suede Moto Jacket"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/topshop-shiny-quilted-bomber-jacket/4346759?origin=keywordsearch-personalizedsort&fashioncolor=PINK",
+      "rel": "",
+      "target": "",
+      "text": "Topshop/ Shiny Quilted Bomber Jacket"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/maia-floral-print-scuba-knit-sheath-dress-online-only/4153042?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%2F%20PINK",
+      "rel": "",
+      "target": "",
+      "text": "Maia/ Floral Print Scuba Knit Sheath Dress"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/lyssehigh-waist-fauxleather-leggings/4089940?origin=keywordsearch-personalizedsort&fashioncolor=BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Lyss\u00e9 High Waist Faux Leather Leggings"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/citizens-of-humanity-rocket-high-rise-distressed-skinny-jeans-ripped-black/4336053?origin=keywordsearch-personalizedsort&fashioncolor=RIPPED%20BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Citizens of Humanity/ 'Rocket' High Rise Distressed Skinny Jeans"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/rebecca-minkoff-large-regan-satchel/4324827?origin=keywordsearch-personalizedsort&fashioncolor=DENIM",
+      "rel": "",
+      "target": "",
+      "text": "Rebecca Minkoff/ 'Large Regan\u2019 Satchel"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/fendi-52mm-cat-eye-sunglasses-regular-retail-price-465-00/4448000?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%2F%20DARK%20RUTHENIUM",
+      "rel": "",
+      "target": "",
+      "text": "Fendi/ 52mm Cat Eye Sunglasses"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/dior-so-real-48mm-sunglasses-regular-retail-price-530-00/4447431?origin=category-personalizedsort&fashioncolor=BLACK%2F%20SPOTTY%20TORTOISE",
+      "rel": "",
+      "target": "",
+      "text": "Dior 'So Real' 48mm Sunglasses"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/halogen-owen-genuine-calf-hair-pointy-toe-ghillie-flat-women/4317363?origin=keywordsearch-personalizedsort&fashioncolor=BEIGE%2FBLACK%20DOT%20CALF%20HAIR",
+      "rel": "",
+      "target": "",
+      "text": "Halogen/ 'Owen' Genuine Calf Hair Pointy Toe Ghillie Flat"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/nike-juvenate-sneaker-women/4421007?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%2F%20BLACK%2F%20WHITE",
+      "rel": "",
+      "target": "",
+      "text": "Nike/ 'Juvenate\u2019 Sneaker"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/charles-by-charles-david-lyssa-over-the-knee-boot-women/4342333?origin=keywordsearch-personalizedsort&fashioncolor=STONE%20MICRO%20SUEDE",
+      "rel": "",
+      "target": "",
+      "text": "Charles by Charles David/ 'Lyssa' Over the Knee Boot"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/stuart-weitzman-soho-tall-elastic-back-boot-women-nordstrom-exclusive/4292438?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%20NAPPA",
+      "rel": "",
+      "target": "",
+      "text": "Stuart Weitzman 'Soho' Tall Elastic Back Boot"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/dolce-vita-connor-over-the-knee-western-boot-women/4335291?origin=keywordsearch-personalizedsort&fashioncolor=BLACK%20SUEDE",
+      "rel": "",
+      "target": "",
+      "text": "Dolce Vita/'Connor' Over the Knee Western Boot"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/chloe-eau-de-parfum-spray-set-185-value/4329943?origin=keywordsearch-personalizedsort",
+      "rel": "",
+      "target": "",
+      "text": "Chlo\u00e9/ Eau de Parfum Spray Set"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/viktorrolf-flowerbomb-eau-de-parfum-set-200-value/4345297?origin=keywordsearch-personalizedsort",
+      "rel": "",
+      "target": "",
+      "text": "Viktor&Rolf 'Flowerbomb' Eau de Parfum Set"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/butter-london-wanderlust-nail-lacquer-collection-48-value/4347481?origin=keywordsearch-personalizedsort",
+      "rel": "",
+      "target": "",
+      "text": "Butter LONDON/ 'Wanderlust' Nail Lacquer Collection"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/bobbi-brown-bobbi-on-trend-nude-lips-set-81-value/4424577?origin=keywordsearch-personalizedsort",
+      "rel": "",
+      "target": "",
+      "text": "Bobbi Brown 'Bobbi on Trend - Nude Lips' Set"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/mario-badescu-the-icon-the-cult-favorite-the-hero-set-50-value/4347684?origin=keywordsearch-personalizedsort",
+      "rel": "",
+      "target": "",
+      "text": "'Icon, The Cult Favorite & The Hero' Set"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/kate-spade-new-york-genuine-calf-hair-belt/4331229?origin=keywordsearch-personalizedsort&fashioncolor=LEOPARD",
+      "rel": "",
+      "target": "",
+      "text": "Kate Spade/ Calf hair Leopard Belt"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/cristabelle-anni-crystal-bib-necklace/4369325?origin=keywordsearch-personalizedsort&fashioncolor=SILVER",
+      "rel": "",
+      "target": "",
+      "text": "Cristabelle/ 'Anni' Crystal Bib Necklace"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/movado-bold-round-bracelet-watch-36mm/4401673?origin=keywordsearch-personalizedsort&fashioncolor=GOLD%2F%20BLACK",
+      "rel": "",
+      "target": "",
+      "text": "Movado/ 'Bold' Round Bracelet Watch, 36mm"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/cristabelle-crystal-ear-crawlers/4369324?origin=keywordsearch-personalizedsort&fashioncolor=JET",
+      "rel": "",
+      "target": "",
+      "text": "Cristabelle/ Crystal Ear Crawlers"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/cristabelle-anni-crystal-ear-jackets/4369326?origin=keywordsearch-personalizedsort&fashioncolor=SILVER",
+      "rel": "",
+      "target": "",
+      "text": "Cristabelle/ 'Anni' Crystal Ear Jackets"
+    },
+    {
+      "href": "http://shop.nordstrom.com/s/sunnylife-rosie-inflatable-flamingo-pool-float/4351828?origin=keywordsearch-personalizedsort&fashioncolor=ROSE%20GOLD",
+      "rel": "",
+      "target": "",
+      "text": "a rose gold flamingo pool float"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=54a7a925e4b0f7d742decaf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen Rathee"
+    },
+    {
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+      "rel": "",
+      "target": "_blank",
+      "text": "Facebook0"
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16&text=Time+to+shop+the+best+sale+of+the+year+at+Nordstrom%21",
+      "rel": "",
+      "target": "_blank",
+      "text": "Twitter"
+    },
+    {
+      "href": "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+      "rel": "",
+      "target": "_blank",
+      "text": "Tumblr"
+    },
+    {
+      "href": "https://www.pinterest.com/pin/create/link/?description=Time+to+shop+the+best+sale+of+the+year+at+Nordstrom%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+      "rel": "",
+      "target": "_blank",
+      "text": "Pinterest0"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16#",
+      "rel": "",
+      "target": "",
+      "text": "0 Likes"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=54a7a925e4b0f7d742decaf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen Rathee"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=54a7a925e4b0f7d742decaf3",
+      "rel": "",
+      "target": "",
+      "text": "Aileen Rathee"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/ysl-studio-paris-france",
+      "rel": "",
+      "target": "",
+      "text": "YSL Studio Paris, France"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "https://www.lovelysunday.co/?author=547b94a6e4b0ac0fb9610bf3#show-archive",
+      "rel": "",
+      "target": "",
+      "text": "Aileen"
+    },
+    {
+      "href": "http://www.instagram.com/_lovelysunday",
+      "rel": "",
+      "target": "_blank",
+      "text": "@_lovelysunday"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_5fZUWH3j6/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg\" alt=\"Thank you to the women owned companies and artists getting me through quarantine \ud83d\ude4c\ud83d\udc8e\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B_aN7oinL-G/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg\" alt=\"\ud83e\udd0d\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-kX2eSnoMp/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg\" alt=\"Once upon a Time in Paris...\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B-h7JFWH64M/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg\" alt=\"Oh, how rare and beautiful you are\ud83c\udf4a\" />"
+    },
+    {
+      "href": "https://www.instagram.com/p/B6TYSyiniqZ/",
+      "rel": "",
+      "target": "_blank",
+      "text": "<img src=\"https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg\" alt=\"\ud83d\udda4\" />"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/oh-my-pearls",
+      "rel": "",
+      "target": "",
+      "text": "Apr 21 Oh my Pearls!"
+    },
+    {
+      "href": "https://www.lovelysunday.co/lookbook/kate-spade-pink-feather-clutch",
+      "rel": "",
+      "target": "",
+      "text": "Jan 2 Kate Spade Pink Feather Clutch"
+    },
+    {
+      "href": "https://www.facebook.com/pages/LovelySunday/812231418844278",
+      "rel": "",
+      "target": "_blank",
+      "text": ""
+    },
+    {
+      "href": "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3",
+      "rel": "",
+      "target": "_blank",
+      "text": "Squarespace"
+    },
+    {
+      "href": "https://www.lovelysunday.co/search",
+      "rel": "search",
+      "target": "",
+      "text": ""
+    },
+    {
+      "href": "https://www.lovelysunday.co/cart",
+      "rel": "",
+      "target": "",
+      "text": "0"
+    }
+  ],
+  "listItems": [],
+  "mainText": "Jul 18 Nordstrom Anniversary Sale Favorites It's July, which means one of the best honorary national holidays of the year is here: The Nordstrom Anniversary Sale! I scoured the Nordstrom site in search of the prettiest pieces and listed my favorites below for you. With so many great pieces on sale, be sure to sign up for Early Access to get your first choice picks and before prices go up on August 8th. They\u2019re also offering in-store pickup for online orders, which is a great way to shop in comfort and avoid all the crowds! Take me on Instagram with #LSNordSale so I can see all the pretty new additions to your closet! Happy Shopping! 1.) Ralph Lauren/ Collarless Crepe Topper Coat Other gorgeous coats: Ralph Lauren/ Black Wool Maxi Bebe/ Grey Tweed Wrap Coat 2.) Leith/Mock Neck Midi Dress (also in pink!) More dresses here: O'Neill Print Sheath Dress ASTR Stripe Romper 3.) Ted Baker London/ \u2018Crystal Bobble\u2019 Patent Leather Clutch (also in floral) Handbags/Clutches: Ted Baker/ Leather Satchel Vince Camuto/ 'Abril' Leather Shoulder Bag Rebecca Minkoff/ 'Avery' Crossbody Bag Leather Weekender: Sole Society/ 'Cassidy' Faux Leather Duffel Bag 4.) Topshop/ 'Julie' Suede Moto Jacket 5.) Topshop/ Shiny Quilted Bomber Jacket 6.) Maia/ Floral Print Scuba Knit Sheath Dress 7.) Lyss\u00e9 High Waist Faux Leather Leggings, Citizens of Humanity/ 'Rocket' High Rise Distressed Skinny Jeans 8.) Rebecca Minkoff/ 'Large Regan\u2019 Satchel 9.) Fendi/ 52mm Cat Eye Sunglasses, Dior 'So Real' 48mm Sunglasses 10.) Halogen/ 'Owen' Genuine Calf Hair Pointy Toe Ghillie Flat 11.) Nike/ 'Juvenate\u2019 Sneaker 12.) Charles by Charles David/ 'Lyssa' Over the Knee Boot I also love these boots: Stuart Weitzman 'Soho' Tall Elastic Back Boot (such a great deal!) Dolce Vita/'Connor' Over the Knee Western Boot 13.) Chlo\u00e9/ Eau de Parfum Spray Set One of my favorite scents: Viktor&Rolf 'Flowerbomb' Eau de Parfum Set 14.) Butter LONDON/ 'Wanderlust' Nail Lacquer Collection More beauty products: Love a nude lip: Bobbi Brown 'Bobbi on Trend - Nude Lips' Set I loved Mario Badescu skincare products! Start your obsession with this starter set: 'Icon, The Cult Favorite & The Hero' Set 15.) Kate Spade/ Calf hair Leopard Belt 16.) Cristabelle/ 'Anni' Crystal Bib Necklace 17.) Movado/ 'Bold' Round Bracelet Watch, 36mm 18.) Cristabelle/ Crystal Ear Crawlers 19.) Cristabelle/ 'Anni' Crystal Ear Jackets Easily the best product in the sale- a rose gold flamingo pool float! I mean, how can you not love this! Aileen Rathee Subscribe to my latest looks! Be the first the see the latest looks or blogs from the Lookbook! SIGN UP Recently from the Lookbook Jan 7, 2019 Aileen YSL Studio Paris, France Find me on @Instagram @_lovelysunday",
+  "meta": {
+    "description": "Time to shop the best sale of the year at Nordstrom!",
+    "robots": null,
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "navLinks": [
+    "https://www.lovelysunday.co/index",
+    "https://www.lovelysunday.co/purple-lace",
+    "https://www.lovelysunday.co/wheat-field-sunset",
+    "https://www.lovelysunday.co/grey-skirt-with-detailed-top",
+    "https://www.lovelysunday.co/all-about-the-basics",
+    "https://www.lovelysunday.co/lilly-pulitzer-jumper",
+    "https://www.lovelysunday.co/white-scalloped-dress",
+    "https://www.lovelysunday.co/sparkly-wedges",
+    "https://www.lovelysunday.co/bonjour-pink-skirt-paris-shirt",
+    "https://www.lovelysunday.co/pink-colouttes",
+    "https://www.lovelysunday.co/mornings-in-germany",
+    "https://www.lovelysunday.co/zara-headband",
+    "https://www.lovelysunday.co/all-white-jamaica-look",
+    "https://www.lovelysunday.co/snake-charmer",
+    "https://www.lovelysunday.co/flowers-bora-bora",
+    "https://www.lovelysunday.co/reformation-polka-dot-dress",
+    "https://www.lovelysunday.co/exploring-a-german-castle",
+    "https://www.lovelysunday.co/lavender-dreams-in-paris",
+    "https://www.lovelysunday.co/",
+    "https://www.lovelysunday.co/daily-diary",
+    "https://www.lovelysunday.co/about-lovely-sunday",
+    "https://www.lovelysunday.co/contact-lovely-sunday",
+    "https://www.lovelysunday.co/shop",
+    "https://www.facebook.com/pages/LovelySunday/812231418844278",
+    "https://www.lovelysunday.co/search",
+    "https://www.lovelysunday.co/cart",
+    "https://www.lovelysunday.co/?author=54a7a925e4b0f7d742decaf3",
+    "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+    "https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16&text=Time+to+shop+the+best+sale+of+the+year+at+Nordstrom%21",
+    "https://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+    "https://www.pinterest.com/pin/create/link/?description=Time+to+shop+the+best+sale+of+the+year+at+Nordstrom%21&media=https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg&url=http%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16",
+    "https://www.lovelysunday.co/lookbook/looks/nord-sale-16#",
+    "http://www.squarespace.com/?channel=word_of_mouth&subchannel=customer&source=footer&campaign=4fd1028ee4b02be53c65dfb3"
+  ],
+  "openGraph": {
+    "description": "Time to shop the best sale of the year at Nordstrom!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/578c6e1c6b8f5ba9870c957b/1468830644002/nordstrom-anniv-sale-2016.jpg?format=1500w",
+    "title": "Nordstrom Anniversary Sale Favorites from Lookbook \u2014 LovelySunday",
+    "type": "article",
+    "url": "http://www.lovelysunday.co/lookbook/looks/nord-sale-16"
+  },
+  "paragraphs": [
+    "It's July, which means one of the best honorary national holidays of the year is here:",
+    "The Nordstrom Anniversary Sale!",
+    "I scoured the Nordstrom site in search of the prettiest pieces and listed my favorites below for you. With so many great pieces on sale, be sure to sign up for Early Access to get your first choice picks and before prices go up on August 8th. They\u2019re also offering in-store pickup for online orders, which is a great way to shop in comfort and avoid all the crowds!",
+    "Take me on Instagram with #LSNordSale so I can see all the pretty new additions to your closet!",
+    "Happy Shopping!",
+    "1.) Ralph Lauren/ Collarless Crepe Topper Coat",
+    "Other gorgeous coats:",
+    "Ralph Lauren/ Black Wool Maxi",
+    "Bebe/ Grey Tweed Wrap Coat",
+    "2.) Leith/Mock Neck Midi Dress (also in pink!)",
+    "More dresses here:",
+    "O'Neill Print Sheath Dress",
+    "ASTR Stripe Romper",
+    "3.) Ted Baker London/ \u2018Crystal Bobble\u2019 Patent Leather Clutch (also in floral)",
+    "Handbags/Clutches:",
+    "Ted Baker/ Leather Satchel",
+    "Vince Camuto/ 'Abril' Leather Shoulder Bag",
+    "Rebecca Minkoff/ 'Avery' Crossbody Bag",
+    "Leather Weekender:",
+    "Sole Society/ 'Cassidy' Faux Leather Duffel Bag",
+    "4.) Topshop/ 'Julie' Suede Moto Jacket",
+    "5.) Topshop/ Shiny Quilted Bomber Jacket",
+    "6.) Maia/ Floral Print Scuba Knit Sheath Dress",
+    "7.) Lyss\u00e9 High Waist Faux Leather Leggings, Citizens of Humanity/ 'Rocket' High Rise Distressed Skinny Jeans",
+    "8.) Rebecca Minkoff/ 'Large Regan\u2019 Satchel",
+    "9.) Fendi/ 52mm Cat Eye Sunglasses, Dior 'So Real' 48mm Sunglasses",
+    "10.) Halogen/ 'Owen' Genuine Calf Hair Pointy Toe Ghillie Flat",
+    "11.) Nike/ 'Juvenate\u2019 Sneaker",
+    "12.) Charles by Charles David/ 'Lyssa' Over the Knee Boot",
+    "I also love these boots: Stuart Weitzman 'Soho' Tall Elastic Back Boot (such a great deal!)",
+    "Dolce Vita/'Connor' Over the Knee Western Boot",
+    "13.) Chlo\u00e9/ Eau de Parfum Spray Set",
+    "One of my favorite scents: Viktor&Rolf 'Flowerbomb' Eau de Parfum Set",
+    "14.) Butter LONDON/ 'Wanderlust' Nail Lacquer Collection",
+    "More beauty products:",
+    "Love a nude lip: Bobbi Brown 'Bobbi on Trend - Nude Lips' Set",
+    "I loved Mario Badescu skincare products! Start your obsession with this starter set:",
+    "'Icon, The Cult Favorite & The Hero' Set",
+    "15.) Kate Spade/ Calf hair Leopard Belt",
+    "16.) Cristabelle/ 'Anni' Crystal Bib Necklace",
+    "17.) Movado/ 'Bold' Round Bracelet Watch, 36mm",
+    "18.) Cristabelle/ Crystal Ear Crawlers",
+    "19.) Cristabelle/ 'Anni' Crystal Ear Jackets",
+    "Easily the best product in the sale- a rose gold flamingo pool float! I mean, how can you not love this!",
+    "Be the first the see the latest looks or blogs from the Lookbook!",
+    "@_lovelysunday"
+  ],
+  "resourceEntries": [
+    {
+      "decodedBodySize": 19001,
+      "duration": 0,
+      "encodedBodySize": 6818,
+      "initiatorType": "script",
+      "name": "https://use.typekit.com/cwu3rau.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 3959,
+      "duration": 0,
+      "encodedBodySize": 513,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 722168,
+      "duration": 0,
+      "encodedBodySize": 75894,
+      "initiatorType": "link",
+      "name": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 95786,
+      "duration": 0,
+      "encodedBodySize": 33434,
+      "initiatorType": "script",
+      "name": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 28570,
+      "duration": 0,
+      "encodedBodySize": 28570,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1420265474809-V7CVLDBEXUS1BPOUGXJS/logo-1000px.png?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 72310,
+      "duration": 0,
+      "encodedBodySize": 19840,
+      "initiatorType": "script",
+      "name": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13912,
+      "duration": 0,
+      "encodedBodySize": 13912,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13980,
+      "duration": 0,
+      "encodedBodySize": 13980,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14168,
+      "duration": 0,
+      "encodedBodySize": 14168,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 14008,
+      "duration": 0,
+      "encodedBodySize": 14008,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/667eee/0000000000000000000129a5/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 13360,
+      "duration": 0,
+      "encodedBodySize": 13360,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/4a332f/0000000000000000000129a4/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18048,
+      "duration": 0,
+      "encodedBodySize": 18048,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/7033d3/0000000000000000000132c1/23/l?subset_id=2&fvd=n7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18428,
+      "duration": 0,
+      "encodedBodySize": 18428,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/eef31e/0000000000000000000132c2/23/l?subset_id=2&fvd=i7&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17328,
+      "duration": 0,
+      "encodedBodySize": 17328,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/659c07/0000000000000000000132c3/23/l?subset_id=2&fvd=n4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 18268,
+      "duration": 0,
+      "encodedBodySize": 18268,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/dd7eed/0000000000000000000132c4/23/l?subset_id=2&fvd=i4&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17304,
+      "duration": 0,
+      "encodedBodySize": 17304,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/2b81c6/0000000000000000000132c5/23/l?subset_id=2&fvd=n3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17888,
+      "duration": 0,
+      "encodedBodySize": 17888,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/5983a2/0000000000000000000132c6/23/l?subset_id=2&fvd=i3&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17904,
+      "duration": 0,
+      "encodedBodySize": 17904,
+      "initiatorType": "css",
+      "name": "https://use.typekit.com/af/c3ae47/0000000000000000000132c9/23/l?subset_id=2&fvd=n6&v=3",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 12.5,
+      "encodedBodySize": 0,
+      "initiatorType": "img",
+      "name": "https://p.typekit.net/p.gif?s=1&k=cwu3rau&ht=tk&h=www.lovelysunday.co&f=15528.15530.18480.18481.18482.18483.18484.18485.18488&a=439854&js=1.21.0&app=typekit&e=js&_=1771204745969",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 180022,
+      "duration": 0,
+      "encodedBodySize": 180022,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589147301470-Z8DESL9VS9QQ20PV95Z9/L1150442.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/analytics.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 4274,
+      "duration": 0.5,
+      "encodedBodySize": 4274,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1492801883635-WAP3ZWDSGNVFH5YKNMXO/Ls--Pearls-4-19-17.jpg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 2594,
+      "duration": 0.6,
+      "encodedBodySize": 2594,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1451725993188-443CX18QEN2I2403BPQN/image-asset.jpeg?format=100w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/share-buttons-8296c7041804d44d-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 93.3,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/RecordHit",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 91.1,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 17,
+      "duration": 90.8,
+      "encodedBodySize": 17,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/census/form-render",
+      "transferSize": 317
+    },
+    {
+      "decodedBodySize": 73,
+      "duration": 90.9,
+      "encodedBodySize": 73,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/1/website-component-definitions",
+      "transferSize": 373
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 112,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://featureassets.org/v1/initialize?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204745986&sid=a39738aa-6565-4584-aec8-54f4e3a42092&se=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 73916,
+      "duration": 0.4,
+      "encodedBodySize": 73916,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468822362504-9OA9HADMXTHAP2EQNZCP/image-asset.jpeg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "link",
+      "name": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 73916,
+      "duration": 0.3,
+      "encodedBodySize": 73916,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1468829225146-U38YU3J9U9XIVJ5UYZKY/nordstrom-anniv-sale-2016.jpg?format=1500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/60489-01dbcc4f78f79d1e-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/20216-d185e517128b7fc9-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/82535-0132945e0fd76040-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/10234-0c78d45c51f2b310-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/9392-74575a01a4f2105a-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/95795-8c09d5e19181e817-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://assets.squarespace.com/universal/scripts-compressed/async-pinterest-library-762319f40fe639cb-min.en-US.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 40.3,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://graph.facebook.com/?id=http://www.lovelysunday.co/lookbook/looks/nord-sale-16&callback=SquarespaceShareButtonCounts1771204745998.facebook",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 15.6,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://widgets.pinterest.com/v1/urls/count.json?source=6&url=http://www.lovelysunday.co/lookbook/looks/nord-sale-16&callback=SquarespaceShareButtonCounts1771204745998.pinterest",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 25,
+      "encodedBodySize": 0,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=38363622&t=pageview&_s=1&dl=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16&ul=en-us&dt=Nordstrom%20Anniversary%20Sale%20Favorites%20from%20Lookbook%20%E2%80%94%20LovelySunday&sr=1440x900&vp=1440x900&_u=CCCAAEIRAAAAACAAI~&jid=&gjid=&cid=261290423.1771203240&tid=UA-19400273-24&_gid=52583902.1771203240&_slc=1&z=85387940",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 40074,
+      "duration": 0,
+      "encodedBodySize": 40074,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1546919374807-N5SERXA6S89VQR1CCSCN/121D5C90-7CE8-4D7C-80BC-EAE41DDF3847.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 0,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 8600,
+      "duration": 126,
+      "encodedBodySize": 8600,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/block/render",
+      "transferSize": 8900
+    },
+    {
+      "decodedBodySize": 30,
+      "duration": 84.9,
+      "encodedBodySize": 50,
+      "initiatorType": "xmlhttprequest",
+      "name": "https://www.lovelysunday.co/api/blog-like-count/578c6e1c6b8f5ba9870c957b",
+      "transferSize": 350
+    },
+    {
+      "decodedBodySize": 20740,
+      "duration": 0,
+      "encodedBodySize": 20740,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-7ZMJ3B0SKZ9331B2BEH1/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 12590,
+      "duration": 0,
+      "encodedBodySize": 12590,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-8NNZWR0XEOTO0UFXKVPB/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 24382,
+      "duration": 0,
+      "encodedBodySize": 24382,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-735K0SR9O9L1V8ML0X8J/image-asset.jpeg?format=500w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 38396,
+      "duration": 0,
+      "encodedBodySize": 38396,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-1FBJOAE86UCY0KAXSWDV/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 17120,
+      "duration": 0,
+      "encodedBodySize": 17120,
+      "initiatorType": "img",
+      "name": "https://images.squarespace-cdn.com/content/v1/547b94a8e4b045935f3ae973/1589139040238-NXXQ7AWW95WC9L2CQ1A3/image-asset.jpeg?format=300w",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 47.4,
+      "encodedBodySize": 0,
+      "initiatorType": "fetch",
+      "name": "https://prodregistryv2.org/v1/rgstr?k=client-kWFcNPkPdqL7uI3Q6V4l5ei9oiIpxyUXZ89r99YzSuK&st=javascript-client&sv=3.14.1&t=1771204746300&sid=a39738aa-6565-4584-aec8-54f4e3a42092&ec=1&gz=1",
+      "transferSize": 0
+    },
+    {
+      "decodedBodySize": 0,
+      "duration": 90.6,
+      "encodedBodySize": 0,
+      "initiatorType": "script",
+      "name": "https://log.pinterest.com/?guid=strFUsBPUnWe&type=pidget&sub=www&button_count=1&follow_count=0&pin_count=0&profile_count=0&board_count=0&via=https%3A%2F%2Fwww.lovelysunday.co%2Flookbook%2Flooks%2Fnord-sale-16&callback=PIN_1771204746000.f.callback[0]",
+      "transferSize": 0
+    }
+  ],
+  "scripts": [
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.googletagmanager.com/gtag/js?id=G-33JDR1LW7V&cx=c&_slc=1",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/plugins/ua/ecommerce.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/announcement-bar-caefb69de8707954-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/pinterest-c091a98e6dc17429-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://www.google-analytics.com/analytics.js",
+      "type": ""
+    },
+    {
+      "async": true,
+      "defer": false,
+      "src": "https://use.typekit.com/cwu3rau.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js",
+      "type": "text/javascript"
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8d99415dd90df90e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f2a1f6ec9a41489-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-22ed584d99d9b83d-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-fbd854d40b0804b7-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-3962200ba715274e-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/common-76d07b79142e5285-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/commerce-b30ff63d54e43203-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": true,
+      "src": "https://assets.squarespace.com/universal/scripts-compressed/performance-486d93565a174fa8-min.en-US.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.visitor.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
+      "type": ""
+    },
+    {
+      "async": false,
+      "defer": false,
+      "src": "https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4947/scripts/site-bundle.js",
+      "type": "text/javascript"
+    }
+  ],
+  "stylesheets": [
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/pinterest-b4046463b72f34e2-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://assets.squarespace.com/universal/styles-compressed/commerce-cd03de9d0d7f1f57-min.en-US.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/6497f82f-acc6-4b09-840f-5b7016bcee76_514/website.components.spacer.styles.css",
+      "rel": "stylesheet"
+    },
+    {
+      "as": "",
+      "href": "https://static1.squarespace.com/static/sitecss/547b94a8e4b045935f3ae973/130/54d3906fe4b04c1c9981b00e/5eb859af3c50017294222390/4947/site.css",
+      "rel": "stylesheet"
+    }
+  ],
+  "title": "Nordstrom Anniversary Sale Favorites from Lookbook \u2014 LovelySunday",
+  "twitter": {
+    "card": "summary",
+    "description": "Time to shop the best sale of the year at Nordstrom!",
+    "image": "http://static1.squarespace.com/static/547b94a8e4b045935f3ae973/564a714ee4b0b5206c34977c/578c6e1c6b8f5ba9870c957b/1468830644002/nordstrom-anniv-sale-2016.jpg?format=1500w",
+    "title": "Nordstrom Anniversary Sale Favorites from Lookbook \u2014 LovelySunday"
+  },
+  "url": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+  "videos": [],
+  "_capture": {
+    "requestedUrl": "https://www.lovelysunday.co/lookbook/looks/nord-sale-16",
+    "pageId": "lookbook-looks-nord-sale-16-d3ca586203",
+    "worker": 1,
+    "capturedAt": "2026-02-16T01:19:08.856190+00:00",
+    "desktopScreenshot": "screenshots/desktop/lookbook-looks-nord-sale-16-d3ca586203.png",
+    "mobileScreenshot": "screenshots/mobile/lookbook-looks-nord-sale-16-d3ca586203.png",
+    "rawHtmlFile": "raw_html/lookbook-looks-nord-sale-16-d3ca586203.html"
+  }
+}

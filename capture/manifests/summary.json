@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-02-16T01:20:06.255235+00:00",
+  "durationSeconds": 83.35,
+  "site": "https://www.lovelysunday.co/",
+  "inventory": {
+    "sitemapUrls": 47,
+    "navUrls": 38,
+    "canonicalUrls": 55
+  },
+  "crawl": {
+    "success": 55,
+    "failed": 0
+  },
+  "assets": {
+    "queued": 724,
+    "downloaded": 724,
+    "failed": 0
+  },
+  "verification": {
+    "totalChecked": 55,
+    "matches": 55,
+    "mismatches": 0,
+    "errors": 0
+  },
+  "outputDir": "capture"
+}
