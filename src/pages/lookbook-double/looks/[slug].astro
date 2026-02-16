@@ -1,27 +1,31 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import { validDoubleSlashLookbookPaths, extractLookbookSlug } from '../../../data/legacyLookbook';
+import CapturedHtmlPage from "../../../components/CapturedHtmlPage.astro";
+import { getCapturedPageBySourcePathname } from "../../../lib/captured-pages";
+import { validDoubleSlashLookbookPaths, extractLookbookSlug } from "../../../data/legacyLookbook";
 
 export function getStaticPaths() {
-  return validDoubleSlashLookbookPaths.map((path) => ({
-    params: {
-      slug: extractLookbookSlug(path),
-    },
-    props: {
-      path,
-    },
-  }));
+  const removeTrailingSlash = (pathname: string) =>
+    pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+
+  return validDoubleSlashLookbookPaths.map((path) => {
+    const sourcePathname = removeTrailingSlash(path);
+    const page = getCapturedPageBySourcePathname(sourcePathname);
+    if (!page) {
+      throw new Error(`Missing captured page for legacy double-slash lookbook path: ${sourcePathname}`);
+    }
+
+    return {
+      params: {
+        slug: extractLookbookSlug(path),
+      },
+      props: {
+        rawHtml: page.rawHtml,
+      },
+    };
+  });
 }
+
+const { rawHtml } = Astro.props;
 ---
 
-<Layout title="LovelySunday">
-  <main class="content content-main">
-    <article>
-      <h1>Legacy lookbook route available</h1>
-      <p>
-        This route is intentionally published to preserve captured legacy behavior for double-slash
-        lookbook URLs.
-      </p>
-    </article>
-  </main>
-</Layout>
+<CapturedHtmlPage rawHtml={rawHtml} />

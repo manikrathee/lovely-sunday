@@ -7,15 +7,16 @@ type CaptureMetadata = {
 
 type CapturePageJson = {
   url: string;
-  canonical: string;
+  canonical: string | null;
   title: string;
   _capture: CaptureMetadata;
 };
 
 export type CapturedPage = {
   url: string;
+  sourcePathname: string;
   pathname: string;
-  canonical: string;
+  canonical: string | null;
   title: string;
   rawHtml: string;
 };
@@ -24,13 +25,21 @@ const repoRoot = resolve(process.cwd());
 const captureDir = resolve(repoRoot, "capture");
 const manifestsDir = resolve(repoRoot, "capture/manifests");
 const pageJsonDir = resolve(repoRoot, "capture/page_json");
+const noscriptPattern = /<noscript[\s\S]*?<\/noscript>/gi;
 
-function toPathname(url: string): string {
-  // Normalize double slashes in pathname (e.g. /lookbook//looks/x -> /lookbook/looks/x)
-  return new URL(url).pathname.replace(/\/{2,}/g, "/");
+function normalizeSourcePathname(pathname: string): string {
+  if (!pathname || pathname === "/") return "/";
+  const withLeadingSlash = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return withLeadingSlash.replace(/\/+$/, "");
+}
+
+function normalizePathname(pathname: string): string {
+  const normalizedSourcePathname = normalizeSourcePathname(pathname);
+  return normalizedSourcePathname.replace(/\/{2,}/g, "/");
 }
 
 let _cache: CapturedPage[] | null = null;
+let _cacheBySourcePathname: Map<string, CapturedPage> | null = null;
 
 export function loadCapturedPages(): CapturedPage[] {
   if (_cache) {
@@ -61,11 +70,13 @@ export function loadCapturedPages(): CapturedPage[] {
       );
     }
 
-    const rawHtml = readFileSync(rawHtmlPath, "utf-8");
+    const rawHtml = readFileSync(rawHtmlPath, "utf-8").replace(noscriptPattern, "");
+    const sourcePathname = normalizeSourcePathname(new URL(pageJson.url).pathname);
 
     pagesByUrl.set(pageJson.url, {
       url: pageJson.url,
-      pathname: toPathname(pageJson.url),
+      sourcePathname,
+      pathname: normalizePathname(sourcePathname),
       canonical: pageJson.canonical,
       title: pageJson.title,
       rawHtml,
@@ -80,6 +91,13 @@ export function loadCapturedPages(): CapturedPage[] {
 
     return page;
   });
+  _cacheBySourcePathname = new Map(_cache.map((page) => [page.sourcePathname, page]));
 
   return _cache;
+}
+
+export function getCapturedPageBySourcePathname(pathname: string): CapturedPage | undefined {
+  const pages = loadCapturedPages();
+  void pages;
+  return _cacheBySourcePathname?.get(normalizeSourcePathname(pathname));
 }

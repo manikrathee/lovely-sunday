@@ -1,8 +1,10 @@
 ---
 import { loadCapturedPages } from "../lib/captured-pages";
+import CapturedHtmlPage from "../components/CapturedHtmlPage.astro";
 
 export function getStaticPaths() {
   const capturedPages = loadCapturedPages();
+  const explicitRoutes = new Set(["/about-lovely-sunday"]);
 
   // Deduplicate by pathname — double-slash URLs (e.g. /lookbook//looks/x)
   // normalize to the same pathname as their single-slash counterparts.
@@ -11,11 +13,12 @@ export function getStaticPaths() {
   const byPathname = new Map();
   for (const page of capturedPages) {
     if (page.pathname === "/") continue;
+    if (explicitRoutes.has(page.pathname)) continue;
     byPathname.set(page.pathname, page);
   }
 
   return [...byPathname.values()].map((page) => {
-    const slug = page.pathname.replace(/^\//, "").split("/").filter(Boolean);
+    const slug = page.pathname.replace(/^\//, "");
     return {
       params: { slug },
       props: {
@@ -28,4 +31,4 @@ export function getStaticPaths() {
 const { rawHtml } = Astro.props;
 ---
 
-<Fragment set:html={rawHtml} />
+<CapturedHtmlPage rawHtml={rawHtml} />
