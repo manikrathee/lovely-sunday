@@ -1,7 +1,24 @@
 ---
+const links = [
+  { label: "Discover", href: "/lookbook" },
+  { label: "Archive", href: "/news" },
+  { label: "Contact", href: "/contact-lovely-sunday" },
+  { label: "Instagram", href: "https://www.instagram.com/lovelysunday" },
+];
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class="site-foot">
-    <div class="social-mark">f</div>
-    <div>Powered by <a href="#">Squarespace</a></div>
+  <div class="site-foot-inner">
+    <div class="site-foot-brand">
+      <strong>Lovely Sunday</strong>
+      <small>© {currentYear}</small>
+    </div>
+
+    <nav class="site-foot-nav" aria-label="Footer">
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+  </div>
 </footer>

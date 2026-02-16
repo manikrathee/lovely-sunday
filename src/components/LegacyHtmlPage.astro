@@ -1,0 +1,160 @@
+---
+import "../styles/components/legacy-gallery.css";
+import { correctedLookbookPath, internalUrlRewriteMap } from "../data/legacyLookbook";
+
+export interface Props {
+  rawHtml: string;
+}
+
+const { rawHtml } = Astro.props;
+const hasAutocolumnGallery = /sqs-gallery-design-autocolumns/.test(rawHtml);
+
+function rewriteInternalHref(href: string): string {
+  const [pathnameAndSearch, hash = ""] = href.split("#", 2);
+  const [pathnameRaw, search = ""] = pathnameAndSearch.split("?", 2);
+
+  let pathname = pathnameRaw;
+
+  // Keep legacy internal links inside this rebuilt site.
+  if (/^https?:\/\/www\.lovelysunday\.co/i.test(pathname)) {
+    pathname = pathname.replace(/^https?:\/\/www\.lovelysunday\.co/i, "") || "/";
+  }
+
+  // Browser-normalized legacy double-slash lookbook links need explicit stable targets.
+  const legacyDoubleMatch = pathname.match(/^\/lookbook\/\/looks\/([^/?#]+)\/?$/i);
+  if (legacyDoubleMatch) {
+    pathname = `/lookbook-double/looks/${legacyDoubleMatch[1]}/`;
+  } else {
+    const slashTerminatedPathname = pathname.endsWith("/") ? pathname : `${pathname}/`;
+    if (internalUrlRewriteMap[slashTerminatedPathname]) {
+      pathname = correctedLookbookPath(pathname);
+    }
+  }
+
+  const queryPart = search ? `?${search}` : "";
+  const hashPart = hash ? `#${hash}` : "";
+  return `${pathname}${queryPart}${hashPart}`;
+}
+
+const renderedHtml = rawHtml.replace(
+  /<a\b([^>]*?)\bhref=(["'])([^"']+)\2([^>]*)>/gi,
+  (_full, beforeHref, quote, hrefValue, afterHref) => {
+    const rewrittenHref = rewriteInternalHref(hrefValue);
+    return `<a${beforeHref}href=${quote}${rewrittenHref}${quote}${afterHref}>`;
+  },
+);
+---
+
+<Fragment set:html={renderedHtml} />
+
+{
+  hasAutocolumnGallery && (
+    <>
+      <script is:inline>
+        (() => {
+          const gallerySelector =
+            ".site-page--gallery-list .slides.sqs-gallery-design-autocolumns .sqs-gallery-design-autocolumns-slide";
+          const orientationThreshold = 24;
+
+          const getSlides = () => Array.from(document.querySelectorAll(gallerySelector));
+
+          const swapHighResImages = (slides) => {
+            for (const slide of slides) {
+              const img = slide.querySelector("img[data-src]");
+              if (!img) continue;
+              const source = img.getAttribute("data-src");
+              if (!source) continue;
+              if (img.getAttribute("src") !== source) {
+                img.setAttribute("src", source);
+              }
+            }
+          };
+
+          const parseOrientation = (slide) => {
+            const img = slide.querySelector("img");
+            if (!img) return "unknown";
+
+            const dimensions = img.getAttribute("data-image-dimensions") || "";
+            const match = dimensions.match(/(\d+)x(\d+)/i);
+            if (!match) return "unknown";
+
+            const width = Number(match[1]);
+            const height = Number(match[2]);
+            if (!Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0) {
+              return "unknown";
+            }
+
+            if (Math.abs(width - height) <= orientationThreshold) return "square";
+            return height > width ? "portrait" : "landscape";
+          };
+
+          const ensureOrientationData = (slides) => {
+            for (const slide of slides) {
+              const orientation = parseOrientation(slide);
+              slide.dataset.orientation = orientation;
+            }
+          };
+
+          const isBalancedPair = (current, next) => {
+            const currentOrientation = current.dataset.orientation || "unknown";
+            const nextOrientation = next.dataset.orientation || "unknown";
+            return (
+              currentOrientation !== "unknown" &&
+              nextOrientation !== "unknown" &&
+              currentOrientation === nextOrientation
+            );
+          };
+
+          const revealSlide = (slide) => slide.classList.add("is-visible");
+
+          const gallerySlides = getSlides();
+          if (gallerySlides.length === 0) return;
+
+          swapHighResImages(gallerySlides);
+          ensureOrientationData(gallerySlides);
+
+          for (const slide of gallerySlides) {
+            slide.classList.remove("is-half-span");
+          }
+
+          const startIndex = gallerySlides.length > 0 ? 1 : 0;
+          for (let index = startIndex; index < gallerySlides.length; ) {
+            const current = gallerySlides[index];
+            const next = gallerySlides[index + 1];
+            if (!next) {
+              index += 1;
+              continue;
+            }
+
+            if (isBalancedPair(current, next)) {
+              current.classList.add("is-half-span");
+              next.classList.add("is-half-span");
+              index += 2;
+              continue;
+            }
+
+            index += 1;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            gallerySlides.forEach(revealSlide);
+            return;
+          }
+
+          const observer = new IntersectionObserver(
+            (entries, obs) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            },
+            { root: null, rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
+          );
+
+          gallerySlides.forEach((slide) => observer.observe(slide));
+        })();
+      </script>
+    </>
+  )
+}

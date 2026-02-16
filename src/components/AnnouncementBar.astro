@@ -1,0 +1,21 @@
+---
+export interface Props {
+  message?: string;
+}
+
+const {
+  message = "Sign up for our email list & be the first to see LovelySunday's latest looks!",
+} = Astro.props;
+---
+
+<aside class="announcement-bar" role="status" aria-live="polite">
+  <p>{message}</p>
+  <button
+    type="button"
+    class="announcement-bar-close"
+    aria-label="Dismiss announcement"
+    onclick="this.closest('aside')?.remove();"
+  >
+    ×
+  </button>
+</aside>

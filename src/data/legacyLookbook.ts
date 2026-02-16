@@ -6,7 +6,7 @@ export const validDoubleSlashLookbookPaths = [
   '/lookbook//looks/sequin-dresses/',
 ] as const;
 
-export const capturedSingleSlashLookbook404Paths = [
+export const legacySingleSlashLookbook404Paths = [
   '/lookbook/looks/babes-day/',
   '/lookbook/looks/culottes/',
   '/lookbook/looks/get-ouai-sted/',

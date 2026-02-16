@@ -14,7 +14,7 @@ The goal is to mirror only static assets while leaving runtime APIs and external
 3. **Reject first-party API routes**
    - URLs on `lovelysunday.co` / `www.lovelysunday.co` with `/api/` path are excluded.
 4. **Allow known static hosts**
-   - Hosts in `STATIC_HOST_ALLOWLIST` are included (Squarespace/static/font providers).
+   - Hosts in `STATIC_HOST_ALLOWLIST` are included (CDN/static/font providers).
 5. **Allow known static URL patterns**
    - URLs with static file extensions (`.css`, `.js`, `.png`, `.woff2`, etc.) or known provider static patterns are included.
 6. **Allow static resource initiator types**

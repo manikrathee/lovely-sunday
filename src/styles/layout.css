@@ -1,76 +1,17 @@
 body {
     margin: 0;
-    background: #f4f4f4;
+    background: var(--color-bg);
     color: #2f2f2f;
     font-family: var(--font-serif);
-}
-
-.site-wrapper {
-    min-height: 100vh;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
 }
 
 .site-main {
     padding: 4rem 1.5rem 2rem;
 }
 
-.announcement-bar {
-    background: #2f2f32;
-    color: #fff;
-    min-height: 3rem;
-    padding: 0.5rem 1rem;
-    font-family: var(--font-sans-serif);
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.site-breadcrumbs {
+    display: none;
 }
-
-.site-head-container {
-    min-height: 14.6rem;
-    border-bottom: 1px solid #e4e4e4;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 0 2.5rem;
-}
-
-.icon-button {
-    border: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #2e2e2e !important;
-    padding: 0 !important;
-    height: auto !important;
-    line-height: 1 !important;
-    font-size: 3.2rem !important;
-    justify-self: start;
-}
-
-.site-head-logo {
-    justify-self: center;
-    width: min(29rem, 48vw);
-}
-
-.site-head-logo img {
-    width: 100%;
-    height: auto;
-    opacity: 0.7;
-}
-
-.site-head-right {
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    font-size: 2.2rem;
-    color: #242424;
-}
-
-.site-breadcrumbs { display: none; }
 
 .post-feed {
     display: grid;
@@ -93,44 +34,13 @@ body {
     font-weight: 400;
 }
 
-.site-foot {
-    text-align: center;
-    padding: 2.8rem 0 4.2rem;
-    color: #4b4b4b;
-    font-size: 3.4rem;
-}
-
-.site-foot .social-mark {
-    font-family: var(--font-sans-serif);
-    font-size: 4rem;
-    margin-bottom: 1.6rem;
-}
-
-.site-foot div:last-child {
-    font-size: 3.2rem;
-}
-
-.site-foot a {
-    color: #8f70e8;
-}
-
 @media (max-width: 900px) {
-    .site-main { padding-top: 3rem; }
-    .post-feed { grid-template-columns: 1fr; gap: 1.8rem; }
-    .site-head-container {
-        min-height: 10.5rem;
-        padding: 0 1.4rem;
-        position: sticky;
-        bottom: 0;
-        background: #f4f4f4;
-        border-top: 1px solid #e4e4e4;
-        border-bottom: 0;
+    .site-main {
+        padding-top: 3rem;
     }
-    .site-head { display: flex; flex-direction: column-reverse; }
-    .announcement-bar { font-size: 0.9rem; min-height: 2rem; }
-    .site-head-logo { width: 16rem; order: -1; position: fixed; top: 4rem; left: 50%; transform: translateX(-50%); }
-    .site-main { padding-top: 17rem; }
-    .site-head-right { font-size: 2rem; gap: 1rem; }
-    .site-foot { font-size: 2.6rem; }
-    .site-foot div:last-child { font-size: 2.1rem; }
+
+    .post-feed {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
 }

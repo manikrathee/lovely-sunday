@@ -28,6 +28,10 @@ const reportPath = path.resolve(
     args.get("--report") || "capture/manifests/verification_report.json",
 );
 const pageJsonDir = path.resolve(repoRoot, args.get("--page-json-dir") || "capture/page_json");
+const rewriteMapPath = path.resolve(
+    repoRoot,
+    args.get("--rewrite-map") || "capture/manifests/internal_url_rewrite_map.json",
+);
 
 const issues = [];
 
@@ -35,19 +39,24 @@ function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, "utf8"));
 }
 
-function normalizePathname(raw) {
+function normalizeRawPathname(raw) {
     if (!raw || raw === "/") return "/";
-    const normalized = raw.replace(/\/+/g, "/").replace(/\/+$/, "");
-    return normalized.startsWith("/") ? normalized : `/${normalized}`;
+    const [pathOnly] = raw.split("?");
+    const withLeadingSlash = pathOnly.startsWith("/") ? pathOnly : `/${pathOnly}`;
+    return withLeadingSlash.replace(/\/+$/, "");
+}
+
+function normalizePathname(raw) {
+    return normalizeRawPathname(raw).replace(/\/{2,}/g, "/");
 }
 
 function normalizeCanonical(raw) {
     if (!raw) return null;
     try {
         const url = new URL(raw);
-        return normalizePathname(url.pathname);
+        return normalizeRawPathname(url.pathname);
     } catch {
-        return normalizePathname(raw);
+        return normalizeRawPathname(raw);
     }
 }
 
@@ -126,6 +135,22 @@ if ((verificationReport.summary?.mismatches ?? 0) > 0 || (verificationReport.sum
 
 const snapshots = readJson(snapshotsPath).pages || [];
 const expectedPages = snapshots.filter((page) => page.status === "success" && page.live);
+const rewriteMap = fs.existsSync(rewriteMapPath) ? readJson(rewriteMapPath).rewriteMap || {} : {};
+const legacyLookbookSingleToSlug = new Map();
+const legacyLookbookDoubleToSlug = new Map();
+
+for (const [singleUrl, doubleUrl] of Object.entries(rewriteMap)) {
+    try {
+        const singlePath = normalizeRawPathname(new URL(singleUrl).pathname);
+        const doublePath = normalizeRawPathname(new URL(doubleUrl).pathname);
+        const slug = doublePath.split("/").filter(Boolean).at(-1);
+        if (!slug) continue;
+        legacyLookbookSingleToSlug.set(singlePath, slug);
+        legacyLookbookDoubleToSlug.set(doublePath, slug);
+    } catch (error) {
+        issues.push(`Invalid rewrite-map entry (${singleUrl} -> ${doubleUrl}): ${error.message}`);
+    }
+}
 
 const screenshotByPath = new Map();
 for (const entry of fs.readdirSync(pageJsonDir)) {
@@ -133,7 +158,7 @@ for (const entry of fs.readdirSync(pageJsonDir)) {
     try {
         const payload = readJson(path.join(pageJsonDir, entry));
         if (!payload.url) continue;
-        const routePath = normalizePathname(new URL(payload.url).pathname);
+        const routePath = normalizeRawPathname(new URL(payload.url).pathname);
         screenshotByPath.set(routePath, {
             desktop: payload._capture?.desktopScreenshot,
             mobile: payload._capture?.mobileScreenshot,
@@ -146,16 +171,26 @@ for (const entry of fs.readdirSync(pageJsonDir)) {
 for (const page of expectedPages) {
     let routePath;
     try {
-        routePath = normalizePathname(new URL(page.url).pathname);
+        routePath = normalizeRawPathname(new URL(page.url).pathname);
     } catch (error) {
         issues.push(`Malformed URL in snapshots: ${JSON.stringify(page.url)} (${error.message}).`);
         continue;
     }
 
-    const htmlPath =
-        routePath === "/"
-            ? path.join(distDir, "index.html")
-            : path.join(distDir, routePath.slice(1), "index.html");
+    const normalizedRoutePath = normalizePathname(routePath);
+    const legacyDoubleSlug = legacyLookbookDoubleToSlug.get(routePath);
+    const legacySingleSlug = legacyLookbookSingleToSlug.get(routePath);
+    let htmlPath;
+    if (legacyDoubleSlug) {
+        htmlPath = path.join(distDir, "lookbook-double", "looks", legacyDoubleSlug, "index.html");
+    } else if (legacySingleSlug) {
+        htmlPath = path.join(distDir, "lookbook-single", "looks", legacySingleSlug, "index.html");
+    } else {
+        htmlPath =
+            normalizedRoutePath === "/"
+                ? path.join(distDir, "index.html")
+                : path.join(distDir, normalizedRoutePath.slice(1), "index.html");
+    }
 
     if (!fs.existsSync(htmlPath)) {
         issues.push(`${routePath}: missing built output file (${path.relative(repoRoot, htmlPath)}).`);

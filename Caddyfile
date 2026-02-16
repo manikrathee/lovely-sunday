@@ -1,0 +1,3 @@
+http://lovelysunday.test {
+	reverse_proxy localhost:4321
+}

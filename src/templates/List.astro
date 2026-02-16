@@ -11,8 +11,6 @@ interface Props {
 
 const { entry, items = [], baseSlug } = Astro.props;
 const { title, description } = entry.data;
-
-let postCounter = 0;
 ---
 
 <Layout title={title} description={description}>
@@ -28,15 +26,11 @@ let postCounter = 0;
         But generic List might want it. */}
 
     <div class="post-feed">
-        {items.map((post) => {
-            postCounter++;
-            return (
-                <PostCard
-                    count={postCounter}
-                    post={post}
-                    slug={baseSlug ? `${baseSlug}/${post.slug}` : post.slug}
-                />
-            );
-        })}
+        {items.map((post) => (
+            <PostCard
+                post={post}
+                slug={baseSlug ? `${baseSlug}/${post.slug}` : post.slug}
+            />
+        ))}
     </div>
 </Layout>

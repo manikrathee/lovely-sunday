@@ -57,6 +57,7 @@ STATIC_EXTENSIONS = {
     ".pdf",
 }
 STATIC_HOST_ALLOWLIST = {
+    # Legacy platform CDN hosts (source site assets).
     "assets.squarespace.com",
     "images.squarespace-cdn.com",
     "static1.squarespace.com",
@@ -76,7 +77,7 @@ RUNTIME_HOST_BLOCKLIST = {
     "www.googletagmanager.com",
     "log.pinterest.com",
     "graph.facebook.com",
-    "clanker-events.squarespace.com",
+    "clanker-events.squarespace.com",  # Legacy platform telemetry.
 }
 
 ASSET_INITIATOR_ALLOWLIST = {"img", "image", "link", "script", "css", "font", "video", "audio"}
