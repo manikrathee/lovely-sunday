@@ -1,4 +1,4 @@
-import { lstat, mkdir, readlink, rm, symlink } from "node:fs/promises";
+import { access, lstat, mkdir, readlink, rm, symlink } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,6 +9,15 @@ const repoRoot = path.resolve(__dirname, "..");
 const mirrorSource = path.join(repoRoot, "capture", "assets", "downloads");
 const publicAssetsDir = path.join(repoRoot, "public", "assets");
 const mirrorTarget = path.join(publicAssetsDir, "downloads");
+
+try {
+  await access(mirrorSource);
+} catch {
+  console.warn(
+    `Skipping capture asset symlink: source directory does not exist.\n  Expected: ${mirrorSource}`,
+  );
+  process.exit(0);
+}
 
 await mkdir(publicAssetsDir, { recursive: true });
 

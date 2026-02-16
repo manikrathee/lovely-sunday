@@ -33,6 +33,10 @@ if (expectedDownloaded !== manifestSuccess) {
   );
 }
 
+if (!Array.isArray(assetsManifest.assets)) {
+  throw new Error("assets_manifest.json is missing the 'assets' array.");
+}
+
 const successfulAssets = assetsManifest.assets.filter(
   (entry) => entry.status === "success",
 );
@@ -55,6 +59,13 @@ for (const entry of successfulAssets) {
 }
 
 const mirroredAssetUrls = new Set(assetsManifest.assets.map((entry) => entry.url));
+
+if (!Array.isArray(failedRecheck.entries)) {
+  throw new Error(
+    "failed_url_recheck_report.json is missing the 'entries' array.",
+  );
+}
+
 const outboundEntries = failedRecheck.entries.filter(
   (entry) => entry.recheck_status === "outbound_link_not_static_asset",
 );
