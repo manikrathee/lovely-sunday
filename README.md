@@ -1,247 +1,303 @@
-# 🏺 Clay Theme for Astro
+# Lovely Sunday — Astro Static Site on AWS (S3 + CloudFront + Route 53 + Hover)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/098d9ba5-fd1a-4c6b-83c1-0b70fd7e017c/deploy-status)](https://app.netlify.com/projects/clay-astro-theme/deploys)
-[![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-orange?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+This repository is an Astro static site configured for directory-style output and trailing slashes, which is ideal for S3 + CloudFront hosting.
 
-A minimalist, image-centric theme for photographers and artists. Originally a Gatsby theme, now fully ported to **Astro** for superior performance and modern development experience.
-
-> **Note**: This theme is a modern Astro port of the beautiful [Clay Theme](https://github.com/lilxyzz/clay-theme) by `lilxyzz`.
-
-<p align="center">
-  <img src="public/img/clay_astro_light.png" width="48%" alt="Light Mode" style="border-radius: 10px; border: 1px solid #ddd;">
-  <img src="public/img/clay_astro_dark.png" width="48%" alt="Dark Mode" style="border-radius: 10px; border: 1px solid #333;">
-</p>
-
-📺 Check out the [Live Demo](https://clay-astro-theme.netlify.app) or view on the [Astro Themes Portal](https://astro.build/themes/details/clay/)
-
----
-
-## ✨ Features
-
-- ⚡ **Astro-Powered** - Blazing fast static site generation with zero-JS output by default
-- 🎨 **Beautiful Design** - Minimalist and image-centric layout perfect for portfolios
-- 🔄 **Swup SPA Navigation** - Smooth SPA-like page transitions on static output
-- 📱 **Responsive Design** - Mobile-friendly layout with a collapsible menu
-- 🌗 **Dark Mode** - Native dark mode support with toggle switch and persistence
-- 📝 **CMS Ready** - Optional **Decap CMS** support (disabled by default, see customization section)
-- 🎯 **Scoped CSS** - Modular, component-scoped styles replacing legacy monolithic CSS
-- ✍️ **Typography** - Futura for titles/menu (Small Caps) and EB Garamond for body
-- 📚 **Content Collections** - Type-safe Markdown content management
-- 🔍 **SEO Stack** - `astro-seo`, `@astrojs/sitemap`, `astro-robots-txt`, OG image generation
-- 🤖 **LLM Discoverability** - `@nuasite/llm-enhancements` for `.md` endpoints + `llms.txt`
-- 📈 **Analytics & Performance** - `@astrolib/analytics`, `astro-compressor`, `astro-capo`
-- 🧭 **Navigation Utilities** - `astro-navbar` and `astro-breadcrumbs`
-- 🖼️ **Image Tooling** - `astro-imagetools` + `astro-og-canvas`
-
----
-
-## 🚀 Getting Started
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/clay-astro-theme.git
-cd clay-astro-theme
-
-# Install dependencies and start dev server
-npm install && npm run dev
-```
-
-Visit `http://localhost:4321` to see your site in action! 🎉
-
-### Detailed Installation
-
-If you prefer a step-by-step approach:
-
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
-
-2.  **Start Development Server**:
-    ```bash
-    npm run dev
-    ```
-
-3.  **Build for Production**:
-    ```bash
-    npm run build
-    ```
-    The output will be in the `dist/` directory, ready for deployment.
-
----
-
-## 🛠️ Tech Stack
-
-- **[Astro](https://astro.build)** - Static Site Generator
-- **[Decap CMS](https://decapcms.org/)** - Headless CMS (optional, disabled by default)
-- **[PostCSS](https://postcss.org/)** - CSS Processing
-- **TypeScript** - Type Safety
-- **Markdown/MDX** - Content Management
-
-### Key Dependencies
-
-- **Core**: `astro`
-- **Integrations**: `@astrojs/sitemap`, `astro-robots-txt`, `@nuasite/llm-enhancements`, `astro-compressor`, `astro-imagetools`
-- **SEO**: `astro-seo`, `astro-og-canvas`, `astro-capo`
-- **UX**: `swup`, `astro-navbar`, `astro-breadcrumbs`
-- **Fonts & Analytics**: `astro-google-fonts-optimizer`, `@astrolib/analytics`
-- **Styling**: `postcss`, `autoprefixer`
-  - Plugins: `postcss-color-function`, `postcss-custom-properties`, `postcss-easy-import`
-
----
-
-## 📁 Project Structure
-
-```text
-/
-├── public/                 # Static assets (images, admin config)
-│   ├── admin/              # Decap CMS configuration
-│   └── img/                # Uploaded images
-├── src/
-│   ├── components/         # Reusable Astro components (PostCard, etc.)
-│   ├── content/            # Content Collections (Markdown/MDX)
-│   │   ├── news/           # News/blog posts
-│   │   ├── pages/          # Static pages
-│   │   ├── sold/           # Sold items (for artists)
-│   │   └── work/           # Portfolio work items
-│   ├── layouts/            # Main layouts (Layout.astro)
-│   ├── pages/              # Route definitions
-│   │   ├── index.astro     # Home page
-│   │   ├── [...slug].astro # Dynamic route for generic pages
-│   │   └── work/[slug].astro # Dynamic routes for collections
-│   ├── styles/             # Global variables and resets
-│   │   ├── content.css     # Typography for markdown content
-│   │   └── vars.css        # CSS Variables (Colors, Fonts)
-│   └── templates/          # Templates for different content types
-├── astro.config.mjs        # Astro configuration
-├── postcss.config.cjs      # PostCSS configuration
-└── tsconfig.json           # TypeScript configuration
-```
-
----
-
-## 🎨 Customization
-
-### Fonts & Colors
-
-Edit `src/styles/vars.css` to update CSS variables for colors, fonts, and breakpoints:
-
-```css
-:root {
-  --color-primary: #3eb0ef;
-  --color-base: #131313;
-  --font-serif: 'EB Garamond', Georgia, Times, serif;
-  /* ... more variables */
-}
-```
-
-### Content Management
-
-#### Direct Editing (Recommended)
-
-Add or edit markdown files directly in the `src/content/` folders:
-- `src/content/news/` - Blog posts/news items
-- `src/content/work/` - Portfolio work items
-- `src/content/sold/` - Exhibition/sold items
-- `src/content/pages/` - Static pages (bio, contact, etc.)
-
-#### Decap CMS (Optional)
-
-> **⚠️ Note**: The Decap CMS configuration is **disabled by default** (`public/admin/config.yml.disabled`) to ensure smooth deployments. Netlify Identity (required for the CMS) is now deprecated by Netlify.
-
-**For showcase/demo purposes**: The CMS is not needed. Edit content files directly in your repository.
-
-**To enable the CMS for production use**:
-
-1. Choose a backend option:
-   - **Git Gateway** (deprecated but functional): Requires Netlify Identity setup
-   - **GitHub/GitLab OAuth**: Direct repository authentication
-   - **Alternative**: Consider modern headless CMS solutions like Sanity, Contentful, or Tina CMS
-
-2. Rename the config file:
-   ```bash
-   mv public/admin/config.yml.disabled public/admin/config.yml
-   ```
-
-3. Update the backend configuration in `public/admin/config.yml` based on your chosen authentication method
-
-4. For Git Gateway (if using despite deprecation):
-   - Enable Netlify Identity in your site settings
-   - Enable Git Gateway under Identity → Services
-   - Note: Netlify recommends migrating to Auth0 or other solutions
-
-### Navigation
-
-Edit the `<nav>` section in `src/layouts/Layout.astro` to customize menu links.
-
----
-
-## 🚀 Deployment
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
-
-### Deploy to S3 (Recommended for this setup)
-
-This project is configured for static output and directory-style routing:
 - `output: "static"`
 - `build.format: "directory"`
 - `trailingSlash: "always"`
 
-That maps cleanly to S3 object keys like `/work/item/index.html`.
+---
 
-1. Build:
-   ```bash
-   npm run build
-   ```
-2. Set your real site URL (used by sitemap, robots, canonical links):
-   ```bash
-   SITE_URL=https://photos.example.com npm run build
-   ```
-3. Sync `dist/` to your S3 bucket:
-   ```bash
-   aws s3 sync dist/ s3://YOUR_BUCKET --delete
-   ```
-4. If using CloudFront, invalidate:
-   ```bash
-   aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION --paths "/*"
-   ```
+## Notes (what this README now includes)
 
-S3/CloudFront routing best practice:
-- Set `index.html` as default root object.
-- For SPA-style deep-link resilience, map 403/404 to `/index.html` (CloudFront custom error response) if your distribution behavior needs fallback rewrites.
+This README contains:
+- Full local dev/build/deploy command list
+- End-to-end AWS setup notes for S3 + CloudFront + ACM
+- DNS setup instructions for both Route 53 + Hover models
+- Verification commands (`curl`, `dig`) and a copy/paste quick reference
 
-### Deploy to Vercel
+If you just need the shortest path, use sections **4) Deploy commands** and **5) DNS setup details (Route 53 + Hover)**.
+
+---
+
+## 1) Prerequisites
+
+Install locally:
 
 ```bash
-npm run build
-# Upload dist/ folder to Vercel
+# Node (20+ recommended)
+node -v
+npm -v
+
+# AWS CLI (v2)
+aws --version
+
+# Authenticate AWS CLI
+aws configure
 ```
 
-## 🔧 Environment Variables
-
-- `SITE_URL` - production URL used for sitemap, robots, canonical tags, `llms.txt`
-- `PUBLIC_GA_MEASUREMENT_ID` - enables Google Analytics via `@astrolib/analytics`
-- `PUBLIC_TWITTER_HANDLE` - optional Twitter metadata in SEO tags
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+Required AWS resources:
+- S3 bucket for site files
+- CloudFront distribution with the S3 bucket as origin
+- ACM certificate in `us-east-1` for your domain(s)
+- Route 53 hosted zone (recommended), with domain registered at Hover
 
 ---
 
-## 🙏 Credits
+## 2) Local development and build commands
 
-- **Original Theme**: [Clay Theme](https://github.com/lilxyzz/clay-theme) by `lilxyzz`
-- **Framework**: [Astro](https://astro.build)
-- **CMS**: [Decap CMS](https://decapcms.org/)
+```bash
+# Install dependencies
+npm install
 
+# Start dev server
+npm run dev
 
+# Build static output into dist/
+npm run build
 
-<p align="center">Made with ❤️ using Astro</p>
+# Preview production build locally
+npm run preview
+```
+
+Build with your canonical production URL:
+
+```bash
+SITE_URL=https://www.yourdomain.com npm run build
+```
+
+---
+
+## 3) One-time AWS setup
+
+> Replace placeholders (`YOUR_*`) before running commands.
+
+### 3.1 Create S3 bucket
+
+```bash
+AWS_REGION=us-east-1
+BUCKET=www.yourdomain.com
+
+aws s3api create-bucket \
+  --bucket "$BUCKET" \
+  --region "$AWS_REGION"
+```
+
+If your region is **not** `us-east-1`, use:
+
+```bash
+aws s3api create-bucket \
+  --bucket "$BUCKET" \
+  --region YOUR_REGION \
+  --create-bucket-configuration LocationConstraint=YOUR_REGION
+```
+
+Block public access (recommended with CloudFront + OAC):
+
+```bash
+aws s3api put-public-access-block \
+  --bucket "$BUCKET" \
+  --public-access-block-configuration \
+  'BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true'
+```
+
+### 3.2 Request ACM certificate (CloudFront must use `us-east-1`)
+
+```bash
+aws acm request-certificate \
+  --region us-east-1 \
+  --domain-name yourdomain.com \
+  --subject-alternative-names "*.yourdomain.com" "www.yourdomain.com" \
+  --validation-method DNS
+```
+
+Then complete DNS validation records (CNAMEs) in Route 53 (or Hover if not delegated yet).
+
+### 3.3 Create CloudFront distribution
+
+Create distribution using:
+- Origin: S3 bucket
+- Origin Access Control (OAC): enabled
+- Alternate domain names (CNAMEs): `yourdomain.com`, `www.yourdomain.com`
+- Viewer certificate: ACM cert from `us-east-1`
+- Default root object: `index.html`
+
+(You can create this in AWS Console; CLI is possible but verbose.)
+
+### 3.4 Grant CloudFront read access to S3 bucket
+
+Attach bucket policy (replace placeholders):
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCloudFrontServicePrincipalReadOnly",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "cloudfront.amazonaws.com"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::www.yourdomain.com/*",
+      "Condition": {
+        "StringEquals": {
+          "AWS:SourceArn": "arn:aws:cloudfront::123456789012:distribution/E123ABC456DEF"
+        }
+      }
+    }
+  ]
+}
+```
+
+Apply it:
+
+```bash
+aws s3api put-bucket-policy \
+  --bucket "$BUCKET" \
+  --policy file://bucket-policy.json
+```
+
+---
+
+## 4) Deploy commands (repeat for every release)
+
+```bash
+# 1) Build
+SITE_URL=https://www.yourdomain.com npm run build
+
+# 2) Sync build output to S3
+aws s3 sync dist/ s3://www.yourdomain.com --delete
+
+# 3) Invalidate CloudFront cache
+aws cloudfront create-invalidation \
+  --distribution-id E123ABC456DEF \
+  --paths "/*"
+```
+
+---
+
+## 5) DNS setup details (Route 53 + Hover)
+
+You have two practical DNS models. Model A is strongly recommended.
+
+## Model A (recommended): Route 53 hosts DNS, Hover remains registrar
+
+### Step A1: Create Route 53 hosted zone
+
+```bash
+aws route53 create-hosted-zone \
+  --name yourdomain.com \
+  --caller-reference "$(date +%s)"
+```
+
+Get Route 53 name servers:
+
+```bash
+aws route53 list-hosted-zones-by-name --dns-name yourdomain.com
+```
+
+Or in console: Route 53 → Hosted zones → `yourdomain.com` → NS record.
+
+### Step A2: Update nameservers at Hover
+
+In Hover domain settings:
+- Disable Hover DNS (if enabled)
+- Set custom nameservers to the 4 Route 53 NS values
+
+After this, Route 53 becomes authoritative DNS for your domain.
+
+### Step A3: Create alias records in Route 53 to CloudFront
+
+In Route 53 hosted zone create:
+- `A` (Alias) for `yourdomain.com` → CloudFront distribution
+- `AAAA` (Alias) for `yourdomain.com` → same distribution
+- `A` (Alias) for `www.yourdomain.com` → CloudFront distribution
+- `AAAA` (Alias) for `www.yourdomain.com` → same distribution
+
+You can also add redirect behavior (optional):
+- Force apex to `www` (or reverse) via CloudFront Function/Lambda@Edge + single canonical host.
+
+## Model B (not preferred): Keep Hover DNS authoritative
+
+If you keep DNS at Hover:
+- `www` can be a CNAME to `dxxxxxxxxxxxx.cloudfront.net`.
+- Apex (`yourdomain.com`) usually cannot be CNAME at many DNS providers; if Hover does not provide ALIAS/ANAME flattening for apex to CloudFront, apex routing is harder.
+
+Practical outcome:
+- Either use `www` as your only public host, or
+- Move authoritative DNS to Route 53 (Model A).
+
+---
+
+## 6) CloudFront behavior for Astro static routing
+
+Because this repo builds with directory format and trailing slashes, routes resolve to objects like:
+- `/about/` → `/about/index.html`
+- `/work/item/` → `/work/item/index.html`
+
+CloudFront settings to verify:
+- Default root object: `index.html`
+- Compression: on (Brotli/Gzip)
+- HTTPS redirect: on
+
+Custom error response recommendations:
+- 404 → `/404.html` (if you create one)
+- Avoid broad SPA fallback unless intentionally desired
+
+---
+
+## 7) Environment variables
+
+Used by this repository:
+
+- `SITE_URL`: canonical site URL used by sitemap/robots/canonical metadata
+- `PUBLIC_GA_MEASUREMENT_ID`: optional analytics
+- `PUBLIC_TWITTER_HANDLE`: optional social metadata
+
+Example:
+
+```bash
+export SITE_URL=https://www.yourdomain.com
+npm run build
+```
+
+---
+
+## 8) Verification checklist
+
+After first deployment:
+
+```bash
+# Check CloudFront hostname directly
+curl -I https://dxxxxxxxxxxxx.cloudfront.net/
+
+# Check your production host
+curl -I https://www.yourdomain.com/
+curl -I https://yourdomain.com/
+
+# Confirm sitemap if enabled
+curl -I https://www.yourdomain.com/sitemap-index.xml
+```
+
+DNS propagation check:
+
+```bash
+dig NS yourdomain.com +short
+dig A yourdomain.com +short
+dig A www.yourdomain.com +short
+```
+
+---
+
+## 9) Repo commands quick reference
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
+SITE_URL=https://www.yourdomain.com npm run build
+aws s3 sync dist/ s3://www.yourdomain.com --delete
+aws cloudfront create-invalidation --distribution-id E123ABC456DEF --paths "/*"
+```
