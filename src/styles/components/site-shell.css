@@ -1,6 +1,7 @@
 :root {
   --header-height: clamp(4rem, 1vw + 3.5rem, 5rem);
   --site-shell-gap: clamp(1rem, 2vw, 1.8rem);
+  --footer-reveal: clamp(11rem, 20vw, 15rem);
 }
 
 /* Site Wrapper
@@ -10,6 +11,15 @@
   background: var(--color-bg);
   min-height: 100vh;
   color: var(--color-base);
+  position: relative;
+}
+
+.site-content-shell {
+  position: relative;
+  z-index: 2;
+  background: var(--color-bg);
+  box-shadow: 0 40px 90px rgba(10, 10, 10, 0.18), 0 20px 35px rgba(10, 10, 10, 0.08),
+    0 8px 14px rgba(10, 10, 10, 0.06);
 }
 
 [data-theme='dark'] .site-wrapper {
@@ -89,6 +99,55 @@
 
 [data-theme='dark'] .site-foot {
   border-top-color: var(--color-border);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: var(--footer-reveal);
+  padding: 2.4rem var(--site-shell-gap) 3.1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), #f3f0e8 30%, #ece6db);
+  overflow: hidden;
+}
+
+.site-foot-logo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+.site-foot-logo svg {
+  width: min(94vw, 820px);
+  height: auto;
+}
+
+.site-foot-logo svg .st0 {
+  fill: none;
+  stroke: rgba(40, 37, 32, 0.5);
+  stroke-width: 1.5;
+  stroke-dasharray: 2800;
+  stroke-dashoffset: 2800;
+  animation: footer-logo-write 5.8s cubic-bezier(0.67, 0.01, 0.38, 0.98) forwards;
+}
+
+.site-foot-logo svg path:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+
+.site-foot-logo svg path:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.site-foot-logo svg path:nth-of-type(4) {
+  animation-delay: 0.9s;
+}
+
+.site-foot-logo svg path:nth-of-type(5) {
+  animation-delay: 1.2s;
 }
 
 .site-foot-inner {
@@ -99,6 +158,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
+  position: relative;
+  z-index: 2;
 }
 
 .site-foot-brand strong {
@@ -135,6 +196,19 @@
 /* Responsive
 /* ---------------------------------------------------------- */
 
+@keyframes footer-logo-write {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .site-foot-logo svg .st0 {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
 @media (max-width: 700px) {
   .site-head-container {
     height: auto;
@@ -151,8 +225,17 @@
     font-size: 0.9rem;
   }
 
+  .site-foot {
+    min-height: clamp(13rem, 40vw, 16rem);
+    padding-bottom: 2.2rem;
+  }
+
   .site-foot-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-foot-logo {
+    opacity: 0.12;
   }
 }
