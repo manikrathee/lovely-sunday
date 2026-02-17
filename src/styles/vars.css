@@ -4,14 +4,17 @@
 :root {
 
     /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #131313;
-    --color-border: #ddd;
-    --color-bg: #ffffff;
+    --color-primary: #C9A6A0;
+    --color-base: #1A1A1A;
+    --color-border: #E5DDD5;
+    --color-bg: #FAF7F2;
+    --color-accent: #C4A265;
+    --color-bg-subtle: #F3EDE6;
 
     /* Fonts */
     --font-sans-serif: 'Futura', 'League Spartan', 'Trebuchet MS', Arial, sans-serif;
     --font-serif: 'EB Garamond', Georgia, Times, serif;
+    --font-display: 'Cormorant Garamond', var(--font-serif);
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
@@ -28,16 +31,15 @@
     /* Sizes */
     --height: 4rem;
     --margin: 2rem;
-    --radius: 0.5rem;
+    --radius: 0.2rem;
 
 }
 
 [data-theme='dark'] {
-    --color-primary: #5ec2ff;
-    --color-base: #e0e0e0;
-    --color-border: #444;
-    --color-bg: #121212;
-
-
-    /* Old BG--color-bg: #f8f8f8;*/
+    --color-primary: #D4B5AF;
+    --color-base: #E8E2DC;
+    --color-border: #3A3530;
+    --color-bg: #171514;
+    --color-accent: #D4B280;
+    --color-bg-subtle: #1E1C1A;
 }

@@ -1,46 +1,61 @@
-.post-card {
-  min-height: 42rem;
-}
+/* Post Card
+/* ---------------------------------------------------------- */
 
 .post-card-link {
   text-decoration: none;
-  color: #505050;
+  color: var(--color-base);
   display: block;
-  transition: color 200ms ease;
-}
-
-.post-card-link:hover {
-  color: #2f2f2f;
 }
 
 .post-card-image-wrap {
-  background: #f1f1f1;
+  background: var(--color-bg-subtle);
   aspect-ratio: 0.8 / 1;
   overflow: hidden;
+  border-radius: var(--radius);
+}
+
+/* Full-width cards get a landscape hero ratio */
+.post-feed .post-card:nth-child(5n+3) .post-card-image-wrap {
+  aspect-ratio: 16 / 9;
 }
 
 .post-card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.98);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.post-card-link:hover .post-card-image {
+  transform: scale(1.02);
 }
 
 .post-card-content {
-  padding: 1.7rem 0.6rem 0;
+  padding: 1.5rem 0 0;
   text-align: center;
 }
 
 .post-card-title {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.5;
-  font-weight: 400;
+  font-family: var(--font-sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-base);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.post-card-link:hover .post-card-title {
+  opacity: 1;
+  text-decoration: none;
 }
 
 .post-card.no-image {
-  border: 1px solid #e6e6e6;
-  background: #fff;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,26 +65,19 @@
   padding: 2.8rem;
 }
 
-.post-card-link:hover .post-card-title {
-  text-decoration: underline;
-}
-
 @media (max-width: 900px) {
-  .post-card {
-    min-height: 0;
-  }
-
   .post-card-image-wrap {
     aspect-ratio: 0.9 / 1;
   }
 
   .post-card-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .post-card-link {
+  .post-card-link,
+  .post-card-image {
     transition: none;
   }
 }

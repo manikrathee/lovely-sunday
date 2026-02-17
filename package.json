@@ -28,7 +28,6 @@
     "astro-capo": "^0.0.1",
     "astro-compressor": "^1.2.0",
     "astro-google-fonts-optimizer": "^0.2.2",
-    "astro-imagetools": "^0.9.0",
     "astro-navbar": "^2.4.0",
     "astro-og-canvas": "^0.10.1",
     "astro-robots-txt": "^1.0.0",
@@ -41,6 +40,7 @@
     "swup": "^4.8.2"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0"
+    "cheerio": "^1.2.0",
+    "playwright": "^1.52.0"
   }
 }

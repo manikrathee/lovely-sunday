@@ -1,6 +1,7 @@
 /* Animations
 /* ---------------------------------------------------------- */
 
+/* Swup page transitions */
 .transition-fade {
     transition: 0.25s;
     opacity: 1;
@@ -23,5 +24,29 @@ html.is-animating .transition-fade {
   }
   100% {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Scroll reveal for post cards */
+.post-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.post-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children for visual rhythm */
+.post-card:nth-child(2) { transition-delay: 0.1s; }
+.post-card:nth-child(3) { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .post-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

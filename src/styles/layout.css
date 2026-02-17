@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: var(--color-bg);
-    color: #2f2f2f;
+    color: var(--color-base);
     font-family: var(--font-serif);
 }
 
@@ -15,10 +15,15 @@ body {
 
 .post-feed {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.6rem;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2rem;
     max-width: 112rem;
     margin: 0 auto;
+}
+
+/* Every 5th card (starting from 3rd) spans full width for variety */
+.post-feed .post-card:nth-child(5n+3) {
+    grid-column: 1 / -1;
 }
 
 .page-head {
@@ -31,7 +36,9 @@ body {
 .page-head-title {
     font-size: clamp(3.6rem, 4vw, 5.4rem);
     line-height: 1.1;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
 }
 
 @media (max-width: 900px) {
