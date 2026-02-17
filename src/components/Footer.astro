@@ -1,4 +1,6 @@
 ---
+import { readFileSync } from "node:fs";
+
 const links = [
   { label: "Discover", href: "/lookbook" },
   { label: "Archive", href: "/news" },
@@ -6,9 +8,15 @@ const links = [
   { label: "Instagram", href: "https://www.instagram.com/lovelysunday" },
 ];
 const currentYear = new Date().getFullYear();
+const footerLogoSvg = readFileSync(
+  new URL("../../public/img/lovely-sunday-logo.svg", import.meta.url),
+  "utf-8",
+);
 ---
 
 <footer class="site-foot">
+  <div class="site-foot-logo" aria-hidden="true" set:html={footerLogoSvg} />
+
   <div class="site-foot-inner">
     <div class="site-foot-brand">
       <strong>Lovely Sunday</strong>

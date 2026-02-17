@@ -117,19 +117,21 @@ const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false
         </script>
     </Head>
     <body class="site-wrapper">
-        <Header title={title} />
+        <div class="site-content-shell">
+            <Header title={title} />
 
-        {showBreadcrumbs && (
-            <div class="site-breadcrumbs">
-                <Breadcrumbs indexText="Home" />
-            </div>
-        )}
+            {showBreadcrumbs && (
+                <div class="site-breadcrumbs">
+                    <Breadcrumbs indexText="Home" />
+                </div>
+            )}
 
-        <main id="site-main" class="site-main">
-            <div id="swup" class="transition-fade">
-                <slot />
-            </div>
-        </main>
+            <main id="site-main" class="site-main">
+                <div id="swup" class="transition-fade">
+                    <slot />
+                </div>
+            </main>
+        </div>
 
         <Footer />
 
