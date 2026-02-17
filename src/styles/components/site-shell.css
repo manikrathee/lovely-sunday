@@ -3,35 +3,38 @@
   --site-shell-gap: clamp(1rem, 2vw, 1.8rem);
 }
 
+/* Site Wrapper
+/* ---------------------------------------------------------- */
+
 .site-wrapper {
-  background: radial-gradient(circle at top, rgba(62, 176, 239, 0.15), transparent 45%),
-    radial-gradient(circle at right, rgba(255, 193, 7, 0.18), transparent 40%),
-    var(--color-bg);
+  background: var(--color-bg);
   min-height: 100vh;
   color: var(--color-base);
 }
 
 [data-theme='dark'] .site-wrapper {
-  background: radial-gradient(circle at top, rgba(62, 176, 239, 0.08), transparent 45%),
-    radial-gradient(circle at right, rgba(255, 193, 7, 0.06), transparent 40%),
+  background: radial-gradient(circle at top, rgba(201, 166, 160, 0.05), transparent 50%),
     var(--color-bg);
 }
+
+/* Header
+/* ---------------------------------------------------------- */
 
 .site-head {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(250, 247, 242, 0.95);
   backdrop-filter: blur(8px);
-  box-shadow: 0 10px 20px rgba(19, 19, 19, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-border);
   z-index: 20;
 }
 
 [data-theme='dark'] .site-head {
-  background: rgba(18, 18, 18, 0.92);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: rgba(23, 21, 20, 0.95);
+  box-shadow: none;
+  border-bottom-color: var(--color-border);
 }
 
 .site-head-container {
@@ -48,61 +51,44 @@
   max-height: calc(var(--header-height) - 1rem);
 }
 
+.site-head-left,
 .site-head-right {
   display: flex;
-  gap: 0.8rem;
-}
-
-.site-head-right .icon-button {
-  width: 4.4rem;
-  height: 4.4rem;
-  padding: 0;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(255, 255, 255, 0.8);
-  font-size: 1.4rem;
-  line-height: 4.4rem;
-}
-
-[data-theme='dark'] .site-head-right .icon-button {
-  border-color: rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.announcement-bar {
-  display: flex;
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
-  padding: 0.45rem 1rem;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
-  background: linear-gradient(135deg, #131313, #3eb0ef);
-  color: #fff;
 }
 
-.announcement-bar button {
-  border: 0;
-  background: transparent;
-  color: inherit;
-  font-size: 1.6rem;
-  cursor: pointer;
-  border-radius: 50%;
-  min-width: 4.4rem;
-  min-height: 4.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+.site-head-left a,
+.site-head-right a {
+  font-family: var(--font-sans-serif);
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-base);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
+
+.site-head-left a:hover,
+.site-head-right a:hover {
+  opacity: 1;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Footer
+/* ---------------------------------------------------------- */
 
 .site-foot {
   margin-top: var(--site-shell-gap);
-  padding: 2rem var(--site-shell-gap) 3rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 3rem var(--site-shell-gap) 4rem;
+  border-top: 1px solid var(--color-border);
 }
 
 [data-theme='dark'] .site-foot {
-  border-top-color: rgba(255, 255, 255, 0.08);
+  border-top-color: var(--color-border);
 }
 
 .site-foot-inner {
@@ -115,6 +101,13 @@
   gap: 0.8rem;
 }
 
+.site-foot-brand strong {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  font-size: 1.2rem;
+}
+
 .site-foot-nav {
   display: flex;
   gap: 1.5rem;
@@ -122,15 +115,25 @@
 }
 
 .site-foot-nav a {
-  color: inherit;
+  font-family: var(--font-sans-serif);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: var(--color-base);
+  opacity: 0.5;
   text-decoration: none;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .site-foot-nav a:hover {
-  text-decoration: underline;
+  opacity: 1;
+  color: var(--color-accent);
+  text-decoration: none;
 }
+
+/* Responsive
+/* ---------------------------------------------------------- */
 
 @media (max-width: 700px) {
   .site-head-container {
@@ -138,14 +141,14 @@
     padding-block: 0.8rem;
   }
 
+  .site-head-left,
   .site-head-right {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
-  .announcement-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.3rem;
+  .site-head-left a,
+  .site-head-right a {
+    font-size: 0.9rem;
   }
 
   .site-foot-inner {

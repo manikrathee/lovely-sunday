@@ -1,33 +1,20 @@
 ---
-import AnnouncementBar from "./AnnouncementBar.astro";
-
-const utilities = [
-  { icon: "◉", label: "Browse our social feed" },
-  { icon: "⌕", label: "Search LovelySunday archives" },
-  { icon: "👜", label: "View cart" },
-];
 ---
 
 <header class="site-head">
-    <AnnouncementBar />
-
     <div class="site-head-container">
-        <button class="icon-button" aria-label="Open menu">☰</button>
+        <nav class="site-head-left" aria-label="Primary">
+            <a href="/lookbook">Discover</a>
+            <a href="/news">Archive</a>
+        </nav>
 
         <a class="site-head-logo" href="/" aria-label="Lovely Sunday home">
             <img src="/img/lovely-sunday-logo.svg" alt="Lovely Sunday" />
         </a>
 
         <nav class="site-head-right" aria-label="Utilities">
-            {utilities.map((utility) => (
-                <button
-                    type="button"
-                    class="icon-button"
-                    aria-label={utility.label}
-                >
-                    {utility.icon}
-                </button>
-            ))}
+            <a href="/about-lovely-sunday">About</a>
+            <a href="/contact-lovely-sunday">Contact</a>
         </nav>
     </div>
 </header>

@@ -278,7 +278,7 @@ body {
 
 ::selection {
     text-shadow: none;
-    background: #cbeafb;
+    background: rgba(201, 166, 160, 0.3);
 }
 
 :focus-visible {
@@ -314,7 +314,7 @@ blockquote {
 blockquote {
     margin: 1.5em 0;
     padding: 0 1.6em 0 1.6em;
-    border-left: var(--color-border) 0.5em solid;
+    border-left: var(--color-accent) 2px solid;
 }
 
 blockquote p {
@@ -344,12 +344,13 @@ blockquote cite a {
 a {
     color: var(--color-primary);
     text-decoration: none;
-    transition: 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 a:hover {
+    color: var(--color-accent);
     text-decoration: underline;
-    transition: 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 h1,
@@ -360,14 +361,16 @@ h5,
 h6 {
     margin-top: 0;
     line-height: 1.4;
-    font-weight: 500;
+    font-family: var(--font-display);
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
     font-size: 5.7rem;
-    font-weight: 800;
+    font-weight: 300;
+    letter-spacing: 0.04em;
 }
 @media (max-width: 500px) {
     h1 {
@@ -378,6 +381,8 @@ h1 {
 h2 {
     margin: 1.5em 0 0.5em 0;
     font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.03em;
 }
 @media (max-width: 500px) {
     h2 {

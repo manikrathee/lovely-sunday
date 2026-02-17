@@ -69,6 +69,9 @@ production stylesheet in assets/built/screen.css using gulp dev
   margin: 0;
   font-size: 4.2rem;
   color: var(--color-base);
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: 0.04em;
 }
 @media (max-width: 500px) {
   .page-head-title {
@@ -79,9 +82,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 .page-head-description {
   margin: 0 0 1.6vw;
   color: var(--color-base);
-  opacity: 0.6;
+  opacity: 0.5;
   font-size: 2.2rem;
   line-height: 1.35em;
+  font-style: italic;
 }
 @media (max-width: 500px) {
   .page-head-description {
@@ -194,7 +198,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 .post-content-body blockquote {
   margin: 0 0 1.5em;
   padding: 0 1.5em;
-  border-left: #000 3px solid;
+  border-left: var(--color-accent) 2px solid;
 }
 
 .post-content-body blockquote p {
@@ -231,7 +235,7 @@ production stylesheet in assets/built/screen.css using gulp dev
   color: var(--color-base);
   font-size: 1.4rem;
   line-height: 1.5em;
-  background: #eeeeee;
+  background: var(--color-bg-subtle);
   border-radius: 5px;
 }
 
@@ -385,6 +389,8 @@ img {border-radius: 10px;}
   margin: 0 0 2.2rem;
   color: var(--color-base);
   opacity: 0.8;
+  font-family: var(--font-display);
+  font-style: italic;
 }
 
 .post-content-image {
@@ -394,7 +400,7 @@ img {border-radius: 10px;}
 
 .post-content-image img {
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--color-border);
 }
 
 .post-content-body {
@@ -409,7 +415,7 @@ img {border-radius: 10px;}
 
 .post-link {
   margin-top: 4rem;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--color-border);
   padding-top: 2rem;
 }
 

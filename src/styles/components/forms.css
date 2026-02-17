@@ -30,7 +30,7 @@ textarea {
     background: var(--color-bg);
     border-radius: var(--radius);
     border: none;
-    border: solid 1px #131313;
+    border: 1px solid var(--color-border);
     color: inherit;
     display: block;
     outline: 0;
@@ -58,8 +58,8 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #131313;
-    box-shadow: 0 0 0 1px #131313;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
 }
 
 select {
@@ -69,7 +69,7 @@ select {
 }
 
 select option {
-    color: #131313;
+    color: var(--color-base);
     background: var(--color-bg);
 }
 
@@ -124,7 +124,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
     background: var(--color-bg);
     border-radius: var(--radius);
-    border: solid 1px #131313;
+    border: 1px solid var(--color-border);
     content: '';
     display: inline-block;
     height: calc(var(--height) * 0.6);
@@ -136,16 +136,16 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-    background: #000000;
-    border-color: #000000;
+    background: var(--color-base);
+    border-color: var(--color-base);
     color: var(--color-bg);
     content: '✓';
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color:  #0000008e;
-    box-shadow: 0 0 0 1px  #0000008e;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
 }
 
 

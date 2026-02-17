@@ -74,9 +74,9 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
 <style>
   .about-page {
     margin: -4rem -1.5rem 0;
-    background: #fff;
-    color: #222;
-    font-family: Georgia, "Times New Roman", serif;
+    background: var(--color-bg);
+    color: var(--color-base);
+    font-family: var(--font-serif);
   }
 
   .hero {
@@ -134,10 +134,10 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
   }
 
   .panel {
-    border: 1px solid #e4e4e4;
+    border: 1px solid var(--color-border);
     padding: 1.2rem;
     margin-bottom: 1.2rem;
-    background: #fafafa;
+    background: var(--color-bg-subtle);
   }
 
   .profile {
@@ -156,14 +156,14 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
   input {
     padding: 0.7rem 0.8rem;
     margin-top: 0.5rem;
-    border: 1px solid #cfcfcf;
-    background: #fff;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
   }
 
   button {
     margin-top: 0.75rem;
-    background: #222;
-    color: #fff;
+    background: var(--color-base);
+    color: var(--color-bg);
     border: 0;
     padding: 0.75rem;
     cursor: pointer;
