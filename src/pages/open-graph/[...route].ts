@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import { getCollection } from "astro:content";
 import { OGImageRoute } from "astro-og-canvas";
 
@@ -57,6 +58,23 @@ const pages: Record<string, OgPage> = {
     },
 };
 
+const ogFontCandidates = [
+    {
+        path: "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        family: "DejaVu Sans",
+    },
+    {
+        path: "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
+        family: "Liberation Sans",
+    },
+    {
+        path: "/System/Library/Fonts/Supplemental/Arial.ttf",
+        family: "Arial",
+    },
+];
+
+const ogFont = ogFontCandidates.find((candidate) => existsSync(candidate.path));
+
 export const { getStaticPaths, GET } = await OGImageRoute({
     param: "route",
     pages,
@@ -72,5 +90,14 @@ export const { getStaticPaths, GET } = await OGImageRoute({
             width: 14,
             side: "inline-start",
         },
+        ...(ogFont
+            ? {
+                  fonts: [ogFont.path],
+                  font: {
+                      title: { families: [ogFont.family] },
+                      description: { families: [ogFont.family] },
+                  },
+              }
+            : {}),
     }),
 });

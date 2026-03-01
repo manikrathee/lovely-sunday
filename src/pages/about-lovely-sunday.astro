@@ -11,7 +11,12 @@ const images = (aboutPage.images as CaptureImage[]).filter((image) => image.src)
 const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
 ---
 
-<Layout title="About LovelySunday" breadcrumbs={false}>
+<Layout
+  title="About LovelySunday"
+  description="Meet Aileen and discover the style journey behind Lovely Sunday."
+  breadcrumbs={false}
+  seo={{ pageType: "profile", image: heroImage.src }}
+>
   <article class="about-page">
     <img class="hero" src={heroImage.src} alt={heroImage.alt ?? ""} />
 

@@ -15,15 +15,24 @@ interface Props {
 const { entry, next, prev, baseSlug } = Astro.props;
 const { Content } = await entry.render();
 
-const { title, description, thumbnail } = entry.data;
-const instagramPosts = await getRelevantInstagramPosts(
+const { title, description, thumbnail, date } = entry.data;
+  const publishedTime = date ? new Date(date).toISOString() : undefined;
+  const instagramPosts = await getRelevantInstagramPosts(
   '_lovelysunday',
   [title, description, entry.slug, baseSlug],
   6,
 );
+
+
 ---
 
-<PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt>
+<PostLayout
+  title={title}
+  description={description}
+  thumbnail={thumbnail}
+  includeExcerpt
+  seo={{ pageType: "article", publishedTime, modifiedTime: publishedTime }}
+>
   <Content />
 
   <InstagramGrid
