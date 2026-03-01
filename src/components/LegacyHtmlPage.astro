@@ -1,6 +1,8 @@
 ---
 import "../styles/components/legacy-gallery.css";
 import { correctedLookbookPath, internalUrlRewriteMap } from "../data/legacyLookbook";
+import { computeSeoMeta, injectSeoIntoLegacyHtml, renderSeoHeadTags } from "../lib/seo";
+import { getRouteSeoMeta } from "../lib/routeSeo";
 
 export interface Props {
   rawHtml: string;
@@ -8,6 +10,46 @@ export interface Props {
 
 const { rawHtml } = Astro.props;
 const hasAutocolumnGallery = /sqs-gallery-design-autocolumns/.test(rawHtml);
+const legacyTitle = rawHtml.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]
+  ?.replace(/<[^>]*>/g, " ")
+  .replace(/\s+/g, " ")
+  .trim();
+const legacyDescription = rawHtml
+  .match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["'][^>]*>/i)?.[1]
+  ?.trim();
+const legacyOgImage = rawHtml
+  .match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["'][^>]*>/i)?.[1]
+  ?.trim() || rawHtml.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i)?.[1]?.trim();
+const routeSeo = getRouteSeoMeta(Astro.url.pathname);
+
+const computedSeo = computeSeoMeta({
+  pathname: Astro.url.pathname,
+  title: routeSeo?.title || legacyTitle,
+  description: routeSeo?.description || legacyDescription,
+  canonical: routeSeo?.canonical,
+  ogImage: routeSeo?.openGraph.image || legacyOgImage,
+  type: routeSeo?.openGraph.type === "article" ? "article" : undefined,
+});
+const seoHeadTags = renderSeoHeadTags({
+  ...computedSeo,
+  robots: routeSeo?.robots || computedSeo.robots,
+  openGraph: {
+    ...computedSeo.openGraph,
+    title: routeSeo?.openGraph.title || computedSeo.openGraph.title,
+    description: routeSeo?.openGraph.description || computedSeo.openGraph.description,
+    url: routeSeo?.openGraph.url || computedSeo.openGraph.url,
+    image: routeSeo?.openGraph.image || computedSeo.openGraph.image,
+    type: (routeSeo?.openGraph.type as "website" | "article" | undefined) || computedSeo.openGraph.type,
+  },
+  twitter: {
+    ...computedSeo.twitter,
+    card: routeSeo?.twitter.card || computedSeo.twitter.card,
+    title: routeSeo?.twitter.title || computedSeo.twitter.title,
+    description: routeSeo?.twitter.description || computedSeo.twitter.description,
+    image: routeSeo?.twitter.image || computedSeo.twitter.image,
+  },
+  jsonLd: routeSeo?.jsonLd.length ? routeSeo.jsonLd : computedSeo.jsonLd,
+});
 
 function rewriteInternalHref(href: string): string {
   const [pathnameAndSearch, hash = ""] = href.split("#", 2);
@@ -36,7 +78,7 @@ function rewriteInternalHref(href: string): string {
   return `${pathname}${queryPart}${hashPart}`;
 }
 
-const renderedHtml = rawHtml
+const renderedHtml = injectSeoIntoLegacyHtml(rawHtml, seoHeadTags)
   // Strip "Powered by Squarespace" branding
   .replace(/<p[^>]*>Powered by\s*<a[^>]*squarespace[^>]*>Squarespace<\/a><\/p>/gi, "")
   // Strip Facebook icon links

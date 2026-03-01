@@ -12,6 +12,7 @@ import { GoogleAnalytics } from "@astrolib/analytics";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getRouteSeoMeta } from "../lib/routeSeo";
+import { computeSeoMeta } from "../lib/seo";
 
 export interface Props {
     title?: string;
@@ -51,6 +52,35 @@ const resolvedOgImage = routeSeo?.openGraph.image || ogImage;
 const resolvedOgUrl = routeSeo?.openGraph.url || canonical;
 const resolvedRobots = routeSeo?.robots || undefined;
 const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false);
+const computedSeo = computeSeoMeta({
+    pathname: Astro.url.pathname,
+    title: resolvedTitle,
+    description: resolvedDescription,
+    canonical,
+    ogImage: resolvedOgImage,
+    type:
+        routeSeo?.openGraph.type === "article"
+            ? "article"
+            : routeSeo?.openGraph.type === "website"
+                ? "website"
+                : undefined,
+});
+const finalTitle = routeSeo?.title || computedSeo.title;
+const finalDescription = routeSeo?.description || computedSeo.description;
+const finalCanonical = routeSeo?.canonical || computedSeo.canonical;
+const finalOgTitle = routeSeo?.openGraph.title || computedSeo.openGraph.title;
+const finalOgDescription = routeSeo?.openGraph.description || computedSeo.openGraph.description;
+const finalOgType = routeSeo?.openGraph.type || computedSeo.openGraph.type;
+const finalOgImage = routeSeo?.openGraph.image || computedSeo.openGraph.image;
+const finalOgUrl = routeSeo?.openGraph.url || computedSeo.openGraph.url;
+const finalTwitterCard = routeSeo?.twitter.card || computedSeo.twitter.card;
+const finalTwitterTitle = routeSeo?.twitter.title || computedSeo.twitter.title;
+const finalTwitterDescription = routeSeo?.twitter.description || computedSeo.twitter.description;
+const finalTwitterImage = routeSeo?.twitter.image || computedSeo.twitter.image;
+const finalRobots = resolvedNoIndex
+    ? "noindex,nofollow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    : (resolvedRobots || computedSeo.robots);
+const finalJsonLd = routeSeo?.jsonLd.length ? routeSeo.jsonLd : computedSeo.jsonLd;
 ---
 
 <!doctype html>
@@ -65,39 +95,38 @@ const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
 
         <SEO
-            title={resolvedTitle}
+            title={finalTitle}
             titleDefault={siteName}
             titleTemplate={routeSeo?.title ? undefined : `%s | ${siteName}`}
-            description={resolvedDescription}
-            canonical={canonical}
+            description={finalDescription}
+            canonical={finalCanonical}
             noindex={resolvedNoIndex}
             nofollow={resolvedNoIndex}
             openGraph={{
                 basic: {
-                    title: routeSeo?.openGraph.title || resolvedTitle,
-                    type: routeSeo?.openGraph.type || "website",
-                    image: resolvedOgImage,
-                    url: resolvedOgUrl,
+                    title: finalOgTitle,
+                    type: finalOgType,
+                    image: finalOgImage,
+                    url: finalOgUrl,
                 },
                 optional: {
-                    description:
-                        routeSeo?.openGraph.description || resolvedDescription,
+                    description: finalOgDescription,
                     siteName,
                 },
             }}
             twitter={{
-                card: routeSeo?.twitter.card || "summary_large_image",
-                title: routeSeo?.twitter.title || resolvedTitle,
-                description: routeSeo?.twitter.description || resolvedDescription,
-                image: routeSeo?.twitter.image || resolvedOgImage,
+                card: finalTwitterCard,
+                title: finalTwitterTitle,
+                description: finalTwitterDescription,
+                image: finalTwitterImage,
                 creator: twitterHandle || undefined,
                 site: twitterHandle || undefined,
             }}
         />
 
-        {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
+        <meta name="robots" content={finalRobots} />
 
-        {routeSeo?.jsonLd.map((entry) => (
+        {finalJsonLd.map((entry) => (
             <script is:inline type="application/ld+json" set:html={entry} />
         ))}
 
