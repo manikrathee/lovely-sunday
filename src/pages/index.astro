@@ -1,19 +1,22 @@
 ---
 import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
-import InstagramFeed from "../components/InstagramFeed.astro";
+import InstagramGrid from "../components/InstagramGrid.astro";
 import { getLegacyPageBySourcePathname } from "../lib/legacy-pages";
+import { getInstagramPosts } from "../lib/instagram";
+
+const INSTAGRAM_USERNAME = "_lovelysunday";
 
 const homePage = getLegacyPageBySourcePathname("/");
 if (!homePage) {
   throw new Error("Missing legacy homepage source for '/'");
 }
+
+const instagramPosts = await getInstagramPosts(INSTAGRAM_USERNAME, 9);
 ---
 
 <LegacyHtmlPage rawHtml={homePage.rawHtml} />
-<InstagramFeed
-  title="Lovely Sunday"
-  description="Homepage highlights"
-  slug="home"
-  heading="Latest from @_lovelysunday"
-  limit={9}
+<InstagramGrid
+  title="Latest from @_lovelysunday"
+  subtitle="A live pull of recent Instagram moments from Lovely Sunday."
+  posts={instagramPosts}
 />

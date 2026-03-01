@@ -1,6 +1,8 @@
 ---
 import PostLayout from '../components/PostLayout.astro';
 import LinkBlock from '../components/LinkBlock.astro';
+import InstagramGrid from '../components/InstagramGrid.astro';
+import { getRelevantInstagramPosts } from '../lib/instagram';
 import { type CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -15,6 +17,11 @@ const { Content } = await entry.render();
 
 const { title, description, thumbnail, date } = entry.data;
 const publishedTime = date ? new Date(date).toISOString() : undefined;
+const instagramPosts = await getRelevantInstagramPosts(
+  '_lovelysunday',
+  [title, description, entry.slug, baseSlug],
+  6,
+);
 ---
 
 <PostLayout
@@ -26,6 +33,12 @@ const publishedTime = date ? new Date(date).toISOString() : undefined;
   seo={{ pageType: "article", publishedTime, modifiedTime: publishedTime }}
 >
   <Content />
+
+  <InstagramGrid
+    title="Related Instagram moments"
+    subtitle="Dynamic picks from @_lovelysunday that best match this story."
+    posts={instagramPosts}
+  />
 
   <Fragment slot="after">
     <div class="post-link">
