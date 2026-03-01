@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A minimalist, high-performance Astro theme for photographers and artists.",
   "scripts": {
-    "dev": "npm exec -- astro dev & caddy run --config Caddyfile",
-    "dev:astro": "npm exec -- astro dev",
-    "build": "npm exec -- astro build && npm run qa:parity",
-    "build:astro": "npm exec -- astro build",
+    "dev": "astro dev & caddy run --config Caddyfile",
+    "dev:astro": "astro dev",
+    "build": "astro build && npm run qa:parity",
+    "build:astro": "astro build",
     "qa:parity": "node scripts/qa/parity-gate.mjs && npm run check:gallery-orientations",
     "check:gallery-orientations": "node scripts/check-gallery-orientations.mjs",
-    "preview": "npm exec -- astro preview",
-    "astro": "npm exec -- astro",
+    "preview": "astro preview",
+    "astro": "astro",
     "deploy:s3": "bash scripts/deploy-to-s3.sh",
     "verify:urls": "node scripts/verify-post-deploy-urls.mjs",
     "deploy:production": "bash scripts/deploy-and-verify.sh",
@@ -19,8 +19,8 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
     "@astrolib/analytics": "^0.6.1",
-    "@nuasite/cms": "^0.8.3",
-    "@nuasite/llm-enhancements": "^0.8.3",
+    "@nuasite/cms": "^0.11.1",
+    "@nuasite/llm-enhancements": "^0.11.1",
     "@swup/head-plugin": "^2.3.1",
     "agentation": "^2.2.1",
     "astro": "^5.16.5",
@@ -34,13 +34,20 @@
     "astro-seo": "^1.1.0",
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
-    "postcss-color-function": "^4.1.0",
-    "postcss-custom-properties": "^14.0.6",
+    "postcss-color-function": "^1.2.0",
+    "postcss-custom-properties": "^15.0.1",
     "postcss-easy-import": "^4.0.0",
     "swup": "^4.8.2"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0",
-    "playwright": "^1.52.0"
+    "cheerio": "^1.2.0"
+  },
+  "overrides": {
+    "color-string": ">=1.5.5",
+    "volar-service-yaml": "0.0.70",
+    "yaml-language-server": ">=1.21.0",
+    "postcss-color-function": {
+      "postcss": ">=8.4.31"
+    }
   }
 }
