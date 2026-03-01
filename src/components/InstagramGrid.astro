@@ -1,0 +1,74 @@
+---
+import type { InstagramPost } from "../lib/instagram";
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  posts: InstagramPost[];
+}
+
+const {
+  title = "From @_lovelysunday on Instagram",
+  subtitle = "Live pulls from the latest looks and travel moments.",
+  posts,
+} = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="instagram-grid" aria-label="Instagram feed">
+    <header class="instagram-grid__header">
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+    </header>
+
+    <div class="instagram-grid__items">
+      {posts.map((post) => (
+        <a href={post.permalink} target="_blank" rel="noopener noreferrer" class="instagram-grid__card">
+          <img src={post.imageUrl} alt={post.caption || "Instagram post from @_lovelysunday"} loading="lazy" />
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .instagram-grid {
+    margin: 3rem 0 2rem;
+  }
+
+  .instagram-grid__header h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .instagram-grid__header p {
+    margin: 0.5rem 0 1.25rem;
+    opacity: 0.8;
+  }
+
+  .instagram-grid__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.65rem;
+  }
+
+  .instagram-grid__card {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.35rem;
+    aspect-ratio: 1 / 1;
+    background: color-mix(in srgb, var(--color-ink) 8%, white);
+  }
+
+  .instagram-grid__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 180ms ease;
+  }
+
+  .instagram-grid__card:hover img,
+  .instagram-grid__card:focus-visible img {
+    transform: scale(1.03);
+  }
+</style>

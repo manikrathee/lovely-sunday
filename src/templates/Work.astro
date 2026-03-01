@@ -1,6 +1,8 @@
 ---
 import PostLayout from '../components/PostLayout.astro';
 import LinkBlock from '../components/LinkBlock.astro';
+import InstagramGrid from '../components/InstagramGrid.astro';
+import { getRelevantInstagramPosts } from '../lib/instagram';
 import { type CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -14,10 +16,21 @@ const { entry, next, prev, baseSlug } = Astro.props;
 const { Content } = await entry.render();
 
 const { title, description, thumbnail } = entry.data;
+const instagramPosts = await getRelevantInstagramPosts(
+  '_lovelysunday',
+  [title, description, entry.slug, baseSlug],
+  6,
+);
 ---
 
 <PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt>
   <Content />
+
+  <InstagramGrid
+    title="Related Instagram moments"
+    subtitle="Dynamic picks from @_lovelysunday that best match this story."
+    posts={instagramPosts}
+  />
 
   <Fragment slot="after">
     <div class="post-link">
