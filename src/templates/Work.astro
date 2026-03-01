@@ -16,7 +16,7 @@ const { Content } = await entry.render();
 const { title, description, thumbnail } = entry.data;
 ---
 
-<PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt>
+<PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt slug={entry.slug}>
   <Content />
 
   <Fragment slot="after">

@@ -1,5 +1,6 @@
 ---
 import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
+import InstagramFeed from "../components/InstagramFeed.astro";
 import { getLegacyPageBySourcePathname } from "../lib/legacy-pages";
 
 const homePage = getLegacyPageBySourcePathname("/");
@@ -9,3 +10,10 @@ if (!homePage) {
 ---
 
 <LegacyHtmlPage rawHtml={homePage.rawHtml} />
+<InstagramFeed
+  title="Lovely Sunday"
+  description="Homepage highlights"
+  slug="home"
+  heading="Latest from @_lovelysunday"
+  limit={9}
+/>

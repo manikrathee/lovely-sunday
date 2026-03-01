@@ -1,0 +1,98 @@
+---
+import { getInstagramMedia, getRelevantInstagramMedia } from "../lib/instagram";
+
+interface Props {
+  title?: string;
+  description?: string;
+  slug?: string;
+  heading?: string;
+  limit?: number;
+}
+
+const {
+  title,
+  description,
+  slug,
+  heading = "From Instagram",
+  limit = 6,
+} = Astro.props;
+
+const media = await getInstagramMedia(24);
+const relevantMedia = getRelevantInstagramMedia(media, { title, description, slug }, limit);
+---
+
+{relevantMedia.length > 0 && (
+  <section class="instagram-feed" aria-label="Latest Instagram photos from @lovelysunday">
+    <div class="instagram-feed-header">
+      <h2>{heading}</h2>
+      <a href="https://www.instagram.com/_lovelysunday/" target="_blank" rel="noreferrer noopener">
+        @_lovelysunday
+      </a>
+    </div>
+
+    <div class="instagram-grid">
+      {relevantMedia.map((item) => (
+        <a class="instagram-card" href={item.permalink} target="_blank" rel="noreferrer noopener">
+          <img src={item.thumbnailUrl} alt={item.caption || "Instagram post by @lovelysunday"} loading="lazy" />
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .instagram-feed {
+    margin: 3rem auto 0;
+    max-width: 1120px;
+    padding: 0 1rem 2rem;
+  }
+
+  .instagram-feed-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .instagram-feed-header h2 {
+    margin: 0;
+    font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
+    font-weight: 500;
+  }
+
+  .instagram-feed-header a {
+    color: inherit;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .instagram-card {
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: block;
+  }
+
+  .instagram-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 220ms ease;
+  }
+
+  .instagram-card:hover img {
+    transform: scale(1.03);
+  }
+
+  @media (min-width: 720px) {
+    .instagram-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
