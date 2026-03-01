@@ -8,6 +8,11 @@ export interface Props {
   thumbnail?: string;
   articleClass?: string;
   includeExcerpt?: boolean;
+  seo?: {
+    pageType?: "article" | "website" | "collection" | "profile" | "contact" | "confirmation";
+    publishedTime?: string;
+    modifiedTime?: string;
+  };
 }
 
 const {
@@ -16,12 +21,22 @@ const {
   thumbnail,
   articleClass = 'post-content',
   includeExcerpt = false,
+  seo,
 } = Astro.props;
 
 const resolvedTitle = title || "";
 ---
 
-<Layout title={resolvedTitle} description={description}>
+<Layout
+  title={resolvedTitle}
+  description={description}
+  seo={{
+    pageType: seo?.pageType || "article",
+    image: thumbnail,
+    publishedTime: seo?.publishedTime,
+    modifiedTime: seo?.modifiedTime,
+  }}
+>
   <article class={`${articleClass} ${thumbnail ? '' : 'no-image'}`.trim()}>
     {includeExcerpt && description && <p class="post-content-excerpt">{description}</p>}
     <ImageBlock src={thumbnail} alt={resolvedTitle} />
