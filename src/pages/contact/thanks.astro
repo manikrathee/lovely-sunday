@@ -2,7 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Thank You">
+<Layout
+  title="Thank You"
+  description="Thanks for contacting Lovely Sunday. Your message has been received."
+  seo={{ pageType: "confirmation" }}
+>
   <article class="post-content page-template no-image">
     <div class="post-content-body">
       <div class="thank-you" style="display: flex; flex-direction: column; align-items: center; text-align: center;">

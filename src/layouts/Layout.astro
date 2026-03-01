@@ -12,6 +12,14 @@ import { GoogleAnalytics } from "@astrolib/analytics";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getRouteSeoMeta } from "../lib/routeSeo";
+import { buildSeoMeta, type SeoPageType } from "../lib/seo";
+
+interface SeoProps {
+    pageType?: SeoPageType;
+    publishedTime?: string;
+    modifiedTime?: string;
+    image?: string;
+}
 
 export interface Props {
     title?: string;
@@ -19,6 +27,7 @@ export interface Props {
     noindex?: boolean;
     breadcrumbs?: boolean;
     ogImagePath?: string;
+    seo?: SeoProps;
     children?: any;
 }
 
@@ -28,6 +37,7 @@ const {
     noindex = false,
     breadcrumbs = true,
     ogImagePath,
+    seo,
 } = Astro.props;
 
 const siteName = "Lovely Sunday";
@@ -51,6 +61,18 @@ const resolvedOgImage = routeSeo?.openGraph.image || ogImage;
 const resolvedOgUrl = routeSeo?.openGraph.url || canonical;
 const resolvedRobots = routeSeo?.robots || undefined;
 const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false);
+const generatedSeo = buildSeoMeta({
+    pathname: Astro.url.pathname,
+    siteOrigin: (Astro.site ?? Astro.url).origin,
+    siteName,
+    title: routeSeo?.title || title || siteName,
+    description: routeSeo?.description || description,
+    image: routeSeo?.openGraph.image || seo?.image || ogImage,
+    pageType: seo?.pageType,
+    publishedTime: seo?.publishedTime,
+    modifiedTime: seo?.modifiedTime,
+});
+const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
 ---
 
 <!doctype html>
@@ -68,14 +90,14 @@ const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false
             title={resolvedTitle}
             titleDefault={siteName}
             titleTemplate={routeSeo?.title ? undefined : `%s | ${siteName}`}
-            description={resolvedDescription}
-            canonical={canonical}
+            description={resolvedDescription || generatedSeo.description}
+            canonical={canonical || generatedSeo.canonical}
             noindex={resolvedNoIndex}
             nofollow={resolvedNoIndex}
             openGraph={{
                 basic: {
                     title: routeSeo?.openGraph.title || resolvedTitle,
-                    type: routeSeo?.openGraph.type || "website",
+                    type: routeSeo?.openGraph.type || generatedSeo.openGraphType,
                     image: resolvedOgImage,
                     url: resolvedOgUrl,
                 },
@@ -83,6 +105,7 @@ const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false
                     description:
                         routeSeo?.openGraph.description || resolvedDescription,
                     siteName,
+                    locale: generatedSeo.locale,
                 },
             }}
             twitter={{
@@ -96,8 +119,10 @@ const resolvedNoIndex = noindex || (resolvedRobots?.includes("noindex") ?? false
         />
 
         {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
+        {!resolvedRobots && <meta name="robots" content={generatedSeo.robots} />}
+        <meta name="author" content={generatedSeo.author} />
 
-        {routeSeo?.jsonLd.map((entry) => (
+        {mergedJsonLd.map((entry) => (
             <script is:inline type="application/ld+json" set:html={entry} />
         ))}
 

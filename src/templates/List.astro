@@ -13,7 +13,7 @@ const { entry, items = [], baseSlug } = Astro.props;
 const { title, description } = entry.data;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} seo={{ pageType: "collection" }}>
     {description && (
       <header class="page-head">
         <h2 class="page-head-title">
