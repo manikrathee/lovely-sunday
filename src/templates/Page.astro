@@ -12,6 +12,6 @@ const { Content } = await entry.render();
 const { title, description, thumbnail } = entry.data;
 ---
 
-<PostLayout title={title} description={description} thumbnail={thumbnail}>
+<PostLayout title={title} description={description} thumbnail={thumbnail} slug={entry.slug}>
   <Content />
 </PostLayout>

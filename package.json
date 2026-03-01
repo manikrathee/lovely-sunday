@@ -40,7 +40,9 @@
     "swup": "^4.8.2"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0",
-    "playwright": "^1.52.0"
+    "cheerio": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
