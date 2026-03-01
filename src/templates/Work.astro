@@ -13,10 +13,17 @@ interface Props {
 const { entry, next, prev, baseSlug } = Astro.props;
 const { Content } = await entry.render();
 
-const { title, description, thumbnail } = entry.data;
+const { title, description, thumbnail, date } = entry.data;
+const publishedTime = date ? new Date(date).toISOString() : undefined;
 ---
 
-<PostLayout title={title} description={description} thumbnail={thumbnail} includeExcerpt>
+<PostLayout
+  title={title}
+  description={description}
+  thumbnail={thumbnail}
+  includeExcerpt
+  seo={{ pageType: "article", publishedTime, modifiedTime: publishedTime }}
+>
   <Content />
 
   <Fragment slot="after">
