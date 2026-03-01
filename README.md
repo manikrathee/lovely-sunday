@@ -47,7 +47,7 @@ npm run validate:capture-assets -- --strict
 Install locally:
 
 ```bash
-# Node (20+ recommended)
+# Node (22+ required for current toolchain)
 node -v
 npm -v
 

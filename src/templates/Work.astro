@@ -16,14 +16,12 @@ const { entry, next, prev, baseSlug } = Astro.props;
 const { Content } = await entry.render();
 
 const { title, description, thumbnail, date } = entry.data;
-  const publishedTime = date ? new Date(date).toISOString() : undefined;
-  const instagramPosts = await getRelevantInstagramPosts(
+const publishedTime = date ? new Date(date).toISOString() : undefined;
+const instagramPosts = await getRelevantInstagramPosts(
   '_lovelysunday',
   [title, description, entry.slug, baseSlug],
   6,
 );
-
-
 ---
 
 <PostLayout
@@ -31,6 +29,7 @@ const { title, description, thumbnail, date } = entry.data;
   description={description}
   thumbnail={thumbnail}
   includeExcerpt
+  slug={entry.slug}
   seo={{ pageType: "article", publishedTime, modifiedTime: publishedTime }}
 >
   <Content />

@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A minimalist, high-performance Astro theme for photographers and artists.",
   "scripts": {
-    "dev": "astro dev & caddy run --config Caddyfile",
-    "dev:astro": "astro dev",
-    "build": "astro build && npm run qa:parity",
-    "build:astro": "astro build",
+    "dev": "npm exec -- astro dev & caddy run --config Caddyfile",
+    "dev:astro": "npm exec -- astro dev",
+    "build": "npm exec -- astro build && npm run qa:parity",
+    "build:astro": "npm exec -- astro build",
     "qa:parity": "node scripts/qa/parity-gate.mjs && npm run check:gallery-orientations",
     "check:gallery-orientations": "node scripts/check-gallery-orientations.mjs",
-    "preview": "astro preview",
-    "astro": "astro",
+    "preview": "npm exec -- astro preview",
+    "astro": "npm exec -- astro",
     "deploy:s3": "bash scripts/deploy-to-s3.sh",
     "verify:urls": "node scripts/verify-post-deploy-urls.mjs",
     "deploy:production": "bash scripts/deploy-and-verify.sh",
@@ -41,6 +41,9 @@
   },
   "devDependencies": {
     "cheerio": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   },
   "overrides": {
     "color-string": ">=1.5.5",
