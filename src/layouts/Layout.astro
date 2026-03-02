@@ -13,6 +13,14 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getRouteSeoMeta } from "../lib/routeSeo";
 import { buildSeoMeta, type SeoPageType } from "../lib/seo";
+import {
+    SITE_AI_META,
+    SITE_AUTHOR,
+    SITE_CATEGORY,
+    SITE_DESCRIPTION,
+    SITE_KEYWORDS,
+    SITE_NAME,
+} from "../lib/siteMeta";
 
 interface SeoProps {
     pageType?: SeoPageType;
@@ -40,9 +48,8 @@ const {
     seo,
 } = Astro.props;
 
-const siteName = "Lovely Sunday";
-const siteDescription =
-    "A minimalist, image-first photoblog built with Astro and the Clay theme.";
+const siteName = SITE_NAME;
+const siteDescription = SITE_DESCRIPTION;
 const routeSeo = getRouteSeoMeta(Astro.url.pathname);
 const normalizedPath = Astro.url.pathname.replace(/^\/|\/$/g, "");
 const resolvedOgPath =
@@ -85,6 +92,7 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full-text site guide" />
 
         <SEO
             title={resolvedTitle}
@@ -121,6 +129,14 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
         {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
         {!resolvedRobots && <meta name="robots" content={generatedSeo.robots} />}
         <meta name="author" content={generatedSeo.author} />
+        <meta name="publisher" content={SITE_AUTHOR} />
+        <meta name="keywords" content={SITE_KEYWORDS.join(", ")} />
+        <meta name="category" content={SITE_CATEGORY} />
+        <meta name="classification" content={SITE_CATEGORY} />
+        <meta name="ai-content" content={SITE_AI_META.contentType} />
+        <meta name="ai-topics" content={SITE_AI_META.topics} />
+        <meta name="ai-audience" content={SITE_AI_META.audience} />
+        <meta name="ai-use" content={SITE_AI_META.use} />
 
         {mergedJsonLd.map((entry) => (
             <script is:inline type="application/ld+json" set:html={entry} />
