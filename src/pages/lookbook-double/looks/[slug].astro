@@ -19,13 +19,13 @@ export function getStaticPaths() {
         slug: extractLookbookSlug(path),
       },
       props: {
-        rawHtml: page.rawHtml,
+        page,
       },
     };
   });
 }
 
-const { rawHtml } = Astro.props;
+const { page } = Astro.props;
 ---
 
-<LegacyHtmlPage rawHtml={rawHtml} />
+<LegacyHtmlPage page={page} />

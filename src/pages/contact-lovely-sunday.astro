@@ -1,0 +1,12 @@
+---
+import { getEntry } from "astro:content";
+import ContactTemplate from "../templates/Contact.astro";
+
+const entry = await getEntry("pages", "contact");
+
+if (!entry) {
+  throw new Error("Missing pages/contact.md content entry");
+}
+---
+
+<ContactTemplate entry={entry} />

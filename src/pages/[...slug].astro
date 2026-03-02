@@ -4,7 +4,7 @@ import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
 
 export function getStaticPaths() {
   const legacyPages = loadLegacyPages();
-  const explicitRoutes = new Set(["/about-lovely-sunday"]);
+  const explicitRoutes = new Set(["/about-lovely-sunday", "/contact-lovely-sunday"]);
 
   // Deduplicate by pathname — double-slash URLs (e.g. /lookbook//looks/x)
   // normalize to the same pathname as their single-slash counterparts.
@@ -22,13 +22,13 @@ export function getStaticPaths() {
     return {
       params: { slug },
       props: {
-        rawHtml: page.rawHtml,
+        page,
       },
     };
   });
 }
 
-const { rawHtml } = Astro.props;
+const { page } = Astro.props;
 ---
 
-<LegacyHtmlPage rawHtml={rawHtml} />
+<LegacyHtmlPage page={page} />
