@@ -126,8 +126,6 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
             }}
         />
 
-        {resolvedRobots && <meta name="robots" content={resolvedRobots} />}
-        {!resolvedRobots && <meta name="robots" content={generatedSeo.robots} />}
         <meta name="author" content={generatedSeo.author} />
         <meta name="publisher" content={SITE_AUTHOR} />
         <meta name="keywords" content={SITE_KEYWORDS.join(", ")} />

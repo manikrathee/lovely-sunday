@@ -14,9 +14,10 @@ if (!homePage) {
 const instagramPosts = await getInstagramPosts(INSTAGRAM_USERNAME, 9);
 ---
 
-<LegacyHtmlPage rawHtml={homePage.rawHtml} />
-<InstagramGrid
-  title="Latest from @_lovelysunday"
-  subtitle="A live pull of recent Instagram moments from Lovely Sunday."
-  posts={instagramPosts}
-/>
+<LegacyHtmlPage page={homePage}>
+  <InstagramGrid
+    title="Latest from @_lovelysunday"
+    subtitle="A live pull of recent Instagram moments from Lovely Sunday."
+    posts={instagramPosts}
+  />
+</LegacyHtmlPage>

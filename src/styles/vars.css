@@ -13,8 +13,8 @@
 
     /* Fonts */
     --font-sans-serif: 'Futura', 'League Spartan', 'Trebuchet MS', Arial, sans-serif;
-    --font-serif: 'EB Garamond', Georgia, Times, serif;
-    --font-display: 'Cormorant Garamond', var(--font-serif);
+    --font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+    --font-display: 'Baskerville', var(--font-serif);
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;

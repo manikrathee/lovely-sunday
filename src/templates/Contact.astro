@@ -19,9 +19,8 @@ const { title, description, thumbnail } = entry.data;
   articleClass="contact-form page-template"
   seo={{ pageType: "contact" }}
 >
+  <h1>{title}</h1>
   <Content />
-
-  <h3 id="forms">Form</h3>
   <form name="contact" method="POST" data-netlify="true" action="/contact/thanks">
     <input type="hidden" name="form-name" value="contact" />
     <p hidden>

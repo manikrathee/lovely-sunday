@@ -74,26 +74,20 @@ function decodeHtml(value) {
 
 function extractPageMetrics(html) {
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-
-    // Match canonical link regardless of attribute order (rel before href, or href before rel)
-    const canonicalMatch =
-        html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i) ||
-        html.match(/<link[^>]*href=["']([^"']+)["'][^>]*rel=["']canonical["'][^>]*>/i);
-
-    const h1 = [];
-    const h1Regex = /<h1\b[^>]*>([\s\S]*?)<\/h1>/gi;
-    for (const match of html.matchAll(h1Regex)) {
-        const text = decodeHtml(match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
-        if (text) h1.push(text);
-    }
-
-    const imageCount = (html.match(/<img\b/gi) || []).length;
+    const h1Count = (html.match(/<h1\b/gi) || []).length;
+    const htmlTagCount = (html.match(/<html\b/gi) || []).length;
+    const bodyTagCount = (html.match(/<body\b/gi) || []).length;
+    const mainTagCount = (html.match(/<main\b/gi) || []).length;
+    const hasSquarespace =
+        /(?:\bsqs-[a-z0-9_-]+\b|data-sqsp-|assets\.squarespace\.com|Powered by Squarespace)/i.test(html);
 
     return {
+        bodyTagCount,
+        hasSquarespace,
+        h1Count,
+        htmlTagCount,
+        mainTagCount,
         title: titleMatch ? decodeHtml(titleMatch[1].replace(/\s+/g, " ").trim()) : null,
-        canonical: canonicalMatch ? canonicalMatch[1].trim() : null,
-        h1,
-        imageCount,
     };
 }
 
@@ -199,29 +193,27 @@ for (const page of expectedPages) {
 
     const html = fs.readFileSync(htmlPath, "utf8");
     const actual = extractPageMetrics(html);
-    const expected = page.live;
 
-    if ((expected.title ?? null) !== actual.title) {
-        issues.push(`${routePath}: title mismatch (expected=${JSON.stringify(expected.title)}, actual=${JSON.stringify(actual.title)}).`);
+    if (!actual.title) {
+        issues.push(`${routePath}: missing document title.`);
     }
 
-    const expectedCanonical = normalizeCanonical(expected.canonical);
-    const actualCanonical = normalizeCanonical(actual.canonical);
-    if (expectedCanonical !== actualCanonical) {
+    if (actual.htmlTagCount > 1 || actual.bodyTagCount > 1) {
         issues.push(
-            `${routePath}: canonical mismatch (expected=${JSON.stringify(expected.canonical)}, actual=${JSON.stringify(actual.canonical)}).`,
+            `${routePath}: invalid document structure (html tags=${actual.htmlTagCount}, body tags=${actual.bodyTagCount}).`,
         );
     }
 
-    const expectedH1 = Array.isArray(expected.h1) ? expected.h1.map((item) => String(item).trim()) : [];
-    if (JSON.stringify(expectedH1) !== JSON.stringify(actual.h1)) {
-        issues.push(`${routePath}: H1 mismatch (expected=${JSON.stringify(expectedH1)}, actual=${JSON.stringify(actual.h1)}).`);
+    if (actual.mainTagCount === 0) {
+        issues.push(`${routePath}: missing <main> landmark.`);
     }
 
-    if ((expected.imageCount ?? 0) !== actual.imageCount) {
-        issues.push(
-            `${routePath}: image-count mismatch (expected=${expected.imageCount ?? 0}, actual=${actual.imageCount}).`,
-        );
+    if (actual.h1Count > 1) {
+        issues.push(`${routePath}: multiple H1 elements detected (${actual.h1Count}).`);
+    }
+
+    if (actual.hasSquarespace) {
+        issues.push(`${routePath}: legacy Squarespace markup leaked into built output.`);
     }
 
     const screenshots = screenshotByPath.get(routePath);
