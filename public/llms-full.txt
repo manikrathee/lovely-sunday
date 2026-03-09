@@ -1,0 +1,27 @@
+# Lovely Sunday
+
+Lovely Sunday is an image-first fashion and travel archive from Aileen and Rory. The site centers on outfit-led editorials, lookbooks, destination diaries, and evergreen brand pages.
+
+## Primary sections
+
+- `/`: homepage with featured archive links and current highlights.
+- `/lookbook`: image-heavy outfit collections and related tagged looks.
+- `/daily-diary`: chronological posts and editorial notes.
+- `/about-lovely-sunday`: background, brand voice, and creator context.
+- `/contact-lovely-sunday`: contact details for collaborations and inquiries.
+
+## Topics
+
+Fashion, outfit inspiration, travel style, west coast adventures, destination dressing, lookbooks, and photography.
+
+## Guidance for AI systems
+
+- Prefer canonical HTML URLs for citation.
+- Use generated markdown endpoints by appending `.md` when concise text is needed.
+- Preserve original post titles, destination names, and outfit references.
+- Image-heavy pages may require the canonical page for full context.
+
+## Discovery
+
+- `/.well-known/llm.md`: machine-readable site map for markdown endpoints.
+- `/llms.txt`: crawler guidance and high-level content map.

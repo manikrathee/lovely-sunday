@@ -1,3 +1,15 @@
+import {
+  SITE_ALTERNATE_NAME,
+  SITE_AUTHOR,
+  SITE_CONTACT_EMAIL,
+  SITE_DESCRIPTION,
+  SITE_FOUNDERS,
+  SITE_KNOWS_ABOUT,
+  SITE_LOCATION,
+  SITE_NAME,
+  SITE_SAME_AS,
+} from "./siteMeta";
+
 export type SeoPageType =
   | "website"
   | "article"
@@ -19,7 +31,7 @@ export interface SeoBuildInput {
 }
 
 const SITE_LOCALE = "en_US";
-const BRAND_AUTHOR = "Lovely Sunday";
+const BRAND_AUTHOR = SITE_AUTHOR;
 
 const normalizePathname = (pathname: string): string => {
   const [pathOnly] = pathname.split("?");
@@ -144,6 +156,9 @@ export const buildSeoMeta = ({
 }: SeoBuildInput): GeneratedSeoMeta => {
   const normalizedPath = normalizePathname(pathname);
   const canonical = new URL(normalizedPath === "/" ? "/" : `${normalizedPath}/`, siteOrigin).toString();
+  const siteRootUrl = new URL("/", siteOrigin).toString();
+  const organizationId = `${siteRootUrl}#organization`;
+  const websiteId = `${siteRootUrl}#website`;
   const resolvedTitle = title?.trim() || siteName;
   const resolvedDescription =
     cleanDescription(description) || blendGeneratedDescription(normalizedPath, siteName);
@@ -169,8 +184,12 @@ export const buildSeoMeta = ({
     inLanguage: "en-US",
     isPartOf: {
       "@type": "WebSite",
+      "@id": websiteId,
       name: siteName,
-      url: new URL("/", siteOrigin).toString(),
+      url: siteRootUrl,
+    },
+    about: {
+      "@id": organizationId,
     },
   };
 
@@ -178,11 +197,43 @@ export const buildSeoMeta = ({
     pageSchema.image = image;
   }
 
+  if (resolvedPageType === "website") {
+    pageSchema["@id"] = websiteId;
+    pageSchema.publisher = { "@id": organizationId };
+    pageSchema.sameAs = [...SITE_SAME_AS];
+  }
+
   if (resolvedPageType === "article") {
-    pageSchema.author = { "@type": "Organization", name: BRAND_AUTHOR };
+    pageSchema.author = { "@id": organizationId };
+    pageSchema.publisher = { "@id": organizationId };
     if (publishedTime) pageSchema.datePublished = publishedTime;
     if (modifiedTime) pageSchema.dateModified = modifiedTime;
   }
+
+  if (resolvedPageType === "profile") {
+    pageSchema.mainEntity = { "@id": organizationId };
+  }
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": organizationId,
+    name: SITE_NAME,
+    alternateName: SITE_ALTERNATE_NAME,
+    url: siteRootUrl,
+    description: SITE_DESCRIPTION,
+    email: SITE_CONTACT_EMAIL,
+    foundingLocation: {
+      "@type": "Place",
+      name: SITE_LOCATION,
+    },
+    founder: SITE_FOUNDERS.map((name) => ({
+      "@type": "Person",
+      name,
+    })),
+    sameAs: [...SITE_SAME_AS],
+    knowsAbout: [...SITE_KNOWS_ABOUT],
+  };
 
   const breadcrumbs = {
     "@context": "https://schema.org",
@@ -203,6 +254,10 @@ export const buildSeoMeta = ({
     robots,
     locale: SITE_LOCALE,
     author: BRAND_AUTHOR,
-    jsonLd: [JSON.stringify(pageSchema), JSON.stringify(breadcrumbs)],
+    jsonLd: [
+      JSON.stringify(pageSchema),
+      JSON.stringify(organizationSchema),
+      JSON.stringify(breadcrumbs),
+    ],
   };
 };

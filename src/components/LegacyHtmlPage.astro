@@ -2,6 +2,22 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/components/legacy-page.css";
 import type { LegacyPage } from "../lib/legacy-pages";
+import "../styles/components/legacy-gallery.css";
+import { correctedLookbookPath, internalUrlRewriteMap } from "../data/legacyLookbook";
+import { getRouteSeoMeta } from "../lib/routeSeo";
+import {
+  SITE_AI_META,
+  SITE_ALTERNATE_NAME,
+  SITE_CATEGORY,
+  SITE_CONTACT_EMAIL,
+  SITE_DESCRIPTION,
+  SITE_FOUNDERS,
+  SITE_KEYWORDS,
+  SITE_KNOWS_ABOUT,
+  SITE_LOCATION,
+  SITE_NAME,
+  SITE_SAME_AS,
+} from "../lib/siteMeta";
 
 export interface Props {
   page: LegacyPage;
@@ -16,6 +32,176 @@ const allParagraphs = view.description
   : view.paragraphs;
 const hasVisuals = Boolean(view.heroImage) || view.images.length > 0;
 const socialImage = view.heroImage?.src || view.images[0]?.src;
+function extractMetaContent(
+  html: string,
+  attribute: "name" | "property",
+  key: string,
+): string | undefined {
+  const pattern = new RegExp(
+    `<meta[^>]+${attribute}=(["'])${key}\\1[^>]+content=(["'])([\\s\\S]*?)\\2[^>]*>`,
+    "i",
+  );
+  const match = html.match(pattern);
+  return match?.[3]?.replace(/\s+/g, " ").trim() || undefined;
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function stripLegacyHeadMetadata(html: string): string {
+  return html
+    .replace(/<title[^>]*>[\s\S]*?<\/title>\s*/i, "")
+    .replace(/<link\b[^>]*\brel=(["'])canonical\1[^>]*>\s*/gi, "")
+    .replace(
+      /<meta\b[^>]*\b(?:name|property)=(["'])(?:description|robots|keywords|author|publisher|classification|og:[^"']+|twitter:[^"']+)\1[^>]*>\s*/gi,
+      "",
+    )
+    .replace(
+      /<script\b[^>]*type=(["'])application\/ld\+json\1[^>]*>[\s\S]*?<\/script>\s*/gi,
+      "",
+    );
+}
+
+const { rawHtml } = Astro.props;
+const routeSeo = getRouteSeoMeta(Astro.url.pathname);
+const hasAutocolumnGallery = /sqs-gallery-design-autocolumns/.test(rawHtml);
+const legacyTitleMatch = rawHtml.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+const legacyDescriptionMatch = rawHtml.match(
+  /<meta[^>]+name=(["'])description\1[^>]+content=(["'])([\s\S]*?)\2[^>]*>/i,
+);
+const legacyTitle = legacyTitleMatch?.[1]?.replace(/\s+/g, " ").trim() || SITE_NAME;
+const legacyDescription =
+  legacyDescriptionMatch?.[3]?.replace(/\s+/g, " ").trim() || SITE_DESCRIPTION;
+const legacyOgImage = extractMetaContent(rawHtml, "property", "og:image");
+const fallbackCanonicalPath =
+  Astro.url.pathname === "/" ? "/" : Astro.url.pathname.replace(/\/$/, "");
+const fallbackCanonical = new URL(fallbackCanonicalPath || "/", Astro.url.origin).toString();
+const resolvedTitle = routeSeo?.title?.trim() || legacyTitle;
+const resolvedDescription = routeSeo?.description?.trim() || legacyDescription;
+const resolvedCanonical = routeSeo?.canonical || fallbackCanonical;
+const resolvedOgType =
+  routeSeo?.openGraph.type || extractMetaContent(rawHtml, "property", "og:type") || "website";
+const resolvedOgImage = routeSeo?.openGraph.image || legacyOgImage;
+const resolvedOgUrl = routeSeo?.openGraph.url || resolvedCanonical;
+const resolvedTwitterCard =
+  routeSeo?.twitter.card || extractMetaContent(rawHtml, "name", "twitter:card") || "summary_large_image";
+
+const legacyOrganizationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${Astro.url.origin}/#organization`,
+  name: SITE_NAME,
+  alternateName: SITE_ALTERNATE_NAME,
+  url: `${Astro.url.origin}/`,
+  description: SITE_DESCRIPTION,
+  email: SITE_CONTACT_EMAIL,
+  foundingLocation: {
+    "@type": "Place",
+    name: SITE_LOCATION,
+  },
+  founder: SITE_FOUNDERS.map((name) => ({
+    "@type": "Person",
+    name,
+  })),
+  sameAs: [...SITE_SAME_AS],
+  knowsAbout: [...SITE_KNOWS_ABOUT],
+});
+const legacyPageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: resolvedTitle,
+  description: resolvedDescription,
+  url: resolvedCanonical,
+  isPartOf: {
+    "@id": `${Astro.url.origin}/#website`,
+  },
+  about: {
+    "@id": `${Astro.url.origin}/#organization`,
+  },
+});
+const normalizedHeadTags = [
+  `<title>${escapeHtml(resolvedTitle)}</title>`,
+  `<link rel="canonical" href="${escapeHtml(resolvedCanonical)}">`,
+  `<meta name="description" content="${escapeHtml(resolvedDescription)}">`,
+  `<meta property="og:title" content="${escapeHtml(routeSeo?.openGraph.title || resolvedTitle)}">`,
+  `<meta property="og:type" content="${escapeHtml(resolvedOgType)}">`,
+  `<meta property="og:url" content="${escapeHtml(resolvedOgUrl)}">`,
+  `<meta property="og:description" content="${escapeHtml(routeSeo?.openGraph.description || resolvedDescription)}">`,
+  '<meta property="og:locale" content="en_US">',
+  `<meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">`,
+  `<meta name="twitter:card" content="${escapeHtml(resolvedTwitterCard)}">`,
+  `<meta name="twitter:title" content="${escapeHtml(routeSeo?.twitter.title || resolvedTitle)}">`,
+  `<meta name="twitter:description" content="${escapeHtml(routeSeo?.twitter.description || resolvedDescription)}">`,
+  '<link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full-text site guide">',
+  `<link rel="alternate" type="text/markdown" href="${escapeHtml(
+    Astro.url.pathname === "/" ? "/index.md" : `${Astro.url.pathname.replace(/\/$/, "")}.md`,
+  )}">`,
+  '<meta name="author" content="Lovely Sunday">',
+  `<meta name="publisher" content="${SITE_NAME}">`,
+  `<meta name="keywords" content="${SITE_KEYWORDS.join(", ")}">`,
+  `<meta name="category" content="${SITE_CATEGORY}">`,
+  `<meta name="classification" content="${SITE_CATEGORY}">`,
+  `<meta name="ai-content" content="${SITE_AI_META.contentType}">`,
+  `<meta name="ai-topics" content="${SITE_AI_META.topics}">`,
+  `<meta name="ai-audience" content="${SITE_AI_META.audience}">`,
+  `<meta name="ai-use" content="${SITE_AI_META.use}">`,
+  '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+  `<script type="application/ld+json">${legacyOrganizationSchema}</script>`,
+  `<script type="application/ld+json">${legacyPageSchema}</script>`,
+];
+
+if (resolvedOgImage) {
+  normalizedHeadTags.splice(5, 0, `<meta property="og:image" content="${escapeHtml(resolvedOgImage)}">`);
+  normalizedHeadTags.splice(12, 0, `<meta name="twitter:image" content="${escapeHtml(routeSeo?.twitter.image || resolvedOgImage)}">`);
+}
+
+function rewriteInternalHref(href: string): string {
+  const [pathnameAndSearch, hash = ""] = href.split("#", 2);
+  const [pathnameRaw, search = ""] = pathnameAndSearch.split("?", 2);
+
+  let pathname = pathnameRaw;
+
+  // Keep legacy internal links inside this rebuilt site.
+  if (/^https?:\/\/www\.lovelysunday\.co/i.test(pathname)) {
+    pathname = pathname.replace(/^https?:\/\/www\.lovelysunday\.co/i, "") || "/";
+  }
+
+  // Browser-normalized legacy double-slash lookbook links need explicit stable targets.
+  const legacyDoubleMatch = pathname.match(/^\/lookbook\/\/looks\/([^/?#]+)\/?$/i);
+  if (legacyDoubleMatch) {
+    pathname = `/lookbook-double/looks/${legacyDoubleMatch[1]}/`;
+  } else {
+    const slashTerminatedPathname = pathname.endsWith("/") ? pathname : `${pathname}/`;
+    if (internalUrlRewriteMap[slashTerminatedPathname]) {
+      pathname = correctedLookbookPath(pathname);
+    }
+  }
+
+  const queryPart = search ? `?${search}` : "";
+  const hashPart = hash ? `#${hash}` : "";
+  return `${pathname}${queryPart}${hashPart}`;
+}
+
+const renderedHtml = stripLegacyHeadMetadata(rawHtml)
+  // Strip "Powered by Squarespace" branding
+  .replace(/<p[^>]*>Powered by\s*<a[^>]*squarespace[^>]*>Squarespace<\/a><\/p>/gi, "")
+  // Strip Facebook icon links
+  .replace(/<a\b[^>]*href="[^"]*facebook\.com\/pages\/LovelySunday[^"]*"[^>]*>[\s\S]*?<\/a>/gi, "")
+  // Rewrite internal hrefs
+  .replace(
+    /<a\b([^>]*?)\bhref=(["'])([^"']+)\2([^>]*)>/gi,
+    (_full, beforeHref, quote, hrefValue, afterHref) => {
+      const rewrittenHref = rewriteInternalHref(hrefValue);
+      return `<a${beforeHref}href=${quote}${rewrittenHref}${quote}${afterHref}>`;
+    },
+  )
+  // Inject normalized metadata into legacy page heads.
+  .replace(/<\/head>/i, `${normalizedHeadTags.join("\n")}\n</head>`);
 ---
 
 <Layout

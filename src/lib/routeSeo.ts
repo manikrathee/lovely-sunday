@@ -54,6 +54,20 @@ const normalizePathname = (pathname: string): string => {
   return collapsed.replace(/\/$/, "");
 };
 
+const normalizeLegacyUrl = (value?: string | null): string | undefined => {
+  if (!value) return undefined;
+
+  try {
+    const url = new URL(value);
+    if (url.protocol === "http:" && url.hostname === "www.lovelysunday.co") {
+      url.protocol = "https:";
+    }
+    return url.toString();
+  } catch {
+    return value ?? undefined;
+  }
+};
+
 const canonicalToPath = (canonical?: string | null): string | null => {
   if (!canonical) return null;
   try {
@@ -85,7 +99,7 @@ for (const data of Object.values(pageJsonModules)) {
 
   routeSeoByPath.set(path, {
     title: data.title ?? undefined,
-    canonical: data.canonical ?? undefined,
+    canonical: normalizeLegacyUrl(data.canonical),
     description: data.meta?.description ?? undefined,
     robots: data.meta?.robots ?? undefined,
     openGraph: {
@@ -93,7 +107,7 @@ for (const data of Object.values(pageJsonModules)) {
       description: data.openGraph?.description ?? undefined,
       image: data.openGraph?.image ?? undefined,
       type: data.openGraph?.type ?? undefined,
-      url: data.openGraph?.url ?? undefined,
+      url: normalizeLegacyUrl(data.openGraph?.url),
     },
     twitter: {
       card: data.twitter?.card ?? undefined,
@@ -101,11 +115,13 @@ for (const data of Object.values(pageJsonModules)) {
       description: data.twitter?.description ?? undefined,
       image: data.twitter?.image ?? undefined,
     },
-    jsonLd: (data.jsonLd ?? []).map(sanitizeJsonLd),
+    jsonLd: (data.jsonLd ?? [])
+      .filter((entry) => !/"@context"\s*:\s*"http:\/\/schema\.org"/.test(entry))
+      .map(sanitizeJsonLd),
   });
 }
 
-if (routeSeoByPath.has("/index")) {
+if (!routeSeoByPath.has("/") && routeSeoByPath.has("/index")) {
   const indexMeta = routeSeoByPath.get("/index");
   if (indexMeta) {
     routeSeoByPath.set("/", indexMeta);
