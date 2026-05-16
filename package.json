@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "npm exec -- astro dev & caddy run --config Caddyfile",
     "dev:astro": "npm exec -- astro dev",
+    "storybook": "npm exec -- storybook dev -p 6006",
+    "storybook:build": "npm exec -- storybook build",
     "build": "npm exec -- astro build && npm run qa:parity",
     "build:astro": "npm exec -- astro build",
     "qa:parity": "node scripts/qa/parity-gate.mjs && npm run check:gallery-orientations",
@@ -17,6 +19,7 @@
     "check:routes": "node scripts/verify-route-manifest.mjs"
   },
   "dependencies": {
+    "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.6.0",
     "@astrolib/analytics": "^0.6.1",
     "@nuasite/cms": "^0.11.1",
@@ -37,10 +40,17 @@
     "postcss-color-function": "^1.2.0",
     "postcss-custom-properties": "^15.0.1",
     "postcss-easy-import": "^4.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "swup": "^4.8.2"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0"
+    "@storybook-astro/framework": "^0.1.0-beta.13",
+    "@storybook/builder-vite": "^10.2.13",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "cheerio": "^1.2.0",
+    "storybook": "^10.2.13"
   },
   "engines": {
     "node": ">=22.0.0"

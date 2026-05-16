@@ -15,6 +15,7 @@
 # astro
 /.astro/
 /dist/
+/storybook-static/
 
 # generated symlink for capture asset mirror (created by prepare-capture-assets.mjs)
 /public/assets/downloads

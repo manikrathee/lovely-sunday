@@ -75,6 +75,12 @@ npm install
 # Start dev server
 npm run dev
 
+# Start Astro only (skip Caddy)
+npm run dev:astro
+
+# Start Storybook
+npm run storybook
+
 # Build static output into dist/
 npm run build
 
@@ -87,6 +93,8 @@ Build with your canonical production URL:
 ```bash
 SITE_URL=https://www.yourdomain.com npm run build
 ```
+
+Agentation is now mounted in the shared Astro layout and only renders in local development, so the toolbar appears automatically while running `npm run dev` or `npm run dev:astro`.
 
 ---
 

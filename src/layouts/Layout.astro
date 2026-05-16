@@ -9,6 +9,7 @@ import { Head } from "astro-capo";
 import { SEO } from "astro-seo";
 import { Breadcrumbs } from "astro-breadcrumbs";
 import { GoogleAnalytics } from "@astrolib/analytics";
+import AgentationToolbar from "../components/AgentationToolbar";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getRouteSeoMeta } from "../lib/routeSeo";
@@ -215,5 +216,6 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
         </script>
 
         {gaMeasurementId && <GoogleAnalytics id={gaMeasurementId} />}
+        {import.meta.env.DEV && <AgentationToolbar client:only="react" />}
     </body>
 </html>

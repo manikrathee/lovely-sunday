@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import pageMarkdown from "@nuasite/llm-enhancements";
 import robotsTxt from "astro-robots-txt";
@@ -54,6 +55,7 @@ export default defineConfig({
         format: "directory",
     },
     integrations: [
+        react(),
         sitemap(),
         pageMarkdown({
             contentDir: "src/content",
