@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "af7702c1452d",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "scripts/validate-built-site.mjs",
+    "src/lib/routeSeo.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/af/7702c1452d/0/metadata.json",
+      "transcript": "/af/7702c1452d/0/full.jsonl",
+      "content_hash": "/af/7702c1452d/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2099195,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 2061312,
+    "output_tokens": 2696,
+    "api_call_count": 16
+  }
+}
