@@ -392,7 +392,17 @@ Because this repo builds with directory format and trailing slashes, routes reso
 - `/about/` → `/about/index.html`
 - `/work/item/` → `/work/item/index.html`
 
-CloudFront settings to verify:
+Production topology:
+
+- Canonical URL: `https://lovelysunday.co` (`www` is not configured)
+- CloudFront distribution: `E26W2SB6TRZO1H` (`d3bnqfye9xhkoz.cloudfront.net`)
+- Private S3 origin: `lovelysunday.s3.us-east-1.amazonaws.com`
+- Origin path: `/site`
+- Default root object: `index.html`
+- Viewer-request function: `lovely-sunday-directory-index`
+
+CloudFront settings:
+
 - Default root object: `index.html`
 - Compression: on (Brotli/Gzip)
 - HTTPS redirect: on
@@ -439,7 +449,7 @@ Used by this repository:
 Example:
 
 ```bash
-export SITE_URL=https://www.yourdomain.com
+export SITE_URL=https://lovelysunday.co
 npm run build
 ```
 
