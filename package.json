@@ -63,5 +63,8 @@
     "postcss-color-function": {
       "postcss": ">=8.4.31"
     }
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.59.0"
   }
 }
