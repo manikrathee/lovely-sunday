@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - navigation "Primary" [ref=e5]:
+          - link "Discover" [ref=e6] [cursor=pointer]:
+            - /url: /lookbook
+          - link "Archive" [ref=e7] [cursor=pointer]:
+            - /url: /daily-diary
+        - link "Lovely Sunday home":
+          - /url: /
+          - img "Lovely Sunday"
+        - navigation "Utilities" [ref=e8]:
+          - link "About" [ref=e9] [cursor=pointer]:
+            - /url: /about-lovely-sunday
+          - link "Contact" [ref=e10] [cursor=pointer]:
+            - /url: /contact-lovely-sunday
+    - main [ref=e11]:
+      - article [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - paragraph [ref=e16]: Home
+            - heading "Welcome to LovelySunday" [level=1] [ref=e17]
+            - paragraph [ref=e18]: A girl who left her corporate jobs to follow her passion as a blogger, creator & stylist–Glitter obsessed and always in search of all things Lovely.
+            - paragraph [ref=e19]: Yves Saint Laurant studio tour, 5 Avenue Marceau in Paris, France.
+          - figure [ref=e20]:
+            - img "Lovely Sunday" [ref=e21]
+        - region "Explore more" [ref=e22]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - link "Purple & Lace" [ref=e25] [cursor=pointer]:
+                - /url: /purple-lace
+            - listitem [ref=e26]:
+              - link "Sunset in a Wheat Field" [ref=e27] [cursor=pointer]:
+                - /url: /wheat-field-sunset
+            - listitem [ref=e28]:
+              - link "Maxi Chic" [ref=e29] [cursor=pointer]:
+                - /url: /grey-skirt-with-detailed-top
+            - listitem [ref=e30]:
+              - link "All About the Basics" [ref=e31] [cursor=pointer]:
+                - /url: /all-about-the-basics
+            - listitem [ref=e32]:
+              - link "Lilly Pulitzer Jumper" [ref=e33] [cursor=pointer]:
+                - /url: /lilly-pulitzer-jumper
+            - listitem [ref=e34]:
+              - link "White Scalloped Dress" [ref=e35] [cursor=pointer]:
+                - /url: /white-scalloped-dress
+            - listitem [ref=e36]:
+              - link "Sparkly Wedges" [ref=e37] [cursor=pointer]:
+                - /url: /sparkly-wedges
+            - listitem [ref=e38]:
+              - link "Bonjour!" [ref=e39] [cursor=pointer]:
+                - /url: /bonjour-pink-skirt-paris-shirt
+            - listitem [ref=e40]:
+              - link "Pink Colouttes" [ref=e41] [cursor=pointer]:
+                - /url: /pink-colouttes
+            - listitem [ref=e42]:
+              - link "Mornings in Germany" [ref=e43] [cursor=pointer]:
+                - /url: /mornings-in-germany
+            - listitem [ref=e44]:
+              - link "Zara Headband" [ref=e45] [cursor=pointer]:
+                - /url: /zara-headband
+            - listitem [ref=e46]:
+              - link "Summer in Jamaica" [ref=e47] [cursor=pointer]:
+                - /url: /all-white-jamaica-look
+        - region "Gallery" [ref=e48]:
+          - figure [ref=e49]:
+            - img "YSL Studio Paris, France" [ref=e50]
+          - figure [ref=e51]:
+            - img "Sequin Dresses" [ref=e52]
+          - figure [ref=e53]:
+            - img "Culottes" [ref=e54]
+          - figure [ref=e55]:
+            - img "Beret Rainbow" [ref=e56]
+          - figure [ref=e57]:
+            - img "Dresses over Denim" [ref=e58]
+          - figure [ref=e59]:
+            - img "International Womens Day!" [ref=e60]
+          - figure [ref=e61]:
+            - img "Ouai-STED with Jen Atkin!" [ref=e62]
+          - figure [ref=e63]:
+            - img "Pink Pumps" [ref=e64]
+          - figure [ref=e65]:
+            - img "Oh my Pearls!" [ref=e66]
+          - figure [ref=e67]:
+            - img "Nordstrom Anniversary Sale Favorites" [ref=e68]
+          - figure [ref=e69]:
+            - img "Kate Spade Pink Feather Clutch" [ref=e70]
+          - figure [ref=e71]:
+            - img "Balmain Blazer" [ref=e72]
+          - figure [ref=e73]:
+            - img "What is your passion?" [ref=e74]
+        - generic [ref=e75]:
+          - paragraph [ref=e76]: As if you needed another reason for more sequins in your life!
+          - paragraph [ref=e77]: Culottes- a surprisingly versitile addition to your closet.
+          - paragraph [ref=e78]: Get some beret inspo!
+          - paragraph [ref=e79]: Find the pieces you NEED to recreate this look!
+          - paragraph [ref=e80]: Happy International Women's Day!!
+          - paragraph [ref=e81]: Check out my favorite Ouai hair products!
+          - paragraph [ref=e82]: New Year, New Shoes!
+          - paragraph [ref=e83]: Pearls are no longer reserved for boring necklaces, but an edgy way to creatively style any look!
+          - paragraph [ref=e84]: Time to shop the best sale of the year at Nordstrom!
+          - paragraph [ref=e85]: Found the perfect look a like of a Kate Spade pink feathered clutch!
+          - paragraph [ref=e86]: Check out this Missguided blazer that looks just like the sold-out Balmain x HM blazer!
+          - paragraph [ref=e87]: What’s something in your life that you spend your free time doing? Something you would do unpaid because you enjoy it so much? What really makes your soul happy and makes you feel personally fulfilled?
+          - paragraph [ref=e88]: Explore looks, style and fun travel recommendations
+          - paragraph [ref=e89]: Jan 7 YSL Studio Paris, France Dec 5 Sequin Dresses Nov 29 Culottes Mar 20 Beret Rainbow Mar 13 Dresses over Denim Mar 8 International Womens Day! Jan 23 Ouai-STED with Jen Atkin!
+  - contentinfo [ref=e90]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - strong [ref=e93]: Lovely Sunday
+        - text: © 2026
+      - navigation "Footer" [ref=e94]:
+        - link "Discover" [ref=e95] [cursor=pointer]:
+          - /url: /lookbook
+        - link "Archive" [ref=e96] [cursor=pointer]:
+          - /url: /daily-diary
+        - link "Contact" [ref=e97] [cursor=pointer]:
+          - /url: /contact-lovely-sunday
+        - link "Instagram" [ref=e98] [cursor=pointer]:
+          - /url: https://www.instagram.com/lovelysunday

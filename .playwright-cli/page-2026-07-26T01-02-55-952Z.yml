@@ -1,0 +1,63 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - log
+    - log
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - banner [ref=e7]:
+        - heading "Storybook" [level=1] [ref=e8]
+        - generic [ref=e12]:
+          - generic [ref=e14]:
+            - link "Skip to content" [ref=e15] [cursor=pointer]:
+              - /url: "#storybook-preview-wrapper"
+            - link "Storybook" [ref=e17] [cursor=pointer]:
+              - /url: ./
+              - img "Storybook" [ref=e18]
+            - switch "Settings" [ref=e23] [cursor=pointer]
+          - generic [ref=e27]: Search for components
+          - search [ref=e28]:
+            - combobox [ref=e29]:
+              - searchbox "Search for components" [ref=e30]
+              - code:
+                - generic: ⌘
+                - text: K
+          - navigation [ref=e32]:
+            - heading "Stories" [level=2] [ref=e33]
+      - separator "Sidebar resize handle" [ref=e53]
+    - generic [ref=e55]:
+      - region [ref=e56]:
+        - heading "Toolbar" [level=2] [ref=e57]
+        - toolbar [ref=e58]:
+          - generic [ref=e59]:
+            - button "Reload story" [ref=e60] [cursor=pointer]
+            - switch "Measure tool" [ref=e63] [cursor=pointer]
+            - switch "Outline tool" [ref=e67] [cursor=pointer]
+            - button "Viewport size" [ref=e70] [cursor=pointer]
+          - generic [ref=e75]:
+            - button "Open in isolation mode" [ref=e76] [cursor=pointer]
+            - switch "Change zoom level" [ref=e82] [cursor=pointer]: 100%
+            - button "Enter full screen" [ref=e83] [cursor=pointer]
+      - main [ref=e86]:
+        - heading "Main preview area" [level=2] [ref=e87]
+        - generic [ref=e88]:
+          - progressbar "Content is loading..." [ref=e90]
+          - generic [ref=e91]:
+            - link "Skip to sidebar" [ref=e92] [cursor=pointer]:
+              - /url: "#content-post-card--with-image"
+            - iframe [ref=e96]:
+              
+    - generic [ref=e97]:
+      - separator "Addon panel resize handle" [ref=e98]
+      - region [ref=e100]:
+        - heading "Addon panel" [level=2] [ref=e101]
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - button "Move addon panel to right" [ref=e105] [cursor=pointer]
+              - button "Hide addon panel" [ref=e109] [cursor=pointer]
+            - tablist "Available addons" [ref=e115]:
+              - tab "Controls" [selected] [ref=e116] [cursor=pointer]
+              - tab "Actions" [ref=e119] [cursor=pointer]
+              - tab "Interactions" [ref=e122] [cursor=pointer]
+              - tab "Code" [ref=e125] [cursor=pointer]
+          - tabpanel "Controls" [ref=e126]

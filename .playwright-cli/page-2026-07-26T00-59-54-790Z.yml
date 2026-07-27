@@ -1,0 +1,76 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e6]:
+      - heading "Storybook" [level=1] [ref=e7]
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - link "Skip to content" [ref=e14] [cursor=pointer]:
+              - /url: "#storybook-preview-wrapper"
+            - link "Storybook" [ref=e16] [cursor=pointer]:
+              - /url: ./
+              - img "Storybook" [ref=e17]
+            - switch "Settings" [ref=e22] [cursor=pointer]
+          - generic [ref=e28]:
+            - generic [ref=e30] [cursor=pointer]:
+              - button "Open onboarding guide" [ref=e34]:
+                - strong [ref=e38]: Get started
+              - generic [ref=e39]:
+                - button "Collapse onboarding guide" [expanded] [ref=e40]
+                - button "0% completed" [ref=e43]:
+                  - generic [ref=e49]: 0%
+            - list [ref=e52]
+        - generic [ref=e53]: Search for components
+        - search [ref=e54]:
+          - combobox [ref=e55]:
+            - searchbox "Search for components" [ref=e56]
+            - code:
+              - generic: ⌘
+              - text: K
+            - button "Tag filters" [ref=e58] [cursor=pointer]
+        - navigation [ref=e62]:
+          - heading "Stories" [level=2] [ref=e63]
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - button "Collapse" [expanded] [ref=e67] [cursor=pointer]: Site
+              - button "Expand all" [ref=e71] [cursor=pointer]
+            - button [ref=e75] [cursor=pointer]
+            - button [ref=e83] [cursor=pointer]
+            - button [ref=e91] [cursor=pointer]
+            - generic [ref=e98]:
+              - button "Collapse" [expanded] [ref=e99] [cursor=pointer]: Content
+              - button "Expand all" [ref=e103] [cursor=pointer]
+            - button [ref=e107] [cursor=pointer]
+            - button [ref=e115] [cursor=pointer]
+            - button [expanded] [ref=e123] [cursor=pointer]
+            - generic [ref=e130]:
+              - link [ref=e131] [cursor=pointer]:
+                - /url: /?path=/docs/content-post-card--docs
+              - link "Skip to content" [ref=e135] [cursor=pointer]:
+                - /url: "#storybook-preview-wrapper"
+            - link [ref=e137] [cursor=pointer]:
+              - /url: /?path=/story/content-post-card--with-image
+            - link [ref=e142] [cursor=pointer]:
+              - /url: /?path=/story/content-post-card--without-image
+            - generic [ref=e146]:
+              - button "Collapse" [expanded] [ref=e147] [cursor=pointer]: Social
+              - button "Expand all" [ref=e151] [cursor=pointer]
+            - button [ref=e155] [cursor=pointer]
+    - separator "Sidebar resize handle" [ref=e162]
+  - generic [ref=e164]:
+    - region [ref=e165]:
+      - heading "Toolbar" [level=2] [ref=e166]
+      - toolbar [ref=e167]:
+        - switch "Outline tool" [ref=e169] [cursor=pointer]
+        - generic [ref=e172]:
+          - button "Enter full screen" [ref=e173] [cursor=pointer]
+          - button "Open in editor" [ref=e176] [cursor=pointer]
+    - main [ref=e180]:
+      - heading "Main preview area" [level=2] [ref=e181]
+      - generic [ref=e182]:
+        - progressbar "Content is loading..." [ref=e184]
+        - generic [ref=e185]:
+          - link "Skip to sidebar" [ref=e186] [cursor=pointer]:
+            - /url: "#content-post-card--docs"
+          - iframe [ref=e190]:
+            
