@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.164.2/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: manikrathee/lovely-sunday
+  branch: master
+  auth_methods: [token]
+  commit_messages:
+    create: 'content: create {{collection}} "{{slug}}"'
+    update: 'content: update {{collection}} "{{slug}}"'
+    delete: 'content: delete {{collection}} "{{slug}}"'
+    uploadMedia: 'content: upload "{{path}}"'
+    deleteMedia: 'content: delete "{{path}}"'
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: news
+    label: News
+    label_singular: News story
+    folder: src/content/news
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: Template key, name: templateKey, widget: hidden, default: blog-post }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - { label: Publish date, name: date, widget: datetime }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: work
+    label: Work
+    label_singular: Work item
+    folder: src/content/work
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: Template key, name: templateKey, widget: hidden, default: work-sub-page }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - { label: Publish date, name: date, widget: datetime }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: sold
+    label: Sold
+    label_singular: Sold item
+    folder: src/content/sold
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: Template key, name: templateKey, widget: hidden, default: exhibitions-sub-page }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - { label: Publish date, name: date, widget: datetime }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home
+        file: src/content/pages/index.md
+        fields: &landing_page_fields
+          - { label: Template key, name: templateKey, widget: hidden }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Heading, name: heading, widget: string, required: false }
+          - { label: Subheading, name: subheading, widget: string, required: false }
+          - { label: Image, name: image, widget: image, required: false }
+          - { label: Thumbnail, name: thumbnail, widget: image, required: false }
+          - { label: Featured image, name: featuredimage, widget: image, required: false }
+          - { label: Body, name: body, widget: markdown, required: false }
+
+      - name: elements
+        label: Elements
+        file: src/content/pages/elements.md
+        fields: *landing_page_fields
+
+      - name: bio
+        label: Bio
+        file: src/content/pages/bio.md
+        fields: &standard_page_fields
+          - { label: Template key, name: templateKey, widget: hidden }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Date, name: date, widget: datetime, required: false }
+          - { label: Thumbnail, name: thumbnail, widget: image, required: false }
+          - { label: Featured image, name: featuredimage, widget: image, required: false }
+          - { label: Number, name: number, widget: number, required: false }
+          - { label: Page type, name: pagetype, widget: list, required: false }
+          - { label: Body, name: body, widget: markdown, required: false }
+
+      - name: work_page
+        label: Work landing page
+        file: src/content/pages/work.md
+        fields: *standard_page_fields
+
+      - name: sold_page
+        label: Sold landing page
+        file: src/content/pages/sold.md
+        fields: *standard_page_fields
+
+      - name: news_page
+        label: News landing page
+        file: src/content/pages/news.md
+        fields: *standard_page_fields
+
+      - name: contact
+        label: Contact
+        file: src/content/pages/contact.md
+        fields: *standard_page_fields

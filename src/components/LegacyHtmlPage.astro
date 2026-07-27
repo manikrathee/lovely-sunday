@@ -16,6 +16,34 @@ const allParagraphs = view.description
   : view.paragraphs;
 const hasVisuals = Boolean(view.heroImage) || view.images.length > 0;
 const socialImage = view.heroImage?.src || view.images[0]?.src;
+
+const orientationFor = (image: (typeof view.images)[number]) => {
+  if (!image.width || !image.height) return "unknown";
+  if (Math.abs(image.width - image.height) <= 24) return "square";
+  return image.height > image.width ? "portrait" : "landscape";
+};
+
+const galleryFrames = view.images.map((image) => ({
+  image,
+  orientation: orientationFor(image),
+  span: "full" as "full" | "half",
+}));
+
+for (let index = 0; index < galleryFrames.length - 1; index += 1) {
+  const current = galleryFrames[index];
+  const next = galleryFrames[index + 1];
+
+  if (
+    current.orientation === "portrait" &&
+    next.orientation === "portrait" &&
+    current.span === "full" &&
+    next.span === "full"
+  ) {
+    current.span = "half";
+    next.span = "half";
+    index += 1;
+  }
+}
 ---
 
 <Layout
@@ -65,13 +93,19 @@ const socialImage = view.heroImage?.src || view.images[0]?.src;
 
     {view.images.length > 0 && (
       <section class={`legacy-page-gallery${hasVisuals ? "" : " no-hero"}`} aria-label="Gallery">
-        {view.images.map((image, index) => (
-          <figure class="legacy-page-frame">
+        {galleryFrames.map(({ image, orientation, span }, index) => (
+          <figure
+            class={`legacy-page-frame is-${span}-span orientation-${orientation}`}
+            data-orientation={orientation}
+          >
             <img
               src={image.src}
               alt={image.alt}
               width={image.width}
               height={image.height}
+              data-image-dimensions={
+                image.width && image.height ? `${image.width}x${image.height}` : undefined
+              }
               loading={index < 4 ? "eager" : "lazy"}
               decoding="async"
               fetchpriority={index === 0 && !view.heroImage ? "high" : undefined}

@@ -1,0 +1,63 @@
+name: Sveltia CMS
+
+on:
+  pull_request:
+    paths:
+      - "public/admin/**"
+      - "src/content/**"
+      - "tests/sveltia-cms.test.mjs"
+      - "scripts/smoke-sveltia-runtime.mjs"
+      - "scripts/validate-built-site.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/cms.yml"
+  push:
+    branches: [master]
+    paths:
+      - "public/admin/**"
+      - "src/content/**"
+      - "tests/sveltia-cms.test.mjs"
+      - "scripts/smoke-sveltia-runtime.mjs"
+      - "scripts/validate-built-site.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/cms.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          SITE_URL: http://127.0.0.1:4321
+
+      - name: Start production preview
+        run: npm run preview -- --host 127.0.0.1 &
+        env:
+          SITE_URL: http://127.0.0.1:4321
+
+      - name: Wait for preview
+        run: |
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4321/admin/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          exit 1
+
+      - run: npm run test:cms:runtime

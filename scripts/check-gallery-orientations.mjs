@@ -38,6 +38,7 @@ async function findHtmlFiles(root) {
 
 const selectors = [
   ".site-page--gallery-list .slides.sqs-gallery-design-autocolumns .sqs-gallery-design-autocolumns-slide",
+  ".legacy-page-gallery .legacy-page-frame",
 ];
 
 const orientationFor = (dimensionAttr) => {
@@ -70,12 +71,21 @@ async function runCheck() {
       };
     });
 
-    for (let i = 0; i < slides.length - 1; i += 1) {
+    for (let i = 0; i < slides.length; i += 1) {
       const current = slides[i];
       const next = slides[i + 1];
-      if (current.halfSpan && next.halfSpan && current.orientation !== next.orientation) {
+      if (!current.halfSpan) continue;
+
+      if (
+        !next ||
+        !next.halfSpan ||
+        current.orientation !== next.orientation
+      ) {
         problems.push({ file, index: i, current, next });
+        continue;
       }
+
+      i += 1;
     }
   }
 
@@ -87,7 +97,7 @@ async function runCheck() {
   console.error("gallery-orientation check failed:");
   for (const { file, index, current, next } of problems) {
     console.error(
-      `${path.relative(process.cwd(), file)} @ slide ${index} → ${current.orientation} vs ${next.orientation}`,
+      `${path.relative(process.cwd(), file)} @ slide ${index} → ${current.orientation} vs ${next?.orientation ?? "missing pair"}`,
     );
   }
   process.exitCode = 1;

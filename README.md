@@ -82,6 +82,9 @@ npm run dev:astro
 # Start Storybook only
 npm run storybook
 
+# Validate the Sveltia CMS configuration
+npm run test:cms
+
 # Verify the static Storybook documentation build
 npm run storybook:build
 
@@ -90,6 +93,9 @@ npm run build
 
 # Preview production build locally
 npm run preview
+
+# With preview running, verify the deployed CMS route
+npm run test:cms:runtime
 ```
 
 Build with your canonical production URL:
@@ -114,6 +120,29 @@ Local pages include a development-only status bar in the bottom-left corner. It:
 Set `PUBLIC_STORYBOOK_URL` when Storybook uses a different local origin. The bar
 and Agentation mount are guarded by `import.meta.env.DEV` and are excluded from
 production output.
+
+### Sveltia CMS
+
+The content manager is available at `/admin/` in local development, preview,
+and production builds. It edits Markdown content in `src/content` and media in
+`public/img`, then commits changes to the `master` branch of
+`manikrathee/lovely-sunday`.
+
+Production sign-in uses a GitHub personal access token with repository content
+write permission. Each editor must already have write access to the repository.
+Sveltia stores the token in that browser's local storage; use a fine-grained,
+repository-scoped token and do not share it.
+
+For local editing without credentials:
+
+1. Run `npm run dev:astro`.
+2. Open `http://localhost:4321/admin/`.
+3. Choose the local repository workflow and select this repository folder.
+4. Review changes with Git, then commit and push them normally.
+
+The CMS is pinned in `public/admin/index.html`. Update the script version and
+matching schema URL together. Run `npm test`, `npm run build`, and—with the
+preview server running—`npm run test:cms:runtime` after any CMS change.
 
 ### Agentation review workflow
 

@@ -168,12 +168,43 @@
 
 .legacy-page-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: clamp(0.85rem, 1.5vw, 1.2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(10px, 1.25vw, 18px);
 }
 
 .legacy-page--gallery .legacy-page-gallery {
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  width: min(calc(100vw - 3rem), 1440px);
+  justify-self: center;
+}
+
+.legacy-page--gallery .legacy-page-frame {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.legacy-page--gallery .legacy-page-frame.is-full-span {
+  grid-column: 1 / -1;
+}
+
+.legacy-page--gallery .legacy-page-frame.is-half-span {
+  grid-column: span 1;
+  aspect-ratio: 2 / 3;
+}
+
+.legacy-page--gallery .legacy-page-frame.is-half-span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.legacy-page--gallery .legacy-page-frame.is-full-span img {
+  width: 100%;
+  height: auto;
+}
+
+.legacy-page--gallery .legacy-page-frame img {
+  border-radius: clamp(0.6rem, 1vw, 1.25rem);
 }
 
 .legacy-page-body {

@@ -67,6 +67,29 @@ for (const file of builtFiles.filter(
   }
 }
 
+const adminHtml = requireFile("admin/index.html");
+if (adminHtml) {
+  const $ = load(adminHtml);
+  const cmsScript = $("script[src]").attr("src");
+  if (cmsScript !== "https://unpkg.com/@sveltia/cms@0.164.2/dist/sveltia-cms.js") {
+    issues.push(`admin/index.html: expected pinned Sveltia CMS script`);
+  }
+  if ($('meta[name="robots"]').attr("content") !== "noindex, nofollow") {
+    issues.push(`admin/index.html: expected noindex, nofollow`);
+  }
+}
+
+const cmsConfig = requireFile("admin/config.yml");
+for (const expected of [
+  "name: github",
+  "repo: manikrathee/lovely-sunday",
+  "branch: master",
+]) {
+  if (cmsConfig && !cmsConfig.includes(expected)) {
+    issues.push(`admin/config.yml missing ${expected}`);
+  }
+}
+
 const robots = requireFile("robots.txt");
 for (const expected of ["User-agent: GPTBot", "User-agent: ClaudeBot", "Sitemap:"]) {
   if (robots && !robots.includes(expected)) issues.push(`robots.txt missing ${expected}`);
