@@ -11,10 +11,20 @@ if (!homePage) {
   throw new Error("Missing legacy homepage source for '/'");
 }
 
+const cleanedHomePage = {
+  ...homePage,
+  view: {
+    ...homePage.view,
+    description: "",
+    links: [],
+    paragraphs: [],
+  },
+};
+
 const instagramPosts = await getInstagramPosts(INSTAGRAM_USERNAME, 9);
 ---
 
-<LegacyHtmlPage page={homePage}>
+<LegacyHtmlPage page={cleanedHomePage}>
   <InstagramGrid
     title="Latest from @_lovelysunday"
     subtitle="A live pull of recent Instagram moments from Lovely Sunday."

@@ -169,6 +169,20 @@
   font-size: 1.2rem;
 }
 
+.site-foot-bio {
+  flex: 1 1 auto;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 4rem);
+  font-family: var(--font-sans-serif);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--color-base);
+  opacity: 0.48;
+}
+
 .site-foot-nav {
   display: flex;
   gap: 1.5rem;
@@ -233,6 +247,14 @@
   .site-foot-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-foot-bio {
+    order: 3;
+    width: 100%;
+    padding-inline: 0;
+    overflow-x: auto;
+    text-align: left;
   }
 
   .site-foot-logo {
