@@ -4,7 +4,9 @@
   "strategy": "manual-commit",
   "branch": "master",
   "checkpoints_count": 3,
-  "files_touched": null,
+  "files_touched": [
+    "README.md"
+  ],
   "sessions": [
     {
       "metadata": "/a3/7e6ce3a6b5/0/metadata.json",
@@ -17,13 +19,19 @@
       "transcript": "/a3/7e6ce3a6b5/1/full.jsonl",
       "content_hash": "/a3/7e6ce3a6b5/1/content_hash.txt",
       "prompt": "/a3/7e6ce3a6b5/1/prompt.txt"
+    },
+    {
+      "metadata": "/a3/7e6ce3a6b5/2/metadata.json",
+      "transcript": "/a3/7e6ce3a6b5/2/full.jsonl",
+      "content_hash": "/a3/7e6ce3a6b5/2/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
-    "input_tokens": 6645535,
+    "input_tokens": 8500401,
     "cache_creation_tokens": 0,
-    "cache_read_tokens": 6191104,
-    "output_tokens": 22515,
-    "api_call_count": 67
+    "cache_read_tokens": 7867136,
+    "output_tokens": 31846,
+    "api_call_count": 89
   }
 }
