@@ -1,0 +1,41 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "0784a06eeb6e",
+  "session_id": "019fa12d-dc8d-79b1-bc37-58a300bade4a",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-27T01:59:44.883474Z",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "src/components/Footer.astro",
+    "src/pages/index.astro",
+    "src/styles/components/site-shell.css"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.6-sol",
+  "turn_id": "48d4f142b742",
+  "checkpoint_transcript_start": 533,
+  "transcript_lines_at_start": 533,
+  "token_usage": {
+    "input_tokens": 574311,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 572416,
+    "output_tokens": 463,
+    "api_call_count": 4
+  },
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-27T01:59:44.360894Z",
+    "agent_lines": 38,
+    "agent_removed": 1,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 38,
+    "total_lines_changed": 39,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}

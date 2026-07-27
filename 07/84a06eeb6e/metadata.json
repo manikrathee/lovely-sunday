@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "0784a06eeb6e",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "src/components/Footer.astro",
+    "src/pages/index.astro",
+    "src/styles/components/site-shell.css"
+  ],
+  "sessions": [
+    {
+      "metadata": "/07/84a06eeb6e/0/metadata.json",
+      "transcript": "/07/84a06eeb6e/0/full.jsonl",
+      "content_hash": "/07/84a06eeb6e/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 574311,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 572416,
+    "output_tokens": 463,
+    "api_call_count": 4
+  }
+}
