@@ -4,13 +4,13 @@ import type { InstagramPost } from "../lib/instagram";
 interface Props {
   title?: string;
   subtitle?: string;
-  posts: InstagramPost[];
+  posts?: InstagramPost[];
 }
 
 const {
   title = "From @_lovelysunday on Instagram",
   subtitle = "Live pulls from the latest looks and travel moments.",
-  posts,
+  posts = [],
 } = Astro.props;
 ---
 

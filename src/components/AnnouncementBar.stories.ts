@@ -1,8 +1,15 @@
 import AnnouncementBar from "./AnnouncementBar.astro";
 
 const meta = {
-  title: "Site/AnnouncementBar",
+  title: "Site/Announcement Bar",
   component: AnnouncementBar,
+  parameters: {
+    docs: {
+      description: {
+        component: "Dismissible, polite-status announcement used for time-sensitive site messaging.",
+      },
+    },
+  },
   args: {
     message:
       "Sign up for our email list and be the first to see Lovely Sunday's latest looks.",

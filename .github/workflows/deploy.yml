@@ -5,9 +5,18 @@ on:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - uses: actions/checkout@v4
@@ -25,27 +34,13 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Sync non-hashed files (must-revalidate)
-        run: |
-          aws s3 sync dist/ "s3://${{ secrets.S3_BUCKET }}/site/" \
-            --delete \
-            --exclude "_astro/*" \
-            --cache-control "public,max-age=0,must-revalidate"
-
-      - name: Sync hashed assets (immutable)
-        run: |
-          aws s3 sync dist/ "s3://${{ secrets.S3_BUCKET }}/site/" \
-            --exclude "*" \
-            --include "_astro/*" \
-            --cache-control "public,max-age=31536000,immutable"
-
-      - name: Invalidate CloudFront cache
-        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id "${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}" \
-            --paths "/site/*"
+      - name: Deploy, invalidate, and verify
+        run: npm run deploy:production
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          VERIFY_BASE_URL: ${{ secrets.SITE_URL }}

@@ -2,13 +2,18 @@
 import "../styles/components/post-card.css";
 
 export interface Props {
-  post: any;
-  slug: string;
+  post?: {
+    data?: {
+      thumbnail?: string;
+      title?: string;
+    };
+  };
+  slug?: string;
 }
 
-const { post, slug } = Astro.props;
-const thumbnail = post.data.thumbnail;
-const title = post.data.title;
+const { post = {}, slug = "" } = Astro.props;
+const thumbnail = post.data?.thumbnail;
+const title = post.data?.title || "Untitled";
 ---
 
 <article class={`post-card ${thumbnail ? 'with-image' : 'no-image'} post`}>

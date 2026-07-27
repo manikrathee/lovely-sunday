@@ -1,0 +1,190 @@
+---
+const storybookUrl = import.meta.env.PUBLIC_STORYBOOK_URL ?? "http://127.0.0.1:6006";
+---
+
+<aside class="dev-bar" data-dev-bar data-storybook-url={storybookUrl} aria-label="Development tools">
+  <button class="dev-bar__toggle" type="button" data-dev-bar-toggle aria-expanded="true">
+    <span class="dev-bar__pulse" aria-hidden="true"></span>
+    <span>Local workspace</span>
+    <span class="dev-bar__chevron" aria-hidden="true">⌄</span>
+  </button>
+
+  <div class="dev-bar__panel" data-dev-bar-panel>
+    <div class="dev-bar__services" aria-label="Service status">
+      <span class="dev-bar__service is-online">
+        <span class="dev-bar__dot" aria-hidden="true"></span>
+        Astro
+      </span>
+      <span class="dev-bar__service is-online" data-agentation-status>
+        <span class="dev-bar__dot" aria-hidden="true"></span>
+        Agentation
+      </span>
+      <a class="dev-bar__service is-checking" href={storybookUrl} target="_blank" rel="noreferrer" data-storybook-status>
+        <span class="dev-bar__dot" aria-hidden="true"></span>
+        Storybook
+      </a>
+    </div>
+
+    <div class="dev-bar__actions">
+      <button type="button" data-agentation-toggle>Hide Agentation</button>
+      <a href={storybookUrl} target="_blank" rel="noreferrer">Open Storybook ↗</a>
+      <button type="button" data-copy-command="npm run dev">Copy start command</button>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .dev-bar {
+    --dev-ink: #291f20;
+    --dev-paper: #fffaf2;
+    --dev-accent: #c35e66;
+    --dev-line: color-mix(in srgb, var(--dev-ink) 18%, transparent);
+    position: fixed;
+    inset: auto auto 16px 16px;
+    z-index: 2147483000;
+    width: min(380px, calc(100vw - 32px));
+    color: var(--dev-ink);
+    background:
+      linear-gradient(135deg, rgb(255 255 255 / 72%), transparent 55%),
+      var(--dev-paper);
+    border: 1px solid var(--dev-line);
+    border-radius: 14px;
+    box-shadow: 0 16px 50px rgb(41 31 32 / 20%);
+    font: 600 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+    overflow: hidden;
+  }
+
+  .dev-bar__toggle {
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    padding: 11px 13px;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+  }
+
+  .dev-bar__pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #318765;
+    box-shadow: 0 0 0 4px rgb(49 135 101 / 14%);
+  }
+
+  .dev-bar__chevron { margin-left: auto; }
+  .dev-bar.is-collapsed .dev-bar__chevron { transform: rotate(-90deg); }
+  .dev-bar.is-collapsed .dev-bar__panel { display: none; }
+
+  .dev-bar__panel {
+    padding: 0 13px 13px;
+    border-top: 1px solid var(--dev-line);
+  }
+
+  .dev-bar__services,
+  .dev-bar__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  .dev-bar__services { padding: 11px 0; }
+
+  .dev-bar__service {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .dev-bar__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #b28b33;
+  }
+
+  .dev-bar__service.is-online .dev-bar__dot { background: #318765; }
+  .dev-bar__service.is-offline .dev-bar__dot { background: var(--dev-accent); }
+
+  .dev-bar__actions button,
+  .dev-bar__actions a {
+    padding: 7px 9px;
+    color: inherit;
+    background: rgb(255 255 255 / 64%);
+    border: 1px solid var(--dev-line);
+    border-radius: 7px;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+  }
+
+  .dev-bar__actions button:hover,
+  .dev-bar__actions a:hover {
+    border-color: var(--dev-accent);
+  }
+
+  @media (max-width: 520px) {
+    .dev-bar { inset: auto 10px 10px; width: auto; }
+  }
+</style>
+
+<script>
+  const bar = document.querySelector<HTMLElement>("[data-dev-bar]");
+
+  if (bar && bar.dataset.initialized !== "true") {
+    bar.dataset.initialized = "true";
+    const panelToggle = bar.querySelector<HTMLButtonElement>("[data-dev-bar-toggle]");
+    const agentationToggle = bar.querySelector<HTMLButtonElement>("[data-agentation-toggle]");
+    const storybookStatus = bar.querySelector<HTMLAnchorElement>("[data-storybook-status]");
+    const storybookUrl = bar.dataset.storybookUrl ?? "http://127.0.0.1:6006";
+    const agentationHost = document.querySelector<HTMLElement>("[data-agentation-host]");
+    const collapsed = localStorage.getItem("lovely-sunday:dev-bar-collapsed") === "true";
+    const agentationHidden = localStorage.getItem("lovely-sunday:agentation-hidden") === "true";
+
+    const setCollapsed = (value: boolean) => {
+      bar.classList.toggle("is-collapsed", value);
+      panelToggle?.setAttribute("aria-expanded", String(!value));
+      localStorage.setItem("lovely-sunday:dev-bar-collapsed", String(value));
+    };
+
+    const setAgentationHidden = (value: boolean) => {
+      if (agentationHost) agentationHost.hidden = value;
+      if (agentationToggle) agentationToggle.textContent = value ? "Show Agentation" : "Hide Agentation";
+      localStorage.setItem("lovely-sunday:agentation-hidden", String(value));
+    };
+
+    setCollapsed(collapsed);
+    setAgentationHidden(agentationHidden);
+
+    panelToggle?.addEventListener("click", () => setCollapsed(!bar.classList.contains("is-collapsed")));
+    agentationToggle?.addEventListener("click", () => setAgentationHidden(!(agentationHost?.hidden ?? false)));
+
+    bar.querySelectorAll<HTMLElement>("[data-copy-command]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const command = button.dataset.copyCommand ?? "";
+        await navigator.clipboard.writeText(command);
+        const previous = button.textContent;
+        button.textContent = "Copied";
+        window.setTimeout(() => { button.textContent = previous; }, 1200);
+      });
+    });
+
+    fetch(storybookUrl, { mode: "no-cors", cache: "no-store" })
+      .then(() => {
+        storybookStatus?.classList.remove("is-checking", "is-offline");
+        storybookStatus?.classList.add("is-online");
+        storybookStatus?.setAttribute("title", "Storybook is available");
+      })
+      .catch(() => {
+        storybookStatus?.classList.remove("is-checking", "is-online");
+        storybookStatus?.classList.add("is-offline");
+        storybookStatus?.setAttribute("title", "Storybook is not responding");
+      });
+  }
+</script>

@@ -2,11 +2,13 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import pageMarkdown from "@nuasite/llm-enhancements";
 import robotsTxt from "astro-robots-txt";
-import compressor from "astro-compressor";
 
 const site = process.env.SITE_URL ?? "https://www.lovelysunday.co";
+const isStorybook = process.env.STORYBOOK === "true";
+const pageMarkdown = isStorybook
+    ? null
+    : (await import("@nuasite/llm-enhancements")).default;
 const aiCrawlerUserAgents = [
     "GPTBot",
     "ChatGPT-User",
@@ -49,12 +51,15 @@ export default defineConfig({
     vite: {
         server: {
             allowedHosts: ["lovelysunday.test"],
+            watch: {
+                ignored: ["**/dist/**", "**/storybook-static/**"],
+            },
         },
     },
     build: {
         format: "directory",
     },
-    integrations: [
+    integrations: isStorybook ? [] : [
         react(),
         sitemap(),
         pageMarkdown({
@@ -85,19 +90,6 @@ export default defineConfig({
                     userAgent,
                     allow: "/",
                 })),
-            ],
-        }),
-        compressor({
-            gzip: true,
-            brotli: true,
-            fileExtensions: [
-                ".css",
-                ".js",
-                ".html",
-                ".xml",
-                ".svg",
-                ".txt",
-                ".json",
             ],
         }),
     ],

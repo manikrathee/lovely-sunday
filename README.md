@@ -63,6 +63,7 @@ Required AWS resources:
 - CloudFront distribution with the S3 bucket as origin
 - ACM certificate in `us-east-1` for your domain(s)
 - Route 53 hosted zone (recommended), with domain registered at Hover
+- GitHub OIDC IAM role restricted to this repository and production environment
 
 ---
 
@@ -72,14 +73,17 @@ Required AWS resources:
 # Install dependencies
 npm install
 
-# Start dev server
+# Start the local workspace (Astro + Storybook)
 npm run dev
 
-# Start Astro only (skip Caddy)
+# Start Astro only
 npm run dev:astro
 
-# Start Storybook
+# Start Storybook only
 npm run storybook
+
+# Verify the static Storybook documentation build
+npm run storybook:build
 
 # Build static output into dist/
 npm run build
@@ -94,7 +98,55 @@ Build with your canonical production URL:
 SITE_URL=https://www.yourdomain.com npm run build
 ```
 
-Agentation is now mounted in the shared Astro layout and only renders in local development, so the toolbar appears automatically while running `npm run dev` or `npm run dev:astro`.
+### Local development workspace
+
+`npm run dev` launches Astro at `http://127.0.0.1:4321` and Storybook at
+`http://127.0.0.1:6006`. Stopping the parent process stops both services.
+
+Local pages include a development-only status bar in the bottom-left corner. It:
+
+- reports Astro, Agentation, and Storybook availability;
+- opens Storybook in a separate tab;
+- shows or hides Agentation without changing source;
+- copies the workspace start command;
+- remembers its collapsed and Agentation visibility settings in local storage.
+
+Set `PUBLIC_STORYBOOK_URL` when Storybook uses a different local origin. The bar
+and Agentation mount are guarded by `import.meta.env.DEV` and are excluded from
+production output.
+
+### Agentation review workflow
+
+Agentation is mounted in the shared Astro layout and guarded by `import.meta.env.DEV`. It appears automatically in the bottom-right corner during `npm run dev` or `npm run dev:astro`; it is not mounted or executed in production HTML.
+
+Recommended toolbar settings for this project:
+
+- Output detail: `Standard` for normal reviews; increase it only when debugging layout or accessibility context.
+- React components: enabled so annotations include the Agentation island’s component context.
+- Marker colour: `Red`, the closest built-in option to the site’s dusty-rose palette and visible over photography.
+- Clear on copy/send: enabled to make each copied review batch explicit.
+- Block page interactions: enabled while annotating, disabled when verifying links/forms.
+- Auto-send: disabled. It remains unavailable until a webhook is deliberately configured.
+- Theme: match the page being reviewed; verify both light and dark modes.
+- MCP, Agent Sync, and webhooks: disabled unless a specific review session supplies an endpoint. Local annotations and clipboard output remain the default.
+
+Annotate the smallest responsible element, include the expected result and viewport, then use Agentation’s copy action. Clear completed annotations before starting a new route. Agentation requires a desktop browser.
+
+### Storybook component workshop
+
+Storybook runs independently at `http://localhost:6006`:
+
+```bash
+npm run storybook
+```
+
+The catalog is organized by responsibility:
+
+- `Site`: Header, Announcement Bar, Footer.
+- `Content`: Post Card, Image Block, Link Block.
+- `Social`: Instagram Grid, including populated and empty states.
+
+Every story receives generated documentation, expanded controls, and project viewports for 390px mobile, 768px tablet, and 1440px desktop review. Add a colocated `ComponentName.stories.ts` whenever a reusable interface component is introduced or gains a meaningful state. Before handoff, run `npm run storybook:build`.
 
 ---
 
@@ -304,6 +356,7 @@ Used by this repository:
 - `AWS_REGION`: optional AWS region for CLI commands
 - `VERIFY_BASE_URL`: deployed public base URL used by post-deploy checker
 - `CLOUDFRONT_DISTRIBUTION_ID`: optional distribution for automatic invalidation in `deploy:production`
+- `AWS_ROLE_ARN`: GitHub Actions secret for the production OIDC deploy role
 
 Example:
 
@@ -345,7 +398,10 @@ dig A www.yourdomain.com +short
 ```bash
 npm install
 npm run dev
+npm run storybook
+npm run storybook:build
 npm run build
+npm run validate:built
 npm run preview
 SITE_URL=https://www.yourdomain.com npm run build
 aws s3 sync dist/ s3://www.yourdomain.com --delete
