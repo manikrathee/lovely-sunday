@@ -1,15 +1,1 @@
-I created an s3 bucket: s3://lovelysunday/site/ 
-
-I want to setup deployment automation with github actions to s3. My gh account has some s3 actions for another repo.
-
----
-
-why are they unavailable? i have gh authenticated.
-
----
-
-"! You were already logged in to this account"
-
----
-
-done
+commit and push
