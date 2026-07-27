@@ -1,0 +1,41 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "d6f634357418",
+  "session_id": "019f9bdb-a155-7991-a790-bbab8275c729",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-27T01:29:09.971764Z",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".playwright-cli/page-2026-07-26T00-58-56-519Z.yml",
+    ".playwright-cli/page-2026-07-26T00-59-26-605Z.yml",
+    ".playwright-cli/page-2026-07-26T00-59-54-790Z.yml",
+    ".playwright-cli/page-2026-07-26T01-00-38-115Z.yml",
+    ".playwright-cli/page-2026-07-26T01-02-55-952Z.yml"
+  ],
+  "agent": "Codex",
+  "model": "gpt-5.6-sol",
+  "turn_id": "8bd400e921c5",
+  "token_usage": {
+    "input_tokens": 24122385,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 23600384,
+    "output_tokens": 54532,
+    "api_call_count": 202
+  },
+  "session_metrics": {
+    "turn_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-27T01:29:08.482427Z",
+    "agent_lines": 418,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 418,
+    "total_lines_changed": 418,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}

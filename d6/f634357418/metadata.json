@@ -1,0 +1,29 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "d6f634357418",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".playwright-cli/page-2026-07-26T00-58-56-519Z.yml",
+    ".playwright-cli/page-2026-07-26T00-59-26-605Z.yml",
+    ".playwright-cli/page-2026-07-26T00-59-54-790Z.yml",
+    ".playwright-cli/page-2026-07-26T01-00-38-115Z.yml",
+    ".playwright-cli/page-2026-07-26T01-02-55-952Z.yml"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d6/f634357418/0/metadata.json",
+      "transcript": "/d6/f634357418/0/full.jsonl",
+      "content_hash": "/d6/f634357418/0/content_hash.txt",
+      "prompt": "/d6/f634357418/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 24122385,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 23600384,
+    "output_tokens": 54532,
+    "api_call_count": 202
+  }
+}

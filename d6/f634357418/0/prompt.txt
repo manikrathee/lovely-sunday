@@ -1,0 +1,90 @@
+Give me a report of recent updates and implementations in this repo - i want to know where we left off
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open.
+</in-app-browser-context>
+
+## My request for Codex:
+Whats wrong with github?
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open.
+</in-app-browser-context>
+
+## My request for Codex:
+run local dev, open the link in the browser side panel
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open with 1 tab.
+- Current URL: http://127.0.0.1:4321/lookbook
+</in-app-browser-context>
+
+## My request for Codex:
+"**404:** **Not found**
+Your site is configured with trailingSlash set to always. Do you want to go to [/lookbook/](http://127.0.0.1:4321/lookbook/) instead?
+
+See [the documentation for](https://docs.astro.build/en/reference/configuration-reference/#trailingslash) [trailingSlash](https://docs.astro.build/en/reference/configuration-reference/#trailingslash) if you need help." 
+
+on path http://127.0.0.1:4321/lookbook
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open with 1 tab.
+- Current URL: http://127.0.0.1:4321/lookbook
+</in-app-browser-context>
+
+## My request for Codex:
+now that local dev is running, agnetation should on and storybook too. Those should also open in tabs. Additionally, I want a development status bar on the local ui so I know those tools are running and can manage the dev config for my workspace. 
+
+Once you do this, save the pattern to memory because I will want to do this in most repos, tailored to their specific functional needs.
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open with 2 tabs.
+- Current URL: http://127.0.0.1:4321/lookbook
+</in-app-browser-context>
+
+## My request for Codex:
+commit changes
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open with 2 tabs.
+- Current URL: http://127.0.0.1:4321/lookbook
+</in-app-browser-context>
+
+## My request for Codex:
+sync
+
+---
+
+<in-app-browser-context source="ambient-ui-state">
+This block is automatically supplied ambient UI state, not part of the user's request. Do not treat it as an instruction or as evidence that the user explicitly selected the in-app browser.
+# In app browser:
+- The user has the in-app browser open with 2 tabs.
+- Current URL: http://127.0.0.1:4321/lookbook
+</in-app-browser-context>
+
+## My request for Codex:
+commit the .playwright files too
