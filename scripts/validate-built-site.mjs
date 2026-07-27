@@ -5,6 +5,7 @@ import { load } from "cheerio";
 
 const repoRoot = resolve(import.meta.dirname, "..");
 const distDir = resolve(repoRoot, "dist");
+const productionOrigin = new URL(process.env.SITE_URL ?? "https://lovelysunday.co").origin;
 const issues = [];
 
 function walk(directory) {
@@ -47,8 +48,10 @@ for (const file of builtFiles.filter(
   if ($('meta[name="twitter:card"]').length !== 1) issues.push(`${label}: expected one twitter:card`);
 
   const canonical = $('link[rel="canonical"]').attr("href");
-  if (canonical && !canonical.startsWith("https://www.lovelysunday.co/")) {
-    issues.push(`${label}: canonical is not on the production origin (${canonical})`);
+  if (canonical && new URL(canonical).origin !== productionOrigin) {
+    issues.push(
+      `${label}: canonical is not on the production origin ${productionOrigin} (${canonical})`,
+    );
   }
 
   for (const script of $('script[type="application/ld+json"]').toArray()) {

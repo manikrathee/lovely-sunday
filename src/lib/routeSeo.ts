@@ -46,6 +46,7 @@ const pageJsonModules = import.meta.glob<RouteMetaInput>("../../capture/page_jso
   eager: true,
   import: "default",
 });
+const siteOrigin = new URL(import.meta.env.SITE ?? "https://lovelysunday.co").origin;
 
 const normalizePathname = (pathname: string): string => {
   const [pathOnly] = pathname.split("?");
@@ -59,8 +60,10 @@ const normalizeLegacyUrl = (value?: string | null): string | undefined => {
 
   try {
     const url = new URL(value);
-    if (url.protocol === "http:" && url.hostname === "www.lovelysunday.co") {
-      url.protocol = "https:";
+    if (url.hostname === "lovelysunday.co" || url.hostname === "www.lovelysunday.co") {
+      const productionUrl = new URL(siteOrigin);
+      url.protocol = productionUrl.protocol;
+      url.host = productionUrl.host;
     }
     return url.toString();
   } catch {
