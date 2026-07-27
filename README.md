@@ -396,6 +396,26 @@ CloudFront settings to verify:
 - Default root object: `index.html`
 - Compression: on (Brotli/Gzip)
 - HTTPS redirect: on
+- Origin path: `/site`
+
+The private S3 REST origin does not resolve directory indexes automatically. Associate a CloudFront Function with the default behavior on `viewer-request`:
+
+```js
+function handler(event) {
+  var request = event.request;
+  var uri = request.uri;
+
+  if (uri.endsWith("/")) {
+    request.uri += "index.html";
+  } else if (!uri.includes(".")) {
+    request.uri += "/index.html";
+  }
+
+  return request;
+}
+```
+
+Production uses the published function `lovely-sunday-directory-index`. It makes both `/white-scalloped-dress` and `/white-scalloped-dress/` resolve to `site/white-scalloped-dress/index.html` while leaving file requests unchanged.
 
 Custom error response recommendations:
 - 404 → `/404.html` (if you create one)
