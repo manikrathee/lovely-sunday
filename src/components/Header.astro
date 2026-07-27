@@ -1,20 +1,31 @@
 ---
+const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const links = [
+    { label: "Discover", href: "/lookbook", section: "/lookbook" },
+    { label: "Archive", href: "/daily-diary", section: "/daily-diary" },
+    { label: "About", href: "/about-lovely-sunday", section: "/about-lovely-sunday" },
+    { label: "Contact", href: "/contact-lovely-sunday", section: "/contact" },
+];
+
+const isCurrent = (section: string) =>
+    pathname === section || pathname.startsWith(`${section}/`);
 ---
 
 <header class="site-head">
     <div class="site-head-container">
-        <nav class="site-head-left" aria-label="Primary">
-            <a href="/lookbook">Discover</a>
-            <a href="/daily-diary">Archive</a>
-        </nav>
-
         <a class="site-head-logo" href="/" aria-label="Lovely Sunday home">
             <img src="/img/lovely-sunday-logo.svg" alt="Lovely Sunday" />
         </a>
 
-        <nav class="site-head-right" aria-label="Utilities">
-            <a href="/about-lovely-sunday">About</a>
-            <a href="/contact-lovely-sunday">Contact</a>
+        <nav class="site-head-nav" aria-label="Primary">
+            {links.map((link) => (
+                <a
+                    href={link.href}
+                    aria-current={isCurrent(link.section) ? "page" : undefined}
+                >
+                    {link.label}
+                </a>
+            ))}
         </nav>
     </div>
 </header>

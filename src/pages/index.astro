@@ -15,8 +15,16 @@ const cleanedHomePage = {
   ...homePage,
   view: {
     ...homePage.view,
-    description: "",
-    links: [],
+    eyebrow: "A personal style journal",
+    title: "Romantic style, lived beautifully.",
+    description:
+      "An edit of expressive looks, faraway places, and the small details that make everyday life feel lovely.",
+    heroImage: homePage.view.images[3],
+    images: homePage.view.images.filter((_, index) => index !== 3),
+    links: [
+      { external: false, href: "/lookbook", label: "Explore the lookbook" },
+      { external: false, href: "/daily-diary", label: "Read the archive" },
+    ],
     paragraphs: [],
   },
 };
@@ -26,8 +34,8 @@ const instagramPosts = await getInstagramPosts(INSTAGRAM_USERNAME, 9);
 
 <LegacyHtmlPage page={cleanedHomePage}>
   <InstagramGrid
-    title="Latest from @_lovelysunday"
-    subtitle="A live pull of recent Instagram moments from Lovely Sunday."
+    title="The latest edit"
+    subtitle="Recent looks and travel moments from @_lovelysunday."
     posts={instagramPosts}
   />
 </LegacyHtmlPage>

@@ -5,7 +5,7 @@ const links = [
   { label: "Discover", href: "/lookbook" },
   { label: "Archive", href: "/daily-diary" },
   { label: "Contact", href: "/contact-lovely-sunday" },
-  { label: "Instagram", href: "https://www.instagram.com/lovelysunday" },
+  { label: "Instagram ↗", href: "https://www.instagram.com/lovelysunday", external: true },
 ];
 const currentYear = new Date().getFullYear();
 const footerLogoSvg = readFileSync(
@@ -32,7 +32,13 @@ const footerLogoSvg = readFileSync(
 
     <nav class="site-foot-nav" aria-label="Footer">
       {links.map((link) => (
-        <a href={link.href}>{link.label}</a>
+        <a
+          href={link.href}
+          target={link.external ? "_blank" : undefined}
+          rel={link.external ? "noopener noreferrer" : undefined}
+        >
+          {link.label}
+        </a>
       ))}
     </nav>
   </div>

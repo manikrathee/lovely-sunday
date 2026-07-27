@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovely Sunday Brand Explorations</title>
+  <style>
+    :root {
+      --accent: #FFF8EC;
+      --ink: #141416;
+      --paper: #F4F1EA;
+      --muted: #696866;
+      --line: rgba(20,20,22,.14);
+      --white: #fff;
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .shell { display: grid; grid-template-columns: 252px minmax(0,1fr); min-height: 100vh; }
+    aside {
+      position: sticky; top: 0; height: 100vh; padding: 32px 24px;
+      background: var(--ink); color: var(--white);
+      display: flex; flex-direction: column; gap: 28px;
+    }
+    .brand-mark {
+      width: 46px; height: 46px; border-radius: 14px;
+      background: var(--accent); display: grid; place-items: center;
+      color: #111111; font-size: 20px; font-weight: 900;
+      transform: rotate(-4deg);
+    }
+    .side-title { font-size: 18px; font-weight: 750; line-height: 1.15; }
+    .side-meta { color: rgba(255,255,255,.58); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
+    nav { display: grid; gap: 7px; }
+    nav a {
+      color: rgba(255,255,255,.68); text-decoration: none; padding: 8px 10px;
+      border-radius: 9px; font-size: 13px;
+    }
+    nav a:hover { background: rgba(255,255,255,.08); color: white; }
+    .status {
+      margin-top: auto; display: inline-flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.65); font-size: 12px;
+    }
+    .status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    main { min-width: 0; }
+    .hero {
+      min-height: 84vh; padding: clamp(52px, 8vw, 112px);
+      display: flex; flex-direction: column; justify-content: space-between;
+      border-bottom: 1px solid var(--line); position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 430px; height: 430px; right: -120px; top: -120px;
+      background: var(--accent); border-radius: 46% 54% 68% 32% / 41% 38% 62% 59%;
+      opacity: .92; transform: rotate(17deg);
+    }
+    .kicker { text-transform: uppercase; letter-spacing: .15em; font-size: 12px; font-weight: 800; }
+    h1 { max-width: 900px; margin: 28px 0; font-size: clamp(54px, 8vw, 118px); line-height: .88; letter-spacing: -.065em; }
+    .hero-copy { max-width: 650px; font-size: clamp(18px, 2vw, 26px); color: var(--muted); }
+    .hero-footer { display: flex; gap: 34px; flex-wrap: wrap; margin-top: 80px; font-size: 13px; }
+    .hero-footer strong { display: block; font-size: 15px; }
+    section { padding: clamp(56px, 7vw, 96px); border-bottom: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 160px 1fr; gap: 32px; margin-bottom: 46px; }
+    .section-index { color: var(--muted); font-size: 13px; }
+    h2 { margin: 0; font-size: clamp(38px, 5vw, 68px); line-height: .96; letter-spacing: -.045em; }
+    h3 { margin: 0 0 12px; font-size: 24px; line-height: 1.1; letter-spacing: -.025em; }
+    p { margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .card {
+      background: rgba(255,255,255,.66); border: 1px solid rgba(255,255,255,.9);
+      border-radius: var(--radius); padding: 26px; box-shadow: 0 16px 50px rgba(20,20,22,.04);
+    }
+    .span-4 { grid-column: span 4; } .span-6 { grid-column: span 6; } .span-8 { grid-column: span 8; } .span-12 { grid-column: span 12; }
+    .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; font-weight: 800; }
+    .big-idea { font-size: clamp(30px, 4vw, 54px); line-height: 1.02; letter-spacing: -.04em; }
+    .list { margin: 0; padding-left: 18px; }
+    .list li + li { margin-top: 8px; }
+    .routes { display: grid; gap: 22px; }
+    .route {
+      border-radius: 30px; overflow: hidden; background: #fff;
+      border: 1px solid var(--line);
+    }
+    .route-head { min-height: 260px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
+    .route-number { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 850; opacity: .7; }
+    .route h3 { font-size: clamp(38px, 5vw, 72px); max-width: 750px; letter-spacing: -.055em; }
+    .route-body { padding: 30px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 34px; }
+    .route-details { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .quote { font-size: 28px; line-height: 1.14; letter-spacing: -.025em; }
+    .palette { display: grid; grid-template-columns: repeat(auto-fit,minmax(92px,1fr)); gap: 8px; }
+    .swatch { min-height: 108px; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid rgba(20,20,22,.08); }
+    .swatch strong, .swatch span { font-size: 11px; }
+    .score-row { display: grid; grid-template-columns: 1fr 160px 34px; gap: 12px; align-items: center; font-size: 12px; margin: 10px 0; }
+    .track { height: 7px; background: rgba(20,20,22,.09); border-radius: 99px; overflow: hidden; }
+    .fill { height: 100%; background: var(--accent); border-radius: 99px; }
+    .total { font-size: 54px; font-weight: 850; letter-spacing: -.06em; }
+    .recommendation {
+      background: var(--ink); color: white; border-radius: 32px; padding: clamp(30px, 5vw, 64px);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+    }
+    .recommendation .label { color: rgba(255,255,255,.5); }
+    .recommendation h3 { font-size: clamp(40px, 6vw, 78px); }
+    .system-preview {
+      min-height: 330px; padding: 42px; border-radius: 30px; background: var(--accent);
+      color: #111111; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .system-preview .tagline { font-size: clamp(42px, 7vw, 90px); line-height: .9; letter-spacing: -.06em; max-width: 820px; }
+    .pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .application { min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; }
+    .application h3 { font-size: 30px; }
+    .source-list { display: grid; gap: 10px; }
+    .source-list a { overflow-wrap: anywhere; }
+    footer { padding: 42px clamp(30px,7vw,96px); color: var(--muted); font-size: 12px; }
+    @media (max-width: 920px) {
+      .shell { display: block; } aside { position: relative; height: auto; } nav { display: none; }
+      .hero::after { width: 240px; height: 240px; opacity: .35; }
+      .section-head { grid-template-columns: 1fr; gap: 10px; }
+      .span-4, .span-6, .span-8 { grid-column: span 12; }
+      .route-body, .recommendation { grid-template-columns: 1fr; }
+      .pillars { grid-template-columns: 1fr; }
+    }
+    @media print {
+      aside { display: none; } .shell { display: block; }
+      section, .route, .card { break-inside: avoid; }
+      body { background: white; } .hero { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand-mark">LS</div>
+      <div>
+        <div class="side-title">Lovely Sunday</div>
+        <div class="side-meta">Lovely Sunday Brand Explorations</div>
+      </div>
+      <nav>
+        <a href="#strategy">Strategic core</a>
+        <a href="#territories">Creative territories</a>
+        <a href="#recommendation">Recommendation</a>
+        
+        <a href="#validation">Validation</a>
+      </nav>
+      <div class="status">territories</div>
+    </aside>
+    <main>
+      <header class="hero">
+        <div>
+          <div class="kicker">Three routes for turning a beloved fashion archive into a distinct, living editorial brand.</div>
+          <h1>Lovely Sunday</h1>
+          <p class="hero-copy">Style worth remembering.</p>
+        </div>
+        <div class="hero-footer">
+          <div><span class="label">Status</span><strong>territories</strong></div>
+          <div><span class="label">Prepared for</span><strong>Lovely Sunday</strong></div>
+          <div><span class="label">Generated</span><strong>2026-07-26</strong></div>
+        </div>
+      </header>
+
+      <section id="strategy">
+        <div class="section-head"><div class="section-index">01</div><h2>Strategic core</h2></div>
+        <div class="grid">
+          <div class="card span-6"><div class="label">Product</div><p>A photography-led personal style journal and editorial archive created by best friends Aileen and Rory, spanning outfit stories, lookbooks, and travel diaries.</p></div>
+          <div class="card span-6"><div class="label">Primary audience</div><p>Style-curious readers who want romantic, wearable inspiration grounded in real places and personal point of view—not trend churn or impersonal luxury editorial.</p></div>
+          <div class="card span-4"><div class="label">Problem</div><p>Most fashion inspiration is either optimized for rapid consumption or presented with distant editorial authority. It shows what is current, but rarely preserves the lived mood, friendship, and styling logic that make a look personally meaningful.</p></div>
+          <div class="card span-4"><div class="label">Category</div><p>Independent fashion and travel editorial; a living personal-style archive rather than a retailer, trend publication, or founder-influencer feed.</p></div>
+          <div class="card span-4"><div class="label">Current alternatives</div><p>Instagram saves, Pinterest boards, fashion magazines, retailer lookbooks, creator feeds, or simply wearing the familiar without seeking inspiration.</p></div>
+          <div class="card span-12"><div class="label">Positioning</div><p>Lovely Sunday is the personal fashion journal for readers who want style inspiration with a memory attached. Through two friends&#039; photography, travel, and honest styling choices, it makes dressing well feel expressive, attainable, and worth remembering.</p></div>
+          <div class="card span-8"><div class="label">Salient brand idea</div><div class="big-idea">Style worth remembering.</div></div>
+          <div class="card span-4"><div class="label">Brand promise</div><p>Every visit offers a look, place, or detail that helps the reader see her own style with fresh confidence.</p></div>
+          <div class="card span-6"><div class="label">Proof points</div><ul class="list"><li>The repository preserves an extensive legacy archive of lookbooks, outfit posts, and travel stories.</li><li>Current site metadata consistently identifies Aileen and Rory, fashion-led photography, lookbooks, travel diaries, and West Coast roots.</li><li>The existing voice guide documents a repeatable blend of intimate diary, practical fashion analysis, romantic polish, and playful confidence.</li><li>A legacy hand-drawn Lovely Sunday wordmark and a substantial inspiration library provide recognition worth preserving or deliberately evolving.</li></ul></div>
+          <div class="card span-6"><div class="label">Personality</div><ul class="list"><li>Intimate, not insular</li><li>Polished, not precious</li><li>Romantic, not nostalgic</li><li>Playful, not frivolous</li></ul></div>
+        </div>
+      </section>
+
+      <section id="territories">
+        <div class="section-head"><div class="section-index">02</div><h2>Three creative territories</h2></div>
+        <div class="routes">
+          <article class="route">
+    <div class="route-head" style="background:#F5F0E8;color:#111111">
+      <div class="route-number">Territory 01</div>
+      <div><h3>The Sunday Edit</h3><p>Lovely Sunday becomes a calm, exacting editor: a quiet place where personal style is selected with care and photography receives room to breathe.</p></div>
+    </div>
+    <div class="route-body">
+      <div>
+        <div class="label">Primary expression</div>
+        <p class="quote">“A softer way to see style.”</p>
+        <div class="route-details" style="margin-top:34px">
+          <div><div class="label">Audience response</div><p>I trust this taste. The archive feels elevated and timeless, but still close enough to wear.</p></div>
+          <div><div class="label">Metaphor</div><p>The Sunday paper reimagined as a refined fashion folio—measured columns, generous margins, and one beautifully chosen image at a time.</p></div>
+          <div><div class="label">Symbol direction</div><p>A narrow rectangular editorial frame interrupted by one soft elliptical crop; the break creates an abstract LS aperture and makes the act of looking the mark&#039;s mechanism.</p></div>
+          <div><div class="label">Application</div><p>The landing page opens like a magazine cover: one edge-to-edge portrait, a small issue/date line, the headline “A softer way to see style,” and a vertical index that reveals looks as curated stories rather than cards.</p></div>
+          <div><div class="label">Voice</div><p>Discerning, not distant · Composed, not cold · Sensory, not ornate</p></div>
+          <div><div class="label">Principal risk</div><p>Quiet luxury conventions are familiar and can make Lovely Sunday resemble a boutique, wedding studio, or generic fashion journal unless the friendship and first-person voice stay visibly present.</p></div>
+        </div>
+        <div style="margin-top:34px"><div class="label">Palette direction</div><div class="palette"><div class="swatch" style="background:#F5F0E8;color:#111111"><strong>Paper</strong><span>#F5F0E8</span></div><div class="swatch" style="background:#171614;color:#FFFFFF"><strong>Carbon</strong><span>#171614</span></div><div class="swatch" style="background:#CFA8A0;color:#111111"><strong>Powder Rose</strong><span>#CFA8A0</span></div><div class="swatch" style="background:#8C4A3C;color:#FFFFFF"><strong>Oxide</strong><span>#8C4A3C</span></div><div class="swatch" style="background:#D8D0C5;color:#111111"><strong>Hairline</strong><span>#D8D0C5</span></div></div></div>
+      </div>
+      <div>
+        <div class="label">Weighted score</div>
+        <div class="total">7.8</div>
+        <div class="score-row"><span>Strategic fit</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div><div class="score-row"><span>Audience relevance</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div><div class="score-row"><span>Distinctiveness</span><span class="track"><span class="fill" style="width:60%"></span></span><strong>6</strong></div><div class="score-row"><span>Credibility</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Memorability</span><span class="track"><span class="fill" style="width:70%"></span></span><strong>7</strong></div><div class="score-row"><span>Extensibility</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Execution resilience</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div>
+        <div class="label" style="margin-top:30px">Typography</div>
+        <p><strong>Display:</strong> A poised high-contrast serif with sharp editorial rhythm; large but rarely loud, with italic reserved for personal asides.</p>
+        <p><strong>Body:</strong> A compact humanist sans for navigation, captions, and practical styling notes; a book serif for longer diary entries.</p>
+      </div>
+    </div>
+  </article><article class="route">
+    <div class="route-head" style="background:#FFF8EC;color:#111111">
+      <div class="route-number">Territory 02</div>
+      <div><h3>Postcards Between Us</h3><p>The brand is built around the exchange between two friends: every look is a note from a place, and the archive becomes an ongoing correspondence with the reader.</p></div>
+    </div>
+    <div class="route-body">
+      <div>
+        <div class="label">Primary expression</div>
+        <p class="quote">“What we wore. Where it took us.”</p>
+        <div class="route-details" style="margin-top:34px">
+          <div><div class="label">Audience response</div><p>I feel invited into a real friendship and a real moment. The style is aspirational, but the story makes it mine.</p></div>
+          <div><div class="label">Metaphor</div><p>Two postcards overlapping on a table—different viewpoints, one shared journey, always addressed with care.</p></div>
+          <div><div class="label">Symbol direction</div><p>Two offset corner frames overlap to form an unmistakable open center: simultaneously a postcard pair, an open book, and two viewpoints composing one picture. In motion, the frames meet before the image appears.</p></div>
+          <div><div class="label">Application</div><p>Each story card has a photographic front and a “postcard back” reveal with location, date, the styling tension, and a short note from Aileen or Rory. The homepage alternates their viewpoints, then lets the reader browse by place, mood, or garment.</p></div>
+          <div><div class="label">Voice</div><p>Personal, not performative · Observant, not over-written · Romantic, not sentimental</p></div>
+          <div><div class="label">Principal risk</div><p>Literal stamps, handwriting, and travel ephemera could tip into scrapbook nostalgia. The system must use crisp grids, contemporary cropping, and disciplined annotation.</p></div>
+        </div>
+        <div style="margin-top:34px"><div class="label">Palette direction</div><div class="palette"><div class="swatch" style="background:#FFF8EC;color:#111111"><strong>Letter Paper</strong><span>#FFF8EC</span></div><div class="swatch" style="background:#24465A;color:#FFFFFF"><strong>Postmark Blue</strong><span>#24465A</span></div><div class="swatch" style="background:#C94C58;color:#FFFFFF"><strong>Lipstick</strong><span>#C94C58</span></div><div class="swatch" style="background:#A8C9D1;color:#111111"><strong>Sky Wash</strong><span>#A8C9D1</span></div><div class="swatch" style="background:#E7B955;color:#111111"><strong>Sunprint</strong><span>#E7B955</span></div></div></div>
+      </div>
+      <div>
+        <div class="label">Weighted score</div>
+        <div class="total">9.2</div>
+        <div class="score-row"><span>Strategic fit</span><span class="track"><span class="fill" style="width:100%"></span></span><strong>10</strong></div><div class="score-row"><span>Audience relevance</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Distinctiveness</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Credibility</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Memorability</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Extensibility</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Execution resilience</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div>
+        <div class="label" style="margin-top:30px">Typography</div>
+        <p><strong>Display:</strong> A warm, slightly idiosyncratic old-style serif that feels literary rather than luxurious, paired with occasional custom handwritten annotations.</p>
+        <p><strong>Body:</strong> A clear grotesk with open forms for captions, itineraries, credits, and archive metadata; compact enough to behave like a postcard back.</p>
+      </div>
+    </div>
+  </article><article class="route">
+    <div class="route-head" style="background:#FFF3D9;color:#111111">
+      <div class="route-number">Territory 03</div>
+      <div><h3>Dress the Day</h3><p>Lovely Sunday is an optimistic styling ritual: clothes do not wait for an occasion; they give an ordinary day its energy, shape, and point of view.</p></div>
+    </div>
+    <div class="route-body">
+      <div>
+        <div class="label">Primary expression</div>
+        <p class="quote">“Make a day of it.”</p>
+        <div class="route-details" style="margin-top:34px">
+          <div><div class="label">Audience response</div><p>I want to try something. This makes style feel active, expressive, and immediately usable.</p></div>
+          <div><div class="label">Metaphor</div><p>A ribbon tracing a route through the day—draping, turning, and snapping into a confident silhouette.</p></div>
+          <div><div class="label">Symbol direction</div><p>A single continuous line makes an S-shaped route, folds once like fabric, and resolves into a small doorway-shaped frame. It acts as underline, path, crop, and compact monogram without relying on a generic sun.</p></div>
+          <div><div class="label">Application</div><p>A mobile story begins with “Give the day a look,” then the route-line guides the reader through three beats—mood, styling move, destination—before landing on the full photograph and item credits.</p></div>
+          <div><div class="label">Voice</div><p>Encouraging, not instructive · Spirited, not chaotic · Specific, not trend-led</p></div>
+          <div><div class="label">Principal risk</div><p>High color and kinetic type may overpower the archive&#039;s varied photography or date quickly. Restraint and a strong neutral mode are essential for long-form reading.</p></div>
+        </div>
+        <div style="margin-top:34px"><div class="label">Palette direction</div><div class="palette"><div class="swatch" style="background:#FFF3D9;color:#111111"><strong>Vanilla</strong><span>#FFF3D9</span></div><div class="swatch" style="background:#35263D;color:#FFFFFF"><strong>Ink Plum</strong><span>#35263D</span></div><div class="swatch" style="background:#E95E45;color:#FFFFFF"><strong>Persimmon</strong><span>#E95E45</span></div><div class="swatch" style="background:#2E8E99;color:#FFFFFF"><strong>Pool</strong><span>#2E8E99</span></div><div class="swatch" style="background:#F0A9B7;color:#111111"><strong>Petal</strong><span>#F0A9B7</span></div></div></div>
+      </div>
+      <div>
+        <div class="label">Weighted score</div>
+        <div class="total">8.5</div>
+        <div class="score-row"><span>Strategic fit</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div><div class="score-row"><span>Audience relevance</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Distinctiveness</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Credibility</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div><div class="score-row"><span>Memorability</span><span class="track"><span class="fill" style="width:90%"></span></span><strong>9</strong></div><div class="score-row"><span>Extensibility</span><span class="track"><span class="fill" style="width:80%"></span></span><strong>8</strong></div><div class="score-row"><span>Execution resilience</span><span class="track"><span class="fill" style="width:70%"></span></span><strong>7</strong></div>
+        <div class="label" style="margin-top:30px">Typography</div>
+        <p><strong>Display:</strong> A wide, expressive serif with buoyant curves and strong lowercase forms; headlines can arc, step, or travel through photography.</p>
+        <p><strong>Body:</strong> A pragmatic geometric sans for styling instructions and credits, using short lines, decisive weights, and oversized numerals.</p>
+      </div>
+    </div>
+  </article>
+        </div>
+      </section>
+
+      <section id="recommendation">
+        <div class="section-head"><div class="section-index">03</div><h2>Recommendation</h2></div>
+        <div class="recommendation">
+          <div>
+            <div class="label">Recommended territory</div>
+            <h3>Postcards Between Us</h3>
+            <p>It turns the most defensible Lovely Sunday truth—two friends, personal style, real places, and a deep archive—into one coherent verbal and visual mechanism. Unlike a generic quiet-luxury treatment, the paired-frame system can make friendship and memory recognizable before the wordmark appears.</p>
+          </div>
+          <div>
+            <div class="label">Trade-off</div>
+            <p>It gives up some of The Sunday Edit&#039;s immediate luxury polish and some of Dress the Day&#039;s campaign energy. In return, it gains a more ownable story, clearer archive behavior, and a platform that can grow from editorial posts into social series, city guides, newsletters, and printed collections.</p>
+            <div class="label" style="margin-top:32px">Selection status</div>
+            <p>Recommended for discussion; no territory has been selected.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section id="validation">
+        <div class="section-head"><div class="section-index">04</div><h2>Validation plan</h2></div>
+        <div class="grid">
+          <div class="card span-6"><div class="label">Strengths</div><ul class="list"><li>A strong, descriptive name with emotional permission already built in.</li><li>A large photographic archive that can demonstrate continuity rather than manufacture a new story.</li><li>A documented voice with useful tensions and repeatable writing behavior.</li><li>The two-founder structure creates a distinctive editorial device, not merely a biography.</li></ul></div>
+          <div class="card span-6"><div class="label">Assumptions</div><ul class="list"><li>The future brand should remain editorial and audience-facing rather than become a personal portfolio or commerce-first shop.</li><li>Aileen and Rory are comfortable making the friendship more visible in navigation, copy, and recurring formats.</li><li>Existing readers value the archive and will accept an identity that organizes old work in a new way.</li><li>The script wordmark has emotional recognition worth testing, even if it is simplified or paired with a new symbol.</li></ul></div>
+          <div class="card span-6"><div class="label">Risks</div><ul class="list"><li>No audience interviews, analytics, or commercial brief were available, so the primary audience and adoption trigger remain strategic hypotheses.</li><li>The current site contains some placeholder ceramic content; brand rollout should audit and separate non-Lovely-Sunday material.</li><li>The existing blush-and-gold direction may already have stakeholder commitment that changes the cost of selecting a more colorful route.</li><li>All symbol concepts require originality screening, vector development, and trademark review before production.</li></ul></div>
+          <div class="card span-6"><div class="label">Next tests</div><ul class="list"><li>Five-second test: can a target reader say “personal fashion and travel journal” after seeing each route&#039;s hero?</li><li>One-week recall: which device is remembered—the editorial aperture, paired postcard frames, or route line?</li><li>Competitor shuffle: can readers match each identity to Lovely Sunday without the name?</li><li>Message test: can readers restate “style worth remembering” in their own words?</li><li>Monochrome test: rebuild all three symbols in one color and check silhouette at 24 pixels.</li><li>Favicon test: compare the paired-frame and route-line concepts at 16, 24, and 32 pixels.</li><li>Archive test: apply each route to one romantic look, one high-contrast city look, and one travel diary to expose photographic bias.</li><li>Recognition test: show the existing script wordmark beside simplified and replaced versions to determine what equity is real.</li></ul></div>
+          <div class="card span-12"><div class="label">Legal and production note</div><p>Creative concepts only. Names, taglines, symbols, and typography have not received trademark, copyright, or font-license clearance.</p></div>
+        </div>
+        
+      </section>
+
+      <footer>Generated with the Build Startup Brand skill. Strategy and creative recommendations remain hypotheses until tested with the intended audience.</footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -12,9 +12,9 @@
     --color-bg-subtle: #F3EDE6;
 
     /* Fonts */
-    --font-sans-serif: 'Futura', 'League Spartan', 'Trebuchet MS', Arial, sans-serif;
+    --font-sans-serif: 'Avenir Next', 'Futura', 'Century Gothic', sans-serif;
     --font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-    --font-display: 'Baskerville', var(--font-serif);
+    --font-display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;

@@ -8,9 +8,13 @@
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
-  background: var(--color-bg);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--color-border) 35%, transparent) 1px, transparent 1px)
+      50% 0 / min(88vw, 1180px) 100% no-repeat,
+    var(--color-bg);
   min-height: 100vh;
   color: var(--color-base);
+  font-family: var(--font-serif);
   position: relative;
 }
 
@@ -18,8 +22,7 @@
   position: relative;
   z-index: 2;
   background: var(--color-bg);
-  box-shadow: 0 40px 90px rgba(10, 10, 10, 0.18), 0 20px 35px rgba(10, 10, 10, 0.08),
-    0 8px 14px rgba(10, 10, 10, 0.06);
+  border-bottom: 1px solid var(--color-border);
 }
 
 [data-theme='dark'] .site-wrapper {
@@ -52,27 +55,33 @@
   margin: 0 auto;
   padding: 0 var(--site-shell-gap);
   height: var(--header-height);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 6rem);
 }
 
 .site-head-logo img {
+  display: block;
+  width: clamp(10rem, 13vw, 13.5rem);
   max-height: calc(var(--header-height) - 1rem);
 }
 
-.site-head-left,
-.site-head-right {
+.site-head-nav {
   display: flex;
-  gap: 2rem;
+  justify-content: flex-end;
+  gap: clamp(1.2rem, 3vw, 2.6rem);
   align-items: center;
 }
 
-.site-head-left a,
-.site-head-right a {
+.site-head-nav a {
+  position: relative;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
   font-family: var(--font-sans-serif);
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
+  font-size: 1rem;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   font-weight: 300;
   color: var(--color-base);
@@ -81,11 +90,36 @@
   transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-.site-head-left a:hover,
-.site-head-right a:hover {
+.site-head-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0.13em;
+  bottom: 0.55rem;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+
+.site-head-nav a:hover,
+.site-head-nav a[aria-current='page'] {
   opacity: 1;
   color: var(--color-accent);
   text-decoration: none;
+}
+
+.site-head-nav a:hover::after,
+.site-head-nav a[aria-current='page']::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.site-head a:focus-visible,
+.site-foot a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
 }
 
 /* Footer
@@ -99,16 +133,7 @@
 
 [data-theme='dark'] .site-foot {
   border-top-color: var(--color-border);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  min-height: var(--footer-reveal);
-  padding: 2.4rem var(--site-shell-gap) 3.1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), #f3f0e8 30%, #ece6db);
-  overflow: hidden;
+  background: linear-gradient(180deg, var(--color-bg), var(--color-bg-subtle));
 }
 
 .site-foot-logo {
@@ -174,11 +199,12 @@
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 4rem);
   font-family: var(--font-sans-serif);
-  font-size: 0.7rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.5;
   letter-spacing: 0.035em;
   text-align: center;
-  white-space: nowrap;
+  max-width: 58ch;
+  white-space: normal;
   color: var(--color-base);
   opacity: 0.48;
 }
@@ -190,13 +216,16 @@
 }
 
 .site-foot-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: var(--font-sans-serif);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-base);
-  opacity: 0.5;
+  opacity: 0.68;
   text-decoration: none;
   transition: opacity 0.3s ease, color 0.3s ease;
 }
@@ -226,16 +255,28 @@
 @media (max-width: 700px) {
   .site-head-container {
     height: auto;
-    padding-block: 0.8rem;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding-block: 0.65rem 0.35rem;
   }
 
-  .site-head-left,
-  .site-head-right {
-    gap: 1rem;
+  .site-head-logo {
+    justify-self: center;
   }
 
-  .site-head-left a,
-  .site-head-right a {
+  .site-head-logo img {
+    width: 11rem;
+  }
+
+  .site-head-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .site-head-nav a {
+    justify-content: center;
     font-size: 0.9rem;
   }
 
@@ -253,7 +294,6 @@
     order: 3;
     width: 100%;
     padding-inline: 0;
-    overflow-x: auto;
     text-align: left;
   }
 
