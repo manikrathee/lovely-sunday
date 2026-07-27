@@ -183,7 +183,65 @@ aws s3api put-public-access-block \
   'BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true'
 ```
 
-### 3.2 Request ACM certificate (CloudFront must use `us-east-1`)
+### 3.2 Configure GitHub Actions access to `s3://lovelysunday/site/`
+
+The account uses GitHub's OIDC provider at `token.actions.githubusercontent.com`. The `lovely-sunday-production-deploy` role uses this trust policy, intentionally restricted to this repository's `production` environment:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::815816266543:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+          "token.actions.githubusercontent.com:sub": "repo:manikrathee/lovely-sunday:environment:production"
+        }
+      }
+    }
+  ]
+}
+```
+
+Attach this least-privilege permissions policy to the role:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetBucketLocation", "s3:ListBucket"],
+      "Resource": "arn:aws:s3:::lovelysunday",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": ["site", "site/*"]
+        }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:DeleteObject", "s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::lovelysunday/site/*"
+    }
+  ]
+}
+```
+
+In GitHub, create the `production` environment, then add:
+
+- Environment secret `AWS_ROLE_ARN`: the role ARN
+- Environment variable `AWS_REGION`: the bucket's AWS region
+- Environment variable `SITE_URL`: canonical public URL; optional until the site has one
+
+Pushes to `master` and manual workflow dispatches build the site, then sync `dist/` to `s3://lovelysunday/site/`. The sync only deletes stale objects inside `site/`.
+
+### 3.3 Request ACM certificate (CloudFront must use `us-east-1`)
 
 ```bash
 aws acm request-certificate \
@@ -195,7 +253,7 @@ aws acm request-certificate \
 
 Then complete DNS validation records (CNAMEs) in Route 53 (or Hover if not delegated yet).
 
-### 3.3 Create CloudFront distribution
+### 3.4 Create CloudFront distribution
 
 Create distribution using:
 - Origin: S3 bucket
@@ -206,7 +264,7 @@ Create distribution using:
 
 (You can create this in AWS Console; CLI is possible but verbose.)
 
-### 3.4 Grant CloudFront read access to S3 bucket
+### 3.5 Grant CloudFront read access to S3 bucket
 
 Attach bucket policy (replace placeholders):
 
@@ -249,7 +307,7 @@ aws s3api put-bucket-policy \
 SITE_URL=https://www.yourdomain.com npm run build
 
 # 2) Upload to S3 (HTML revalidates, hashed assets are immutable)
-S3_BUCKET=www.yourdomain.com AWS_REGION=us-east-1 npm run deploy:s3
+S3_URI=s3://lovelysunday/site/ AWS_REGION=us-east-1 npm run deploy:s3
 
 # 3) Invalidate CloudFront cache (optional but recommended)
 aws cloudfront create-invalidation \
@@ -260,7 +318,7 @@ aws cloudfront create-invalidation \
 VERIFY_BASE_URL=https://www.yourdomain.com npm run verify:urls
 
 # 5) One command: upload, optional invalidation, and URL verification
-S3_BUCKET=www.yourdomain.com \
+S3_URI=s3://lovelysunday/site/ \
 AWS_REGION=us-east-1 \
 VERIFY_BASE_URL=https://www.yourdomain.com \
 CLOUDFRONT_DISTRIBUTION_ID=E123ABC456DEF \
@@ -352,7 +410,7 @@ Used by this repository:
 - `SITE_URL`: canonical site URL used by sitemap/robots/canonical metadata
 - `PUBLIC_GA_MEASUREMENT_ID`: optional analytics
 - `PUBLIC_TWITTER_HANDLE`: optional social metadata
-- `S3_BUCKET`: target bucket for deploy scripts
+- `S3_URI`: full deployment target, including an optional prefix; `S3_BUCKET` remains supported for backward compatibility
 - `AWS_REGION`: optional AWS region for CLI commands
 - `VERIFY_BASE_URL`: deployed public base URL used by post-deploy checker
 - `CLOUDFRONT_DISTRIBUTION_ID`: optional distribution for automatic invalidation in `deploy:production`
