@@ -33,7 +33,7 @@ jobs:
 
       - run: npm run build
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://www.lovelysunday.co' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://lovelysunday.co' }}
 
       - uses: aws-actions/configure-aws-credentials@v6
         with:

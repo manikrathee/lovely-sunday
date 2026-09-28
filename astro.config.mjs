@@ -4,7 +4,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
 
-const site = process.env.SITE_URL ?? "https://www.lovelysunday.co";
+const site = process.env.SITE_URL ?? "https://lovelysunday.co";
 const isStorybook = process.env.STORYBOOK === "true";
 const pageMarkdown = isStorybook
     ? null
