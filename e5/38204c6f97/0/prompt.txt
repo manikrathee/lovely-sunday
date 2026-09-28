@@ -1,0 +1,13 @@
+Run 10 parallel design improvement passes, fix visual issues, improve navigation, etc. Return screenshot results.
+
+---
+
+Take each post's photo layout and make the grid more immersive - full width images, 2x1 portrait orientation images, 10px spacers or larger, etc.
+
+---
+
+show me more previews of the full page, or a large browser viewport
+
+---
+
+Check for bugs, then commit and push
