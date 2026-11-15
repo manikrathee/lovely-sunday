@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "d726f2e475b6",
+  "strategy": "manual-commit",
+  "branch": "conductor/design-review-grid-animations",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "package-lock.json",
+    "package.json"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d7/26f2e475b6/0/metadata.json",
+      "transcript": "/d7/26f2e475b6/0/full.jsonl",
+      "content_hash": "/d7/26f2e475b6/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1545976,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1531136,
+    "output_tokens": 3867,
+    "api_call_count": 19
+  }
+}

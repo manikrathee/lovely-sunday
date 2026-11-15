@@ -1,0 +1,37 @@
+{
+  "cli_version": "0.5.3",
+  "checkpoint_id": "d726f2e475b6",
+  "session_id": "01a1e151-9da7-73a0-98d7-de9577557e9a",
+  "strategy": "manual-commit",
+  "created_at": "2026-11-15T22:31:51.632616Z",
+  "branch": "conductor/design-review-grid-animations",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "package-lock.json",
+    "package.json"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6-sol",
+  "turn_id": "b43bc8c31d45",
+  "checkpoint_transcript_start": 235,
+  "transcript_lines_at_start": 235,
+  "token_usage": {
+    "input_tokens": 1545976,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1531136,
+    "output_tokens": 3867,
+    "api_call_count": 19
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-11-15T22:31:51.180834Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 30,
+    "human_modified": 1,
+    "human_removed": 0,
+    "total_committed": 30,
+    "total_lines_changed": 31,
+    "agent_percentage": 0,
+    "metric_version": 2
+  }
+}
