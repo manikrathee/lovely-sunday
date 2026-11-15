@@ -3,7 +3,7 @@
   "checkpoint_id": "2f4a9a1b5b80",
   "strategy": "manual-commit",
   "branch": "conductor/design-review-grid-animations",
-  "checkpoints_count": 0,
+  "checkpoints_count": 1,
   "files_touched": [
     ".github/workflows/pr-screenshots.yml"
   ],
@@ -13,13 +13,19 @@
       "transcript": "/2f/4a9a1b5b80/0/full.jsonl",
       "content_hash": "/2f/4a9a1b5b80/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/2f/4a9a1b5b80/1/metadata.json",
+      "transcript": "/2f/4a9a1b5b80/1/full.jsonl",
+      "content_hash": "/2f/4a9a1b5b80/1/content_hash.txt",
+      "prompt": "/2f/4a9a1b5b80/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 1161397,
-    "cache_creation_tokens": 0,
-    "cache_read_tokens": 1144448,
-    "output_tokens": 3559,
-    "api_call_count": 17
+    "input_tokens": 1163213,
+    "cache_creation_tokens": 1001110,
+    "cache_read_tokens": 16623080,
+    "output_tokens": 186193,
+    "api_call_count": 84
   }
 }
