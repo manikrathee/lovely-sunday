@@ -1,0 +1,817 @@
+<system_instruction>
+You are working inside Conductor, a Mac app that lets the user run many coding agents in parallel.
+Your work should take place in the /Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2 directory (unless otherwise directed), which has been set up for you to work in.
+Each workspace has a .context directory (gitignored) where you can save files to collaborate with other agents.
+The target branch for this workspace is origin/master. Use this for actions like diffing (`git diff origin/master...`) or creating PRs (`gh pr create --base master`).
+You're on a new branch with a placeholder name. Conductor will automatically rename it in the background to match your task.
+
+Do not rename the current branch unless the user explicitly tells you to do so.
+
+By default, the user will only see the last message that you send before stopping. Include all essential information in the last message. The intermediate messages will be collapsed and accessible by the user but not displayed by default.
+
+Save screenshots under `.context/` and embed them inline in the final response using Markdown image syntax, for example `![Screenshot](</Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/.context/screenshot.png>)`.
+
+If the user asks you to work on several unrelated tasks, you can suggest they start new workspaces.
+Sometimes the user might send you a message they meant to send in a different workspace or a different chat. If something doesn't make sense in the context of your work, just ask.
+If the user asks for help with Conductor, you can ask them to go to "Help -> Send Feedback" to get in touch with our team.
+</system_instruction>
+
+Complete 3 deep-dive design reviews and implement improvements to make the design more consistent, grid-aligned, with a good hierarchy, and subtle + beautiful animations on scroll and hover.
+
+---
+
+<task-notification>
+<task-id>ae4433dbb0a0ea7c8</task-id>
+<tool-use-id>toolu_013FCDbg1urYUUFPRjUCyjhj</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-manikrathee-conductor-workspaces-lovely-sunday-barcelona-v2/4f2cc4a1-7a12-402b-b986-bdcff578f9f1/tasks/ae4433dbb0a0ea7c8.output</output-file>
+<status>completed</status>
+<summary>Agent "Check brand docs and prior design notes" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>I found all five answers. The main finding is that the "Atelier Blush" direction (cream, dusty rose, gold, Cormorant Garamond) is already applied in the code. A newer brand report recommends a different direction ("Postcards Between Us"), but it says no direction has been chosen. Nothing requires legacy pages to match the old site pixel for pixel; they can be restyled as long as the structural build checks still pass.
+
+## 1. Brand identity
+
+**Name and people.** The site is "Lovely Sunday" (production: `https://lovelysunday.co`). It is not an artist or a shop. `brand-research/lovely-sunday-brand-identity.json` describes it as *"A photography-led personal style journal and editorial archive created by best friends Aileen and Rory, spanning outfit stories, lookbooks, and travel diaries."* The main idea is "Style worth remembering." Its personality pairs are "Intimate, not insular / Polished, not precious / Romantic, not nostalgic / Playful, not frivolous."
+
+**Colours in use now.** These come from `_Resources/atelier-blush-redesign-plan.md` and are live in `src/styles/vars.css`:
+- Light mode: `--color-primary: #C9A6A0` (dusty rose), `--color-base: #1A1A1A` (warm black), `--color-border: #E5DDD5` (warm sand), `--color-bg: #FAF7F2` (cream), `--color-accent: #C4A265` (gold), `--color-bg-subtle: #F3EDE6`
+- Dark mode: `#D4B5AF`, `#E8E2DC`, `#3A3530`, `#171514`, `#D4B280`, `#1E1C1A`
+- The plan says: *"warm minimalism / quiet luxury — inspired by brands like Céline and The Row ... photography-forward presentation with generous whitespace, refined typography."*
+
+**Typography in use now** (same plan and `vars.css`):
+- `--font-display: 'Cormorant Garamond'` for headings, with thin weights: h1 at `font-weight: 300; letter-spacing: 0.04em`.
+- `--font-serif` (Iowan Old Style or Palatino) for body text.
+- `--font-sans-serif` (Avenir Next or Futura) for navigation and labels, styled `letter-spacing: 0.15em; text-transform: uppercase; font-weight: 300`.
+- `--radius: 0.2rem`.
+
+**Competing brand directions** (in `brand-research/`, not yet adopted):
+- **The Sunday Edit:** Paper `#F5F0E8`, Carbon `#171614`, Powder Rose `#CFA8A0`, Oxide `#8C4A3C`, Hairline `#D8D0C5`. It has a *"magazine cover: one edge-to-edge portrait ... vertical index"* and is closest to the current palette.
+- **Postcards Between Us (the recommended one):** Letter Paper `#FFF8EC`, Postmark Blue `#24465A`, Lipstick `#C94C58`, Sky Wash `#A8C9D1`, Sunprint `#E7B955`. It uses paired offset frames and a "postcard back" reveal on cards. The report says: *"Recommended for discussion; no territory has been selected."* It also warns: *"The existing blush-and-gold direction may already have stakeholder commitment."*
+- **Dress the Day:** Vanilla, Ink Plum, Persimmon, Pool and Petal, with lively, moving type.
+
+**Tone** (`VOICE_AND_TONE.md`):
+- "A personal style diary, not a magazine editorial."
+- The mix is 40% intimate diary, 25% fashion analysis, 20% aspirational elegance and 15% playful confidence.
+- It should feel "Warm, conversational, intentional ... Sophisticated but approachable."
+
+**Mood boards** in `_Resources/`: `moodboard-1-atelier-blush.html` (the chosen one), `-2-editorial-noir`, `-3-copper-jardin` and `-4-lazy-sunday`, each with a `.png` screenshot. There are also 189 reference images in `_Resources/_Inspiration-Ref/`, a logo in `_Resources/Animated SVG Brand/lovely-sunday.svg` and `.html`, and source logo files in `_Resources/Brand/*.ai`/`.eps`.
+
+## 2. Design system, motion and explicit "do not" rules
+
+There is no formal design system document. The tokens in `src/styles/vars.css` plus `_Resources/atelier-blush-redesign-plan.md` act as one.
+
+**Motion** (plan, Step 10):
+- Cards fade in on scroll: `opacity 0 → 1` and `translateY(20px)` over `0.6s cubic-bezier(0.16, 1, 0.3, 1)`, staggered by 0.1s.
+- Images zoom slightly on hover: `scale(1.02)` over 0.6s with the same curve.
+- "Keep existing Swup transition-fade and slideUp animations."
+- Verification item 8: "Test `prefers-reduced-motion`: animations disabled". Reduced-motion rules already exist in `site-shell.css`, `animations.css`, `legacy-page.css`, `legacy-gallery.css` and `post-card.css`.
+
+**Layout and grid** (plan, Step 6):
+- Asymmetric home grid: `grid-template-columns: 1.15fr 0.85fr`, with every `5n+3` card spanning the full width at 16/9.
+- Single column at ≤900px.
+- Header container max-width `1320px`.
+
+**Gallery rules** (`docs/gallery-orientation.md`):
+- Side-by-side photos must share an orientation: "consecutive portrait images form a two-column row; landscape, square, unknown, and unpaired portrait images span the full gallery width."
+- "the gallery expands beyond the text measure up to `1440px`"
+- "gutters remain between `10px` and `18px`, including on mobile."
+- `npm run check:gallery-orientations` fails the build if the pairing rule is broken.
+- "keep width and height metadata intact. `LegacyHtmlPage.astro` uses those dimensions to assign orientation and span classes."
+
+**Explicit "do not" items:**
+- Plan: remove the emoji icon buttons (☰ ◉ ⌕ 👜), set `box-shadow: none` on the header, remove the blue dark-mode radial gradient, and remove the announcement bar (recommended Option B, "for the quiet luxury aesthetic").
+- `README.md`: Agentation marker colour is "Red, the closest built-in option to the site's dusty-rose palette"; "verify both light and dark modes."
+- `VOICE_AND_TONE.md` (copy only): no hard-sell calls to action, no corporate marketing phrases, no hype words or exclamation marks, no detached third-person voice, no product-ad framing.
+- Brand-report risks:
+  - Quiet luxury "can make Lovely Sunday resemble a boutique, wedding studio, or generic fashion journal unless the friendship and first-person voice stay visibly present."
+  - Postcards "could tip into scrapbook nostalgia."
+  - "The current site contains some placeholder ceramic content."
+- Storybook review sizes: 390px, 768px and 1440px (`README.md`).
+
+## 3. Recent design commits
+
+`git show --stat HEAD~4..HEAD` only reaches back to `d55541c`. The homepage redesign is one commit earlier, at `6a5f1ce`, so I checked it separately.
+
+- **`6a5f1ce` "feat: redesign homepage layout and navigation"**
+  - Changed `src/components/Footer.astro` (10), `src/components/Header.astro` (27) and `src/components/InstagramGrid.astro` (28).
+  - Changed `src/pages/index.astro` (16), `src/styles/components/legacy-page.css` (+115), `src/styles/components/site-shell.css` (112), `src/styles/layout.css` (2) and `src/styles/vars.css` (4).
+  - Added before/after/final screenshots in `output/playwright/` (baseline, after and final at desktop, tablet and mobile, plus footer shots) and `.playwright-cli/page-*.yml`.
+- **`d55541c` "feat: add Sveltia CMS and improve legacy gallery layouts"**
+  - Changed `src/components/LegacyHtmlPage.astro` (38), `src/styles/components/legacy-page.css` (37), `scripts/check-gallery-orientations.mjs`, `scripts/validate-built-site.mjs`, `docs/gallery-orientation.md` and `public/admin/*`.
+  - Added `output/playwright/gallery-*.png` and `preview-*.png` screenshots.
+- **`a063a9c`, `e4291c2`, `4f70d7c`:** moved the brand report into `brand-research/`, fixed the canonical site address and compressed the preview images. No styling changes.
+
+## 4. Dev server and tools
+
+- **Astro:** `http://127.0.0.1:4321`. `scripts/dev-workspace.mjs` runs `dev:astro -- --host 127.0.0.1`. The README also uses `http://localhost:4321/admin/`.
+- **Storybook:** `http://127.0.0.1:6006`, started alongside Astro by `npm run dev`.
+- **Caddy:** `Caddyfile` maps `http://lovelysunday.test` to `localhost:4321`. The `npm run dev` script does not start Caddy, even though `CLAUDE.md` says it does, so use port 4321 directly.
+- **Astro only:** `npm run dev:astro`.
+- **Local-only extras:** in development, pages show a status bar in the bottom-left and the Agentation toolbar in the bottom-right. Hide them or crop them out of screenshots.
+- **agent-browser:** installed at `/Users/manikrathee/.nvm/versions/node/v22.21.1/bin/agent-browser`.
+- **node_modules:** missing (`ls: node_modules: No such file or directory`). Run `npm install` before starting the server. `.nvmrc` sets the Node version, and the README requires Node 22 or newer.
+
+## 5. Legacy HTML mirror pages: parity or restyle?
+
+They can be restyled; nothing requires a pixel-for-pixel match.
+
+- **The "parity gate" only checks structure** (`scripts/qa/parity-gate.mjs`, run by `npm run build` through `qa:parity`). For each captured route it requires:
+  - a built HTML file, a title, and a single `&lt;html&gt;`/`&lt;body&gt;`;
+  - a `&lt;main&gt;` landmark and at most one H1;
+  - no leaked Squarespace markup (`"legacy Squarespace markup leaked into built output."`);
+  - baseline screenshot files in `capture/page_json`, where it only checks that the desktop capture is wider than the mobile one.
+- **The design docs expect restyling.** The plan's Step 12 says: "Legacy pages inherit global styles ... Any hardcoded colors in legacy CSS should be overridden to use variables" and "Check legacy lookbook pages: gallery inherits new colors." `docs/gallery-orientation.md` already describes a "more immersive editorial layout" for rebuilt legacy galleries.
+- **Hard limits that remain:**
+  - the gallery pairing rule and the 1440px / 10–18px gutter rule;
+  - keeping image width and height metadata;
+  - the checks in `scripts/validate-built-site.mjs` (`docs/ai-discovery.md`): one title, canonical and description per page, valid JSON-LD, no Agentation code in production, and "the legacy double-slash lookbook regression route renders a main landmark and H1";
+  - `npm run check:routes` and `verify:urls`, which check that every captured address still exists.
+- **Relevant style files:** `src/styles/components/legacy-page.css`, `legacy-gallery.css` and `src/components/LegacyHtmlPage.astro`.
+
+Separately, this session reported that several connectors need authorising (Figma, Gmail, Google Calendar, Google Drive, Notion, Spotify, and the Linear plugin) and that the claude.ai Linear connector failed to connect. None of them were needed here.</result>
+<usage><subagent_tokens>64484</subagent_tokens><tool_uses>11</tool_uses><duration_ms>59358</duration_ms></usage>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>ada1a864be1c8bd2a</task-id>
+<tool-use-id>toolu_011qrn9bytqTe7JGrNfqEZm3</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-manikrathee-conductor-workspaces-lovely-sunday-barcelona-v2/4f2cc4a1-7a12-402b-b986-bdcff578f9f1/tasks/ada1a864be1c8bd2a.output</output-file>
+<status>completed</status>
+<summary>Agent "Map components, pages, and templates" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>I've read every file you listed plus the shared CSS they depend on, so the wrapper and spacing findings are grounded. Two limits: `node_modules` and `dist/` are missing from this worktree, so I couldn't build or list which legacy routes come out as `gallery`, `list` or `page`. And one likely image-offset bug (8a) comes from reading the CSS, not from rendering it.
+
+Before reading the numbers below: **`html { font-size: 62.5% }` makes 1rem = 10px** (`src/styles/components/global.css:258`). Several scoped styles look like they were written for 16px.
+
+---
+
+## 1. Routes: template, sections, wrapper classes
+
+All pages render inside `Layout.astro` like this: `body.site-wrapper &gt; div.site-content-shell &gt; Header` → `main#site-main.site-main &gt; div#swup.transition-fade &gt; &lt;slot/&gt;`, followed by `Footer` outside the shell.
+
+| Route | Type | Chain | Sections / wrapper classes |
+|---|---|---|---|
+| `/` (`src/pages/index.astro`) | **Legacy mirror, overridden** | `LegacyHtmlPage` with a rewritten `view` (lines 14-30), plus `InstagramGrid` passed in the slot | `article.legacy-page.legacy-page--home` → `header.legacy-page-hero.has-media` → `.legacy-page-copy` (`p.legacy-page-eyebrow`, `h1`) and `figure.legacy-page-hero-media` → `section.legacy-page-links` (2 CTA pills) → `section.legacy-page-gallery` of `figure.legacy-page-frame` → after `&lt;/article&gt;`: `section.instagram-grid` (9 posts) |
+| `[...slug]` (every captured URL except `/`, `/about-lovely-sunday`, `/contact-lovely-sunday`; lines 7, 15-16) | **Legacy mirror** | `LegacyHtmlPage` | Same structure, modifier `legacy-page--gallery`, `--list` or `--page`. Covers `/lookbook`, `/daily-diary`, `/cart`, `/search`, `/shop`, `/lookbook/looks/*`, etc. |
+| `/lookbook-double/looks/[slug]`, `/lookbook-single/looks/[slug]` | **Legacy mirror** | `LegacyHtmlPage` | 5 slugs each (`src/data/legacyLookbook.ts:1-15`). `src/middleware.ts` rewrites `/lookbook//looks/x` and `/lookbook/looks/x` to these. |
+| `/about-lovely-sunday` | New Astro (hand-written) | `Layout` directly, `breadcrumbs={false}` | Images come from `capture/page_json/about-lovely-sunday-d298690e81.json`. `article.about-page` → `img.hero` → `.about-inner` → `.brand` (logo) → `.content-grid` (`section` + `aside` with 3 `section.panel`) → `.hidden-media` (display:none) |
+| `/contact-lovely-sunday` | New Astro | `templates/Contact.astro` → `PostLayout` → `Layout` | `article.contact-form.page-template` → `ImageBlock` (`div.post-content-image &gt; img.kg-image`) → `div.post-content-body` (`h1`, Markdown, `form` using `.row.gtr-uniform` / `.col-6.col-12-xsmall` / `ul.actions`) → `InstagramFeed` |
+| `/work/[slug]`, `/news/[slug]`, `/sold/[slug]` | New Astro | `templates/Work.astro` → `PostLayout` → `Layout` | `article.post-content` → `p.post-content-excerpt` → `ImageBlock` → `div.post-content-body` (Markdown + `InstagramGrid`) → slot `after`: `div.post-link` with two `LinkBlock` (`a.post-nav-link.prev/.next`) → `InstagramFeed` |
+| `/contact/thanks` | New Astro | `Layout` | `article.post-content.page-template.no-image &gt; div.post-content-body &gt; section.thank-you` |
+| `templates/Page.astro`, `templates/List.astro` | — | — | **Not used by any route.** `List` is the only place `PostCard` / `.post-feed` / `.page-head` render. |
+
+**How legacy pages are rendered** (`src/lib/legacy-pages.ts`):
+- No raw HTML is injected anywhere. At build time, `loadLegacyPages()` (332-385) reads `capture/manifests/all_urls.txt` (55 URLs), each `capture/page_json/*.json`, and the matching `capture/raw_html/*` (with a path-traversal guard at 355, and `&lt;noscript&gt;` stripped).
+- Cheerio extracts plain data: gallery images from `#page .sqs-gallery-design-autocolumns-slide img, #page img` using `data-image`, `data-src`, `src` and `data-image-dimensions` (175-200), paragraphs as text (202-222), and links (224-262, internal only, at most 12).
+- That data becomes a structured `LegacyView {kind, eyebrow, title, description, heroImage, images, links, paragraphs}`.
+- `kind` (297-304): `home` for `/`; `gallery` if more than one gallery image; `list` if more than 3 links; otherwise `page`.
+- `LegacyHtmlPage.astro` then re-renders that data with new markup, so it is effectively sanitised by reconstruction.
+
+---
+
+## 2. Scoped `&lt;style&gt;` blocks inside .astro files
+
+| File | Lines | What it defines |
+|---|---|---|
+| `src/pages/about-lovely-sunday.astro` | 79-194 | `.about-page { margin: -4rem -1.5rem 0 }`, `.hero` (16/9, cover), `.about-inner { max-width: 1100px; padding: 2rem 1.2rem 4rem }`, `.brand`, `.content-grid` (1.5fr/1fr, gap 2.5rem), **bare `h1`/`h2`/`h3`/`p`/`input`/`button`** rules, `.panel`, `.profile`, and a stack at ≤800px |
+| `src/components/InstagramFeed.astro` | 43-98 | `.instagram-feed { max-width: 1120px; padding: 0 1rem 2rem; margin: 3rem auto 0 }`, header `h2` at `clamp(1.4rem, …, 2rem)` / weight 500, `.instagram-grid` (2 columns, 3 from 720px), `.instagram-card` (aspect-ratio 1, **no border-radius**), 1.03 scale on hover |
+| `src/components/InstagramGrid.astro` | 34-90 | `.instagram-grid { width: min(100%, 1180px); margin: clamp(4rem, 8vw, 7rem) auto 2rem }`, `h2` in `--font-display` at `clamp(2.4rem, 4vw, 4rem)`, `.instagram-grid__items` (3 columns, 2 at ≤640px), `.instagram-grid__card` (1/1, **radius 0.8rem**), first card spans full width at 1.6/1 on mobile |
+| `src/pages/contact/thanks.astro` | 21-29 | `.thank-you` grid, centred, `padding: 2rem 0` |
+| `src/components/DevelopmentBar.astro` | 36-135 | Dev-only floating panel, self-contained |
+
+Global component CSS imported from components: `PostCard.astro:2` imports `post-card.css`, and `LegacyHtmlPage.astro:3` imports `legacy-page.css`.
+
+Not imported anywhere: `legacy-gallery.css` (targets old `.sqs-*` markup). `hamburger.css` is imported through `content.css:19`, but no hamburger markup exists.
+
+---
+
+## 3. Client-side JS and animation hooks
+
+- **Swup** (`Layout.astro:182-194`, bundled module): `new Swup({ containers: ["#swup"], cache: true, animationSelector: "[class*='transition-']", plugins: [new HeadPlugin()] })`. It isn't an Astro integration; `astro.config.mjs` only has react, sitemap, llm-enhancements and robots-txt.
+- **Swup CSS** (`src/styles/components/animations.css:5-28`):
+  - `.transition-fade` runs a `slideUp` keyframe from `translate3d(0, 4vh, 0)` on load.
+  - `html.is-changing .transition-fade` transitions opacity; `html.is-animating .transition-fade { opacity: 0 }`.
+  - Note: this `transform` on `#swup` makes it a containing block for any `position: fixed` element inside it.
+- **Scroll reveal** (`Layout.astro:196-217`, `is:inline`): an IntersectionObserver (threshold 0.1, rootMargin `0px 0px -40px 0px`) adds `.is-visible` to `.post-card`. It returns early under `prefers-reduced-motion`. The CSS is at `animations.css:31-51` (hidden and translateY(20px) until `.is-visible`, with delays on nth-child 2 and 3).
+  - **Gap:** it runs once on first load and is never re-bound after a Swup navigation, so `.post-card`s on a page reached through Swup would stay at opacity 0. This is latent today because nothing renders `PostCard`.
+  - **Gap:** Storybook doesn't run this script but does load `animations.css`, so the PostCard stories probably render invisible.
+- **Theme** (`Layout.astro:145-161`): sets `data-theme="dark"` from localStorage. There is no toggle in the UI.
+- **AnnouncementBar**: inline `onclick` removes the `&lt;aside&gt;`. The component isn't used on any page.
+- **DevelopmentBar**: dev-only collapse, copy and Storybook-ping script.
+- There is no hamburger menu, no scroll listener, and no `.reveal` or `data-animate` hook. The only other animation is the footer SVG stroke-draw (`site-shell.css:153-176, 242-254`).
+
+---
+
+## 4. Header and Footer
+
+**Header** (`src/components/Header.astro`):
+- Markup: `header.site-head &gt; div.site-head-container &gt; a.site-head-logo &gt; img` plus `nav.site-head-nav[aria-label=Primary]` with plain `&lt;a&gt;` elements.
+- Nav items: Discover → `/lookbook`, Archive → `/daily-diary`, About → `/about-lovely-sunday`, Contact → `/contact-lovely-sunday`.
+- Active state is `aria-current="page"`, set at build time (line 24). CSS (`site-shell.css:77-117`): opacity 0.6, then accent colour on hover or current, with an `::after` underline that scales in.
+- **Bug:** Contact's `section` is `"/contact"` (line 7), so it never matches `/contact-lovely-sunday`. It only lights up on `/contact/thanks`.
+- **Bug:** the header sits outside `#swup`, so `aria-current` goes stale after Swup navigation.
+- Layout: `.site-head-container { max-width: 1320px; padding: 0 var(--site-shell-gap) }`, grid `auto 1fr`. At ≤700px the logo is centred and the nav becomes 4 equal columns.
+- Nav font-size is `1rem`, which is **10px**.
+- `Header.stories.ts` describes a "centered wordmark", but on desktop the logo is left-aligned.
+
+**Footer** (`src/components/Footer.astro`):
+- Markup: `footer.site-foot &gt; div.site-foot-logo` (logo SVG inlined through `set:html`) + `div.site-foot-inner &gt; .site-foot-brand (strong, small ©) + small.site-foot-bio + nav.site-foot-nav`.
+- Links: Discover, Archive, Contact, "Instagram ↗" → `instagram.com/lovelysunday`. **No About link**, and the handle differs from the `_lovelysunday` used everywhere else.
+- Inner width is `max-width: 1320px`, matching the header. There's hover styling but no active state.
+- **Positioning quirk:** `.site-foot-logo` is `position: absolute; inset: 0`, but `.site-foot` isn't positioned. Its containing block is therefore `body.site-wrapper`, so the logo is centred over the whole page, behind `.site-content-shell` (z-index 2, opaque background). `--footer-reveal` (`site-shell.css:4`) is defined but never used, so a reveal-footer effect looks unfinished.
+
+---
+
+## 5. PostCard, InstagramGrid, InstagramFeed, ImageBlock
+
+- **PostCard** (`PostCard.astro:19-31`):
+  - Markup: `article.post-card.{with-image|no-image}.post &gt; a.post-card-link` wrapping everything, so **the whole card is the link**. Inside: `div.post-card-image-wrap &gt; img.post-card-image` (alt = title, lazy) and `div.post-card-content &gt; h2.post-card-title`.
+  - No figure/figcaption.
+  - Aspect ratio comes from CSS: `0.8/1` (`post-card.css:12`), `16/9` for `.post-feed .post-card:nth-child(5n+3)` (18-20), `0.9/1` at ≤900px.
+  - Links go to `/${slug}/`.
+  - Not used on any route.
+- **InstagramGrid** (`InstagramGrid.astro`):
+  - Markup: `section.instagram-grid &gt; header.instagram-grid__header (h2, p)` + `div.instagram-grid__items &gt; a.instagram-grid__card &gt; img`.
+  - Each card is an external link (`target=_blank`), square via CSS, alt = caption or a fallback. No figure.
+  - Used on `/` (after the legacy article) and inside `.post-content-body` on work, news and sold pages.
+- **InstagramFeed** (`InstagramFeed.astro`):
+  - Markup: `section.instagram-feed &gt; div.instagram-feed-header (h2 + a)` + `div.instagram-grid &gt; a.instagram-card &gt; img`.
+  - **It reuses the class name `.instagram-grid`** for a different element than InstagramGrid's `&lt;section&gt;`. Scoping stops the two colliding today, but it's confusing.
+  - Rendered by every `PostLayout`.
+- **ImageBlock** (`ImageBlock.astro`): `div.{className ?? "post-content-image"} &gt; img.kg-image`. No figure/figcaption, no width/height. Alt is the page title (set in `PostLayout.astro:45`).
+- **Legacy frames** (`LegacyHtmlPage.astro:94-116`) are the only place using `&lt;figure&gt;`: `figure.legacy-page-frame.is-{full|half}-span.orientation-{portrait|landscape|square|unknown}[data-orientation]`, with an `img` that has `width`/`height` and `data-image-dimensions`.
+  - Pairing logic (32-46): two consecutive portraits become `is-half-span`.
+  - None use figcaption. Alt comes from the capture, falling back to "Lovely Sunday gallery image".
+- **Global:** `img { border-radius: 10px }` (`content.css:373`) rounds every image, including logos. Other radii vary: 0.8rem on InstagramGrid cards, none on InstagramFeed cards, `var(--radius)` = 0.2rem on PostCard, 1.25rem on legacy frames, `14rem 14rem 1.25rem 1.25rem` on the home hero.
+
+---
+
+## 6. Homepage section by section (`index.astro` → `LegacyHtmlPage`)
+
+1. **`header.legacy-page-hero.has-media`**, 2-column grid `minmax(0, .82fr) minmax(340px, 1.18fr)`, min-height `min(680px, 100vh - header - 7rem)` (`legacy-page.css:67-71`).
+   - `.legacy-page-copy`: `p.legacy-page-eyebrow` "A personal style journal", `h1` "Romantic style, lived beautifully." (`clamp(4.4rem, 7.5vw, 8rem)`, `max-width: 10ch`), then the description `p` (max 40ch).
+   - `figure.legacy-page-hero-media`: capture image index 3, with the arch radius, `min-height: 34rem`, eager / fetchpriority high.
+2. **`section.legacy-page-links`**: two pill CTAs ("Explore the lookbook", "Read the archive"). A negative `margin-top: clamp(-5rem, -5vw, -2rem)` pulls them up (104-118).
+3. **`section.legacy-page-gallery`**: 12-column grid. Frames `span 4`, with `:nth-child(5n+1)` and `(5n+4)` at `span 8`, fixed height `clamp(22rem, 38vw, 34rem)` and cover (120-137). At ≤640px they're `span 6`, `3n+1` is full width, height 24rem.
+   - The `is-half-span` classes are still emitted, but the home CSS ignores them.
+4. **`section.legacy-page-body`**: omitted because `paragraphs: []`.
+5. **`section.instagram-grid`** (slot, rendered after `&lt;/article&gt;`): "The latest edit", 9 posts.
+
+---
+
+## 7. Main content wrapper and max-width
+
+`.site-main` (`src/styles/layout.css:8-10`) only sets padding: `clamp(2.5rem, 5vw, 5rem) 1.5rem clamp(4rem, 8vw, 7rem)`. It has **no max-width**, so each page chooses its own:
+
+| Context | Max-width | Where |
+|---|---|---|
+| Header / footer inner | 1320px | `site-shell.css:54, 179` |
+| Background guide line | `min(88vw, 1180px)` | `site-shell.css:13` |
+| `.legacy-page` | `min(100%, 1180px)` | `legacy-page.css:2` |
+| Gallery breakout | `min(100vw - 3rem, 1440px)` | `legacy-page.css:176` |
+| `.instagram-grid` | 1180px | `InstagramGrid.astro:36` |
+| `.instagram-feed` | 1120px, with its own 1rem side padding | `InstagramFeed.astro:46` |
+| `.post-feed` | 112rem (1120px) | `layout.css:20` |
+| `.about-inner` | 1100px, with 1.2rem padding | about `:95` |
+| `.post-content` | 720px (`content.css:112`), overridden to **74rem = 740px** (`:381`) | |
+| `.contact-form` | 720px | `content.css:118` |
+| `.page-head` | 70% (`content.css:37`), overridden to 68rem (`layout.css:31`) | |
+
+So the pages do **not** share one wrapper. Header and footer align to 1320px, while content sits at 1180, 1120, 1100, 740 or 720.
+
+---
+
+## 8. Visual inconsistencies and likely bugs
+
+a. **`.post-content-image` is probably shifted off-grid** (`content.css:148-156` vs `:396-399`). This is from reading the CSS, not rendering it, so check it in a browser before acting on it.
+   - The first rule sets `width: 75vw; min-width: 100%; transform: translateX(calc(50vw - 50%))` and negative 50vw margins.
+   - The override only resets `margin` and adds `max-width: 62rem`. `min-width: 100%` beats `max-width`, and the translate is left in place.
+   - On work, news, sold and contact pages the image should end up pushed right by roughly `50vw - 370px`.
+
+b. **Duplicate or conflicting definitions:**
+   - `.post-content`: 720px vs 74rem (`content.css:111` vs `:380`).
+   - `.post-content-excerpt`: `content.css:134` vs `:385`.
+   - `.post-content-body`: 1.9rem vs 2rem.
+   - `.page-head` and `.page-head-title`: `content.css:31/68` vs `layout.css:29/36`.
+   - `.post-link`: `buttons.css:115`, `content.css:296` and `content.css:416`.
+
+c. **rem values written as if 1rem were 16px** (it's 10px):
+   - `.legacy-page p { font-size: 1.02rem }` → 10.2px (`legacy-page.css:44`).
+   - `.legacy-page-eyebrow` 1rem.
+   - About page `p { font-size: 1rem }` → 10px and `h2` 1.35rem.
+   - InstagramFeed `h2` max 2rem and link 0.95rem.
+   - Header and footer nav 1rem.
+   - Compare `.post-content-body` at 2rem (20px) and body at 1.5rem (15px).
+
+d. **The about page cancels the main padding with fixed numbers:**
+   - Main top padding is `clamp(2.5rem, 5vw, 5rem)`, or 3rem at ≤900px.
+   - `.about-page` uses `margin: -4rem -1.5rem 0`, or -3rem at ≤800px.
+   - So the hero either overlaps the header or leaves a gap depending on viewport; between 800px and 900px it overlaps by 1rem.
+
+e. **Heading levels:**
+   - Work, news and sold pages have **no `&lt;h1&gt;`**; the Markdown starts at `##`, and the excerpt is a `&lt;p&gt;`.
+   - The contact page puts its `h1` *after* the hero image.
+   - About page panel titles mix `h3` ("Meet Aileen", "Contact Me") with `h2` ("Subscribe…").
+   - `PostCard` uses `h2` for card titles.
+   - Instagram section titles are `h2` in two different typographic styles: display font at 2.4–4rem vs weight 500 at ≤2rem.
+
+f. **Work, news and sold pages show two Instagram sections:** `InstagramGrid` inside `.post-content-body` (so inside the 740px column) plus `InstagramFeed` from `PostLayout`, each with a different width, radius and heading style.
+
+g. **Placeholder content left from the "Clay" theme:**
+   - The Markdown collections are pottery content (`src/content/work/minimal-forms.md`).
+   - `contact.md` has the description "Clay theme contact page".
+   - The contact form's enquiry options are Commissions, Exhibitions and Gallery Feature.
+   - The about page's "Subscribe" button is `type="button"` and does nothing, and the "Contact Me" panel has no link.
+
+h. **Nav mismatches:** the Contact active-state bug and the Footer's missing About link (both in §4), plus Instagram handle drift: `lovelysunday` in the footer vs `_lovelysunday` in the feed components.
+
+i. **Unused styling:** `.site-breadcrumbs { display: none }` (`layout.css:12`) hides breadcrumbs everywhere even though they're still rendered. `hamburger.css` and `legacy-gallery.css` are dead.
+
+---
+
+## Storybook and the build gate
+
+- **Storybook:**
+  - `.storybook/main.ts` picks up `src/**/*.stories.ts` with `@storybook-astro/framework`.
+  - `preview.ts` imports `vars.css`, `content.css`, `layout.css` and `site-shell.css`, but **not** `legacy-page.css`.
+  - There are 7 stories: Header, Footer, AnnouncementBar, ImageBlock, InstagramGrid, LinkBlock, PostCard. None for LegacyHtmlPage, InstagramFeed or PostLayout.
+  - They only pass props (`message`, `src`/`alt`/`loading`, `title`/`subtitle`/`posts`, `href`/`label`/`direction`, `post.data.{title, thumbnail}`/`slug`). Keep those prop names stable or update the stories.
+  - Storybook isn't part of `npm run build` or `npm test`, so it can't break the gate.
+  - The dev bar links to it at `PUBLIC_STORYBOOK_URL` (default `127.0.0.1:6006`).
+- **Build gate:** `build = astro build &amp;&amp; qa:parity`, where `qa:parity` runs `parity-gate` → `check:gallery-orientations` → `validate:built`.
+  - **`scripts/qa/parity-gate.mjs`** — for every live snapshot route:
+    - The built HTML exists, including the `lookbook-double/` and `lookbook-single/` mappings.
+    - There's a `&lt;title&gt;`, at most one `&lt;html&gt;`/`&lt;body&gt;`, and at least one `&lt;main&gt;`.
+    - **No more than one `&lt;h1&gt;`.** A design change that adds an h1 to legacy pages or the homepage would fail here.
+    - **No Squarespace markup** (regex `\bsqs-[a-z0-9_-]+\b`, `data-sqsp-`, `assets.squarespace.com`, "Powered by Squarespace"). Don't introduce any class starting with `sqs-`.
+    - Baseline screenshot metadata exists.
+    - The whole gate is skipped if the capture artifacts are missing.
+  - **`scripts/check-gallery-orientations.mjs`** — on every built page, finds `.legacy-page-gallery .legacy-page-frame` (and the legacy `.sqs-gallery…` selector). It requires every `.is-half-span` frame to be followed by another `.is-half-span` frame whose `img[data-image-dimensions]` has the same orientation.
+    - Keep the class names `legacy-page-gallery`, `legacy-page-frame` and `is-half-span` and the attribute `data-image-dimensions`, or update the script alongside.
+    - Changing the pairing logic in `LegacyHtmlPage.astro:32-46` is checked by this script.
+  - **`scripts/validate-built-site.mjs`**:
+    - `dist/lookbook-double/looks/babes-day/index.html` must have exactly one `&lt;main&gt;` and exactly one non-empty `&lt;h1&gt;`.
+    - Every page needs exactly one `&lt;title&gt;`, canonical (on the production origin), `meta[name=description]`, `og:title` and `twitter:card`, plus valid JSON-LD.
+    - The string "agentation" must not appear in any built HTML. Don't reuse that word in class names.
+    - It also checks the admin, robots and llms artifacts.
+  - **`tests/*.test.mjs`** only check the site origin in the config and the Sveltia CMS config. Nothing asserts on component classes.</result>
+<usage><subagent_tokens>111650</subagent_tokens><tool_uses>22</tool_uses><duration_ms>183635</duration_ms></usage>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>a7ab130cb669db380</task-id>
+<tool-use-id>toolu_01V8X2jVQ38seJP81TiuXYWb</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-manikrathee-conductor-workspaces-lovely-sunday-barcelona-v2/4f2cc4a1-7a12-402b-b986-bdcff578f9f1/tasks/a7ab130cb669db380.output</output-file>
+<status>completed</status>
+<summary>Agent "Map styles and design tokens" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>I read everything in `src/styles/`, plus `postcss.config.cjs`, `Layout.astro`, and the components and templates that load or override these styles. I didn't run a build, since that writes `dist/`. The biggest finding is that the site has almost no real token system, and several style files are loaded on no live route.
+
+## 0. How the CSS is loaded (read this first)
+
+**`src/layouts/Layout.astro`**
+- Lines 2–6 import, in order: `vars.css`, `content.css`, `layout.css`, `components/site-shell.css`, `astro-breadcrumbs/breadcrumbs.css`.
+- Line 96 loads Google Fonts: Cormorant Garamond, weights 300/400/600 plus italic 300/400.
+
+**`src/styles/content.css:10-20`** pulls in the rest through `@import`, which `postcss-easy-import` inlines: `vars`, `global`, `ghost`, `lists`, `grid`, `tables`, `forms`, `buttons`, `actions`, `hamburger`, `animations`.
+- `vars.css` is therefore imported twice: `Layout.astro:2` and `content.css:10`.
+
+**Files outside that chain**
+- `post-card.css` is imported only by `src/components/PostCard.astro:2`. PostCard is only used in `src/templates/List.astro`, and nothing imports `templates/List.astro` or `templates/Page.astro`.
+  - So `.post-feed`, `.post-card` and `.page-head` render only in Storybook, on no live route.
+- `legacy-page.css` is imported by `src/components/LegacyHtmlPage.astro:3`. That component is used by `index.astro`, `[...slug].astro` and the `lookbook-*` pages, so **legacy is the dominant visual on the live site** (including the homepage).
+- **`legacy-gallery.css` is not imported anywhere.** It is only named in `scripts/ci/map-changes-to-routes.mjs:128`. It is dead CSS, and its `.sqs-*` / `body.collection-type-gallery` selectors match no current markup.
+- `hamburger.css` is imported, but no component uses `.hamburger`.
+
+**`postcss.config.cjs`**
+- It runs `postcss-easy-import`, then `postcss-custom-properties({ preserve: false })`, then `autoprefixer`.
+- **Risk (not confirmed, no build run):** `preserve:false` means `var(--x)` is likely replaced with the static `:root` value wherever the definition is visible in the same file.
+  - That applies to `content.css`, because it inlines `vars.css`.
+  - It does not apply to `layout.css`, `site-shell.css`, `post-card.css` or `legacy-page.css`, which are processed separately.
+  - If so, the `[data-theme='dark']` overrides (`vars.css:38-45`) would not reach any rule in global, buttons, forms or tables, while they would reach the shell and legacy pages.
+  - Check the built CSS for `var(--color-` before relying on dark mode.
+- The only dark-mode switch is `localStorage.theme` (`Layout.astro:145-160`). There is no toggle UI.
+
+## 1. Tokens in `vars.css`
+
+**Colors (light, `:root`)**
+- Lines 7–12: `--color-primary: #C9A6A0`, `--color-base: #1A1A1A`, `--color-border: #E5DDD5`, `--color-bg: #FAF7F2`, `--color-accent: #C4A265`, `--color-bg-subtle: #F3EDE6`.
+
+**Colors (dark, `[data-theme='dark']`)**
+- Lines 39–44: primary `#D4B5AF`, base `#E8E2DC`, border `#3A3530`, bg `#171514`, accent `#D4B280`, bg-subtle `#1E1C1A`.
+
+**Fonts**
+- Line 15: `--font-sans-serif: 'Avenir Next', 'Futura', 'Century Gothic', sans-serif`
+- Line 16: `--font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif`
+- Line 17: `--font-display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif`
+- Line 18: `--font-mono: Menlo, Courier, monospace`
+- Avenir and Iowan are Apple system fonts and are not loaded.
+
+**Weights**
+- Lines 19–22: `--font-light: 100`, `--font-normal: 400`, `--font-bold: 700`, `--font-heavy: 800`.
+- `--font-light` is never used; `300` is hard-coded everywhere instead.
+
+**Breakpoints**
+- Lines 25–29: `--xlarge: 1680px`, `--large: 1280px`, `--medium: 980px`, `--small: 740px`, `--xsmall: 480px`.
+- None are actually used. The one attempt, `actions.css:58` `@media (max-width: var(--xsmall))`, is invalid CSS and never matches.
+
+**Sizes**
+- Lines 32–34: `--height: 4rem`, `--margin: 2rem`, `--radius: 0.2rem`.
+
+**Not defined at all:** a spacing scale, a type scale, easing or duration tokens, container widths, z-index values.
+
+**Extra tokens in `site-shell.css:1-5`**
+- `--header-height: clamp(4rem, 1vw + 3.5rem, 5rem)`
+- `--site-shell-gap: clamp(1rem, 2vw, 1.8rem)`
+- `--footer-reveal: clamp(11rem, 20vw, 15rem)` (unused)
+
+**Undefined token in use:** `--color-ink` in `src/components/InstagramGrid.astro:65`.
+
+**Hard-coded colors that bypass tokens**
+- `global.css:168` mark `#fdffb6`
+- `global.css:281` `rgba(201,166,160,0.3)`
+- `global.css:297` hr `border-top: 2px solid #000000` (breaks dark mode)
+- `buttons.css:77` `#fff !important`
+- `site-shell.css:40` `rgba(250,247,242,0.95)` (a copy of `--color-bg`)
+- `site-shell.css:48` `rgba(23,21,20,0.95)`
+- `site-shell.css:155` `rgba(40,37,32,0.5)`
+
+**Root font size:** `global.css:258` sets `html { font-size: 62.5% }`, so **1rem = 10px**. This matters for section 4.
+
+## 2. Grid system and layout
+
+**`grid.css`** is a 12-column flex grid.
+- `.row` (line 9): `margin: 0 -1rem`.
+- All `.col-*` (line 25): `padding: 1rem`, so the gutter is 2rem.
+- Widths are 8.333% steps (lines 34–92).
+- Collapse points: every `.col-1..11` becomes 50% at `max-width: 800px` (line 94) and 100% at `600px` (line 111).
+- There are no responsive column classes. `templates/Contact.astro:30-31` uses `gtr-uniform` and `col-12-xsmall`, and neither is defined, so the contact form fields only collapse through the generic 800px/600px rules.
+- `.col-12` is excluded from both media queries (fine).
+
+**`layout.css`**
+- `.site-main` (line 9): `padding: clamp(2.5rem,5vw,5rem) 1.5rem clamp(4rem,8vw,7rem)`. At ≤900px (line 46), `padding-top: 3rem`.
+- `.post-feed` (lines 16–22): CSS grid, `1.15fr 0.85fr`, `gap: 2rem`, `max-width: 112rem`, and every `5n+3` card spans full width. At ≤900px: `1fr`, `gap: 1.8rem`.
+- Unlike `grid.css`, this is a separate CSS-grid system.
+
+**Container and max-width values (all different, none tokenized)**
+
+| Where | Value |
+|---|---|
+| `site-shell.css:13` background guide line | `min(88vw, 1180px)` |
+| `site-shell.css:54` header, `:179` footer | `1320px` |
+| `layout.css:20` `.post-feed` | `112rem` (1120px) |
+| `layout.css:31` `.page-head` | `68rem`. `content.css:37` also sets `max-width: 70%` and `padding: 13vw 0`, which `layout.css` overrides |
+| `content.css:112` `.post-content` | `720px`, redefined at `content.css:381` as `74rem` (740px) |
+| `content.css:118` `.contact-form` | `720px` |
+| `content.css:398` `.post-content-image` | `62rem` |
+| `legacy-page.css:2` | `min(100%, 1180px)` |
+| `legacy-page.css:176` legacy gallery | `min(calc(100vw - 3rem), 1440px)` |
+| `legacy-gallery.css:2` (dead) | `min(1440px, 100%)` |
+| `InstagramGrid.astro:36` | `min(100%, 1180px)` |
+| `InstagramFeed.astro:46` | `1120px` |
+| `about-lovely-sunday.astro:95` | `1100px` |
+
+**Horizontal gutters don't match**
+- `.site-main` uses a fixed `1.5rem` (`layout.css:9`).
+- The header and footer use `var(--site-shell-gap)` = `clamp(1rem,2vw,1.8rem)` (`site-shell.css:56,130`).
+- The about page hard-codes `margin: -4rem -1.5rem 0` (`about-lovely-sunday.astro:81`) to cancel `.site-main` padding. But the top padding is `clamp(2.5rem,5vw,5rem)`, not 4rem, so the cancel is only right at one viewport width.
+
+**Media-query breakpoints actually used** (none from vars):
+- 900px: `layout.css`, `post-card.css`, `legacy-page.css:215`
+- 800px: `grid.css`, `ghost.css`, `legacy-gallery.css`, about page
+- 700px: `site-shell.css:255`
+- 640px: `legacy-page.css:238`, `InstagramGrid.astro`
+- 600px: `grid.css`
+- 500px: `global.css`, `content.css`
+- 720px min-width: `InstagramFeed.astro`
+
+**Likely bug in `.post-content-image`**
+- `content.css:148-156` sets `width: 75vw; min-width: 100%; margin-left/right: calc(50% - 50vw); transform: translateX(calc(50vw - 50%))`.
+- The override at `content.css:396-399` resets `margin: 0 auto 2.4rem; max-width: 62rem` but **leaves the `transform` and `width: 75vw` in place**.
+- With the negative margins gone, the translateX probably pushes the image off-center on wide screens.
+- It's used by `ImageBlock` inside `PostLayout` (work, news and sold pages). Check this visually.
+
+## 3. Animations
+
+**`animations.css`**
+- Lines 5–10, `.transition-fade` (the Swup `#swup` wrapper in `Layout.astro:173`): `transition: 0.25s` (all properties), `animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards`, `transform: translate3d(0, 4vh, 0)`.
+- Lines 12–19, Swup states: `html.is-changing` gives `transition: opacity 0.24s ease`; `html.is-animating` gives `opacity: 0`.
+- Lines 21–28: `@keyframes slideUp` animates from `translate3d(0,4vh,0)` to 0.
+- Lines 31–44, post-card scroll reveal: `.post-card { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16,1,0.3,1) }`, `.is-visible` resets both, and there is a stagger of `nth-child(2)` 0.1s and `nth-child(3)` 0.2s only.
+- Lines 46–52: reduced-motion handling covers **only `.post-card`**.
+- **No reduced-motion handling for `.transition-fade` / `slideUp`**, which runs on every page load.
+
+**Other keyframes**
+- `site-shell.css:242-246` `footer-logo-write` (stroke-dashoffset 2800 → 0).
+- Used at line 159 with `5.8s cubic-bezier(0.67, 0.01, 0.38, 0.98)` and path stagger of 0.3/0.6/0.9/1.2s (lines 162–176).
+- Reduced motion is handled at lines 249–254.
+
+**JS IntersectionObserver: yes, one exists** (`Layout.astro:196-215`, `is:inline`).
+- It bails if `prefers-reduced-motion: reduce` matches (line 199).
+- It observes `.post-card` with `threshold: 0.1, rootMargin: '0px 0px -40px 0px'`, adds `is-visible`, then unobserves.
+- **It runs once on first load and does not re-run on Swup page swaps** (the Swup init is at lines 182–194 with no hooks). Any `.post-card` reached through Swup navigation would stay at opacity 0.
+- With JS off, cards also stay at opacity 0.
+- In practice no live route renders `.post-card` right now.
+
+**Other reveal CSS with no JS behind it**
+- `legacy-gallery.css:22-33` defines `.is-visible` for `.sqs-gallery-design-autocolumns-slide` (opacity 0, `translate3d(0,14px,0)`, `0.6s ease-out`). No JS targets it, and the file isn't loaded.
+- `scripts/ci/capture-screenshots.mjs:81-85` force-adds `is-visible` for screenshots.
+- `.legacy-page-frame` (the live gallery) has **no reveal at all**.
+
+## 4. Typography
+
+Remember 1rem = 10px throughout.
+
+**Body**
+- `global.css:262-277`: system sans stack (`-apple-system, …`), `1.5rem`, `line-height: 1.6em`.
+- `global.css:115` sets `html { font-family: sans-serif }`.
+- `layout.css:5` overrides the body to `var(--font-serif)`, and `site-shell.css:17` sets serif again on `.site-wrapper`, which is the `&lt;body&gt;` class. So the effective font is serif, set in three places.
+
+**Heading base (`global.css:356-431`)**
+- All headings: `font-family: var(--font-display)`, `line-height: 1.4`, `font-weight: 400`.
+
+| Tag | Size | Mobile (≤500px) | Weight | Letter-spacing | Margin |
+|---|---|---|---|---|---|
+| h1 (369–379) | `5.7rem` | `3rem` | 300 | `0.04em` | `0 0 .5em` |
+| h2 (381–391) | `4rem` | `2.7rem` | 300 | `0.03em` | `1.5em 0 .5em` |
+| h3 (393–401) | `3.2rem` | `2rem` | 400 | none | `1.5em 0 1em` |
+| h4 | `2.6rem` | `1.8rem` | 400 | none | |
+| h5 | `2.4rem` | `1.6rem` | 400 | none | |
+| h6 | `2.2rem` | `1.4rem` | 400 | none | |
+
+The reset at `global.css:141-144` (`h1 { font-size: 2em }`) is dead because it's overridden.
+
+**Competing h1 definitions**
+- `legacy-page.css:33-40`: `clamp(2.4rem, 5vw, 4.6rem)`, `line-height: 0.95`, weight 400, `letter-spacing: 0.01em`.
+- `legacy-page.css:78-83` (home): `clamp(4.4rem, 7.5vw, 8rem)`, `line-height: 0.82`, `letter-spacing: -0.025em`, `max-width: 10ch`. At ≤640px (line 240): `clamp(4rem, 16vw, 5.8rem)`.
+- `content.css:46-52` `.error-head h1`: `7rem`, `line-height: 1.1em`, weight `var(--font-heavy)` (800, which Cormorant doesn't load, so the browser fakes the bold), `letter-spacing: 10px`.
+- `about-lovely-sunday.astro:117-119`: `clamp(1.8rem, 3vw, 2.6rem)` = 18–26px, weight 400. That is smaller than the global h3.
+
+**Competing `.page-head-title`**
+- `content.css:68-80`: `4.2rem`, weight 300, `0.04em`, and `2rem` at ≤500px.
+- `layout.css:36-42`: `clamp(3.6rem, 4vw, 5.4rem)`, `line-height: 1.1`. This wins because `layout.css` loads later, and the 500px `2rem` rule from `content.css` still applies on mobile.
+
+**Competing h2 definitions**
+- Global: `4rem`, weight 300.
+- `InstagramGrid.astro:43-44`: `clamp(2.4rem, 4vw, 4rem)`, weight 400, `line-height: 1`.
+- `InstagramFeed.astro:60-61`: `clamp(1.4rem, 1.1rem + 1vw, 2rem)`, weight **500** (not loaded).
+- About page line 124: `1.35rem` (13.5px), weight **500**.
+- `.post-card-title` (an h2, `post-card.css:38-49`): `1.4rem`, sans, uppercase, `letter-spacing: 0.08em`, weight 300, opacity 0.7. At ≤900px it becomes `1.5rem`, so it is larger on mobile.
+
+**Body text sizes vary widely**
+- `.post-content-body` is defined twice: `content.css:167-170` has `1.9rem / 1.65em` (1.7rem mobile), and `content.css:406-410` has `2rem / line-height 1.9`, which wins.
+- `.legacy-page p` (`legacy-page.css:44-45`): **`1.02rem` = 10.2px**, `line-height: 1.75`.
+- Legacy home copy (line 88): `clamp(1rem, 1.4vw, 1.2rem)` = 10–12px.
+- About `p` (line 138): `1rem` = 10px.
+- These values look written for a 16px root. Legacy page body copy is about half the size of work/news post body text (20px).
+
+**Other text sizes (also 10px-root)**
+- Nav links (`site-shell.css:83`): `1rem` = 10px, and `0.9rem` = 9px on mobile (line 280).
+- Footer bio (line 202): `0.95rem` = 9.5px.
+- Footer brand (line 194): `1.2rem`.
+- Legacy eyebrow (`legacy-page.css:27`): `1rem`.
+- InstagramFeed link (line 66): `0.95rem`.
+
+**Excerpt, defined twice**
+- `content.css:134-146`: `2.2rem`, `line-height: 1.6em`, opacity 0.5, `margin: -2vw 0 3vw`.
+- `content.css:385-394`: `2.2rem`, `line-height: 1.4`, opacity 0.8, display italic, `margin: 0 0 2.2rem`.
+
+**Letter-spacing on uppercase sans labels**
+
+| Element | Value |
+|---|---|
+| Nav (`site-shell.css:84`) | `0.13em` |
+| Footer nav (`site-shell.css:223`) | `0.12em` |
+| Buttons (`buttons.css:22`) | `0.1em` |
+| Post card (`post-card.css:43`) | `0.08em` |
+| Legacy eyebrow (`legacy-page.css:28`) | `0.24em` |
+| Legacy link pills (`legacy-page.css:156`) | `0.04em` |
+| Footer bio (`site-shell.css:204`) | `0.035em` |
+| Footer brand (`site-shell.css:193`) | `0.06em` |
+
+## 5. Hover states and transitions
+
+| File:line | Property / duration / easing | Hover effect |
+|---|---|---|
+| `buttons.css:25` | `transition: 0.4s ease` (all props) | none |
+| `buttons.css:82-91` | `transition: 0.2s ease` | `color: var(--color-accent) !important`, `box-shadow: inset 0 0 0 1px accent`; bg stays `--color-base` |
+| `buttons.css:104-113` `.primary` | inherits 0.4s / 0.2s | inverts: `color: var(--color-bg)`, `background: var(--color-base)`, 1px base border |
+| `global.css:344-354` `a` | `color 0.4s ease`, hover `color 0.2s ease` | accent + underline |
+| `site-shell.css:90` nav, `:230` footer nav | `opacity 0.3s ease, color 0.3s ease` | opacity 0.6 or 0.68 → 1, accent |
+| `site-shell.css:103` nav underline | `transform 0.25s ease` | `scaleX(0 → 1)`, origin swaps right → left |
+| `post-card.css:26` | `transform 0.6s cubic-bezier(0.16,1,0.3,1)` | image `scale(1.02)` |
+| `post-card.css:48` | `opacity 0.3s ease` | title 0.7 → 1 |
+| `legacy-page.css:157-160` | border-color, color, transform, all `0.25s ease` | accent + `translateY(-1px)` |
+| `legacy-gallery.css:24-26` (dead) | opacity, transform `0.6s ease-out` | reveal only |
+| `InstagramGrid.astro:72` | `transform 180ms ease` | `scale(1.03)` |
+| `InstagramFeed.astro:86` | `transform 220ms ease` | `scale(1.03)` |
+| `content.css:311`, `:428` post-nav / post-link | none | underline only |
+| `content.css:341` author links | none | opacity 0.4 → 1, instant |
+| `hamburger.css` (unused) | 0.15s linear/ease, several cubic-beziers | n/a |
+
+- `actions.css`, `lists.css` and `ghost.css` have **no hover or transition rules**.
+
+**Inconsistencies**
+- Durations in use: 0.15, 0.18, 0.2, 0.22, 0.24, 0.25, 0.3, 0.4, 0.6, 0.9 and 5.8s.
+- Easings in use: `ease`, `ease-out`, `linear`, `cubic-bezier(0.16,1,0.3,1)`, `cubic-bezier(0.075,0.82,0.165,1)`, `cubic-bezier(0.67,0.01,0.38,0.98)`.
+- Image zoom is `1.02` on cards but `1.03` on Instagram.
+- Reveal distance is `20px` on cards, `14px` on the gallery, and `4vh` on the page transition.
+- Buttons and links use a slow-out/fast-in pattern (0.4s off, 0.2s on); nothing else does.
+- `buttons.css:4-8` styles **every** `&lt;button&gt;` globally (dark fill, white uppercase text, `4rem` tall). That hits `AnnouncementBar.astro:13` and the dev bar, and the about page has to re-override it (`about-lovely-sunday.astro` `button` rule).
+- `.post-link` is defined in both `buttons.css:115-121` (`padding-top: 1.5rem`) and `content.css:296-301` and `:416-420` (`padding-top: 2rem` wins).
+- `.post-link a { font-size: 1.7rem !important }` (`content.css:423`) overrides `.post-nav-link` at `2rem` (`content.css:307`).
+
+## 6. Magic numbers (no spacing scale exists; only `--margin: 2rem` / `--height: 4rem`)
+
+**`content.css`**
+- Line 36: `padding: 13vw 0`
+- Line 51: `letter-spacing: 10px`
+- Line 84: `margin: 0 0 1.6vw`
+- Line 114: `padding: 3vw 0`
+- Line 129: `margin: 0 0 3vw`
+- Line 135: `margin: -2vw 0 3vw`
+- Line 149: `margin: 4vw 0`
+- Line 159: `2vw 0`
+- Line 217: `padding: 0 5px 2px`
+- Line 222: `border-radius: 3px`
+- Line 232: `padding: 20px`
+- Line 239: `border-radius: 5px`
+- Line 258: `margin: 4vw 0`
+- Lines 264–269: hr diamond `top: -15px; margin-left: -10px; width: 0px; height: 30px`. `width: 0` likely makes the diamond invisible.
+- Line 276: `30px`
+- Line 322: `10px`
+- Line 330: `20px`
+- Line 336: `0 12px`
+- Line 348: `0 3px`
+- Line 389: `2.2rem`
+- Line 397: `2.4rem`
+- Lines 373, 375, 377: `border-radius: 10px`. Line 377 applies it to **every `img`**.
+
+**`layout.css`**
+- Line 9: `1.5rem`, `clamp(2.5rem,5vw,5rem)`, `clamp(4rem,8vw,7rem)`
+- Line 19: `gap: 2rem`
+- Line 32: `3rem`
+- Line 46: `3rem`
+- Line 51: `1.8rem`
+
+**`site-shell.css`**
+- Line 61: `gap: clamp(2rem,5vw,6rem)`
+- Line 73: `clamp(1.2rem,3vw,2.6rem)`
+- Lines 80, 221: `44px`
+- Line 98: `0.55rem`
+- Line 122: `outline-offset: 4px` (global `:focus-visible` at `global.css:284-287` uses `2px`)
+- Line 130: `3rem … 4rem`
+- Line 149: `820px`
+- Line 185: `0.8rem`
+- Line 200: `clamp(1rem,4vw,4rem)`
+- Line 214: `1.5rem`
+- Lines 259–260: `0.35rem`, `0.65rem`
+- Line 268: `11rem`
+- Line 285: `2.2rem`
+
+**`post-card.css`**
+- Line 34: `1.5rem`
+- Line 65: `2.8rem`
+
+**`legacy-page.css`**
+- Line 5: `clamp(2rem,4vw,3.5rem)`
+- Line 11: `clamp(1.5rem,3vw,3rem)`
+- Line 16: `minmax(280px, 34rem)`
+- Line 68: `min(680px, calc(100vh - var(--header-height) - 7rem))`
+- Line 69: `minmax(340px,1.18fr)`
+- Line 93: `34rem`
+- Line 100: `border-radius: 14rem 14rem 1.25rem 1.25rem`
+- Line 105: `clamp(-5rem,-5vw,-2rem)`
+- Line 117: `1.4rem`
+- Line 122: `clamp(0.65rem,1.2vw,1rem)`
+- Line 145: `0.85rem`
+- Line 150: `1rem 1.1rem`
+- Line 152: `999px`
+- Line 172: `clamp(10px,1.25vw,18px)` (px, unlike the rem values nearby)
+- Line 207: `clamp(0.6rem,1vw,1.25rem)`
+- Line 230: `28rem`
+- Line 234: `-1rem`
+- Line 254: `24rem`
+
+**`legacy-gallery.css`**
+- Line 4: `clamp(14px,2.2vw,30px)`
+- Line 10: `clamp(12px,1.5vw,20px)`
+- Line 53: `14px`
+
+**`ghost.css`**
+- Line 5: `7vw`
+- Line 21: `1.5rem`
+- Line 59: `6vw`
+- Lines 88, 92: `0.75em`
+- Line 99: `calc(-7vw + 0.75em)`
+
+**`global.css`**
+- Line 293: hr `2.5em 0 3.5em`
+- Line 316: `1.6em`
+
+**Border radii** (`--radius` is `0.2rem`)
+- `--radius` is used by `post-card.css:14`, buttons and forms.
+- Elsewhere: `10px` on all images, `1.25rem` legacy (`legacy-page.css:59`), `0.8rem` Instagram (`InstagramGrid.astro:63`), `999px` pills, `14rem` arch.
+
+**Broken declarations**
+- `forms.css:19`: `margin: 0 0 (var(--margin) * 0.5) 0;` has no `calc()`, so it is invalid and dropped.
+- `actions.css:58`: `@media (max-width: var(--xsmall))` is invalid and never applies.
+
+## 7. Legacy pages compared with the rest of the site
+
+`legacy-page.css` styles the homepage, the catch-all `[...slug]` pages and the lookbook pages. Its visual language is very different from `content.css`/`global.css`, which drive the work, news, sold and contact pages through `PostLayout`:
+
+- **Headings**
+  - Legacy h1 is tight: `line-height: 0.95` / `0.82`, weight 400, negative tracking `-0.025em` on home.
+  - Global h1 is `line-height: 1.4`, weight 300, `+0.04em`.
+- **Body copy**
+  - Legacy is `1.02rem` (≈10px), `line-height: 1.75`, `max-width: 68ch`.
+  - Posts are `2rem` (20px), `line-height: 1.9`.
+  - Legacy home copy is dimmed with `color-mix(... 68%, transparent)` (line 87); posts use opacity instead.
+- **Corners**
+  - Legacy uses soft `1.25rem` radii, an arched hero `14rem 14rem 1.25rem 1.25rem` (line 100), pill links `999px`, and a hero image filter `saturate(0.88) contrast(1.02)` (line 101).
+  - The new pages use `--radius: 0.2rem` on cards and `10px` on images.
+- **Links**
+  - Legacy uses bordered pill buttons (lines 148–167, lift `-1px`, 0.25s).
+  - Elsewhere, buttons are solid dark uppercase rectangles (`buttons.css`), and nav is underline-grow (`site-shell.css`).
+- **Eyebrow**
+  - Legacy has a `letter-spacing: 0.24em` accent-colored eyebrow (lines 24–31). Nothing else on the site uses this pattern.
+- **Widths**
+  - Legacy content is `1180px`, and the legacy gallery breaks out to `min(calc(100vw - 3rem), 1440px)` (line 176).
+  - The header and footer are `1320px`, posts are `740px`, and InstagramFeed is `1120px`. So on wide screens the gallery is wider than the header container, and the content column is narrower than it.
+- **Gallery grids**
+  - Home uses a 12-column grid with span 4/8 (lines 120–132, gap `clamp(0.65rem,1.2vw,1rem)`).
+  - Gallery pages use 2 columns with full/half spans (lines 169–204, gap `clamp(10px,1.25vw,18px)`).
+  - Neither uses `grid.css` or `.post-feed`.
+- **Breakpoints:** legacy uses 900 and 640; most other files use 800, 700 or 500.
+- **Motion:** legacy has no reveal on `.legacy-page-frame`. `legacy-gallery.css` had one for the old Squarespace markup, but it's unloaded.
+
+Net result: the live homepage and legacy pages read as a soft, rounded, editorial design with tiny body text. The work and news post pages read as a boxier layout with large body text from the older theme. Header and footer are shared, but their `1320px` container matches neither.</result>
+<usage><subagent_tokens>92564</subagent_tokens><tool_uses>19</tool_uses><duration_ms>218043</duration_ms></usage>
+</task-notification>
+
+---
+
+None of the findings files rendered. Create 3 full page screenshots and detail screenshots for the difference review recommendations
+
+---
+
+Implement all of them and give me a toggle on the web preview to switch between them until I can decide on a winner
+
+---
+
+run preview
+
+---
+
+All 3 - integrate them directly into the site, refactor for clean code, remove the toggles, On the homepage, run a subagent to complete another redesign, replace the photo in the homepage hero with a gallery of MY photos, modify the homepage post list to show the main image, title, and a 3 smaller images per post, in a responsive layout.
+
+---
+
+<task-notification>
+<task-id>a088d3dec8bd0e3e3</task-id>
+<tool-use-id>REDACTED</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-manikrathee-conductor-workspaces-lovely-sunday-barcelona-v2/4f2cc4a1-7a12-402b-b986-bdcff578f9f1/tasks/a088d3dec8bd0e3e3.output</output-file>
+<status>completed</status>
+<summary>Agent "Redesign homepage hero and post list" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>## Report: homepage redesign
+
+### Files (all within the allowed boundaries)
+- `/Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/src/pages/index.astro` — rewritten; uses `Layout` directly, keeps `title`/`description`, passes `seo={{ image: heroPhotos[0].src, pageType: "collection" }}`.
+- `/Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/src/lib/home.ts` — new; post + hero selection, CDN `srcset` helpers.
+- `/Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/src/components/home/HomeHero.astro`, `HomePostList.astro`, `HomePostCard.astro` — new.
+- `/Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/src/styles/components/home.css` — new; all styles in one place, tokens only, role classes `.eyebrow/.lead/.pill/.section-title` from `global.css`.
+- Nothing in the forbidden list was touched.
+
+### Selection logic (`home.ts`)
+- **Posts**: `view.kind === "gallery"`, ≥4 images, minus `//` duplicates, "LovelySunday" 404 captures, utility routes, `/lookbook/tag/*`. Two extra filters were needed after inspecting the actual images: (1) lookbook captures drag sidebar images from other posts into their gallery, so an image appearing on several pages is kept only on the page that leads with it; (2) frames with a short side &lt; 600px (product cut-outs like "Balmain Blazer $2430") are dropped. Titles have " from Lookbook" stripped. Result: **18 eligible shoots, 12 shown** (`getHomePosts(12)`), owner-named shoots first then capture-manifest order. Each card = main image + 3 thumbs + eyebrow + title; filename-style alts are replaced with "Title, photo N".
+- **Hero**: 5 photos, one per post, orientation-matched to the mosaic cells (3 portrait, 2 landscape): Purple &amp; Lace, Flower Crowns in Bora Bora, Lavender Dreams in Paris, Sunset in a Wheat Field, Exploring a German Castle. The hero prefers frames the cards don't show so the hero and the first row don't repeat. One explicit curation entry (`HERO_PREFERRED_FRAME`) picks Purple &amp; Lace photo 8 over an automatic handbag detail shot.
+- **Important finding**: of the lookbook pages the owner listed, `/lookbook/balmain-blazer` is a press collage (Alexa Chung) and `/lookbook/oh-my-pearls` is a shopping collage; `dresses-over-denim`, `kate-spade-pink-feather-clutch`, `looks/beretrainbow`, `looks/nord-sale-16`, `what-is-your-passion` are also pins/product images. I verified each visually and excluded all seven via a commented `NOT_OWN_PHOTOGRAPHY` set. Only `/lookbook/ysl-studio-paris-france` is real photography and is included.
+- Images use Squarespace `?format=Nw` renditions with `srcset`/`sizes` (hero 500–1500w, mains 500–1000w, thumbs 300–500w); the 2500×3750 originals were 640KB each. All 53 URLs HEAD-checked: 200.
+
+### Responsive layout
+- **1440**: hero is a 5/7 split — copy left, 4:3 mosaic right on an 8×6 grid (large portrait, wide landscape, small portrait, square, small landscape). Post list 3 columns; everything on the 118rem container at x=130.
+- **768**: hero stacks (copy, then full-width mosaic); list 2 columns.
+- **390**: mosaic becomes 2 columns with per-cell aspect ratios (two portraits, full-width landscape, two squares); pills stack full-width; list 1 column.
+- `data-reveal` on hero copy children, each hero photo, each card, and the section header. Hover: `scale(var(--hover-scale))` on linked media over `--dur-slow`; title tints to accent. One tab stop per card (stretched title link).
+
+### Screenshots
+`/Users/manikrathee/conductor/workspaces/lovely-sunday/barcelona-v2/.context/home-redesign/home-1440.png`, `home-768.png`, `home-390.png`, plus `home-1440-row3-viewport.png`. Note: a few main images appear blank in the tall full-page captures; this is a Chromium full-page decode artifact — the browser reported every image `complete` with a natural width, and the viewport capture of that row shows them rendered.
+
+### Build
+`npm run build` passes: 69 pages, parity gate (55 routes, 1 h1, `&lt;main&gt;`, no `sqs-`), gallery-orientation check, built-site validation.
+
+### Not done / outside boundaries
+- The Instagram section renders zero cards in both dev and the built `dist/index.html` because `getInstagramPosts` returns `[]` (it scrapes Instagram's web API and gets nothing here). The component is wired exactly as before; this predates my change and lives in `src/lib/instagram.ts`, which I did not edit.
+- `InstagramGrid.astro` still uses hard-coded `1180px`/rem values and its own top margin instead of tokens; I placed it after `.home` so its own margin governs, but harmonising it is in the other engineer's territory.</result>
+<usage><subagent_tokens>187535</subagent_tokens><tool_uses>68</tool_uses><duration_ms>881178</duration_ms></usage>
+</task-notification>
+
+---
+
+create PR
