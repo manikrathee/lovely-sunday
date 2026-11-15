@@ -16,7 +16,7 @@ const thumbnail = post.data?.thumbnail;
 const title = post.data?.title || "Untitled";
 ---
 
-<article class={`post-card ${thumbnail ? 'with-image' : 'no-image'} post`}>
+<article class={`post-card ${thumbnail ? 'with-image' : 'no-image'} post`} data-reveal>
   <a href={`/${slug}/`} class="post-card-link">
     {thumbnail && (
       <div class="post-card-image-wrap">
@@ -25,7 +25,7 @@ const title = post.data?.title || "Untitled";
     )}
 
     <div class="post-card-content">
-      <h2 class="post-card-title">{title}</h2>
+      <h2 class="post-card-title label">{title}</h2>
     </div>
   </a>
 </article>

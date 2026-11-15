@@ -21,17 +21,75 @@
     --font-bold: 700;
     --font-heavy: 800;
 
-    /* Breakpoints */
+    /* Breakpoints (reference only; custom properties cannot be used inside @media) */
     --xlarge: 1680px;
     --large: 1280px;
     --medium: 980px;
     --small: 740px;
     --xsmall: 480px;
 
-    /* Sizes */
+    /* Legacy sizes (kept for the Clay/Ghost layer) */
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.2rem;
+
+    /* ------------------------------------------------------ */
+    /* Design tokens. NOTE: html { font-size: 62.5% } → 1rem = 10px */
+    /* ------------------------------------------------------ */
+
+    /* Spacing */
+    --space-1: 0.4rem;
+    --space-2: 0.8rem;
+    --space-3: 1.2rem;
+    --space-4: 1.6rem;
+    --space-5: 2.4rem;
+    --space-6: 3.2rem;
+    --space-7: 4.8rem;
+    --space-8: 6.4rem;
+    --space-9: 9.6rem;
+    --section-gap: clamp(4.8rem, 8vw, 9.6rem);
+    --block-gap: clamp(2.4rem, 4vw, 4rem);
+    --grid-gap: clamp(1rem, 1.25vw, 1.8rem);
+
+    /* Type scale (fluid) */
+    --text-xs: 1.1rem;
+    --text-sm: 1.4rem;
+    --text-md: clamp(1.6rem, 1.5rem + 0.25vw, 1.8rem);
+    --text-lg: clamp(1.8rem, 1.6rem + 0.5vw, 2.1rem);
+    --text-xl: clamp(2.2rem, 1.8rem + 1vw, 2.8rem);
+    --text-2xl: clamp(2.8rem, 2rem + 2vw, 4rem);
+    --text-3xl: clamp(3.6rem, 2.4rem + 3vw, 5.4rem);
+    --text-display: clamp(4.4rem, 2.8rem + 5.5vw, 8rem);
+    --leading-tight: 1.02;
+    --leading-snug: 1.2;
+    --leading-body: 1.7;
+    --tracking-label: 0.18em;
+    --tracking-display: -0.02em;
+
+    /* Containers */
+    --container: 118rem;
+    --container-wide: 144rem;
+    --container-prose: 72rem;
+    --gutter: clamp(1.6rem, 3vw, 3.2rem);
+
+    /* Radii */
+    --radius-sm: 0.4rem;
+    --radius-md: 0.8rem;
+    --radius-lg: 1.2rem;
+    --radius-pill: 999px;
+
+    /* Motion */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --dur-fast: 180ms;
+    --dur-base: 320ms;
+    --dur-slow: 700ms;
+    --reveal-duration: 600ms;
+    --reveal-distance: 12px;
+    --hover-scale: 1.02;
+
+    /* Layers */
+    --z-header: 20;
+    --z-toggle: 2147482000;
 
 }
 

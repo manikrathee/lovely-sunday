@@ -18,17 +18,17 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
   seo={{ pageType: "profile", image: heroImage.src }}
 >
   <article class="about-page">
-    <img class="hero" src={heroImage.src} alt={heroImage.alt ?? ""} />
+    <img class="hero" src={heroImage.src} alt={heroImage.alt ?? ""} data-reveal />
 
     <div class="about-inner">
-      <div class="brand">
+      <div class="brand" data-reveal>
         <img src={logoImage.src} alt={logoImage.alt ?? "LovelySunday"} />
       </div>
 
       <div class="content-grid">
-        <section>
+        <section data-reveal>
           <h1>The girl behind Lovely Sunday</h1>
-          <h2>Welcome to LovelySunday</h2>
+          <h2 class="section-title">Welcome to LovelySunday</h2>
 
           <p>Hi, I'm Aileen.</p>
           <p>
@@ -50,20 +50,20 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
         </section>
 
         <aside>
-          <section class="panel">
-            <h3>Meet Aileen</h3>
+          <section class="panel" data-reveal>
+            <h3 class="label">Meet Aileen</h3>
             <img class="profile" src={profileImage.src} alt={profileImage.alt ?? ""} />
           </section>
 
-          <section class="panel">
-            <h2>Subscribe to LovelySunday</h2>
+          <section class="panel" data-reveal>
+            <h3 class="label">Subscribe to LovelySunday</h3>
             <p>Get updates on new looks and posts!</p>
             <input type="email" placeholder="Email Address" aria-label="Email Address" />
             <button type="button">Sign Up</button>
           </section>
 
-          <section class="panel">
-            <h3>Contact Me</h3>
+          <section class="panel" data-reveal>
+            <h3 class="label">Contact Me</h3>
             <p>Explore looks, style and fun travel recommendations</p>
           </section>
         </aside>
@@ -78,100 +78,89 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
 
 <style>
   .about-page {
-    margin: -4rem -1.5rem 0;
-    background: var(--color-bg);
-    color: var(--color-base);
-    font-family: var(--font-serif);
+    width: min(100%, var(--container));
+    margin: 0 auto;
   }
 
   .hero {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
     display: block;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-subtle);
   }
 
   .about-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1.2rem 4rem;
+    padding: var(--block-gap) 0 0;
   }
 
   .brand {
+    margin: 0 0 var(--block-gap);
     text-align: center;
-    margin: 1rem 0 2.5rem;
   }
 
   .brand img {
-    width: min(420px, 90%);
+    width: min(100%, 420px);
   }
 
   .content-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 2.5rem;
+    gap: var(--block-gap);
     align-items: start;
   }
 
-  h1 {
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
-    margin: 0 0 1.25rem;
-    font-weight: 400;
+  .about-page section > h1 {
+    margin-bottom: var(--space-4);
   }
 
-  h2 {
-    margin: 1.6rem 0 0.9rem;
-    font-size: 1.35rem;
-    font-weight: 500;
+  .about-page section > h2 {
+    margin-bottom: var(--space-4);
   }
 
-  h3 {
-    margin: 1.6rem 0 0.9rem;
-    font-size: 1.1rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  p {
-    margin: 0 0 1rem;
-    line-height: 1.7;
-    font-size: 1rem;
+  .about-page p {
+    margin: 0 0 var(--space-4);
+    max-width: 62ch;
   }
 
   .panel {
+    padding: var(--space-5);
+    margin-bottom: var(--space-4);
     border: 1px solid var(--color-border);
-    padding: 1.2rem;
-    margin-bottom: 1.2rem;
+    border-radius: var(--radius-md);
     background: var(--color-bg-subtle);
   }
 
+  .panel h3 {
+    margin: 0 0 var(--space-3);
+  }
+
+  .panel p:last-child {
+    margin-bottom: 0;
+  }
+
   .profile {
-    width: 100%;
     display: block;
-    margin: 1rem 0 0;
+    width: 100%;
+    margin-top: var(--space-3);
+    border-radius: var(--radius-md);
   }
 
   input,
   button {
     width: 100%;
-    font: inherit;
-    box-sizing: border-box;
+    margin-top: var(--space-3);
+    font-size: var(--text-sm);
   }
 
   input {
-    padding: 0.7rem 0.8rem;
-    margin-top: 0.5rem;
+    padding: 0 var(--space-3);
+    height: var(--height);
     border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
     background: var(--color-bg);
-  }
-
-  button {
-    margin-top: 0.75rem;
-    background: var(--color-base);
-    color: var(--color-bg);
-    border: 0;
-    padding: 0.75rem;
-    cursor: pointer;
+    color: inherit;
   }
 
   .hidden-media {
@@ -179,16 +168,8 @@ const [heroImage, logoImage, profileImage, ...hiddenImages] = images;
   }
 
   @media (max-width: 800px) {
-    .about-page {
-      margin-top: -3rem;
-    }
-
     .content-grid {
       grid-template-columns: 1fr;
-    }
-
-    .about-inner {
-      padding-top: 1rem;
     }
   }
 </style>

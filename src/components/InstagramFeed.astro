@@ -23,16 +23,16 @@ const relevantMedia = getRelevantInstagramMedia(media, { title, description, slu
 
 {relevantMedia.length > 0 && (
   <section class="instagram-feed" aria-label="Latest Instagram photos from @lovelysunday">
-    <div class="instagram-feed-header">
-      <h2>{heading}</h2>
-      <a href="https://www.instagram.com/_lovelysunday/" target="_blank" rel="noreferrer noopener">
+    <div class="instagram-feed-header" data-reveal>
+      <h2 class="section-title">{heading}</h2>
+      <a class="label" href="https://www.instagram.com/_lovelysunday/" target="_blank" rel="noreferrer noopener">
         @_lovelysunday
       </a>
     </div>
 
-    <div class="instagram-grid">
+    <div class="instagram-feed__items">
       {relevantMedia.map((item) => (
-        <a class="instagram-card" href={item.permalink} target="_blank" rel="noreferrer noopener">
+        <a class="instagram-card" href={item.permalink} target="_blank" rel="noreferrer noopener" data-reveal>
           <img src={item.thumbnailUrl} alt={item.caption || "Instagram post by @lovelysunday"} loading="lazy" />
         </a>
       ))}
@@ -42,57 +42,62 @@ const relevantMedia = getRelevantInstagramMedia(media, { title, description, slu
 
 <style>
   .instagram-feed {
-    margin: 3rem auto 0;
-    max-width: 1120px;
-    padding: 0 1rem 2rem;
+    width: min(100%, var(--container-prose));
+    margin: var(--section-gap) auto 0;
   }
 
   .instagram-feed-header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
   }
 
   .instagram-feed-header h2 {
     margin: 0;
-    font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
-    font-weight: 500;
   }
 
   .instagram-feed-header a {
     color: inherit;
-    font-size: 0.95rem;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
-  .instagram-grid {
+  .instagram-feed__items {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+    gap: var(--grid-gap);
   }
 
   .instagram-card {
     aspect-ratio: 1;
     overflow: hidden;
     display: block;
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-subtle);
   }
 
   .instagram-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 220ms ease;
+    transition: transform var(--dur-slow) var(--ease-out);
   }
 
-  .instagram-card:hover img {
-    transform: scale(1.03);
+  .instagram-card:hover img,
+  .instagram-card:focus-visible img {
+    transform: scale(var(--hover-scale));
   }
 
   @media (min-width: 720px) {
-    .instagram-grid {
+    .instagram-feed__items {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .instagram-card img {
+      transition: none;
     }
   }
 </style>

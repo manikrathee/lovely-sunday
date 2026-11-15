@@ -1,14 +1,20 @@
+/* Legacy pages (home, lookbook, diary, looks)
+/* Rendered by src/components/LegacyHtmlPage.astro from captured data.
+/* ---------------------------------------------------------- */
+
 .legacy-page {
-  width: min(100%, 1180px);
+  width: min(100%, var(--container));
   margin: 0 auto;
   display: grid;
-  gap: clamp(2rem, 4vw, 3.5rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
+  gap: var(--section-gap);
 }
+
+/* Hero
+/* ---------------------------------------------------------- */
 
 .legacy-page-hero {
   display: grid;
-  gap: clamp(1.5rem, 3vw, 3rem);
+  gap: var(--block-gap);
   align-items: start;
 }
 
@@ -18,37 +24,51 @@
 
 .legacy-page-copy {
   display: grid;
-  gap: 1rem;
-}
-
-.legacy-page-eyebrow {
-  margin: 0;
-  font-family: var(--font-sans-serif);
-  font-size: 1rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--color-accent);
+  gap: var(--space-4);
 }
 
 .legacy-page h1 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5vw, 4.6rem);
-  line-height: 0.95;
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
 
 .legacy-page p {
   margin: 0;
-  font-size: 1.02rem;
-  line-height: 1.75;
-  max-width: 68ch;
+  font-size: var(--text-md);
+  line-height: var(--leading-body);
+  max-width: 62ch;
 }
+
+.legacy-page-copy > p.lead {
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  max-width: 48ch;
+  color: color-mix(in srgb, var(--color-base) 78%, transparent);
+}
+
+/* `.legacy-page p` outranks `.eyebrow`, so restate the label spec here */
+.legacy-page p.legacy-page-eyebrow {
+  max-width: none;
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-xs);
+  line-height: 1.2;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Media: radius lives on the container so hover zoom keeps its corners */
 
 .legacy-page-hero-media,
 .legacy-page-frame {
   margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-subtle);
 }
 
 .legacy-page-hero-media img,
@@ -56,85 +76,15 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 1.25rem;
-  background: var(--color-bg-subtle);
+  transition: transform var(--dur-slow) var(--ease-out);
 }
 
-.legacy-page--home {
-  gap: clamp(3rem, 7vw, 6rem);
+.legacy-page-frame:hover img {
+  transform: scale(1.01);
 }
 
-.legacy-page--home .legacy-page-hero {
-  min-height: min(680px, calc(100vh - var(--header-height) - 7rem));
-  grid-template-columns: minmax(0, 0.82fr) minmax(340px, 1.18fr);
-  align-items: center;
-}
-
-.legacy-page--home .legacy-page-copy {
-  gap: clamp(1rem, 2vw, 1.5rem);
-  padding-right: clamp(0rem, 4vw, 4rem);
-}
-
-.legacy-page--home h1 {
-  max-width: 10ch;
-  font-size: clamp(4.4rem, 7.5vw, 8rem);
-  line-height: 0.82;
-  letter-spacing: -0.025em;
-}
-
-.legacy-page--home .legacy-page-copy > p:not(.legacy-page-eyebrow) {
-  max-width: 40ch;
-  color: color-mix(in srgb, var(--color-base) 68%, transparent);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-}
-
-.legacy-page--home .legacy-page-hero-media {
-  align-self: stretch;
-  min-height: 34rem;
-}
-
-.legacy-page--home .legacy-page-hero-media img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  border-radius: 14rem 14rem 1.25rem 1.25rem;
-  filter: saturate(0.88) contrast(1.02);
-}
-
-.legacy-page--home .legacy-page-links {
-  margin-top: clamp(-5rem, -5vw, -2rem);
-}
-
-.legacy-page--home .legacy-page-links ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.legacy-page--home .legacy-page-links a {
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  padding-inline: 1.4rem;
-}
-
-.legacy-page--home .legacy-page-gallery {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: clamp(0.65rem, 1.2vw, 1rem);
-}
-
-.legacy-page--home .legacy-page-frame {
-  grid-column: span 4;
-}
-
-.legacy-page--home .legacy-page-frame:nth-child(5n + 1),
-.legacy-page--home .legacy-page-frame:nth-child(5n + 4) {
-  grid-column: span 8;
-}
-
-.legacy-page--home .legacy-page-frame img {
-  height: clamp(22rem, 38vw, 34rem);
-  object-fit: cover;
-}
+/* Links (CTA pills)
+/* ---------------------------------------------------------- */
 
 .legacy-page-links ul {
   list-style: none;
@@ -142,45 +92,38 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 0.85rem;
+  gap: var(--space-3);
 }
 
 .legacy-page-links a {
-  display: block;
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  text-decoration: none;
-  color: var(--color-base);
-  font-family: var(--font-sans-serif);
-  letter-spacing: 0.04em;
-  transition:
-    border-color 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
+  display: flex;
+  justify-content: center;
 }
 
-.legacy-page-links a:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-  transform: translateY(-1px);
-}
+/* Gallery
+/* ---------------------------------------------------------- */
 
 .legacy-page-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(10px, 1.25vw, 18px);
+  gap: var(--grid-gap);
 }
 
-.legacy-page--gallery .legacy-page-gallery {
-  width: min(calc(100vw - 3rem), 1440px);
+/* Gallery and list pages: the article is the wide container and every
+   non-gallery row steps back to the standard one. */
+.legacy-page--gallery,
+.legacy-page--list {
+  width: min(100%, var(--container-wide));
+}
+
+.legacy-page--gallery > :not(.legacy-page-gallery),
+.legacy-page--list > :not(.legacy-page-gallery) {
+  width: min(100%, var(--container));
   justify-self: center;
 }
 
 .legacy-page--gallery .legacy-page-frame {
   min-width: 0;
-  overflow: hidden;
-  background: var(--color-bg-subtle);
 }
 
 .legacy-page--gallery .legacy-page-frame.is-full-span {
@@ -198,65 +141,47 @@
   object-fit: cover;
 }
 
-.legacy-page--gallery .legacy-page-frame.is-full-span img {
-  width: 100%;
-  height: auto;
-}
-
-.legacy-page--gallery .legacy-page-frame img {
-  border-radius: clamp(0.6rem, 1vw, 1.25rem);
-}
-
 .legacy-page-body {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-4);
 }
+
+.legacy-page-body a,
+.legacy-page-copy a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition:
+    background-size var(--dur-base) var(--ease-out),
+    color var(--dur-base) var(--ease-out);
+}
+
+.legacy-page-body a:hover,
+.legacy-page-copy a:hover {
+  text-decoration: none;
+  background-size: 100% 1px;
+}
+
+/* Responsive
+/* ---------------------------------------------------------- */
 
 @media (max-width: 900px) {
   .legacy-page-hero.has-media {
     grid-template-columns: 1fr;
   }
 
-  .legacy-page--home .legacy-page-hero {
-    min-height: 0;
-    grid-template-columns: 1fr;
-  }
-
-  .legacy-page--home .legacy-page-copy {
-    padding-right: 0;
-  }
-
-  .legacy-page--home .legacy-page-hero-media {
-    min-height: 28rem;
-  }
-
-  .legacy-page--home .legacy-page-links {
-    margin-top: -1rem;
-  }
 }
 
 @media (max-width: 640px) {
-  .legacy-page--home h1 {
-    font-size: clamp(4rem, 16vw, 5.8rem);
-  }
 
-  .legacy-page--home .legacy-page-frame,
-  .legacy-page--home .legacy-page-frame:nth-child(5n + 1),
-  .legacy-page--home .legacy-page-frame:nth-child(5n + 4) {
-    grid-column: span 6;
-  }
-
-  .legacy-page--home .legacy-page-frame:nth-child(3n + 1) {
-    grid-column: 1 / -1;
-  }
-
-  .legacy-page--home .legacy-page-frame img {
-    height: 24rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .legacy-page-links a {
+  .legacy-page-frame img,
+  .legacy-page-hero-media img {
     transition: none;
+    transform: none;
   }
 }

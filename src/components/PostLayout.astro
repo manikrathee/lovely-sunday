@@ -41,10 +41,17 @@ const resolvedTitle = title || "";
   }}
 >
   <article class={`${articleClass} ${thumbnail ? '' : 'no-image'}`.trim()}>
-    {includeExcerpt && description && <p class="post-content-excerpt">{description}</p>}
-    <ImageBlock src={thumbnail} alt={resolvedTitle} />
+    {resolvedTitle && (
+      <header class="post-content-header" data-reveal>
+        <h1 class="post-content-title">{resolvedTitle}</h1>
+      </header>
+    )}
+    {includeExcerpt && description && <p class="post-content-excerpt" data-reveal>{description}</p>}
+    <div data-reveal>
+      <ImageBlock src={thumbnail} alt={resolvedTitle} />
+    </div>
 
-    <div class="post-content-body">
+    <div class="post-content-body" data-reveal>
       <slot />
     </div>
 

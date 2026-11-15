@@ -1,0 +1,75 @@
+---
+import "../../styles/components/home.css";
+import { buildSrcSet, cdnSrc, type HeroPhoto, type HeroSlot } from "../../lib/home";
+
+export interface Props {
+  photos: HeroPhoto[];
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+  actions?: Array<{ href: string; label: string }>;
+}
+
+const {
+  photos,
+  eyebrow = "A personal style journal",
+  title = "Romantic style, lived beautifully.",
+  lead = "An edit of expressive looks, faraway places, and the small details that make everyday life feel lovely.",
+  actions = [
+    { href: "/lookbook", label: "Explore the lookbook" },
+    { href: "/daily-diary", label: "Read the archive" },
+  ],
+} = Astro.props;
+
+/* Rendered widths per cell (desktop / tablet / phone) for `sizes`. */
+const SIZES: Record<HeroSlot, string> = {
+  a: "(min-width: 1024px) 26vw, (min-width: 640px) 36vw, 50vw",
+  b: "(min-width: 1024px) 43vw, (min-width: 640px) 60vw, 100vw",
+  c: "(min-width: 1024px) 17vw, (min-width: 640px) 24vw, 50vw",
+  d: "(min-width: 1024px) 26vw, (min-width: 640px) 36vw, 50vw",
+  e: "(min-width: 1024px) 26vw, (min-width: 640px) 36vw, 50vw",
+};
+
+const HERO_WIDTHS = [500, 750, 1000, 1500];
+---
+
+<section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero__copy">
+    <p class="eyebrow" data-reveal>{eyebrow}</p>
+    <h1 id="home-hero-title" class="home-hero__title" data-reveal>{title}</h1>
+    <p class="lead home-hero__lead" data-reveal>{lead}</p>
+    <ul class="home-hero__actions" data-reveal>
+      {actions.map((action) => (
+        <li>
+          <a class="pill" href={action.href}>{action.label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {photos.length > 0 && (
+    <div class="home-hero__gallery" role="list" aria-label="Photographs from the journal">
+      {photos.map((photo, index) => (
+        <figure
+          class={`home-frame home-hero__photo home-hero__photo--${photo.slot}`}
+          role="listitem"
+          data-reveal
+        >
+          <a href={photo.href} aria-label={`${photo.postTitle}: view the shoot`}>
+            <img
+              src={cdnSrc(photo.src, 1000)}
+              srcset={buildSrcSet(photo, HERO_WIDTHS)}
+              sizes={SIZES[photo.slot]}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading={index < 2 ? "eager" : "lazy"}
+              decoding="async"
+              fetchpriority={index === 0 ? "high" : undefined}
+            />
+          </a>
+        </figure>
+      ))}
+    </div>
+  )}
+</section>

@@ -1,52 +1,57 @@
 /* Animations
 /* ---------------------------------------------------------- */
 
-/* Swup page transitions */
+/* Swup page transition: a quiet crossfade with a 12px rise. Nothing moves on
+   first load. */
 .transition-fade {
-    transition: 0.25s;
-    opacity: 1;
-    animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-    transform: translate3d(0, 4vh, 0);
+  opacity: 1;
+  transform: none;
 }
 
 html.is-changing .transition-fade {
-    transition: opacity 0.24s ease;
-    will-change: opacity;
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+  will-change: opacity, transform;
 }
 
 html.is-animating .transition-fade {
-    opacity: 0;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translate3d(0, 4vh, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-/* Scroll reveal for post cards */
-.post-card {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(var(--reveal-distance));
 }
 
-.post-card.is-visible {
+/* Scroll reveal. Elements carry `data-reveal`; src/scripts/reveal.ts adds
+   `is-visible` as they enter the viewport. The `reveal-ready` class is set on
+   <html> only when IntersectionObserver exists and reduced motion is off, so
+   nothing is ever hidden without JS. */
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--reveal-duration) var(--ease-out) var(--reveal-delay, 0ms),
+    transform var(--reveal-duration) var(--ease-out) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+html.reveal-ready [data-reveal].is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  will-change: auto;
 }
-
-/* Stagger children for visual rhythm */
-.post-card:nth-child(2) { transition-delay: 0.1s; }
-.post-card:nth-child(3) { transition-delay: 0.2s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .post-card {
-    opacity: 1;
-    transform: none;
-    transition: none;
+  .transition-fade,
+  [data-reveal] {
+    transition: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media print {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

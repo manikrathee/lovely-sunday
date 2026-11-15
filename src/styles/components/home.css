@@ -1,0 +1,288 @@
+/* Homepage: hero mosaic + journal post list
+/* Rendered by src/pages/index.astro via src/components/home/*.astro.
+/* Tokens only (vars.css); role classes (.eyebrow/.lead/.pill/.section-title)
+/* come from components/global.css.
+/* ---------------------------------------------------------- */
+
+.home {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  display: grid;
+  gap: var(--section-gap);
+}
+
+/* Shared media frame: radius + clip on the container, never on the <img> */
+
+.home-frame {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-subtle);
+}
+
+.home-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+/* Hero
+/* ---------------------------------------------------------- */
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--block-gap) var(--space-8);
+  align-items: center;
+}
+
+.home-hero__copy {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 52rem;
+}
+
+.home-hero__copy > * {
+  margin: 0;
+}
+
+.home-hero__title {
+  max-width: 10ch;
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: var(--tracking-display);
+  color: var(--color-base);
+}
+
+.home-hero__lead {
+  max-width: 40ch;
+}
+
+.home-hero__actions {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+/* Mosaic: an 8 x 6 unit grid in a 4:3 frame (units are square), five cells:
+   a  large portrait   | b  wide landscape
+   e  small landscape  | c  portrait | d  square                         */
+
+.home-hero__gallery {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  aspect-ratio: 4 / 3;
+}
+
+.home-hero__photo a {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.home-hero__photo:hover img,
+.home-hero__photo a:focus-visible img {
+  transform: scale(var(--hover-scale));
+}
+
+.home-hero__photo a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+  border-radius: var(--radius-lg);
+}
+
+.home-hero__photo--a { grid-column: 1 / 4; grid-row: 1 / 5; }
+.home-hero__photo--b { grid-column: 4 / 9; grid-row: 1 / 4; }
+.home-hero__photo--c { grid-column: 4 / 6; grid-row: 4 / 7; }
+.home-hero__photo--d { grid-column: 6 / 9; grid-row: 4 / 7; }
+.home-hero__photo--e { grid-column: 1 / 4; grid-row: 5 / 7; }
+
+/* Journal
+/* ---------------------------------------------------------- */
+
+.home-journal {
+  display: grid;
+  gap: var(--block-gap);
+}
+
+.home-journal__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.home-journal__heading {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.home-journal__heading > * {
+  margin: 0;
+}
+
+.home-journal__more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  opacity: 0.7;
+}
+
+.home-journal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8) var(--space-5);
+}
+
+/* Post card: main image, three smaller frames, label + title. The title link
+   is stretched over the whole card so there is exactly one tab stop. */
+
+.home-post {
+  position: relative;
+  display: grid;
+  gap: var(--grid-gap);
+  align-content: start;
+}
+
+.home-post__main {
+  aspect-ratio: 4 / 5;
+}
+
+.home-post__thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+.home-post__thumb {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+}
+
+.home-post__header {
+  display: grid;
+  gap: var(--space-1);
+  padding-top: var(--space-2);
+}
+
+.home-post__header > * {
+  margin: 0;
+}
+
+.home-post__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: var(--leading-snug);
+  letter-spacing: 0;
+  color: var(--color-base);
+}
+
+.home-post__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--dur-base) var(--ease-out);
+}
+
+.home-post__title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+}
+
+.home-post:hover .home-post__main img,
+.home-post:focus-within .home-post__main img {
+  transform: scale(var(--hover-scale));
+}
+
+.home-post:hover .home-post__title a,
+.home-post:focus-within .home-post__title a {
+  color: var(--color-accent);
+}
+
+.home-post__title a:focus-visible {
+  outline: none;
+}
+
+.home-post__title a:focus-visible::after {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 6px;
+}
+
+/* Responsive
+/* ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: var(--block-gap);
+  }
+
+  .home-hero__copy {
+    max-width: 60rem;
+  }
+
+  .home-journal__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-4);
+  }
+}
+
+@media (max-width: 639px) {
+  .home-hero__title {
+    font-size: clamp(4.2rem, 15vw, 5.6rem);
+  }
+
+  .home-hero__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__actions .pill {
+    justify-content: center;
+  }
+
+  /* Phone mosaic: two columns, each cell sets its own aspect ratio. */
+  .home-hero__gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    aspect-ratio: auto;
+  }
+
+  .home-hero__photo--a { grid-column: 1; grid-row: 1; aspect-ratio: 3 / 4; }
+  .home-hero__photo--c { grid-column: 2; grid-row: 1; aspect-ratio: 3 / 4; }
+  .home-hero__photo--b { grid-column: 1 / -1; grid-row: 2; aspect-ratio: 3 / 2; }
+  .home-hero__photo--e { grid-column: 1; grid-row: 3; aspect-ratio: 1 / 1; }
+  .home-hero__photo--d { grid-column: 2; grid-row: 3; aspect-ratio: 1 / 1; }
+
+  .home-journal__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-frame img,
+  .home-post__title a {
+    transition: none;
+  }
+}

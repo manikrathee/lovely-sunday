@@ -4,8 +4,9 @@ import { readFileSync } from "node:fs";
 const links = [
   { label: "Discover", href: "/lookbook" },
   { label: "Archive", href: "/daily-diary" },
+  { label: "About", href: "/about-lovely-sunday" },
   { label: "Contact", href: "/contact-lovely-sunday" },
-  { label: "Instagram ↗", href: "https://www.instagram.com/lovelysunday", external: true },
+  { label: "Instagram ↗", href: "https://www.instagram.com/_lovelysunday", external: true },
 ];
 const currentYear = new Date().getFullYear();
 const footerLogoSvg = readFileSync(
@@ -16,10 +17,10 @@ const footerLogoSvg = readFileSync(
   .replace(/<!DOCTYPE[^>]*>\s*/g, "");
 ---
 
-<footer class="site-foot">
+<footer class="site-foot" data-reveal-watch>
   <div class="site-foot-logo" aria-hidden="true" set:html={footerLogoSvg} />
 
-  <div class="site-foot-inner">
+  <div class="site-foot-inner" data-reveal>
     <div class="site-foot-brand">
       <strong>Lovely Sunday</strong>
       <small>© {currentYear}</small>

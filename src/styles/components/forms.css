@@ -16,7 +16,7 @@ label {
     display: block;
     font-size: 0.9em;
     font-weight: var(--font-bold);
-    margin: 0 0 (var(--margin) * 0.5) 0;
+    margin: 0 0 1rem 0;
 }
 
 input[type="text"],
@@ -28,15 +28,18 @@ input[type="url"],
 select,
 textarea {
     background: var(--color-bg);
-    border-radius: var(--radius);
-    border: none;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--color-border);
     color: inherit;
     display: block;
     outline: 0;
     padding: 0 0.6em;
+    font-size: var(--text-md);
     text-decoration: none;
     width: 100%;
+    transition:
+        border-color var(--dur-fast) var(--ease-out),
+        box-shadow var(--dur-fast) var(--ease-out);
 }
 
 input[type="text"]:invalid,

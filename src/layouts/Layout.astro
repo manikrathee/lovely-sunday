@@ -159,6 +159,17 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
                 document.documentElement.removeAttribute("data-theme");
             }
         </script>
+
+        <script is:inline>
+            // Scroll reveal gate: only hide [data-reveal] elements when the
+            // observer exists and the user has not asked for reduced motion.
+            if (
+                "IntersectionObserver" in window &&
+                !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ) {
+                document.documentElement.classList.add("reveal-ready");
+            }
+        </script>
     </Head>
     <body class="site-wrapper">
         <div class="site-content-shell">
@@ -180,40 +191,7 @@ const mergedJsonLd = [...generatedSeo.jsonLd, ...(routeSeo?.jsonLd ?? [])];
         <Footer />
 
         <script>
-            import Swup from "swup";
-            import HeadPlugin from "@swup/head-plugin";
-
-            document.addEventListener("DOMContentLoaded", () => {
-                new Swup({
-                    containers: ["#swup"],
-                    cache: true,
-                    animationSelector: "[class*='transition-']",
-                    plugins: [new HeadPlugin()],
-                });
-            });
-        </script>
-
-        <script is:inline>
-            // Scroll reveal for post cards
-            (function () {
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-                var observer = new IntersectionObserver(
-                    function (entries) {
-                        entries.forEach(function (entry) {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add('is-visible');
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    },
-                    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-                );
-
-                document.querySelectorAll('.post-card').forEach(function (card) {
-                    observer.observe(card);
-                });
-            })();
+            import "../scripts/reveal";
         </script>
 
         {gaMeasurementId && <GoogleAnalytics id={gaMeasurementId} />}
