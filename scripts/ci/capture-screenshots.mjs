@@ -9,6 +9,7 @@
 import { readFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { chromium } from "playwright";
+import { routeToFilename } from "./route-filename.mjs";
 
 const args = process.argv.slice(2);
 const pagesFile = args.find((a) => a.startsWith("--pages="))?.split("=")[1];
@@ -27,11 +28,6 @@ const VIEWPORTS = [
   { name: "desktop", width: 1440, height: 900 },
   { name: "mobile", width: 390, height: 844 },
 ];
-
-function routeToFilename(route) {
-  if (route === "/") return "index.png";
-  return route.replace(/^\//, "").replace(/\//g, "--") + ".png";
-}
 
 /** Scroll the page incrementally to trigger lazy-loaded images */
 async function triggerLazyImages(page) {
@@ -99,7 +95,7 @@ async function capturePage(browser, route, viewport) {
     deviceScaleFactor: 1,
   });
   const page = await context.newPage();
-  const filename = routeToFilename(route);
+  const filename = routeToFilename(route, "png");
   const dir = join(outputDir, viewport.name);
   mkdirSync(dir, { recursive: true });
   const outputPath = join(dir, filename);

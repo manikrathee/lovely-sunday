@@ -9,6 +9,7 @@
 import { readFileSync, mkdirSync, renameSync } from "fs";
 import { join } from "path";
 import { chromium } from "playwright";
+import { routeToFilename } from "./route-filename.mjs";
 
 const args = process.argv.slice(2);
 const routesFile = args.find((a) => a.startsWith("--routes="))?.split("=")[1];
@@ -22,11 +23,6 @@ if (!routesFile) {
 
 const routes = JSON.parse(readFileSync(routesFile, "utf8"));
 mkdirSync(outputDir, { recursive: true });
-
-function routeToFilename(route) {
-  if (route === "/") return "index.webm";
-  return route.replace(/^\//, "").replace(/\//g, "--") + ".webm";
-}
 
 /** Quick scroll: fast down, pause, fast back up (~6s total) */
 async function scrollDemo(page) {
@@ -111,7 +107,7 @@ async function recordPage(browser, route) {
 
   const videoPath = await page.video()?.path();
   if (videoPath) {
-    const dest = join(outputDir, routeToFilename(route));
+    const dest = join(outputDir, routeToFilename(route, "webm"));
     renameSync(videoPath, dest);
     console.log(`  ${route} -> ${dest}`);
   }
