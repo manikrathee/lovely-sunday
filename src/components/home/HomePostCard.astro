@@ -1,0 +1,57 @@
+---
+import "../../styles/components/home.css";
+import { buildSrcSet, cdnSrc, type HomePost } from "../../lib/home";
+
+export interface Props {
+  post: HomePost;
+  /** Position in the list; the first row loads eagerly. */
+  index?: number;
+}
+
+const { post, index = 0 } = Astro.props;
+
+const MAIN_WIDTHS = [500, 750, 1000];
+const THUMB_WIDTHS = [300, 500];
+const MAIN_SIZES = "(min-width: 1024px) 30vw, (min-width: 640px) 48vw, 100vw";
+const THUMB_SIZES = "(min-width: 1024px) 10vw, (min-width: 640px) 16vw, 32vw";
+const eager = index < 3;
+---
+
+<article class="home-post" data-reveal>
+  <figure class="home-frame home-post__main">
+    <img
+      src={cdnSrc(post.main.src, 750)}
+      srcset={buildSrcSet(post.main, MAIN_WIDTHS)}
+      sizes={MAIN_SIZES}
+      alt={post.main.alt}
+      width={post.main.width}
+      height={post.main.height}
+      loading={eager ? "eager" : "lazy"}
+      decoding="async"
+    />
+  </figure>
+
+  <div class="home-post__thumbs" aria-hidden="true">
+    {post.thumbs.map((thumb) => (
+      <figure class="home-frame home-post__thumb">
+        <img
+          src={cdnSrc(thumb.src, 500)}
+          srcset={buildSrcSet(thumb, THUMB_WIDTHS)}
+          sizes={THUMB_SIZES}
+          alt=""
+          width={thumb.width}
+          height={thumb.height}
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+    ))}
+  </div>
+
+  <header class="home-post__header">
+    <p class="eyebrow">{post.eyebrow}</p>
+    <h3 class="home-post__title">
+      <a href={post.pathname}>{post.title}</a>
+    </h3>
+  </header>
+</article>

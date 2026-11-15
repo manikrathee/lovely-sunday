@@ -49,6 +49,8 @@ jobs:
           node-version: 22
           cache: npm
 
+      - run: npm ci
+
       - name: Build site
         run: npm run build:astro
         env:

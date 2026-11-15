@@ -1,14 +1,17 @@
 ---
 const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
+// `sections` is a space-separated list of path prefixes that count as "current".
 const links = [
-    { label: "Discover", href: "/lookbook", section: "/lookbook" },
-    { label: "Archive", href: "/daily-diary", section: "/daily-diary" },
-    { label: "About", href: "/about-lovely-sunday", section: "/about-lovely-sunday" },
-    { label: "Contact", href: "/contact-lovely-sunday", section: "/contact" },
+    { label: "Discover", href: "/lookbook", sections: "/lookbook /lookbook-single /lookbook-double" },
+    { label: "Archive", href: "/daily-diary", sections: "/daily-diary" },
+    { label: "About", href: "/about-lovely-sunday", sections: "/about-lovely-sunday" },
+    { label: "Contact", href: "/contact-lovely-sunday", sections: "/contact-lovely-sunday /contact" },
 ];
 
-const isCurrent = (section: string) =>
-    pathname === section || pathname.startsWith(`${section}/`);
+const isCurrent = (sections: string) =>
+    sections
+        .split(/\s+/)
+        .some((section) => pathname === section || pathname.startsWith(`${section}/`));
 ---
 
 <header class="site-head">
@@ -21,7 +24,8 @@ const isCurrent = (section: string) =>
             {links.map((link) => (
                 <a
                     href={link.href}
-                    aria-current={isCurrent(link.section) ? "page" : undefined}
+                    data-section={link.sections}
+                    aria-current={isCurrent(link.sections) ? "page" : undefined}
                 >
                     {link.label}
                 </a>

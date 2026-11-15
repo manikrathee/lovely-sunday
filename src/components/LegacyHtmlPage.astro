@@ -54,16 +54,16 @@ for (let index = 0; index < galleryFrames.length - 1; index += 1) {
   <article class={`legacy-page legacy-page--${view.kind}`}>
     <header class={`legacy-page-hero${view.heroImage ? " has-media" : ""}`}>
       <div class="legacy-page-copy">
-        <p class="legacy-page-eyebrow">{view.eyebrow}</p>
-        <h1>{view.title}</h1>
+        <p class="legacy-page-eyebrow eyebrow" data-reveal>{view.eyebrow}</p>
+        <h1 data-reveal>{view.title}</h1>
 
-        {allParagraphs.slice(0, view.heroImage ? 2 : 3).map((paragraph) => (
-          <p>{paragraph}</p>
+        {allParagraphs.slice(0, view.heroImage ? 2 : 3).map((paragraph, index) => (
+          <p class={index === 0 ? "lead" : undefined} data-reveal>{paragraph}</p>
         ))}
       </div>
 
       {view.heroImage && (
-        <figure class="legacy-page-hero-media">
+        <figure class="legacy-page-hero-media" data-reveal>
           <img
             src={view.heroImage.src}
             alt={view.heroImage.alt}
@@ -81,8 +81,8 @@ for (let index = 0; index < galleryFrames.length - 1; index += 1) {
       <section class="legacy-page-links" aria-label="Explore more">
         <ul>
           {view.links.map((link) => (
-            <li>
-              <a href={link.href} rel={link.external ? "noreferrer" : undefined}>
+            <li data-reveal>
+              <a class="pill" href={link.href} rel={link.external ? "noreferrer" : undefined}>
                 {link.label}
               </a>
             </li>
@@ -97,6 +97,7 @@ for (let index = 0; index < galleryFrames.length - 1; index += 1) {
           <figure
             class={`legacy-page-frame is-${span}-span orientation-${orientation}`}
             data-orientation={orientation}
+            data-reveal
           >
             <img
               src={image.src}
@@ -118,7 +119,7 @@ for (let index = 0; index < galleryFrames.length - 1; index += 1) {
     {allParagraphs.slice(view.heroImage ? 2 : 3).length > 0 && (
       <section class="legacy-page-body">
         {allParagraphs.slice(view.heroImage ? 2 : 3).map((paragraph) => (
-          <p>{paragraph}</p>
+          <p data-reveal>{paragraph}</p>
         ))}
       </section>
     )}

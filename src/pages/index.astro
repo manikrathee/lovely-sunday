@@ -1,41 +1,35 @@
 ---
-import LegacyHtmlPage from "../components/LegacyHtmlPage.astro";
+import Layout from "../layouts/Layout.astro";
+import HomeHero from "../components/home/HomeHero.astro";
+import HomePostList from "../components/home/HomePostList.astro";
 import InstagramGrid from "../components/InstagramGrid.astro";
-import { getLegacyPageBySourcePathname } from "../lib/legacy-pages";
+import { getHeroPhotos, getHomePosts } from "../lib/home";
 import { getInstagramPosts } from "../lib/instagram";
 
 const INSTAGRAM_USERNAME = "_lovelysunday";
 
-const homePage = getLegacyPageBySourcePathname("/");
-if (!homePage) {
-  throw new Error("Missing legacy homepage source for '/'");
-}
+const title = "Romantic style, lived beautifully.";
+const description =
+  "An edit of expressive looks, faraway places, and the small details that make everyday life feel lovely.";
 
-const cleanedHomePage = {
-  ...homePage,
-  view: {
-    ...homePage.view,
-    eyebrow: "A personal style journal",
-    title: "Romantic style, lived beautifully.",
-    description:
-      "An edit of expressive looks, faraway places, and the small details that make everyday life feel lovely.",
-    heroImage: homePage.view.images[3],
-    images: homePage.view.images.filter((_, index) => index !== 3),
-    links: [
-      { external: false, href: "/lookbook", label: "Explore the lookbook" },
-      { external: false, href: "/daily-diary", label: "Read the archive" },
-    ],
-    paragraphs: [],
-  },
-};
-
+const heroPhotos = getHeroPhotos();
+const posts = getHomePosts(12);
 const instagramPosts = await getInstagramPosts(INSTAGRAM_USERNAME, 9);
 ---
 
-<LegacyHtmlPage page={cleanedHomePage}>
+<Layout
+  title={title}
+  description={description}
+  seo={{ image: heroPhotos[0]?.src, pageType: "collection" }}
+>
+  <div class="home">
+    <HomeHero photos={heroPhotos} title={title} lead={description} />
+    <HomePostList posts={posts} />
+  </div>
+
   <InstagramGrid
     title="The latest edit"
     subtitle="Recent looks and travel moments from @_lovelysunday."
     posts={instagramPosts}
   />
-</LegacyHtmlPage>
+</Layout>

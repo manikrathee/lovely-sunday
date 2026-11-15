@@ -1,0 +1,39 @@
+---
+import "../../styles/components/home.css";
+import HomePostCard from "./HomePostCard.astro";
+import type { HomePost } from "../../lib/home";
+
+export interface Props {
+  posts: HomePost[];
+  eyebrow?: string;
+  title?: string;
+  moreHref?: string;
+  moreLabel?: string;
+}
+
+const {
+  posts,
+  eyebrow = "The journal",
+  title = "Recent shoots and stories",
+  moreHref = "/daily-diary",
+  moreLabel = "View the archive",
+} = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="home-journal" aria-labelledby="home-journal-title">
+    <header class="home-journal__header" data-reveal>
+      <div class="home-journal__heading">
+        <p class="eyebrow">{eyebrow}</p>
+        <h2 id="home-journal-title" class="section-title">{title}</h2>
+      </div>
+      <a class="home-journal__more label link-underline" href={moreHref}>{moreLabel}</a>
+    </header>
+
+    <div class="home-journal__grid">
+      {posts.map((post, index) => (
+        <HomePostCard post={post} index={index} />
+      ))}
+    </div>
+  </section>
+)}
